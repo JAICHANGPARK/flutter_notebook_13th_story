@@ -22,9 +22,15 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
-                  Expanded(child: Row(children: [
-                    IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios), padding: EdgeInsets.zero, iconSize: 18,),
-                    Text("BACK"),
+                  Expanded(child:
+
+
+                  Row(children: [
+
+                    IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios), padding: EdgeInsets.zero, iconSize: 16,),
+                    Text("BACK", style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),),
                   ],)),
 
 
