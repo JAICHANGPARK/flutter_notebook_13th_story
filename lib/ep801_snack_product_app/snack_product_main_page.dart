@@ -12,6 +12,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
         backgroundColor: Colors.grey[100],
         body: SafeArea(
           child: Column(
