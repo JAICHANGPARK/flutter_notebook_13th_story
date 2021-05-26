@@ -12,7 +12,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
+        resizeToAvoidBottomInset: false,
         backgroundColor: Colors.grey[100],
         body: SafeArea(
           child: Column(
@@ -67,7 +67,13 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                         child: Container(
                           decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                           child: TextField(
-                            decoration: InputDecoration(border: InputBorder.none),
+                            decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: "CHEETOS SIMPLY",
+                                hintStyle: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.orange
+                                )),
                           ),
                         ),
                         flex: 10,
@@ -77,14 +83,13 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                       ),
                       Expanded(
                         child: Container(
-                            margin: EdgeInsets.symmetric(horizontal: 2),
-                          decoration: BoxDecoration(
-
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(8)
-                          ),
+                          margin: EdgeInsets.symmetric(horizontal: 2),
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                           child: Center(
-                            child: Icon(Icons.tune, color: Colors.orange,),
+                            child: Icon(
+                              Icons.tune,
+                              color: Colors.orange,
+                            ),
                           ),
                         ),
                         flex: 2,
