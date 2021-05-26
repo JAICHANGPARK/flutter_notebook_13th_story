@@ -28,8 +28,8 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
 
 
                   Expanded(child: Center(child: Text("SEARCH"))),
-                  Spacer(),
-                  CircleAvatar(),
+                  Expanded(child: CircleAvatar(backgroundColor: Colors.orange,)),
+                  // CircleAvatar(),
 
 
                 ],
