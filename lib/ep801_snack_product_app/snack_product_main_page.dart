@@ -67,6 +67,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                           border: Border.all(color: Colors.white)
                         ),
                       ), flex: 10,),
+                      SizedBox(width: 8,),
                       Expanded(child: Placeholder(), flex: 2,),
                     ],
                   ),
