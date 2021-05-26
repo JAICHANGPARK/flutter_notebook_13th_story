@@ -12,6 +12,6 @@ class SnackProductMainPage extends StatefulWidget {
 class _SnackProductMainPageState extends State<SnackProductMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold();
   }
 }
