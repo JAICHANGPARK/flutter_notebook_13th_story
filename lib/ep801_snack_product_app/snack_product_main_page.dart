@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -28,7 +29,10 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
 
 
                   Expanded(child: Center(child: Text("SEARCH"))),
-                  Expanded(child: CircleAvatar(backgroundColor: Colors.orange,)),
+                  Expanded(child: Align(
+
+                      alignment: Alignment.centerRight,
+                      child: CircleAvatar(backgroundColor: Colors.orange,))),
                   // CircleAvatar(),
 
 
