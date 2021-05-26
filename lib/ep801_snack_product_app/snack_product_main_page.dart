@@ -18,13 +18,16 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
         child: Column(
           children: [
             Expanded(child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
-                  IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios), padding: EdgeInsets.zero, iconSize: 24,),
-                  Text("BACK"),
-                  Spacer(),
-                  Text("SEARCH"),
+                  Expanded(child: Row(children: [
+                    IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios), padding: EdgeInsets.zero, iconSize: 18,),
+                    Text("BACK"),
+                  ],)),
+
+
+                  Expanded(child: Center(child: Text("SEARCH"))),
                   Spacer(),
                   CircleAvatar(),
 
