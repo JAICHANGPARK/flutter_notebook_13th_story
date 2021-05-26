@@ -14,11 +14,15 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[100],
-      body: Column(
-        children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-        ],
+      body: SafeArea(
+        
+        child: Column(
+          children: [
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder(), flex: 15,),
+          ],
+        ),
       )
     );
   }
