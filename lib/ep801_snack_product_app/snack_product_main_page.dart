@@ -15,9 +15,9 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       body: SafeArea(
-        
         child: Column(
           children: [
+
             Expanded(child: Placeholder()),
             Expanded(child: Placeholder()),
             Expanded(child: Placeholder(), flex: 15,),
