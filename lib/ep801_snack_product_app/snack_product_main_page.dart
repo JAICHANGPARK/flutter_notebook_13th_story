@@ -70,10 +70,8 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                             decoration: InputDecoration(
                                 border: InputBorder.none,
                                 hintText: "CHEETOS SIMPLY",
-                                hintStyle: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.orange
-                                )),
+                                icon: Icon(Icons.search),
+                                hintStyle: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange)),
                           ),
                         ),
                         flex: 10,
