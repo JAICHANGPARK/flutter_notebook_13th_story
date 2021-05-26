@@ -58,7 +58,11 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                 flex: 2,
               ),
               Expanded(
-                child: Placeholder(),
+                child: Row(
+                  children: [
+                    
+                  ],
+                ),
                 flex: 2,
               ),
               Expanded(
