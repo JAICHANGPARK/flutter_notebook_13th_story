@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'snack_product_main_page.dart';
+
+
 
 class SnackProductApp extends StatelessWidget {
   const SnackProductApp({Key? key}) : super(key: key);
@@ -8,7 +11,7 @@ class SnackProductApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       title: "Flutter Live Coding",
-
+      home: const SnackProductMainPage(),
     );
   }
 }
