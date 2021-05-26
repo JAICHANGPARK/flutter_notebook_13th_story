@@ -21,8 +21,11 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
               children: [
                 IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
                 Text("BACK"),
+                Spacer(),
+                Text("SEARCH"),
+                CircleAvatar(),
+                Spacer(),
 
-                
               ],
             ), flex: 2,),
             Expanded(child: Placeholder(), flex: 2,),
