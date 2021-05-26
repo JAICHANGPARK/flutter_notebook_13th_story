@@ -8,6 +8,7 @@ class SnackProductApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       title: "Flutter Live Coding",
+
     );
   }
 }
