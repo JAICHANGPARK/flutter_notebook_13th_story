@@ -23,7 +23,7 @@ linter:
   # producing the lint.
   rules:
 
-    prefer_const_literals_to_create_immutables: true
+    prefer_const_literals_to_create_immutables: false
     prefer_const_constructors : false
 
     # avoid_print: false  # Uncomment to disable the `avoid_print` rule
