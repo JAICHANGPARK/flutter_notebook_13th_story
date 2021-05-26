@@ -75,7 +75,17 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                         width: 16,
                       ),
                       Expanded(
-                        child: Placeholder(),
+                        child: Container(
+
+                          decoration: BoxDecoration(
+
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8)
+                          ),
+                          child: Center(
+                            child: Icon(Icons.tune, color: Colors.orange,),
+                          ),
+                        ),
                         flex: 2,
                       ),
                     ],
