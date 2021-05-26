@@ -9,9 +9,9 @@ class SnackProductApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return  const MaterialApp(
       title: "Flutter Live Coding",
-      home: const SnackProductMainPage(),
+      home: SnackProductMainPage(),
     );
   }
 }
