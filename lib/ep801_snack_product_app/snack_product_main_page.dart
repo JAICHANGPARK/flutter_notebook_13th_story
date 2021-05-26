@@ -17,7 +17,14 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder(), flex: 2,),
+            Expanded(child: Row(
+              children: [
+                IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
+                Text("BACK"),
+
+                
+              ],
+            ), flex: 2,),
             Expanded(child: Placeholder(), flex: 2,),
             Expanded(child: Placeholder(), flex: 15,),
           ],
