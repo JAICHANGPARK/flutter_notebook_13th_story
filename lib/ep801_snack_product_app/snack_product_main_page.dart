@@ -17,16 +17,20 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Row(
-              children: [
-                IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
-                Text("BACK"),
-                Spacer(),
-                Text("SEARCH"),
-                CircleAvatar(),
-                Spacer(),
+            Expanded(child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: Row(
+                children: [
+                  IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios), padding: EdgeInsets.zero, iconSize: 24,),
+                  Text("BACK"),
+                  Spacer(),
+                  Text("SEARCH"),
+                  Spacer(),
+                  CircleAvatar(),
 
-              ],
+
+                ],
+              ),
             ), flex: 2,),
             Expanded(child: Placeholder(), flex: 2,),
             Expanded(child: Placeholder(), flex: 15,),
