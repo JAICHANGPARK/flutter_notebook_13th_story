@@ -13,6 +13,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: Column(
         children: [
           Expanded(child: Placeholder()),
