@@ -58,11 +58,14 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                 flex: 2,
               ),
               Expanded(
-                child: Row(
-                  children: [
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Expanded(child: Placeholder(), flex: 10,),
+                      Expanded(child: Placeholder(), flex: 2,),
+                    ],
+                  ),
                 ),
                 flex: 2,
               ),
