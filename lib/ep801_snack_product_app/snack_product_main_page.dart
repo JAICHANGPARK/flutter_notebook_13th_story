@@ -66,6 +66,9 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.white)
                         ),
+                        child: TextField(
+                          decoration: InputDecoration(),
+                        ),
                       ), flex: 10,),
                       SizedBox(width: 16,),
                       Expanded(child: Placeholder(), flex: 2,),
