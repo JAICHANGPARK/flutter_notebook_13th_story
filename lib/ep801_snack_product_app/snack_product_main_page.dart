@@ -59,19 +59,25 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
               ),
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16 ,vertical: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   child: Row(
                     children: [
-                      Expanded(child: Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.white)
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(border: Border.all(color: Colors.white)),
+                          child: TextField(
+                            decoration: InputDecoration(border: InputBorder.none),
+                          ),
                         ),
-                        child: TextField(
-                          decoration: InputDecoration(),
-                        ),
-                      ), flex: 10,),
-                      SizedBox(width: 16,),
-                      Expanded(child: Placeholder(), flex: 2,),
+                        flex: 10,
+                      ),
+                      SizedBox(
+                        width: 16,
+                      ),
+                      Expanded(
+                        child: Placeholder(),
+                        flex: 2,
+                      ),
                     ],
                   ),
                 ),
