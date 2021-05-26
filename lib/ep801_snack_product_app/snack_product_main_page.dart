@@ -76,7 +76,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                       ),
                       Expanded(
                         child: Container(
-
+                            margin: EdgeInsets.symmetric(horizontal: 2),
                           decoration: BoxDecoration(
 
                             color: Colors.white,
