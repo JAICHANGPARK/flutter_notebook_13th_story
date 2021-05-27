@@ -103,15 +103,22 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-
-                      Expanded(child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Align(
-                            alignment: Alignment.centerLeft,
-                            child: Text("Found 06 Result".toUpperCase())),
-                      ),flex: 2,),
-                      Expanded(child: Placeholder(), flex: 20,),
-
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "Found 06 Result".toUpperCase(),
+                                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                              )),
+                        ),
+                        flex: 2,
+                      ),
+                      Expanded(
+                        child: Placeholder(),
+                        flex: 20,
+                      ),
                     ],
                   ),
                 ),
