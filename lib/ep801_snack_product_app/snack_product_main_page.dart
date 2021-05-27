@@ -133,6 +133,13 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                     right: 0,
                                     bottom: 0,
                                   ),
+
+                                  Positioned(
+                                    child: Image.asset("assets/img/cheetos.png"),
+                                    top: 0,
+                                    left: 24,
+                                    right: 24,
+                                  ),
                                 ],
                               ),
                             ),
