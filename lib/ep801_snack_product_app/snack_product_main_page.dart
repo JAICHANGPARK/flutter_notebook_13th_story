@@ -123,7 +123,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                             color: Colors.red,
                             child: Stack(
                               children: [
-                                Positioned(child: Card(), top: 24, left: 0, right: 0, bottom: 0,),
+                                Positioned(child: Card(), top: 48, left: 0, right: 0, bottom: 0,),
                               ],
                             ),
                           ), Container(
