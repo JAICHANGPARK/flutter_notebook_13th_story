@@ -121,6 +121,20 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                         children: [
                           Container(
                             color: Colors.red,
+                          ), Container(
+                            color: Colors.red,
+                          ),
+                          Container(
+                            color: Colors.red,
+                          ),
+                          Container(
+                            color: Colors.red,
+                          ),
+                          Container(
+                            color: Colors.red,
+                          ),
+                          Container(
+                            color: Colors.red,
                           )
                         ],
                         ),
