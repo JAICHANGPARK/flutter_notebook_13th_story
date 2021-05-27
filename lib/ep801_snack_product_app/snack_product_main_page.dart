@@ -141,7 +141,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                           ),
                                           Text(
                                             "\$5.99".toUpperCase(),
-                                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+                                            style: TextStyle(fontWeight: FontWeight.bold,),
                                           ),
 
                                         ],
