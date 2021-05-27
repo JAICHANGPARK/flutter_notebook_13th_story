@@ -116,32 +116,42 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                         flex: 2,
                       ),
                       Expanded(
-                        child: GridView.count(crossAxisCount: 2,mainAxisSpacing: 16 ,crossAxisSpacing: 16,
-                          childAspectRatio: 4/5,
-                        children: [
-                          Container(
-                            color: Colors.red,
-                            child: Stack(
-                              children: [
-                                Positioned(child: Card(), top: 48, left: 0, right: 0, bottom: 0,),
-                              ],
+                        child: GridView.count(
+                          crossAxisCount: 2,
+                          mainAxisSpacing: 16,
+                          crossAxisSpacing: 16,
+                          childAspectRatio: 4 / 5,
+                          children: [
+                            Container(
+                              color: Colors.red,
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: Card(),
+                                    top: 48,
+                                    left: 0,
+                                    right: 0,
+                                    bottom: 0,
+                                  ),
+                                ],
+                              ),
                             ),
-                          ), Container(
-                            color: Colors.red,
-                          ),
-                          Container(
-                            color: Colors.red,
-                          ),
-                          Container(
-                            color: Colors.red,
-                          ),
-                          Container(
-                            color: Colors.red,
-                          ),
-                          Container(
-                            color: Colors.red,
-                          )
-                        ],
+                            Container(
+                              color: Colors.red,
+                            ),
+                            Container(
+                              color: Colors.red,
+                            ),
+                            Container(
+                              color: Colors.red,
+                            ),
+                            Container(
+                              color: Colors.red,
+                            ),
+                            Container(
+                              color: Colors.red,
+                            )
+                          ],
                         ),
                         flex: 20,
                       ),
