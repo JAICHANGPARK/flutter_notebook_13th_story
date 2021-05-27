@@ -128,25 +128,29 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                 children: [
                                   Positioned(
                                     child: Card(
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Spacer(),
-                                          Text(
-                                            "Simply crunchy".toUpperCase(),
-                                            style: TextStyle(fontWeight: FontWeight.bold),
-                                          ),
-                                          Text(
-                                            "Crunchy WHITE".toUpperCase(),
-                                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
-                                          ),
-                                          Text(
-                                            "\$5.99".toUpperCase(),
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Spacer(),
+                                            Text(
+                                              "Simply crunchy".toUpperCase(),
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                                             ),
-                                          ),
-                                        ],
+                                            Text(
+                                              "Crunchy WHITE".toUpperCase(),
+                                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red
+                                              , fontSize: 10),
+                                            ),
+                                            Text(
+                                              "\$5.99".toUpperCase(),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                     top: 48,
