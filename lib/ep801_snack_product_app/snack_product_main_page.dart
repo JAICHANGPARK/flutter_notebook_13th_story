@@ -165,6 +165,12 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                     right: 24,
                                     bottom: 54,
                                   ),
+                                  Positioned(child: Container(
+
+                                    height: 32,
+                                    width: 32,
+
+                                  ), right: 24, bottom: 24,),
                                 ],
                               ),
                             ),
