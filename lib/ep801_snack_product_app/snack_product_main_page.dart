@@ -168,16 +168,18 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                   Positioned(
                                     child: PhysicalModel(
                                       color: Colors.grey,
-    shape: BoxShape.circle,
+                                      shape: BoxShape.circle,
                                       elevation: 2,
                                       child: Container(
                                         height: 24,
                                         width: 24,
-                                        decoration: BoxDecoration(color: Colors.white,
-                                        shape: BoxShape.circle),
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
                                         child: Center(
-                                          child: Icon(Icons.favorite, color: Colors.red,
-                                          size: 16,),
+                                          child: Icon(
+                                            Icons.favorite,
+                                            color: Colors.red,
+                                            size: 16,
+                                          ),
                                         ),
                                       ),
                                     ),
