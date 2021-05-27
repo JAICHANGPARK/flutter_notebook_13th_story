@@ -169,6 +169,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                     child: PhysicalModel(
                                       color: Colors.grey,
     shape: BoxShape.circle,
+                                      elevation: 2,
                                       child: Container(
                                         height: 32,
                                         width: 32,
