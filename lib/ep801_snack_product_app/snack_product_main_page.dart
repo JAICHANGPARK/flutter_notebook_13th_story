@@ -127,13 +127,21 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                               child: Stack(
                                 children: [
                                   Positioned(
-                                    child: Card(),
+                                    child: Card(
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            "Simply crunchy".toUpperCase(),
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          )
+                                        ],
+                                      ),
+                                    ),
                                     top: 48,
                                     left: 8,
                                     right: 8,
                                     bottom: 0,
                                   ),
-
                                   Positioned(
                                     child: Image.asset("assets/img/cheetos.png"),
                                     top: 0,
