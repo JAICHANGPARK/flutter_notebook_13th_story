@@ -101,7 +101,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                 child: Column(
                   children: [
 
-                    Expanded(child: Placeholder(),flex: 2,),
+                    Expanded(child: Text("Found 06 Result".toUpperCase()),flex: 2,),
                     Expanded(child: Placeholder(), flex: 20,),
 
                   ],
