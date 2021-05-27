@@ -134,7 +134,16 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                           Text(
                                             "Simply crunchy".toUpperCase(),
                                             style: TextStyle(fontWeight: FontWeight.bold),
-                                          )
+                                          ),
+                                          Text(
+                                            "Crunchy WHITE".toUpperCase(),
+                                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+                                          ),
+                                          Text(
+                                            "\$5.99".toUpperCase(),
+                                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+                                          ),
+
                                         ],
                                       ),
                                     ),
