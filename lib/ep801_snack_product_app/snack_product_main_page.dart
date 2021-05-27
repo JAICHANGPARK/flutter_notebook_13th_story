@@ -110,7 +110,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                               alignment: Alignment.centerLeft,
                               child: Text(
                                 "Found 06 Result".toUpperCase(),
-                                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                               )),
                         ),
                         flex: 2,
