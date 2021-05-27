@@ -129,6 +129,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                   Positioned(
                                     child: Card(
                                       child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Spacer(),
                                           Text(
@@ -141,9 +142,10 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                           ),
                                           Text(
                                             "\$5.99".toUpperCase(),
-                                            style: TextStyle(fontWeight: FontWeight.bold,),
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
-
                                         ],
                                       ),
                                     ),
