@@ -101,8 +101,8 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                 child: Column(
                   children: [
 
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder(),flex: 2,),
+                    Expanded(child: Placeholder(), flex: 20,),
 
                   ],
                 ),
