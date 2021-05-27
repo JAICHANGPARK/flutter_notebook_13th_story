@@ -98,14 +98,17 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                 flex: 2,
               ),
               Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
 
-                    Expanded(child: Text("Found 06 Result".toUpperCase()),flex: 2,),
-                    Expanded(child: Placeholder(), flex: 20,),
+                      Expanded(child: Text("Found 06 Result".toUpperCase()),flex: 2,),
+                      Expanded(child: Placeholder(), flex: 20,),
 
-                  ],
+                    ],
+                  ),
                 ),
                 flex: 18,
               ),
