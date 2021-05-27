@@ -140,8 +140,8 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                             ),
                                             Text(
                                               "Crunchy WHITE".toUpperCase(),
-                                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red
-                                              , fontSize: 10),
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.red, fontSize: 10),
                                             ),
                                             Text(
                                               "\$5.99".toUpperCase(),
@@ -165,17 +165,22 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                     right: 24,
                                     bottom: 54,
                                   ),
-                                  Positioned(child: PhysicalModel(
-                                    
-                                    child: Container(
-
-                                      height: 32,
-                                      width: 32,
-decoration: BoxDecoration(
-  color: Colors.white
-),
+                                  Positioned(
+                                    child: PhysicalModel(
+                                      color: Colors.grey,
+                                      child: Container(
+                                        height: 32,
+                                        width: 32,
+                                        decoration: BoxDecoration(color: Colors.white,
+                                        shape: BoxShape.circle),
+                                        child: Center(
+                                          child: Icon(Icons.favorite, color: Colors.red,),
+                                        ),
+                                      ),
                                     ),
-                                  ), right: 24, bottom: 24,),
+                                    right: 16,
+                                    bottom: 8,
+                                  ),
                                 ],
                               ),
                             ),
