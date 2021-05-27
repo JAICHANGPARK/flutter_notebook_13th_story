@@ -99,6 +99,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
               ),
               Expanded(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
 
                     Expanded(child: Text("Found 06 Result".toUpperCase()),flex: 2,),
