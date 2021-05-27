@@ -102,7 +102,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                   children: [
 
                     Expanded(child: Placeholder()),
-                    
+                    Expanded(child: Placeholder()),
 
                   ],
                 ),
