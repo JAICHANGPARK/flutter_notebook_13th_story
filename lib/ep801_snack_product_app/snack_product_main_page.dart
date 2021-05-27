@@ -123,7 +123,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                           childAspectRatio: 4 / 5,
                           children: [
                             Container(
-                              color: Colors.red,
+
                               child: Stack(
                                 children: [
                                   Positioned(
@@ -190,20 +190,340 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                               ),
                             ),
                             Container(
-                              color: Colors.red,
+
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: Card(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Spacer(),
+                                            Text(
+                                              "Simply crunchy".toUpperCase(),
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                            ),
+                                            Text(
+                                              "Crunchy WHITE".toUpperCase(),
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.red, fontSize: 10),
+                                            ),
+                                            Text(
+                                              "\$5.99".toUpperCase(),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    top: 48,
+                                    left: 8,
+                                    right: 8,
+                                    bottom: 0,
+                                  ),
+                                  Positioned(
+                                    child: Image.asset("assets/img/cheetos.png"),
+                                    top: 0,
+                                    left: 24,
+                                    right: 24,
+                                    bottom: 54,
+                                  ),
+                                  Positioned(
+                                    child: PhysicalModel(
+                                      color: Colors.grey,
+                                      shape: BoxShape.circle,
+                                      elevation: 2,
+                                      child: Container(
+                                        height: 24,
+                                        width: 24,
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.favorite,
+                                            color: Colors.red,
+                                            size: 16,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    right: 20,
+                                    bottom: 12,
+                                  ),
+                                ],
+                              ),
                             ),
                             Container(
-                              color: Colors.red,
+
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: Card(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Spacer(),
+                                            Text(
+                                              "Simply crunchy".toUpperCase(),
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                            ),
+                                            Text(
+                                              "Crunchy WHITE".toUpperCase(),
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.red, fontSize: 10),
+                                            ),
+                                            Text(
+                                              "\$5.99".toUpperCase(),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    top: 48,
+                                    left: 8,
+                                    right: 8,
+                                    bottom: 0,
+                                  ),
+                                  Positioned(
+                                    child: Image.asset("assets/img/cheetos.png"),
+                                    top: 0,
+                                    left: 24,
+                                    right: 24,
+                                    bottom: 54,
+                                  ),
+                                  Positioned(
+                                    child: PhysicalModel(
+                                      color: Colors.grey,
+                                      shape: BoxShape.circle,
+                                      elevation: 2,
+                                      child: Container(
+                                        height: 24,
+                                        width: 24,
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.favorite,
+                                            color: Colors.red,
+                                            size: 16,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    right: 20,
+                                    bottom: 12,
+                                  ),
+                                ],
+                              ),
                             ),
                             Container(
-                              color: Colors.red,
+
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: Card(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Spacer(),
+                                            Text(
+                                              "Simply crunchy".toUpperCase(),
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                            ),
+                                            Text(
+                                              "Crunchy WHITE".toUpperCase(),
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.red, fontSize: 10),
+                                            ),
+                                            Text(
+                                              "\$5.99".toUpperCase(),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    top: 48,
+                                    left: 8,
+                                    right: 8,
+                                    bottom: 0,
+                                  ),
+                                  Positioned(
+                                    child: Image.asset("assets/img/cheetos.png"),
+                                    top: 0,
+                                    left: 24,
+                                    right: 24,
+                                    bottom: 54,
+                                  ),
+                                  Positioned(
+                                    child: PhysicalModel(
+                                      color: Colors.grey,
+                                      shape: BoxShape.circle,
+                                      elevation: 2,
+                                      child: Container(
+                                        height: 24,
+                                        width: 24,
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.favorite,
+                                            color: Colors.red,
+                                            size: 16,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    right: 20,
+                                    bottom: 12,
+                                  ),
+                                ],
+                              ),
                             ),
                             Container(
-                              color: Colors.red,
+
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: Card(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Spacer(),
+                                            Text(
+                                              "Simply crunchy".toUpperCase(),
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                            ),
+                                            Text(
+                                              "Crunchy WHITE".toUpperCase(),
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.red, fontSize: 10),
+                                            ),
+                                            Text(
+                                              "\$5.99".toUpperCase(),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    top: 48,
+                                    left: 8,
+                                    right: 8,
+                                    bottom: 0,
+                                  ),
+                                  Positioned(
+                                    child: Image.asset("assets/img/cheetos.png"),
+                                    top: 0,
+                                    left: 24,
+                                    right: 24,
+                                    bottom: 54,
+                                  ),
+                                  Positioned(
+                                    child: PhysicalModel(
+                                      color: Colors.grey,
+                                      shape: BoxShape.circle,
+                                      elevation: 2,
+                                      child: Container(
+                                        height: 24,
+                                        width: 24,
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.favorite,
+                                            color: Colors.red,
+                                            size: 16,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    right: 20,
+                                    bottom: 12,
+                                  ),
+                                ],
+                              ),
                             ),
                             Container(
-                              color: Colors.red,
-                            )
+
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: Card(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Spacer(),
+                                            Text(
+                                              "Simply crunchy".toUpperCase(),
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                            ),
+                                            Text(
+                                              "Crunchy WHITE".toUpperCase(),
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.red, fontSize: 10),
+                                            ),
+                                            Text(
+                                              "\$5.99".toUpperCase(),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    top: 48,
+                                    left: 8,
+                                    right: 8,
+                                    bottom: 0,
+                                  ),
+                                  Positioned(
+                                    child: Image.asset("assets/img/cheetos.png"),
+                                    top: 0,
+                                    left: 24,
+                                    right: 24,
+                                    bottom: 54,
+                                  ),
+                                  Positioned(
+                                    child: PhysicalModel(
+                                      color: Colors.grey,
+                                      shape: BoxShape.circle,
+                                      elevation: 2,
+                                      child: Container(
+                                        height: 24,
+                                        width: 24,
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.favorite,
+                                            color: Colors.red,
+                                            size: 16,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    right: 20,
+                                    bottom: 12,
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                         flex: 20,
