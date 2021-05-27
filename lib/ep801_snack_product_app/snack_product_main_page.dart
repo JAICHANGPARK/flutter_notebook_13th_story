@@ -130,6 +130,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                     child: Card(
                                       child: Column(
                                         children: [
+                                          Spacer(),
                                           Text(
                                             "Simply crunchy".toUpperCase(),
                                             style: TextStyle(fontWeight: FontWeight.bold),
