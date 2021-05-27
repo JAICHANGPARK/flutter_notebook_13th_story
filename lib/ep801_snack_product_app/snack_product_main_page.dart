@@ -129,8 +129,8 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                   Positioned(
                                     child: Card(),
                                     top: 48,
-                                    left: 0,
-                                    right: 0,
+                                    left: 8,
+                                    right: 8,
                                     bottom: 0,
                                   ),
 
@@ -139,6 +139,7 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                     top: 0,
                                     left: 24,
                                     right: 24,
+                                    bottom: 54,
                                   ),
                                 ],
                               ),
