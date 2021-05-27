@@ -116,7 +116,14 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                         flex: 2,
                       ),
                       Expanded(
-                        child: GridView.count(crossAxisCount: 2,mainAxisSpacing: 16 ,crossAxisSpacing: 16,),
+                        child: GridView.count(crossAxisCount: 2,mainAxisSpacing: 16 ,crossAxisSpacing: 16,
+
+                        children: [
+                          Container(
+                            color: Colors.red,
+                          )
+                        ],
+                        ),
                         flex: 20,
                       ),
                     ],
