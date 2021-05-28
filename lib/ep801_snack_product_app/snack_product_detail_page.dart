@@ -17,24 +17,27 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
         child: Column(
           children: [
             Expanded(
-              child: Row(
-                children: [
-                  InkWell(
-                      onTap: () {
-                        Navigator.of(context).pop();
-                      },
-                      child: Icon(Icons.arrow_back_ios)),
-                  Text(
-                    "BACK",
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  Spacer(),
-                  Container(
-                    height: 48,
-                    width: 48,
-                    decoration: BoxDecoration(color: Colors.grey),
-                  )
-                ],
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Row(
+                  children: [
+                    InkWell(
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Icon(Icons.arrow_back_ios)),
+                    Text(
+                      "BACK",
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Spacer(),
+                    Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(color: Colors.grey),
+                    )
+                  ],
+                ),
               ),
               flex: 2,
             ),
