@@ -87,7 +87,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
               child: Stack(
                 children: [
                   Positioned(
-                      top: 64,
+                      top: 120,
                       left: 0,
                       bottom: 0,
                       right: 0,
