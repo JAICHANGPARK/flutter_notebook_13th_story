@@ -34,7 +34,6 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                     Container(
                       height: 48,
                       width: 48,
-                      decoration: BoxDecoration(color: Colors.grey),
                       child: Stack(
                         children: [
                           Positioned(
