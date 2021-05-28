@@ -93,7 +93,11 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                       right: 0,
                       child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.red
+                      color: Colors.red,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(24),
+                        topRight: Radius.circular(24)
+                      )
                     ),
                   ))
                 ],
