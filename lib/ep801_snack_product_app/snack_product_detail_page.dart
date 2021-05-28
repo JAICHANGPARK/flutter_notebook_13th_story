@@ -51,6 +51,16 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                             right: 6,
                             top: 6,
                             bottom: 6,
+                          ),
+                          Positioned(
+                            child: CircleAvatar(
+                              radius: 8,
+                              child: Text("4"),
+                              backgroundColor: Colors.black,
+                              foregroundColor: Colors.white,
+                            ),
+                            right: 0,
+                            top: 0,
                           )
                         ],
                       ),
