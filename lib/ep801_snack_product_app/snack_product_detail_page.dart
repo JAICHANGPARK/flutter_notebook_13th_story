@@ -13,10 +13,14 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+              Expanded(child: Placeholder()),
+            Expanded(child: Placeholder())
+
+          ],
+        ),
       ),
     );
   }
