@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-
 class SnackProductDetailPage extends StatefulWidget {
   final String mainImg;
+
   SnackProductDetailPage({Key? key, required this.mainImg}) : super(key: key);
 
   @override
@@ -15,11 +15,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [
-              Expanded(child: Placeholder()),
-            Expanded(child: Placeholder())
-
-          ],
+          children: [Expanded(child: Placeholder()), Expanded(child: Placeholder())],
         ),
       ),
     );
