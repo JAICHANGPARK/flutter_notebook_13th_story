@@ -38,19 +38,12 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                         children: [
                           Positioned(
                             child: Container(
-                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8),
-                              boxShadow: 
-                              [
-                                BoxShadow(
-                                  color: Colors.black.withOpacity(0.1),
-                                  blurRadius: 2,
-                                  spreadRadius: 4
-                                )
-                                
-                              ]
-                                  
-                              
-                              ),
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8),
+                                  boxShadow: [
+                                    BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 2, spreadRadius: 4)
+                                  ]),
                               child: Center(
                                   child: Icon(
                                 Icons.shopping_bag,
@@ -66,9 +59,10 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                           Positioned(
                             child: CircleAvatar(
                               radius: 8,
-                              child: Text("4", style: TextStyle(
-                                fontSize: 12
-                              ),),
+                              child: Text(
+                                "4",
+                                style: TextStyle(fontSize: 12),
+                              ),
                               backgroundColor: Colors.black,
                               foregroundColor: Colors.white,
                             ),
@@ -92,28 +86,41 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                       bottom: 0,
                       right: 0,
                       child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.red,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(24),
-                        topRight: Radius.circular(24)
-                      )
-                    ),
-                  )),
+                        decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius:
+                                BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24))),
+                        child: Column(
+                          children: [
+                            Expanded(child: Placeholder()),
+                            Expanded(child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(24)
+                              ),
+                            )),
+                            Expanded(child: Placeholder()),
+                          ],
+                        ),
+                      ),
+
+                  ),
                   Positioned(
                     child: Hero(
                         tag: "item_0",
-                        child: Image.asset("assets/img/cheetos.png", width: 64, height: 320,)),
+                        child: Image.asset(
+                          "assets/img/cheetos.png",
+                          width: 64,
+                          height: 280,
+                        )),
                     top: 0,
                     left: 24,
                     right: 24,
-
                   ),
                 ],
               ),
               flex: 20,
             ),
-
           ],
         ),
       ),
