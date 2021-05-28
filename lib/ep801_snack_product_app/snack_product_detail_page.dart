@@ -12,6 +12,12 @@ class SnackProductDetailPage extends StatefulWidget {
 class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
