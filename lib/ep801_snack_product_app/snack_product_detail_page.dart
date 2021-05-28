@@ -37,12 +37,20 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                       decoration: BoxDecoration(color: Colors.grey),
                       child: Stack(
                         children: [
-                          Positioned(child: Container(
-                            child: Center(
-                              child: Icon(Icons.shopping_bag)
+                          Positioned(
+                            child: Container(
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                              child: Center(
+                                  child: Icon(
+                                Icons.shopping_bag,
+                                color: Colors.red,
+                                size: 18,
+                              )),
                             ),
-
-                          ), left: 4,right: 4,top: 4,bottom: 4,
+                            left: 6,
+                            right: 6,
+                            top: 6,
+                            bottom: 6,
                           )
                         ],
                       ),
