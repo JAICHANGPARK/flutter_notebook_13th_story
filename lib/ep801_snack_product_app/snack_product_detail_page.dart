@@ -99,11 +99,21 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                         topRight: Radius.circular(24)
                       )
                     ),
-                  ))
+                  )),
+                  Positioned(
+                    child: Hero(
+                        tag: "item_0",
+                        child: Image.asset("assets/img/cheetos.png", width: 64, height: 320,)),
+                    top: 0,
+                    left: 24,
+                    right: 24,
+
+                  ),
                 ],
               ),
               flex: 20,
-            )
+            ),
+
           ],
         ),
       ),
