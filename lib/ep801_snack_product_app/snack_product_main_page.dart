@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep801_snack_product_app/snack_product_detail_page.dart';
 
 class SnackProductMainPage extends StatefulWidget {
   const SnackProductMainPage({Key? key}) : super(key: key);
@@ -127,7 +128,8 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                               child: Material(
                                 child: InkWell(
                                   onTap: (){
-                                    
+                                    Navigator.of(context).push(MaterialPageRoute(builder: (context)
+                                    => SnackProductDetailPage(mainImg: "assets/img/cheetos.png")));
                                   },
                                   child: Container(
 
