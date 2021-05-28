@@ -35,6 +35,11 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                       height: 48,
                       width: 48,
                       decoration: BoxDecoration(color: Colors.grey),
+                      child: Stack(
+                        children: [
+                          
+                        ],
+                      ),
                     )
                   ],
                 ),
