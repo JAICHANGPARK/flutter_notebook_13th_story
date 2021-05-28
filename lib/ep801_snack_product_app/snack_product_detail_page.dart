@@ -84,7 +84,20 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
               flex: 2,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Stack(
+                children: [
+                  Positioned(
+                      top: 64,
+                      left: 0,
+                      bottom: 0,
+                      right: 0,
+                      child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.red
+                    ),
+                  ))
+                ],
+              ),
               flex: 20,
             )
           ],
