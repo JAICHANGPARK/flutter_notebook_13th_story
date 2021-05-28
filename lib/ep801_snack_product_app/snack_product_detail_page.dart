@@ -19,7 +19,11 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
             Expanded(
               child: Row(
                 children: [
-                  InkWell(onTap: () {}, child: Icon(Icons.arrow_back_ios)),
+                  InkWell(
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                      child: Icon(Icons.arrow_back_ios)),
                   Text(
                     "BACK",
                     style: const TextStyle(fontWeight: FontWeight.bold),
