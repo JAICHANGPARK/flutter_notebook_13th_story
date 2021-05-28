@@ -27,6 +27,12 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                   Text(
                     "BACK",
                     style: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  Spacer(),
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(color: Colors.grey),
                   )
                 ],
               ),
