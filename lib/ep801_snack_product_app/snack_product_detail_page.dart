@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class SnackProductDetailPage extends StatefulWidget {
   final String mainImg;
-  SnackProductDetailPage({Key? key, this.mainImg}) : super(key: key);
+  SnackProductDetailPage({Key? key, required this.mainImg}) : super(key: key);
 
   @override
   _SnackProductDetailPageState createState() => _SnackProductDetailPageState();
