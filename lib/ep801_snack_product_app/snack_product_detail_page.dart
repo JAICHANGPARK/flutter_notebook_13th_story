@@ -15,7 +15,24 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [Expanded(child: Placeholder()), Expanded(child: Placeholder())],
+          children: [
+            Expanded(
+              child: Row(
+                children: [
+                  Icon(Icons.arrow_back_ios),
+                  Text("BACK", style: const TextStyle(
+
+                    fontWeight: FontWeight.bold
+                  ),)
+                ],
+              ),
+              flex: 2,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 20,
+            )
+          ],
         ),
       ),
     );
