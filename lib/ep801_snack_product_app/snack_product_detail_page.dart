@@ -118,23 +118,33 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                     Container(
                                       height: 36,
                                       width: 36,
-                                      decoration: BoxDecoration(
-                                        color: Colors.red,
-                                        borderRadius: BorderRadius.circular(8)
-                                      ),
+                                      decoration:
+                                          BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
                                       child: Center(
-                                        child: Icon(Icons.favorite, color: Colors.white,),
+                                        child: Icon(
+                                          Icons.favorite,
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     )
-
                                   ],
                                 )),
-                                Expanded(child: Row(
+                                Expanded(
+                                    child: Row(
                                   children: [
                                     Text(
                                       widget.subtitle,
                                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.red),
                                     ),
+                                    Text("4.8"),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.red,
+                                    ),
+                                    Text(
+                                      "(42+)",
+                                      style: TextStyle(color: Colors.grey),
+                                    )
                                   ],
                                 )),
                                 Expanded(child: Placeholder()),
