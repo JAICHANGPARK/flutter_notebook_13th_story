@@ -252,6 +252,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                               child: Padding(
                                 padding: const EdgeInsets.all(16.0),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                                 Text(
