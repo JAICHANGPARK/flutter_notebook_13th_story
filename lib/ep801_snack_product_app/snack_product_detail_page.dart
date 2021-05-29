@@ -155,6 +155,9 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                 Expanded(child: Row(
                                   children: [
                                     Expanded(child: Placeholder()),
+                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Placeholder()),
                                   ],
                                 )),
                               ],
