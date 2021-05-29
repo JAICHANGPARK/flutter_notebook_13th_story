@@ -6,12 +6,12 @@ class SnackProductDetailPage extends StatefulWidget {
   final String subtitle;
   final double singlePrice;
 
-  SnackProductDetailPage({Key? key, required this.mainImg,
-  required this.title,
+  SnackProductDetailPage({
+    Key? key,
+    required this.mainImg,
+    required this.title,
     required this.subtitle,
     required this.singlePrice,
-
-
   }) : super(key: key);
 
   @override
@@ -90,43 +90,40 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
               child: Stack(
                 children: [
                   Positioned(
-                      top: 120,
-                      left: 0,
-                      bottom: 0,
-                      right: 0,
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.red,
-                            borderRadius:
-                                BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24))),
-                        child: Column(
-                          children: [
-                            Expanded(child: Placeholder()),
-                            Expanded(child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(24)
-                              ),
-                              child: Column(
-                                children: [
-                                  Expanded(child: Row(
-                                    children: [
-                                      Text("${widget.title}", style: TextStyle(
-                                        fontSize: 28
-                                      ),)
-                                    ],
-                                  )),
-                                  Expanded(child: Placeholder()),
-                                  Expanded(child: Placeholder()),
-
-                                ],
-                              ),
-                            )),
-                            Expanded(child: Placeholder()),
-                          ],
-                        ),
+                    top: 120,
+                    left: 0,
+                    bottom: 0,
+                    right: 0,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24))),
+                      child: Column(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          Expanded(
+                              child: Container(
+                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                    child: Row(
+                                  children: [
+                                    Text(
+                                      "${widget.title}",
+                                      style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                                    )
+                                  ],
+                                )),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                              ],
+                            ),
+                          )),
+                          Expanded(child: Placeholder()),
+                        ],
                       ),
-
+                    ),
                   ),
                   Positioned(
                     child: Hero(
