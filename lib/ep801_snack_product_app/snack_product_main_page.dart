@@ -129,7 +129,11 @@ class _SnackProductMainPageState extends State<SnackProductMainPage> {
                                 child: InkWell(
                                   onTap: (){
                                     Navigator.of(context).push(MaterialPageRoute(builder: (context)
-                                    => SnackProductDetailPage(mainImg: "assets/img/cheetos.png")));
+                                    => SnackProductDetailPage(mainImg: "assets/img/cheetos.png",
+
+                                    title: "Simply crunchy".toUpperCase(),
+                                    subtitle: "Crunchy WHITE".toUpperCase(),
+                                    singlePrice: 5.99,)));
                                   },
                                   child: Container(
 
