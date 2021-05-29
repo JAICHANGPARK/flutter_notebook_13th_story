@@ -166,9 +166,13 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                         children: [
                                           Text("30 MG",style: TextStyle(
                                             fontSize: 12,
-                                            fontWeight: FontWeight.bold
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.red
                                           ),),
-                                          Text("Calcium")
+                                          Text("Calcium",style: TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.red
+                                          ),)
                                         ],
                                       ),
                                     )),
