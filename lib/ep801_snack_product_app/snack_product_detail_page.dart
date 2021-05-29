@@ -137,7 +137,10 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.red),
                                     ),
                                     Spacer(),
-                                    Text("4.8"),
+                                    Text(
+                                      "4.8",
+                                      style: TextStyle(fontWeight: FontWeight.bold),
+                                    ),
                                     Icon(
                                       Icons.star,
                                       color: Colors.red,
