@@ -153,7 +153,6 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                   ],
                                 )),
                                 Expanded(child: Row(
-
                                   children: [
                                     Expanded(child: Container(
                                       margin: EdgeInsets.only(right: 12),
@@ -181,21 +180,60 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                       decoration: BoxDecoration(
                                         color: Colors.red[100],
                                         borderRadius: BorderRadius.circular(8),
-                                      ),
+                                      ),    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Text("0.4 MG",style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.red
+                                        ),),
+                                        Text("Iron",style: TextStyle(
+                                            fontSize: 12,
+                                            color: Colors.red
+                                        ),)
+                                      ],
+                                    ),
                                     )),
                                     Expanded(child: Container(
                                       margin: EdgeInsets.only(right: 12),
                                       decoration: BoxDecoration(
                                         color: Colors.red[100],
                                         borderRadius: BorderRadius.circular(8),
-                                      ),
+                                      ),    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Text("2 G",style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.red
+                                        ),),
+                                        Text("Protein",style: TextStyle(
+                                            fontSize: 12,
+                                            color: Colors.red
+                                        ),)
+                                      ],
+                                    ),
                                     )),
                                     Expanded(child: Container(
                                       margin: EdgeInsets.only(right: 12),
                                       decoration: BoxDecoration(
                                         color: Colors.red[100],
                                         borderRadius: BorderRadius.circular(8),
-                                      ),
+                                      ),    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Text("70 MG",style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.red
+                                        ),),
+                                        Text("Potassium",style: TextStyle(
+                                            fontSize: 12,
+                                            color: Colors.red
+                                        ),)
+                                      ],
+                                    ),
                                     )),
                                   ],
                                 )),
