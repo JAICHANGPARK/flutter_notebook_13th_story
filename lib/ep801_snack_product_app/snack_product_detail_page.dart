@@ -107,6 +107,20 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(24)
                               ),
+                              child: Column(
+                                children: [
+                                  Expanded(child: Row(
+                                    children: [
+                                      Text("${widget.title}", style: TextStyle(
+                                        fontSize: 28
+                                      ),)
+                                    ],
+                                  )),
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+
+                                ],
+                              ),
                             )),
                             Expanded(child: Placeholder()),
                           ],
