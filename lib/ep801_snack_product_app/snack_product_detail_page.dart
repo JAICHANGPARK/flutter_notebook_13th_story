@@ -104,6 +104,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                           Expanded(
                               child: Container(
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
+                            padding: EdgeInsets.all(16),
                             child: Column(
                               children: [
                                 Expanded(
@@ -119,6 +120,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                       width: 36,
                                       decoration: BoxDecoration(
                                         color: Colors.red,
+                                        borderRadius: BorderRadius.circular(8)
                                       ),
                                       child: Center(
                                         child: Icon(Icons.favorite, color: Colors.white,),
