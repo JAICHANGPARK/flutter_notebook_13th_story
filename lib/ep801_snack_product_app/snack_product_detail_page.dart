@@ -100,7 +100,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                           borderRadius: BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24))),
                       child: Column(
                         children: [
-                          Expanded(child: Placeholder()),
+                          Expanded(child: Container()),
                           Expanded(
                               child: Container(
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
@@ -129,7 +129,11 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
 
                                   ],
                                 )),
-                                Expanded(child: Placeholder()),
+                                Expanded(child: Row(
+                                  children: [
+
+                                  ],
+                                )),
                                 Expanded(child: Placeholder()),
                               ],
                             ),
