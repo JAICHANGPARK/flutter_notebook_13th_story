@@ -153,6 +153,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                   ],
                                 )),
                                 Expanded(child: Row(
+
                                   children: [
                                     Expanded(child: Container(
                                       margin: EdgeInsets.only(right: 12),
@@ -160,6 +161,16 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                         color: Colors.red[100],
                                         borderRadius: BorderRadius.circular(8),
                                       ),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          Text("30 MG",style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold
+                                          ),),
+                                          Text("Calcium")
+                                        ],
+                                      ),
                                     )),
                                     Expanded(child: Container(
                                       margin: EdgeInsets.only(right: 12),
@@ -168,8 +179,20 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                     )),
-                                    Expanded(child: Placeholder()),
-                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Container(
+                                      margin: EdgeInsets.only(right: 12),
+                                      decoration: BoxDecoration(
+                                        color: Colors.red[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                    )),
+                                    Expanded(child: Container(
+                                      margin: EdgeInsets.only(right: 12),
+                                      decoration: BoxDecoration(
+                                        color: Colors.red[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                    )),
                                   ],
                                 )),
                               ],
