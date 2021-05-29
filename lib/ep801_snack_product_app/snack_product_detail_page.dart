@@ -300,11 +300,30 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                         ),
                                       ),
                                     ),
-                                    Container(
-                                      height: 42,
-                                      width: 72,
-                                      decoration:
-                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                    InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          _count = 2;
+                                          _price = widget.singlePrice * _count;
+                                        });
+                                      },
+                                      child: Container(
+                                        height: 42,
+                                        width: 72,
+                                        decoration: _count == 2
+                                            ? BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8))
+                                            : BoxDecoration(
+                                            color: Colors.transparent,
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(8)),
+                                        child: Center(
+                                          child: Text("02", style: TextStyle(
+                                              color: _count == 2 ? Colors.black :Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18
+                                          ),),
+                                        ),
+                                      ),
                                     ),
                                     Container(
                                       height: 42,
@@ -327,7 +346,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                       style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
                                     ),
                                     Text(
-                                      "\$${widget.singlePrice}",
+                                      "\$${_price}",
                                       style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
                                     ),
                                     Spacer(),
