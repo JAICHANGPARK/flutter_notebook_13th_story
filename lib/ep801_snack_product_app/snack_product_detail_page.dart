@@ -155,11 +155,19 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                 Expanded(child: Row(
                                   children: [
                                     Expanded(child: Container(
+                                      margin: EdgeInsets.only(right: 12),
                                       decoration: BoxDecoration(
                                         color: Colors.red[100],
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                     )),
-                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Container(
+                                      margin: EdgeInsets.only(right: 12),
+                                      decoration: BoxDecoration(
+                                        color: Colors.red[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                    )),
                                     Expanded(child: Placeholder()),
                                     Expanded(child: Placeholder()),
                                   ],
