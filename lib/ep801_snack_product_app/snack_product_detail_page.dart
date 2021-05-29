@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 class SnackProductDetailPage extends StatefulWidget {
   final String mainImg;
+  final String title;
+  final String subtitle;
+  final double singlePrice;
 
   SnackProductDetailPage({Key? key, required this.mainImg}) : super(key: key);
 
