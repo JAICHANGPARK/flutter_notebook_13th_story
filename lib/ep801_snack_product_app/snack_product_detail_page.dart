@@ -325,18 +325,56 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                         ),
                                       ),
                                     ),
-                                    Container(
-                                      height: 42,
-                                      width: 72,
-                                      decoration:
-                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                    InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          _count = 3;
+                                          _price = widget.singlePrice * _count;
+                                        });
+                                      },
+                                      child: Container(
+                                        height: 42,
+                                        width: 72,
+                                        decoration: _count == 3
+                                            ? BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8))
+                                            : BoxDecoration(
+                                            color: Colors.transparent,
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(8)),
+                                        child: Center(
+                                          child: Text("03", style: TextStyle(
+                                              color: _count == 3 ? Colors.black :Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18
+                                          ),),
+                                        ),
+                                      ),
                                     ),
-                                    Container(
-                                      height: 42,
-                                      width: 72,
-                                      decoration:
-                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                                    )
+                                    InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          _count = 4;
+                                          _price = widget.singlePrice * _count;
+                                        });
+                                      },
+                                      child: Container(
+                                        height: 42,
+                                        width: 72,
+                                        decoration: _count == 4
+                                            ? BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8))
+                                            : BoxDecoration(
+                                            color: Colors.transparent,
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(8)),
+                                        child: Center(
+                                          child: Text("04", style: TextStyle(
+                                              color: _count == 4 ? Colors.black :Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18
+                                          ),),
+                                        ),
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 Row(
