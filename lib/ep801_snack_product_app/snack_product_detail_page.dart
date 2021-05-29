@@ -113,10 +113,10 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                       "${widget.title}",
                                       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                                     ),
-
+                                    Spacer(),
                                     Container(
-                                      height: 42,
-                                      width: 42,
+                                      height: 36,
+                                      width: 36,
                                       decoration: BoxDecoration(
                                         color: Colors.red,
                                       ),
