@@ -112,7 +112,16 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                     Text(
                                       "${widget.title}",
                                       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                                    ),
+
+                                    Container(
+                                      height: 48,
+                                      width: 48,
+                                      child: Center(
+                                        child: Icon(Icons.favorite),
+                                      ),
                                     )
+
                                   ],
                                 )),
                                 Expanded(child: Placeholder()),
