@@ -285,6 +285,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                   ],
                                 ),
                                 Row(
+
                                   children: [
                                     Text(
                                       "TOTAL:",
@@ -292,8 +293,9 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                     ),
                                     Text(
                                       "\$${widget.singlePrice}",
-                                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+                                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
                                     ),
+                                    Spacer(),
                                     Container(
                                       height: 42,
                                       width: 120,
