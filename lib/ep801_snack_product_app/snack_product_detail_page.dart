@@ -115,10 +115,13 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                     ),
 
                                     Container(
-                                      height: 48,
-                                      width: 48,
+                                      height: 42,
+                                      width: 42,
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                      ),
                                       child: Center(
-                                        child: Icon(Icons.favorite),
+                                        child: Icon(Icons.favorite, color: Colors.white,),
                                       ),
                                     )
 
