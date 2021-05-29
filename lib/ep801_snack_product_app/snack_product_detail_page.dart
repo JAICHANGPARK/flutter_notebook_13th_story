@@ -265,22 +265,28 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                     Container(
                                       height: 42,
                                       width: 72,
-                                      decoration: BoxDecoration(color: Colors.white),
+                                      decoration: BoxDecoration(color: Colors.white,
+                                          borderRadius: BorderRadius.circular(8)),
                                     ),
                                     Container(
                                       height: 42,
                                       width: 72,
-                                      decoration: BoxDecoration(color: Colors.white),
+                                      decoration: BoxDecoration(color: Colors.white,
+
+                                          borderRadius: BorderRadius.circular(8)),
                                     ),
                                     Container(
                                       height: 42,
                                       width: 72,
-                                      decoration: BoxDecoration(color: Colors.white),
+                                      decoration: BoxDecoration(color: Colors.white,
+                                          borderRadius: BorderRadius.circular(8)),
                                     ),
                                     Container(
                                       height: 42,
                                       width: 72,
-                                      decoration: BoxDecoration(color: Colors.white),
+                                      decoration: BoxDecoration(color: Colors.white,
+                                          borderRadius: BorderRadius.circular(8)
+                                      ),
                                     )
                                   ],
                                 ),
