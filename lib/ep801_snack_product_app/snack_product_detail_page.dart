@@ -10,7 +10,7 @@ class SnackProductDetailPage extends StatefulWidget {
   required this.title,
     required this.subtitle,
     required this.singlePrice,
-    
+
 
   }) : super(key: key);
 
