@@ -288,7 +288,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
 
                                   children: [
                                     Text(
-                                      "TOTAL:",
+                                      "TOTAL : ",
                                       style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
                                     ),
                                     Text(
