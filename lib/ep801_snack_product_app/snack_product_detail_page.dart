@@ -19,6 +19,19 @@ class SnackProductDetailPage extends StatefulWidget {
 }
 
 class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
+  double _price = 0.0;
+  int _count = 1;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    setState(() {
+      _price = widget.singlePrice * _count;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -262,36 +275,45 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Container(
-                                      height: 42,
-                                      width: 72,
-                                      decoration: BoxDecoration(color: Colors.white,
-                                          borderRadius: BorderRadius.circular(8)),
-                                    ),
-                                    Container(
-                                      height: 42,
-                                      width: 72,
-                                      decoration: BoxDecoration(color: Colors.white,
-
-                                          borderRadius: BorderRadius.circular(8)),
-                                    ),
-                                    Container(
-                                      height: 42,
-                                      width: 72,
-                                      decoration: BoxDecoration(color: Colors.white,
-                                          borderRadius: BorderRadius.circular(8)),
-                                    ),
-                                    Container(
-                                      height: 42,
-                                      width: 72,
-                                      decoration: BoxDecoration(color: Colors.white,
-                                          borderRadius: BorderRadius.circular(8)
+                                    InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          _count = 1;
+                                          _price = widget.singlePrice * _count;
+                                        });
+                                      },
+                                      child: Container(
+                                        height: 42,
+                                        width: 72,
+                                        decoration: _count == 1
+                                            ? BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8))
+                                            : BoxDecoration(
+                                                color: Colors.transparent,
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(8)),
                                       ),
+                                    ),
+                                    Container(
+                                      height: 42,
+                                      width: 72,
+                                      decoration:
+                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                    ),
+                                    Container(
+                                      height: 42,
+                                      width: 72,
+                                      decoration:
+                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                    ),
+                                    Container(
+                                      height: 42,
+                                      width: 72,
+                                      decoration:
+                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                                     )
                                   ],
                                 ),
                                 Row(
-
                                   children: [
                                     Text(
                                       "TOTAL : ",
@@ -305,8 +327,8 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                     Container(
                                       height: 42,
                                       width: 120,
-                                      decoration: BoxDecoration(color: Colors.white,
-                                      borderRadius: BorderRadius.circular(8)),
+                                      decoration:
+                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                                       child: Center(
                                         child: Text(
                                           "BUY NOW",
