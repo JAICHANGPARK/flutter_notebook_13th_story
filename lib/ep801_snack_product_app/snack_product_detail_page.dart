@@ -257,7 +257,40 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                   "SELECT QUANTITY",
                                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,
                                   color: Colors.white),
-                                )
+                                ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    height: 42,
+                                    width: 72,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 42,
+                                    width: 72,
+                                    decoration: BoxDecoration(
+                                        color: Colors.white
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 42,
+                                    width: 72,
+                                    decoration: BoxDecoration(
+                                        color: Colors.white
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 42,
+                                    width: 72,
+                                    decoration: BoxDecoration(
+                                        color: Colors.white
+                                    ),
+                                  )
+                                ],
+                              )
                             ],
                           ),
                               )),
