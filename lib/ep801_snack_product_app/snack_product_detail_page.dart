@@ -250,52 +250,60 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                           )),
                           Expanded(
                               child: Padding(
-                                padding: const EdgeInsets.all(16.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
                                 Text(
                                   "SELECT QUANTITY",
-                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,
-                                  color: Colors.white),
+                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
                                 ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    height: 42,
-                                    width: 72,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Container(
+                                      height: 42,
+                                      width: 72,
+                                      decoration: BoxDecoration(color: Colors.white),
                                     ),
-                                  ),
-                                  Container(
-                                    height: 42,
-                                    width: 72,
-                                    decoration: BoxDecoration(
-                                        color: Colors.white
+                                    Container(
+                                      height: 42,
+                                      width: 72,
+                                      decoration: BoxDecoration(color: Colors.white),
                                     ),
-                                  ),
-                                  Container(
-                                    height: 42,
-                                    width: 72,
-                                    decoration: BoxDecoration(
-                                        color: Colors.white
+                                    Container(
+                                      height: 42,
+                                      width: 72,
+                                      decoration: BoxDecoration(color: Colors.white),
                                     ),
-                                  ),
-                                  Container(
-                                    height: 42,
-                                    width: 72,
-                                    decoration: BoxDecoration(
-                                        color: Colors.white
-                                    ),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                              )),
+                                    Container(
+                                      height: 42,
+                                      width: 72,
+                                      decoration: BoxDecoration(color: Colors.white),
+                                    )
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text("TOTAL:"),
+                                    Text("\$${widget.singlePrice},"),
+                                    Container(
+                                      height: 42,
+                                      width: 120,
+                                      decoration: BoxDecoration(color: Colors.white),
+                                      child: Center(
+                                        child: Text(
+                                          "BUY NOW",
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          )),
                         ],
                       ),
                     ),
