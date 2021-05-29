@@ -249,14 +249,18 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                             ),
                           )),
                           Expanded(
-                              child: Column(
+                              child: Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
                             children: [
-                              Text(
-                                "SELECT QUANTITY",
-                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                              )
+                                Text(
+                                  "SELECT QUANTITY",
+                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                                )
                             ],
-                          )),
+                          ),
+                              )),
                         ],
                       ),
                     ),
