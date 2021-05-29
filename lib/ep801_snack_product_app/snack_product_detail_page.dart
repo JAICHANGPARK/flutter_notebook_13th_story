@@ -111,7 +111,7 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                     child: Row(
                                   children: [
                                     Text(
-                                      "${widget.title}",
+                                      widget.title,
                                       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                                     ),
                                     Spacer(),
@@ -131,7 +131,10 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                 )),
                                 Expanded(child: Row(
                                   children: [
-
+                                    Text(
+                                      widget.subtitle,
+                                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.red),
+                                    ),
                                   ],
                                 )),
                                 Expanded(child: Placeholder()),
