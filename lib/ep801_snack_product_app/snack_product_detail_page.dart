@@ -291,6 +291,13 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                                 color: Colors.transparent,
                                                 border: Border.all(color: Colors.white),
                                                 borderRadius: BorderRadius.circular(8)),
+                                        child: Center(
+                                          child: Text("01", style: TextStyle(
+                                            color: _count == 1 ? Colors.black :Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18
+                                          ),),
+                                        ),
                                       ),
                                     ),
                                     Container(
