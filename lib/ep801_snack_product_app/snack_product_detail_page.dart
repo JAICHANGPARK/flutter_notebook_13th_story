@@ -136,10 +136,12 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                       widget.subtitle,
                                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.red),
                                     ),
+                                    Spacer(),
                                     Text("4.8"),
                                     Icon(
                                       Icons.star,
                                       color: Colors.red,
+                                      size: 14,
                                     ),
                                     Text(
                                       "(42+)",
