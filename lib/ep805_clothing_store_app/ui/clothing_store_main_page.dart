@@ -13,8 +13,11 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(),
       ),
     );
   }
