@@ -14,7 +14,13 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [],
+        children: [
+
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         notchMargin: 12,
