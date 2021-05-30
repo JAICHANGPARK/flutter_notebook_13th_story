@@ -31,7 +31,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                   });
                 },
                 child: Icon(
-                  Icons.home,
+                  _index ==0 ? Icons.home : Icons.home_outlined,
                   color: _index == 0? Colors.indigo : Colors.grey,
                 ),
               ),
