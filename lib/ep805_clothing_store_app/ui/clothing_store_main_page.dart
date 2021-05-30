@@ -18,7 +18,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
         notchMargin: 12,
         shape: CircularNotchedRectangle(),
         child: Container(
-          height: 72,
+          height: 64,
           padding: EdgeInsets.symmetric(horizontal: 24),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
