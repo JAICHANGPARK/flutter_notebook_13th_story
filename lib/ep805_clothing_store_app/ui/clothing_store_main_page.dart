@@ -13,14 +13,15 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Placeholder(), flex: 2,),
+            Expanded(child: Placeholder(), flex: 2,),
+            Expanded(child: Placeholder(), flex: 2,),
+            Expanded(child: Placeholder(), flex: 15,),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         notchMargin: 12,
