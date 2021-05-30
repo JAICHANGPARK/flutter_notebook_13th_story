@@ -9,6 +9,7 @@ class ClothingStoreMainPage extends StatefulWidget {
 
 class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
   int _index = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,37 +26,51 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               InkWell(
-                onTap: (){
+                onTap: () {
                   setState(() {
                     _index = 0;
                   });
                 },
                 child: Icon(
-                  _index ==0 ? Icons.home : Icons.home_outlined,
-                  color: _index == 0? Colors.indigo : Colors.grey,
+                  _index == 0 ? Icons.home : Icons.home_outlined,
+                  color: _index == 0 ? Colors.indigo : Colors.grey,
                 ),
               ),
               InkWell(
-                onTap: (){
+                onTap: () {
                   setState(() {
                     _index = 1;
                   });
                 },
                 child: Icon(
-                  _index ==1 ? Icons.apps : Icons.apps_outlined,
-                  color: _index == 1? Colors.indigo : Colors.grey,
+                  _index == 1 ? Icons.apps : Icons.apps_outlined,
+                  color: _index == 1 ? Colors.indigo : Colors.grey,
                 ),
               ),
               SizedBox(
                 width: 16,
               ),
-              Icon(
-                Icons.wallet_giftcard,
-                color: Colors.indigo,
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    _index = 2;
+                  });
+                },
+                child: Icon(
+                  _index == 2 ? Icons.wallet_giftcard : Icons.wallet_giftcard_outlined,
+                  color: _index == 2 ? Colors.indigo : Colors.grey,
+                ),
               ),
-              Icon(
-                Icons.perm_identity,
-                color: Colors.indigo,
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    _index = 3;
+                  });
+                },
+                child: Icon(
+                  _index == 3 ? Icons.person : Icons.perm_identity,
+                  color: _index == 3 ? Colors.indigo : Colors.grey,
+                ),
               ),
             ],
           ),
