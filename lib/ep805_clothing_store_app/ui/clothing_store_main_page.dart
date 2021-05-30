@@ -31,6 +31,9 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                 Icons.apps,
                 color: Colors.indigo,
               ),
+              SizedBox(
+                width: 16,
+              ),
               Icon(
                 Icons.wallet_giftcard,
                 color: Colors.indigo,
