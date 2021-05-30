@@ -17,7 +17,16 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
         ],
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(),
+        child: Container(
+          child: Row(
+            children: [
+              Icon(Icons.home, color: Colors.indigo,),
+              Icon(Icons.apps, color: Colors.indigo,),
+              Icon(Icons.wallet_giftcard, color: Colors.indigo,),
+              Icon(Icons.perm_identity, color: Colors.indigo,),
+            ],
+          ),
+        ),
       ),
     );
   }
