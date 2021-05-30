@@ -16,10 +16,22 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder(), flex: 2,),
-            Expanded(child: Placeholder(), flex: 2,),
-            Expanded(child: Placeholder(), flex: 2,),
-            Expanded(child: Placeholder(), flex: 15,),
+            Expanded(
+              child: Placeholder(),
+              flex: 2,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 2,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 2,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 15,
+            ),
           ],
         ),
       ),
