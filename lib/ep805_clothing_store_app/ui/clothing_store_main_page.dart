@@ -29,7 +29,8 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-
+        onPressed: () {  },
+        child: Icon(Icons.qr_code),
       ),
     );
   }
