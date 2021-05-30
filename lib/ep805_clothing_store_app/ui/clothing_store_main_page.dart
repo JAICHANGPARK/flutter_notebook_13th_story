@@ -12,9 +12,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
-
-        ],
+        children: [],
       ),
       bottomNavigationBar: BottomAppBar(
         shape: CircularNotchedRectangle(),
@@ -24,34 +22,32 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Icon(Icons.home, color: Colors.indigo,),
-              Icon(Icons.apps, color: Colors.indigo,),
-              Icon(Icons.wallet_giftcard, color: Colors.indigo,),
-              Icon(Icons.perm_identity, color: Colors.indigo,),
+              Icon(
+                Icons.home,
+                color: Colors.indigo,
+              ),
+              Icon(
+                Icons.apps,
+                color: Colors.indigo,
+              ),
+              Icon(
+                Icons.wallet_giftcard,
+                color: Colors.indigo,
+              ),
+              Icon(
+                Icons.perm_identity,
+                color: Colors.indigo,
+              ),
             ],
           ),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {  },
+        backgroundColor: Colors.indigo,
+        onPressed: () {},
         child: Icon(Icons.qr_code),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
