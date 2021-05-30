@@ -8,6 +8,7 @@ class ClothingStoreMainPage extends StatefulWidget {
 }
 
 class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
+  int _index = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,9 +24,16 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Icon(
-                Icons.home,
-                color: Colors.indigo,
+              InkWell(
+                onTap: (){
+                  setState(() {
+                    _index = 0;
+                  });
+                },
+                child: Icon(
+                  Icons.home,
+                  color: _index == 0? Colors.indigo : Colors.grey,
+                ),
               ),
               Icon(
                 Icons.apps,
