@@ -28,6 +28,24 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+
+      ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
