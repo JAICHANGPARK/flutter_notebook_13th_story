@@ -292,11 +292,13 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                                 border: Border.all(color: Colors.white),
                                                 borderRadius: BorderRadius.circular(8)),
                                         child: Center(
-                                          child: Text("01", style: TextStyle(
-                                            color: _count == 1 ? Colors.black :Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 18
-                                          ),),
+                                          child: Text(
+                                            "01",
+                                            style: TextStyle(
+                                                color: _count == 1 ? Colors.black : Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -313,15 +315,17 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                         decoration: _count == 2
                                             ? BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8))
                                             : BoxDecoration(
-                                            color: Colors.transparent,
-                                            border: Border.all(color: Colors.white),
-                                            borderRadius: BorderRadius.circular(8)),
+                                                color: Colors.transparent,
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(8)),
                                         child: Center(
-                                          child: Text("02", style: TextStyle(
-                                              color: _count == 2 ? Colors.black :Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 18
-                                          ),),
+                                          child: Text(
+                                            "02",
+                                            style: TextStyle(
+                                                color: _count == 2 ? Colors.black : Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -338,15 +342,17 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                         decoration: _count == 3
                                             ? BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8))
                                             : BoxDecoration(
-                                            color: Colors.transparent,
-                                            border: Border.all(color: Colors.white),
-                                            borderRadius: BorderRadius.circular(8)),
+                                                color: Colors.transparent,
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(8)),
                                         child: Center(
-                                          child: Text("03", style: TextStyle(
-                                              color: _count == 3 ? Colors.black :Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 18
-                                          ),),
+                                          child: Text(
+                                            "03",
+                                            style: TextStyle(
+                                                color: _count == 3 ? Colors.black : Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -363,15 +369,17 @@ class _SnackProductDetailPageState extends State<SnackProductDetailPage> {
                                         decoration: _count == 4
                                             ? BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8))
                                             : BoxDecoration(
-                                            color: Colors.transparent,
-                                            border: Border.all(color: Colors.white),
-                                            borderRadius: BorderRadius.circular(8)),
+                                                color: Colors.transparent,
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(8)),
                                         child: Center(
-                                          child: Text("04", style: TextStyle(
-                                              color: _count == 4 ? Colors.black :Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 18
-                                          ),),
+                                          child: Text(
+                                            "04",
+                                            style: TextStyle(
+                                                color: _count == 4 ? Colors.black : Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18),
+                                          ),
                                         ),
                                       ),
                                     ),
