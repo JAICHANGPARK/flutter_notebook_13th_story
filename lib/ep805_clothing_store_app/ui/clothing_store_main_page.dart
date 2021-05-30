@@ -35,9 +35,16 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                   color: _index == 0? Colors.indigo : Colors.grey,
                 ),
               ),
-              Icon(
-                Icons.apps,
-                color: Colors.indigo,
+              InkWell(
+                onTap: (){
+                  setState(() {
+                    _index = 1;
+                  });
+                },
+                child: Icon(
+                  _index ==1 ? Icons.apps : Icons.apps_outlined,
+                  color: _index == 1? Colors.indigo : Colors.grey,
+                ),
               ),
               SizedBox(
                 width: 16,
