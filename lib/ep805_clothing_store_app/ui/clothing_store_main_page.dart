@@ -20,7 +20,9 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
         shape: CircularNotchedRectangle(),
         child: Container(
           height: 72,
+          padding: EdgeInsets.symmetric(horizontal: 24),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Icon(Icons.home, color: Colors.indigo,),
               Icon(Icons.apps, color: Colors.indigo,),
