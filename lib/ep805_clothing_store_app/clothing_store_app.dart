@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ui/clothing_store_main_page.dart';
+
 class ClothingStoreApp extends StatelessWidget {
   const ClothingStoreApp({Key? key}) : super(key: key);
 
