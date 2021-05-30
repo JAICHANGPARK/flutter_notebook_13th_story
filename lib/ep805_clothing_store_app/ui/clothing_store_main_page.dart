@@ -15,6 +15,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomAppBar(
+        notchMargin: 16,
         shape: CircularNotchedRectangle(),
         child: Container(
           height: 72,
