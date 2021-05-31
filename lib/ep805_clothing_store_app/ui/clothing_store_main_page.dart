@@ -23,7 +23,10 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(Icons.menu),
-                    Text("ISSACS"),
+                    Text(
+                      "ISSACS",
+                      style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                    ),
                     Container(
                       height: 38,
                       width: 38,
