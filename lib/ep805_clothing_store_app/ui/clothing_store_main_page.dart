@@ -17,37 +17,40 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
         child: Column(
           children: [
             Expanded(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(Icons.menu),
-                  Text("ISSACS"),
-                  Container(
-                    height: 38,
-                    width: 38,
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          child: Icon(Icons.shopping_bag_outlined),
-                          left: 8,
-                          top: 8,
-                          right: 8,
-                          bottom: 8,
-                        ),
-                        Positioned(
-                          child: CircleAvatar(
-                            radius: 8,
-                            child: Text("3"),
-                            backgroundColor: Colors.red,
-                            foregroundColor: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(Icons.menu),
+                    Text("ISSACS"),
+                    Container(
+                      height: 38,
+                      width: 38,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            child: Icon(Icons.shopping_bag_outlined),
+                            left: 8,
+                            top: 8,
+                            right: 8,
+                            bottom: 8,
                           ),
-                          right: 0,
-                          top: 0,
-                        ),
-                      ],
-                    ),
-                  )
-                ],
+                          Positioned(
+                            child: CircleAvatar(
+                              radius: 8,
+                              child: Text("3"),
+                              backgroundColor: Colors.red,
+                              foregroundColor: Colors.white,
+                            ),
+                            right: 0,
+                            top: 0,
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
               flex: 2,
             ),
