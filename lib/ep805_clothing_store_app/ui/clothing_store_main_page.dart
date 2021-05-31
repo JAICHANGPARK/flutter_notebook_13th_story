@@ -81,23 +81,31 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                     itemCount: 10,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(right: 16),
-                        child: Column(
-                          children: [
-                            Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                border: _selectTabItem == index ? null  : Border.all(color: Colors.grey),
-                                shape: BoxShape.circle,
+                      return InkWell(
+                        onTap: (){
+                          setState(() {
+                            _selectTabItem = index;
+                          });
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 16),
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  color: _selectTabItem == index ? Colors.white : Colors.transparent,
+                                  border: _selectTabItem == index ? null : Border.all(color: Colors.grey),
+                                  shape: BoxShape.circle,
+                                ),
                               ),
-                            ),
-                            Text(
-                              "Clothes",
-                              style: TextStyle(color: Colors.grey),
-                            ),
-                          ],
+                              Text(
+                                "Clothes",
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                            ],
+                          ),
                         ),
                       );
                     }),
