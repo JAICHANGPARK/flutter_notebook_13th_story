@@ -80,7 +80,13 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                   itemBuilder: (context, index) {
                 return Column(
                   children: [
-                    CircleAvatar(),
+                    Container(
+                      height: 38,
+                      width: 38,
+                      decoration: BoxDecoration(
+                        
+                      ),
+                    ),
                     Text("Clothes"),
                   ],
                 );
