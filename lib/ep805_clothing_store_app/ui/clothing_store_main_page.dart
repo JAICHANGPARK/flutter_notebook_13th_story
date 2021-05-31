@@ -58,7 +58,11 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
               flex: 2,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+              ),
               flex: 2,
             ),
             Expanded(
