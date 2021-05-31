@@ -27,6 +27,14 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                     decoration: BoxDecoration(
                       color: Colors.grey,
                     ),
+                    child: Stack(
+                      children: [
+                        Positioned(child: CircleAvatar(radius: 8,), right: 0,
+                        top: 0,),
+                        Positioned(child: Icon(Icons.shopping_bag_outlined), left: 8, top: 8,
+                        right: 8, bottom: 8,)
+                      ],
+                    ),
                   )
                 ],
               ),
