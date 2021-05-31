@@ -130,6 +130,9 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                         Icon(Icons.arrow_right_alt),
                       ],
                     ),
+                  ),
+                  Expanded(
+                    child: Placeholder(),
                   )
                 ],
               ),
