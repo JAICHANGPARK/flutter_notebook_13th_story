@@ -18,6 +18,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
           children: [
             Expanded(
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Icon(Icons.menu),
                   Text("ISSACS"),
@@ -37,6 +38,8 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                           child: CircleAvatar(
                             radius: 8,
                             child: Text("3"),
+                            backgroundColor: Colors.red,
+                            foregroundColor: Colors.white,
                           ),
                           right: 0,
                           top: 0,
