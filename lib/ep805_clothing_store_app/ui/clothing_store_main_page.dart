@@ -88,7 +88,10 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                             shape: BoxShape.circle,
                           ),
                         ),
-                        Text("Clothes"),
+                        Text(
+                          "Clothes",
+                          style: TextStyle(color: Colors.grey),
+                        ),
                       ],
                     );
                   }),
