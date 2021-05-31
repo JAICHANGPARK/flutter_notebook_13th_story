@@ -63,7 +63,12 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16)
-
+                ),
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                    hintText: "Search Products"
+                  ),
                 ),
               ),
               flex: 2,
