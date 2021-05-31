@@ -119,7 +119,20 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
               flex: 3,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Text("New Arrivals"),
+                        Spacer(),
+                        Icon(Icons.arrow_right_alt),
+                      ],
+                    ),
+                  )
+                ],
+              ),
               flex: 15,
             ),
           ],
