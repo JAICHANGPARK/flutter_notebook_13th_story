@@ -60,10 +60,8 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
             Expanded(
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(16)
-                ),
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                 child: TextField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
