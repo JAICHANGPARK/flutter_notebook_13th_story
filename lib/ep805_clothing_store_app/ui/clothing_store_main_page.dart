@@ -17,7 +17,13 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
         child: Column(
           children: [
             Expanded(
-              child: Placeholder(),
+              child: Row(
+                children: [
+                  Icon(Icons.menu),
+                  Text("ISSACS"),
+                  Container()
+                ],
+              ),
               flex: 2,
             ),
             Expanded(
