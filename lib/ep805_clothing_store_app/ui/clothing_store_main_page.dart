@@ -74,6 +74,9 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
               ),
               flex: 2,
             ),
+            SizedBox(
+              height: 16,
+            ),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.only(left: 16),
@@ -82,7 +85,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return InkWell(
-                        onTap: (){
+                        onTap: () {
                           setState(() {
                             _selectTabItem = index;
                           });
@@ -100,6 +103,9 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                   shape: BoxShape.circle,
                                 ),
                               ),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Text(
                                 "Clothes",
                                 style: TextStyle(color: Colors.grey),
@@ -110,7 +116,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                       );
                     }),
               ),
-              flex: 2,
+              flex: 3,
             ),
             Expanded(
               child: Placeholder(),
