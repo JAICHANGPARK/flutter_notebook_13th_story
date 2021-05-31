@@ -21,7 +21,13 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                 children: [
                   Icon(Icons.menu),
                   Text("ISSACS"),
-                  Container()
+                  Container(
+                    height: 38,
+                    width: 38,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                    ),
+                  )
                 ],
               ),
               flex: 2,
