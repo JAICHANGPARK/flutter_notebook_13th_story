@@ -74,10 +74,14 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
               flex: 2,
             ),
             Expanded(
-              child: ListView.builder(itemBuilder: (context, index) {
+              child: ListView.builder(
+                  itemCount: 10,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
                 return Column(
                   children: [
-                    
+                    CircleAvatar(),
+                    Text("Clothes"),
                   ],
                 );
               }),
