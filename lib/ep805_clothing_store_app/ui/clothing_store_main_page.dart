@@ -74,7 +74,9 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
               flex: 2,
             ),
             Expanded(
-              child: Placeholder(),
+              child: ListView.builder(itemBuilder: (context, index) {
+                return Column();
+              }),
               flex: 2,
             ),
             Expanded(
