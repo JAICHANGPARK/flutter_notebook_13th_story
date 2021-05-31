@@ -74,30 +74,33 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
               flex: 2,
             ),
             Expanded(
-              child: ListView.builder(
-                  itemCount: 10,
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.only(right: 16),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 42,
-                            width: 42,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.grey),
-                              shape: BoxShape.circle,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: ListView.builder(
+                    itemCount: 10,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 16),
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 42,
+                              width: 42,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey),
+                                shape: BoxShape.circle,
+                              ),
                             ),
-                          ),
-                          Text(
-                            "Clothes",
-                            style: TextStyle(color: Colors.grey),
-                          ),
-                        ],
-                      ),
-                    );
-                  }),
+                            Text(
+                              "Clothes",
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                          ],
+                        ),
+                      );
+                    }),
+              ),
               flex: 2,
             ),
             Expanded(
