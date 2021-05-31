@@ -67,7 +67,8 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                 child: TextField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
-                    hintText: "Search Products"
+                    hintText: "Search Products",
+                    icon: Icon(Icons.search),
                   ),
                 ),
               ),
