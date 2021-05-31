@@ -24,9 +24,6 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                   Container(
                     height: 38,
                     width: 38,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                    ),
                     child: Stack(
                       children: [
                         Positioned(child: CircleAvatar(radius: 8,), right: 0,
