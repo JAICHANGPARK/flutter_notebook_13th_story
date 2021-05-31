@@ -9,6 +9,7 @@ class ClothingStoreMainPage extends StatefulWidget {
 
 class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
   int _index = 0;
+  int _selectTabItem = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +89,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                               height: 42,
                               width: 42,
                               decoration: BoxDecoration(
-                                border: Border.all(color: Colors.grey),
+                                border: _selectTabItem == index ? null  : Border.all(color: Colors.grey),
                                 shape: BoxShape.circle,
                               ),
                             ),
