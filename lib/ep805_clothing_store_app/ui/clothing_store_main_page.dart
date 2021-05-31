@@ -78,19 +78,20 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                   itemCount: 10,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                return Column(
-                  children: [
-                    Container(
-                      height: 38,
-                      width: 38,
-                      decoration: BoxDecoration(
-                        
-                      ),
-                    ),
-                    Text("Clothes"),
-                  ],
-                );
-              }),
+                    return Column(
+                      children: [
+                        Container(
+                          height: 38,
+                          width: 38,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey),
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text("Clothes"),
+                      ],
+                    );
+                  }),
               flex: 2,
             ),
             Expanded(
