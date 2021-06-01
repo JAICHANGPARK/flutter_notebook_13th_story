@@ -126,7 +126,10 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
                       children: [
-                        Text("New Arrivals"),
+                        Text(
+                          "New Arrivals",
+                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
                         Spacer(),
                         Icon(Icons.arrow_right_alt),
                       ],
