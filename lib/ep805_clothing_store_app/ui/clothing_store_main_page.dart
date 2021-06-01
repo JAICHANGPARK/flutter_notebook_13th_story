@@ -194,6 +194,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                         children: [
                                           Text(
                                             '\$199.99',
+                                            style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                           SizedBox(
                                             width: 8,
