@@ -134,9 +134,11 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                   ),
                   Expanded(
                     child: StaggeredGridView.countBuilder(
-                        crossAxisCount: 4,
+                        crossAxisCount: 2,
                         crossAxisSpacing: 4,
                         mainAxisSpacing: 4,
+                        itemCount: 8,
+
                         itemBuilder: (context, index) {
                           return Container(
                             decoration: BoxDecoration(
@@ -145,7 +147,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                           );
                         },
                         staggeredTileBuilder: (index) {
-                          return StaggeredTile.count(2, index.isEven ? 2 : 1);
+                          return StaggeredTile.count(4, index.isEven ? 2 : 1);
                         }),
                   )
                 ],
