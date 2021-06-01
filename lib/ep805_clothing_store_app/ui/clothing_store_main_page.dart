@@ -153,6 +153,11 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                 children: [
                                   Expanded(child: Container(
                                     decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                        image: NetworkImage(""
+                                            "https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_960_720.jpg"),
+                                        fit: BoxFit.cover
+                                      ),
                                       color: Colors.grey,
                                       borderRadius: BorderRadius.circular(8)
                                     ),
