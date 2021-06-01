@@ -140,14 +140,21 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                       padding: const EdgeInsets.all(16.0),
                       child: StaggeredGridView.countBuilder(
                           crossAxisCount: 2,
-                          crossAxisSpacing: 4,
-                          mainAxisSpacing: 4,
+                          crossAxisSpacing: 8,
+                          mainAxisSpacing: 8,
                           itemCount: 8,
                           itemBuilder: (context, index) {
                             return Container(
                               decoration: BoxDecoration(
                                 color: Colors.blue,
+
                               ),
+                              child: Column(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                ],
+                              )
                             );
                           },
                           staggeredTileBuilder: (index) {
