@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class ClothingStoreMainPage extends StatefulWidget {
   const ClothingStoreMainPage({Key? key}) : super(key: key);
@@ -132,7 +133,9 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                     ),
                   ),
                   Expanded(
-                    child: Placeholder(),
+                    child: StaggeredGridView.countBuilder(crossAxisCount: 2, itemBuilder: (context, index){}, staggeredTileBuilder: (index){
+                      return StaggeredTile.count(2, index.isEven ? 2 : 1);
+                    }),
                   )
                 ],
               ),
