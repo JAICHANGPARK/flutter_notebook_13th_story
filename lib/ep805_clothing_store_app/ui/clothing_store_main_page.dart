@@ -145,10 +145,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                           itemCount: 8,
                           itemBuilder: (context, index) {
                             return Container(
-                              decoration: BoxDecoration(
-                                color: Colors.blue,
 
-                              ),
                               child: Column(
                                 children: [
                                   Expanded(child: Container(
@@ -177,7 +174,17 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                     ),
                                   ), flex: 8,),
                                   SizedBox(height: 8,),
-                                  Expanded(child: Placeholder(), flex: 4,),
+                                  Expanded(child: Column(
+                                    children: [
+                                      Text("Dream Walker - Jacket"),
+                                      Row(
+                                        children: [
+                                          Text('\$199.99',),
+                                          Text("\$299.99")
+                                        ],
+                                      )
+                                    ],
+                                  ), flex: 4,),
                                 ],
                               )
                             );
