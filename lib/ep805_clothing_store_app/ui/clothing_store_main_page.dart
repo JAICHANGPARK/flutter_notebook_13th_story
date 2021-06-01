@@ -133,21 +133,24 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                     ),
                   ),
                   Expanded(
-                    child: StaggeredGridView.countBuilder(
-                        crossAxisCount: 2,
-                        crossAxisSpacing: 4,
-                        mainAxisSpacing: 4,
-                        itemCount: 8,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                          );
-                        },
-                        staggeredTileBuilder: (index) {
-                          return StaggeredTile.count(1, index.isEven ? 2 : 1);
-                        }),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: StaggeredGridView.countBuilder(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 4,
+                          mainAxisSpacing: 4,
+                          itemCount: 8,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                              ),
+                            );
+                          },
+                          staggeredTileBuilder: (index) {
+                            return StaggeredTile.count(1, index.isEven ? 2 : 1);
+                          }),
+                    ),
                   )
                 ],
               ),
