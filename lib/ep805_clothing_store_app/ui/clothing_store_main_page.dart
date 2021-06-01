@@ -138,7 +138,6 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                         crossAxisSpacing: 4,
                         mainAxisSpacing: 4,
                         itemCount: 8,
-
                         itemBuilder: (context, index) {
                           return Container(
                             decoration: BoxDecoration(
