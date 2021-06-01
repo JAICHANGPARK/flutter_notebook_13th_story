@@ -158,7 +158,9 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                     ),
                                     child: Stack(
                                       children: [
-                                        
+                                        CircleAvatar(
+                                          child: Icon(Icons.favorite),
+                                        )
                                       ],
                                     ),
                                   ), flex: 8,),
