@@ -151,8 +151,18 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                               ),
                               child: Column(
                                 children: [
-                                  Expanded(child: Placeholder()),
-                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(8)
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        
+                                      ],
+                                    ),
+                                  ), flex: 8,),
+                                  Expanded(child: Placeholder(), flex: 4,),
                                 ],
                               )
                             );
