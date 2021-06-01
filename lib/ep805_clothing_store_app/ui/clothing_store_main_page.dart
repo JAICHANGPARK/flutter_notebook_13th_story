@@ -163,14 +163,15 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                           top: 8,
                                           child: CircleAvatar(
                                             radius: 12,
-                                            backgroundColor: Colors.whte,
+                                            backgroundColor: Colors.white,
                                             foregroundColor: Colors.red,
-                                            child: Icon(Icons.favorite),
+                                            child: Icon(Icons.favorite, size: 16,),
                                           ),
                                         )
                                       ],
                                     ),
                                   ), flex: 8,),
+                                  SizedBox(height: 8,),
                                   Expanded(child: Placeholder(), flex: 4,),
                                 ],
                               )
