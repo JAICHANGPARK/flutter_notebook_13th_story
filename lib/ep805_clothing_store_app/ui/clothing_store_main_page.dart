@@ -183,7 +183,10 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("Dream Walker - Jacket"),
+                                      Text(
+                                        "Dream Walker - Jacket",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ),
                                       SizedBox(
                                         height: 8,
                                       ),
