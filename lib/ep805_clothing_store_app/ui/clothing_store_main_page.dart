@@ -180,7 +180,10 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                       Row(
                                         children: [
                                           Text('\$199.99',),
-                                          Text("\$299.99")
+                                          Text("\$299.99", style: TextStyle(
+                                            color: Colors.grey,
+                                            decoration: TextDecoration.lineThrough
+                                          ),)
                                         ],
                                       )
                                     ],
