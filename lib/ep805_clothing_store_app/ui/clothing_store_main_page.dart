@@ -145,19 +145,17 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                           itemCount: 8,
                           itemBuilder: (context, index) {
                             return Container(
-
-                              child: Column(
-                                children: [
-                                  Expanded(child: Container(
+                                child: Column(
+                              children: [
+                                Expanded(
+                                  child: Container(
                                     decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        image: NetworkImage(""
-                                            "https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_960_720.jpg"),
-                                        fit: BoxFit.cover
-                                      ),
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                        image: DecorationImage(
+                                            image: NetworkImage(""
+                                                "https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_960_720.jpg"),
+                                            fit: BoxFit.cover),
+                                        color: Colors.grey,
+                                        borderRadius: BorderRadius.circular(8)),
                                     child: Stack(
                                       children: [
                                         Positioned(
@@ -167,31 +165,49 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                             radius: 12,
                                             backgroundColor: Colors.white,
                                             foregroundColor: Colors.red,
-                                            child: Icon(Icons.favorite, size: 16,),
+                                            child: Icon(
+                                              Icons.favorite,
+                                              size: 16,
+                                            ),
                                           ),
                                         )
                                       ],
                                     ),
-                                  ), flex: 8,),
-                                  SizedBox(height: 8,),
-                                  Expanded(child: Column(
+                                  ),
+                                  flex: 8,
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("Dream Walker - Jacket"),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
                                       Row(
                                         children: [
-                                          Text('\$199.99',),
-                                          SizedBox(width: 8,),
-                                          Text("\$299.99", style: TextStyle(
-                                            color: Colors.grey,
-                                            decoration: TextDecoration.lineThrough
-                                          ),)
+                                          Text(
+                                            '\$199.99',
+                                          ),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Text(
+                                            "\$299.99",
+                                            style:
+                                                TextStyle(color: Colors.grey, decoration: TextDecoration.lineThrough),
+                                          )
                                         ],
                                       )
                                     ],
-                                  ), flex: 4,),
-                                ],
-                              )
-                            );
+                                  ),
+                                  flex: 4,
+                                ),
+                              ],
+                            ));
                           },
                           staggeredTileBuilder: (index) {
                             return StaggeredTile.count(1, index.isEven ? 2 : 1);
