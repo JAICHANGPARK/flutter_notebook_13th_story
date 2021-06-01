@@ -162,6 +162,9 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                           right: 8,
                                           top: 8,
                                           child: CircleAvatar(
+                                            radius: 12,
+                                            backgroundColor: Colors.whte,
+                                            foregroundColor: Colors.red,
                                             child: Icon(Icons.favorite),
                                           ),
                                         )
