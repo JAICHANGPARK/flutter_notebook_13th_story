@@ -147,7 +147,7 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                           );
                         },
                         staggeredTileBuilder: (index) {
-                          return StaggeredTile.count(4, index.isEven ? 2 : 1);
+                          return StaggeredTile.count(1, index.isEven ? 2 : 1);
                         }),
                   )
                 ],
