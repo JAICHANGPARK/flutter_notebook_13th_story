@@ -40,11 +40,15 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
               ),
             ),),
             Positioned(
-                top: 0,
+                top: 16,
                 left: 16,
                 right: 16,
                 child: Row(children: [
-              Icon(Icons.arrow_back),
+              InkWell(
+                onTap: (){
+                  Navigator.pop(context);
+                },
+                  child: Icon(Icons.arrow_back)),
               Spacer(),
               Icon(Icons.favorite, color: Colors.red,),
                   Container(
