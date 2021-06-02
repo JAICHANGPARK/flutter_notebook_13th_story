@@ -98,17 +98,24 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 height: 320,
                 child: Column(
                   children: [
-                    Expanded(child: Placeholder(), flex: 2,),
+                    Expanded(child: Placeholder(), flex: 4,),
                     Expanded(child: Placeholder(), flex: 1,),
-                    Expanded(child: Placeholder(), flex: 10,),
+                    Expanded(child:Container(
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(16),
+                            topLeft: Radius.circular(16),
+                          )),
+                      child: Column(
+                        children: [
+                          
+                        ],
+                      ),
+                    ), flex: 10,),
                   ],
                 ),
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(16),
-                      topLeft: Radius.circular(16),
-                    )),
+
               ),
               left: 0,
               right: 0,
