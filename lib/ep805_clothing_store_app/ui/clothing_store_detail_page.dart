@@ -28,16 +28,22 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
             right: 0,
             top: 0,
             child: Container(
+
             decoration: BoxDecoration(
+              color: Colors.blue,
               image: DecorationImage(
                 image: NetworkImage(widget.imgString),
                 fit: BoxFit.cover
               )
             ),
           ),),
-          Positioned(child: Row(children: [
-              Icon(Icons.arrow_back),
-              Icon(Icons.favorite, color: Colors.red,),
+          Positioned(
+              top: 0,
+              left: 16,
+              right: 16,
+              child: Row(children: [
+            Icon(Icons.arrow_back),
+            Icon(Icons.favorite, color: Colors.red,),
 
           ],)),
           Positioned(
