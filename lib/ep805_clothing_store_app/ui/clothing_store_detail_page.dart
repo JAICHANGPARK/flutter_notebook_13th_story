@@ -78,8 +78,8 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                   ],
                 )),
             Positioned(
-                left: 16,
-                right: 16,
+                left: 8,
+                right: 8,
                 top: 24,
                 bottom: 200,
                 child: Container(
@@ -95,7 +95,12 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 )),
             Positioned(
               child: Container(
-                height: 200,
+                height: 320,
+                child: Column(
+                  children: [
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
