@@ -20,7 +20,15 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+          Positioned(
+            child: Container(
+              height: 160,
+              decoration: BoxDecoration(color: Colors.white),
+            ),
+            left: 0,
+            right: 0,
+            bottom: 0,
+          ),
         ],
       ),
     );
