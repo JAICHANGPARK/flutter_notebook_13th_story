@@ -99,7 +99,17 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 child: Column(
                   children: [
                     Expanded(
-                      child: Placeholder(),
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: Container(
+
+                          width: 160,
+                          height: 48,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
                       flex: 4,
                     ),
                     Expanded(
