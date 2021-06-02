@@ -98,7 +98,9 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 height: 320,
                 child: Column(
                   children: [
-                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder(), flex: 2,),
+                    Expanded(child: Placeholder(), flex: 1,),
+                    Expanded(child: Placeholder(), flex: 10,),
                   ],
                 ),
                 decoration: BoxDecoration(
