@@ -103,11 +103,13 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                       flex: 4,
                     ),
                     Expanded(
-                      child: Center(
+                      child: Align(
+                        alignment: Alignment.bottomCenter,
                         child: Container(
-                          height: 6,
+                          height: 4,
                           width: 48,
-                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                          decoration: BoxDecoration(color: Colors.white,
+                              borderRadius: BorderRadius.circular(8)),
                         ),
                       ),
                       flex: 1,
