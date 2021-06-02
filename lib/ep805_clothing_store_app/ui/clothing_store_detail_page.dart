@@ -20,46 +20,49 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Positioned(
-            bottom: 200,
-            left: 0,
-            right: 0,
-            top: 0,
-            child: Container(
+      body: SafeArea(
 
-            decoration: BoxDecoration(
-              color: Colors.blue,
-              image: DecorationImage(
-                image: NetworkImage(widget.imgString),
-                fit: BoxFit.cover
-              )
-            ),
-          ),),
-          Positioned(
+        child: Stack(
+          children: [
+            Positioned(
+              bottom: 200,
+              left: 0,
+              right: 0,
               top: 0,
-              left: 16,
-              right: 16,
-              child: Row(children: [
-            Icon(Icons.arrow_back),
-            Icon(Icons.favorite, color: Colors.red,),
+              child: Container(
 
-          ],)),
-          Positioned(
-            child: Container(
-              height: 200,
-              decoration: BoxDecoration(color: Colors.white,
-              borderRadius: BorderRadius.only(
-                topRight: Radius.circular(16),
-                topLeft:  Radius.circular(16),
-              )),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                image: DecorationImage(
+                  image: NetworkImage(widget.imgString),
+                  fit: BoxFit.cover
+                )
+              ),
+            ),),
+            Positioned(
+                top: 0,
+                left: 16,
+                right: 16,
+                child: Row(children: [
+              Icon(Icons.arrow_back),
+              Icon(Icons.favorite, color: Colors.red,),
+
+            ],)),
+            Positioned(
+              child: Container(
+                height: 200,
+                decoration: BoxDecoration(color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(16),
+                  topLeft:  Radius.circular(16),
+                )),
+              ),
+              left: 0,
+              right: 0,
+              bottom: 0,
             ),
-            left: 0,
-            right: 0,
-            bottom: 0,
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
