@@ -202,7 +202,8 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                                           Text(
                                             "\$299.99",
                                             style:
-                                                TextStyle(color: Colors.grey, decoration: TextDecoration.lineThrough),
+                                                TextStyle(color: Colors.grey,
+                                                    decoration: TextDecoration.lineThrough),
                                           )
                                         ],
                                       )
