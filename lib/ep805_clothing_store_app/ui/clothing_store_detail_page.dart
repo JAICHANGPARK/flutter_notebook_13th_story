@@ -22,6 +22,14 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
     return Scaffold(
       body: Stack(
         children: [
+          Positioned(child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(widget.imgString),
+                fit: BoxFit.cover
+              )
+            ),
+          ),),
           Positioned(
             child: Container(
               height: 160,
