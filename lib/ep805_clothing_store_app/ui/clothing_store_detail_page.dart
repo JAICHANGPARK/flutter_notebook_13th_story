@@ -9,7 +9,7 @@ class ClothingStoreDetailPage extends StatefulWidget {
     Key? key,
     required this.imgString,
     required this.price,
-    
+    required this.title,
   }) : super(key: key);
 
   @override
