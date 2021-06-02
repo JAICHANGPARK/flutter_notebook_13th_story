@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 
 class ClothingStoreDetailPage extends StatefulWidget {
-  const ClothingStoreDetailPage({Key? key}) : super(key: key);
+  final String imgString;
+  const ClothingStoreDetailPage({Key? key, required this.imgString}) : super(key: key);
 
   @override
   _ClothingStoreDetailPageState createState() => _ClothingStoreDetailPageState();
