@@ -104,12 +104,19 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                         width: 160,
                         height: 72,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.grey[300],
                           borderRadius: BorderRadius.circular(8)
                         ),
                         child: Row(
                           children: [
-                                        
+                            Expanded(child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white
+                              ),
+                            )),
+                            Expanded(child: Container()),
+                            Expanded(child: Container()),
+
                           ],
                         )
                       ),
