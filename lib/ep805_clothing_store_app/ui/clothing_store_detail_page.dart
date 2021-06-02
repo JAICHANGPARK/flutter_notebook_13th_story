@@ -17,6 +17,12 @@ class ClothingStoreDetailPage extends StatefulWidget {
 class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Stack(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
