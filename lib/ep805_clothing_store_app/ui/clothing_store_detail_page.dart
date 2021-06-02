@@ -101,12 +101,13 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 24),
                       child: Container(
-                        width: 160,
+                        width: 172,
                         height: 72,
                         decoration: BoxDecoration(
                           color: Colors.grey[300],
                           borderRadius: BorderRadius.circular(8)
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                         child: Row(
                           children: [
                             Expanded(child: Container(
@@ -114,8 +115,19 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                 color: Colors.white
                               ),
                             )),
-                            Expanded(child: Container()),
-                            Expanded(child: Container()),
+                            SizedBox(width: 4,),
+                            Expanded(child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all()
+                              ),
+                            )),SizedBox(width: 4,),
+                            Expanded(child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white
+                              ),
+                            )),
 
                           ],
                         )
