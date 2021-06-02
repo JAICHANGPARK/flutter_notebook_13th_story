@@ -112,7 +112,8 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                           children: [
                             Expanded(child: Container(
                               decoration: BoxDecoration(
-                                color: Colors.white
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8)
                               ),
                             )),
                             SizedBox(width: 4,),
@@ -125,7 +126,8 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                             )),SizedBox(width: 4,),
                             Expanded(child: Container(
                               decoration: BoxDecoration(
-                                  color: Colors.white
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8)
                               ),
                             )),
 
