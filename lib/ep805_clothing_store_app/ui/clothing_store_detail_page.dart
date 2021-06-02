@@ -35,6 +35,9 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
               )
             ),
           ),),
+          Positioned(child: Row(children: [
+
+          ],)),
           Positioned(
             child: Container(
               height: 200,
