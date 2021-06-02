@@ -98,19 +98,21 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 height: 320,
                 child: Column(
                   children: [
-                    Expanded(
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8),
-                        child: Container(
-
-                          width: 160,
-                          height: 48,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                          ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 24),
+                      child: Container(
+                        width: 160,
+                        height: 72,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          
                         ),
+                        child: Row(
+                          children: [
+
+                          ],
+                        )
                       ),
-                      flex: 4,
                     ),
                     Expanded(
                       child: Align(
@@ -118,8 +120,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                         child: Container(
                           height: 4,
                           width: 48,
-                          decoration: BoxDecoration(color: Colors.white,
-                              borderRadius: BorderRadius.circular(8)),
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                         ),
                       ),
                       flex: 1,
