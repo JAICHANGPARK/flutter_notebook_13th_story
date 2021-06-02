@@ -36,6 +36,8 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
             ),
           ),),
           Positioned(child: Row(children: [
+              Icon(Icons.arrow_back),
+              Icon(Icons.favorite, color: Colors.red,),
 
           ],)),
           Positioned(
