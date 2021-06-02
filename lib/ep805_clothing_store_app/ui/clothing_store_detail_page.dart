@@ -25,7 +25,11 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
           Positioned(
             child: Container(
               height: 160,
-              decoration: BoxDecoration(color: Colors.white),
+              decoration: BoxDecoration(color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(16),
+                topLeft:  Radius.circular(16),
+              )),
             ),
             left: 0,
             right: 0,
