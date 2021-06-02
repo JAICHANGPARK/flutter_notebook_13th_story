@@ -150,7 +150,8 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                               onTap: (){
                                 Navigator.push(context, MaterialPageRoute(builder: (context){
                                   return ClothingStoreDetailPage(
-                                    
+                                    imgString: "https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_960_720.jpg",
+                                    price: ,
                                   );
                                 }));
                               },
