@@ -95,7 +95,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 )),
             Positioned(
               child: Container(
-                height: 320,
+                height: 300,
                 child: Column(
                   children: [
                     Padding(
@@ -105,11 +105,11 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                         height: 72,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          
+                          borderRadius: BorderRadius.circular(8)
                         ),
                         child: Row(
                           children: [
-
+                                        
                           ],
                         )
                       ),
