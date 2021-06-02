@@ -78,6 +78,21 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                   )
             ],)),
             Positioned(
+                left: 16,
+                right: 16,
+                top: 24,
+                bottom: 200,
+                child: Container(
+              child: Center(
+                child: Row(
+                  children: [
+                      IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_left)),
+                    IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_right)),
+                  ],
+                ),
+              ),
+            )),
+            Positioned(
               child: Container(
                 height: 200,
                 decoration: BoxDecoration(color: Colors.white,
