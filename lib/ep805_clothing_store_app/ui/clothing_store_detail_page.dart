@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class ClothingStoreDetailPage extends StatefulWidget {
   final String imgString;
+  final double price;
   const ClothingStoreDetailPage({Key? key, required this.imgString}) : super(key: key);
 
   @override
