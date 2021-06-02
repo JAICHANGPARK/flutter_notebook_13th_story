@@ -98,24 +98,36 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 height: 320,
                 child: Column(
                   children: [
-                    Expanded(child: Placeholder(), flex: 4,),
-                    Expanded(child: Placeholder(), flex: 1,),
-                    Expanded(child:Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(16),
-                            topLeft: Radius.circular(16),
-                          )),
-                      child: Column(
-                        children: [
-                          
-                        ],
+                    Expanded(
+                      child: Placeholder(),
+                      flex: 4,
+                    ),
+                    Expanded(
+                      child: Center(
+                        child: Container(
+                          height: 6,
+                          width: 48,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                        ),
                       ),
-                    ), flex: 10,),
+                      flex: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(16),
+                              topLeft: Radius.circular(16),
+                            )),
+                        child: Column(
+                          children: [],
+                        ),
+                      ),
+                      flex: 10,
+                    ),
                   ],
                 ),
-
               ),
               left: 0,
               right: 0,
