@@ -102,7 +102,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                       padding: EdgeInsets.symmetric(horizontal: 24),
                       child: Container(
                         width: 172,
-                        height: 72,
+                        height: 64,
                         decoration: BoxDecoration(
                           color: Colors.grey[300],
                           borderRadius: BorderRadius.circular(8)
