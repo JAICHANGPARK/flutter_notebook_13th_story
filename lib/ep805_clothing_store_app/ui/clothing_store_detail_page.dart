@@ -22,7 +22,12 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(child: Container(
+          Positioned(
+            bottom: 200,
+            left: 0,
+            right: 0,
+            top: 0,
+            child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage(widget.imgString),
@@ -32,7 +37,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
           ),),
           Positioned(
             child: Container(
-              height: 160,
+              height: 200,
               decoration: BoxDecoration(color: Colors.white,
               borderRadius: BorderRadius.only(
                 topRight: Radius.circular(16),
