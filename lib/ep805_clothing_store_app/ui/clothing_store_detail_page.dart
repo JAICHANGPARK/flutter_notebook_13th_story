@@ -45,8 +45,33 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 right: 16,
                 child: Row(children: [
               Icon(Icons.arrow_back),
+              Spacer(),
               Icon(Icons.favorite, color: Colors.red,),
-
+                  Container(
+                    height: 38,
+                    width: 38,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          child: Icon(Icons.shopping_bag_outlined),
+                          left: 8,
+                          top: 8,
+                          right: 8,
+                          bottom: 8,
+                        ),
+                        Positioned(
+                          child: CircleAvatar(
+                            radius: 8,
+                            child: Text("3"),
+                            backgroundColor: Colors.red,
+                            foregroundColor: Colors.white,
+                          ),
+                          right: 0,
+                          top: 0,
+                        ),
+                      ],
+                    ),
+                  )
             ],)),
             Positioned(
               child: Container(
