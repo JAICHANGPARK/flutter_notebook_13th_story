@@ -49,6 +49,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 },
                 children: [
                   Container(
+                    padding: EdgeInsets.all(16),
                     decoration: BoxDecoration(
                         color: Colors.grey[100],
                         image: DecorationImage(image: NetworkImage(_img0),
@@ -56,6 +57,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
+                        padding: EdgeInsets.all(16),
                         color: Colors.grey[100],
                         image: DecorationImage(image: NetworkImage(widget.imgString),
                             fit: BoxFit.cover)),
