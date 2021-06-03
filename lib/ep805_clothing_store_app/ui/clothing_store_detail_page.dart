@@ -101,39 +101,40 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 24),
                       child: Container(
-                        width: 172,
-                        height: 64,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(8)
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                        child: Row(
-                          children: [
-                            Expanded(child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(8)
+                          width: 172,
+                          height: 64,
+                          decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(8)),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                  child: Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899729_960_720.png",
+                                        ),
+                                        fit: BoxFit.cover)),
+                              )),
+                              SizedBox(
+                                width: 4,
                               ),
-                            )),
-                            SizedBox(width: 4,),
-                            Expanded(child: Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                borderRadius: BorderRadius.circular(8),
-                                border: Border.all()
+                              Expanded(
+                                  child: Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.white, borderRadius: BorderRadius.circular(8), border: Border.all()),
+                              )),
+                              SizedBox(
+                                width: 4,
                               ),
-                            )),SizedBox(width: 4,),
-                            Expanded(child: Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8)
-                              ),
-                            )),
-
-                          ],
-                        )
-                      ),
+                              Expanded(
+                                  child: Container(
+                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                              )),
+                            ],
+                          )),
                     ),
                     Expanded(
                       child: Align(
