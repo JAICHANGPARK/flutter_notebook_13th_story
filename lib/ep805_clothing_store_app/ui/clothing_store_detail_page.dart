@@ -50,19 +50,19 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 children: [
                   Container(
                     decoration: BoxDecoration(
-
+                        color: Colors.grey[100],
                         image: DecorationImage(image: NetworkImage(_img0),
                             fit: BoxFit.cover)),
                   ),
                   Container(
                     decoration: BoxDecoration(
-
+                        color: Colors.grey[100],
                         image: DecorationImage(image: NetworkImage(widget.imgString),
                             fit: BoxFit.cover)),
                   ),
                   Container(
                     decoration: BoxDecoration(
-
+                        color: Colors.grey[100],
                         image: DecorationImage(image: NetworkImage(_img1),
                             fit: BoxFit.cover)),
                   ),
@@ -128,7 +128,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
 
                         }, icon: Icon(Icons.keyboard_arrow_left)),
                         IconButton(onPressed: () {
-                         
+
                           _pageController.jumpToPage(_pageIndex + 1);
                         }, icon: Icon(Icons.keyboard_arrow_right)),
                       ],
@@ -154,6 +154,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(8),
+                            border: _pageIndex == 0 ? Border.all() : null,
                                       image: DecorationImage(
                                           image: NetworkImage(
                                             _img0,
@@ -171,7 +172,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                             image: NetworkImage(widget.imgString), fit: BoxFit.cover),
                                         color: Colors.white,
                                         borderRadius: BorderRadius.circular(8),
-                                        border: Border.all()),
+                                        border: _pageIndex == 1 ? Border.all() : null),
                                   )),
                               SizedBox(
                                 width: 4,
@@ -180,6 +181,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                   child: Container(
                                     decoration: BoxDecoration(
                                         color: Colors.white,
+                                        border: _pageIndex == 2 ? Border.all() : null,
                                         borderRadius: BorderRadius.circular(8),
                                         image: DecorationImage(
                                             image: NetworkImage(
