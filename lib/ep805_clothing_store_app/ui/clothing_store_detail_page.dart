@@ -110,13 +110,14 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                               Expanded(
                                   child: Container(
                                 decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(8),
-                                    image: DecorationImage(
-                                        image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899729_960_720.png",
-                                        ),
-                                        fit: BoxFit.cover)),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8),
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899729_960_720.png",
+                                      ),
+                                      fit: BoxFit.cover),
+                                ),
                               )),
                               SizedBox(
                                 width: 4,
@@ -124,7 +125,14 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                               Expanded(
                                   child: Container(
                                 decoration: BoxDecoration(
-                                    color: Colors.white, borderRadius: BorderRadius.circular(8), border: Border.all()),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                          widget.imgString
+                                        ),
+                                        fit: BoxFit.cover),
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: Border.all()),
                               )),
                               SizedBox(
                                 width: 4,
