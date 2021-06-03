@@ -28,10 +28,14 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
               left: 0,
               right: 0,
               top: 0,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: Colors.blue,
-                    image: DecorationImage(image: NetworkImage(widget.imgString), fit: BoxFit.cover)),
+              child: PageView(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        image: DecorationImage(image: NetworkImage(widget.imgString), fit: BoxFit.cover)),
+                  ),
+                ],
               ),
             ),
             Positioned(
