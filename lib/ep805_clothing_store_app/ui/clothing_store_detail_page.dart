@@ -18,7 +18,7 @@ class ClothingStoreDetailPage extends StatefulWidget {
 
 class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
   late PageController _pageController;
-  int _pageIndex = 0;
+  int _pageIndex = 1;
   final String _img0 = "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899729_960_720.png";
   final String _img1 = "https://cdn.pixabay.com/photo/2018/10/03/17/42/leather-3721996_960_720.jpg";
 
@@ -26,7 +26,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _pageController = PageController(initialPage: 0)
+    _pageController = PageController(initialPage: 1);
   }
 
   @override
@@ -50,20 +50,20 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                        color: Colors.blue,
+                       
+                        image: DecorationImage(image: NetworkImage(_img0),
+                            fit: BoxFit.cover)),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+
                         image: DecorationImage(image: NetworkImage(widget.imgString),
                             fit: BoxFit.cover)),
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        color: Colors.blue,
-                        image: DecorationImage(image: NetworkImage(widget.imgString),
-                            fit: BoxFit.cover)),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        image: DecorationImage(image: NetworkImage(widget.imgString),
+
+                        image: DecorationImage(image: NetworkImage(_img1),
                             fit: BoxFit.cover)),
                   ),
                 ],
