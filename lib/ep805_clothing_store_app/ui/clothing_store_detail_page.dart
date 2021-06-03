@@ -232,7 +232,14 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                   Expanded(
                                     child: Column(
                                       children: [
-                                        Expanded(child: Placeholder()),
+                                        Expanded(child: Container(
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Colors.grey[300]!,
+                                            ),
+                                            borderRadius: BorderRadius.circular(8)
+                                          ),
+                                        )),
                                         Expanded(child: Placeholder()),
                                       ],
                                     ),
