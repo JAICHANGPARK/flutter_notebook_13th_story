@@ -258,7 +258,18 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                                 ),
                                                 borderRadius: BorderRadius.circular(8)
                                             ),
-                                            
+                                            child: Column(
+                                              children: [
+                                                Text("Color"),
+                                                Container(
+                                                  height: 4,
+                                                  width: 42,
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.black
+                                                  ),
+                                                )
+                                              ],
+                                            ),
                                           ),
                                         )),
                                       ],
