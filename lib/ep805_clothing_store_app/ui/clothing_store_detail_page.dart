@@ -232,15 +232,35 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                   Expanded(
                                     child: Column(
                                       children: [
-                                        Expanded(child: Container(
-                                          decoration: BoxDecoration(
-                                            border: Border.all(
-                                              color: Colors.grey[300]!,
+                                        Expanded(child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              border: Border.all(
+                                                color: Colors.grey[300]!,
+                                              ),
+                                              borderRadius: BorderRadius.circular(8)
                                             ),
-                                            borderRadius: BorderRadius.circular(8)
+                                            child: Column(
+                                              children: [
+                                                Text("Size"),
+                                                Text("Large"),
+                                              ],
+                                            ),
                                           ),
                                         )),
-                                        Expanded(child: Placeholder()),
+                                        Expanded(child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  color: Colors.grey[300]!,
+                                                ),
+                                                borderRadius: BorderRadius.circular(8)
+                                            ),
+                                            
+                                          ),
+                                        )),
                                       ],
                                     ),
                                     flex: 2,
