@@ -219,9 +219,15 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(widget.title),
+                                Text(widget.title, style: TextStyle(
+                                  fontSize: 20,
+                                    fontWeight: FontWeight.bold
+                                ),),
 
-                                Text(widget.price.toString())
+                                Text("\$${widget.price}", style: TextStyle(
+                                    fontSize: 18,
+                                  fontWeight: FontWeight.bold
+                                ),)
                               ],
                             )
                           ],
