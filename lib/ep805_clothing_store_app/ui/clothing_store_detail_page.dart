@@ -125,11 +125,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                               Expanded(
                                   child: Container(
                                 decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                        image: NetworkImage(
-                                          widget.imgString
-                                        ),
-                                        fit: BoxFit.cover),
+                                    image: DecorationImage(image: NetworkImage(widget.imgString), fit: BoxFit.cover),
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(8),
                                     border: Border.all()),
@@ -139,7 +135,14 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                               ),
                               Expanded(
                                   child: Container(
-                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2018/10/03/17/42/leather-3721996_960_720.jpg",
+                                        ),
+                                        fit: BoxFit.cover)),
                               )),
                             ],
                           )),
