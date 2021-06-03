@@ -241,7 +241,10 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               ),
                                               borderRadius: BorderRadius.circular(8)
                                             ),
+                                            height: double.infinity,
+                                            width: double.infinity,
                                             child: Column(
+
                                               children: [
                                                 Text("Size"),
                                                 Text("Large"),
