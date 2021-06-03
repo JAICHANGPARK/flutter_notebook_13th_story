@@ -19,12 +19,14 @@ class ClothingStoreDetailPage extends StatefulWidget {
 class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
   late PageController _pageController;
   int _pageIndex = 0;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _pageController = PageController(initialPage: 0)
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,11 +40,29 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
               top: 0,
               child: PageView(
                 controller: _pageController,
+                onPageChanged: (pIdx) {
+                  setState(() {
+                    _pageIndex = pIdx;
+                  });
+                },
                 children: [
                   Container(
                     decoration: BoxDecoration(
                         color: Colors.blue,
-                        image: DecorationImage(image: NetworkImage(widget.imgString), fit: BoxFit.cover)),
+                        image: DecorationImage(image: NetworkImage(widget.imgString),
+                            fit: BoxFit.cover)),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        image: DecorationImage(image: NetworkImage(widget.imgString),
+                            fit: BoxFit.cover)),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        image: DecorationImage(image: NetworkImage(widget.imgString),
+                            fit: BoxFit.cover)),
                   ),
                 ],
               ),
@@ -122,41 +142,42 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                             children: [
                               Expanded(
                                   child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8),
-                                  image: DecorationImage(
-                                      image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899729_960_720.png",
-                                      ),
-                                      fit: BoxFit.cover),
-                                ),
-                              )),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899729_960_720.png",
+                                          ),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  )),
                               SizedBox(
                                 width: 4,
                               ),
                               Expanded(
                                   child: Container(
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(image: NetworkImage(widget.imgString), fit: BoxFit.cover),
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(8),
-                                    border: Border.all()),
-                              )),
+                                    decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                            image: NetworkImage(widget.imgString), fit: BoxFit.cover),
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(8),
+                                        border: Border.all()),
+                                  )),
                               SizedBox(
                                 width: 4,
                               ),
                               Expanded(
                                   child: Container(
-                                decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(8),
-                                    image: DecorationImage(
-                                        image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2018/10/03/17/42/leather-3721996_960_720.jpg",
-                                        ),
-                                        fit: BoxFit.cover)),
-                              )),
+                                    decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2018/10/03/17/42/leather-3721996_960_720.jpg",
+                                            ),
+                                            fit: BoxFit.cover)),
+                                  )),
                             ],
                           )),
                     ),
