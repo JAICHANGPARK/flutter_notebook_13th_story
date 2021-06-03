@@ -50,7 +50,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                       
+
                         image: DecorationImage(image: NetworkImage(_img0),
                             fit: BoxFit.cover)),
                   ),
@@ -122,8 +122,15 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_left)),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_right)),
+                        IconButton(onPressed: () {
+
+                          _pageController.jumpToPage(_pageIndex - 1);
+
+                        }, icon: Icon(Icons.keyboard_arrow_left)),
+                        IconButton(onPressed: () {
+                         
+                          _pageController.jumpToPage(_pageIndex + 1);
+                        }, icon: Icon(Icons.keyboard_arrow_right)),
                       ],
                     ),
                   ),
