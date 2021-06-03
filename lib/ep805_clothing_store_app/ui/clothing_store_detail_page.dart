@@ -229,6 +229,13 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                   fontWeight: FontWeight.bold
                                 ),)
                               ],
+                            ),
+                            Row(
+                              children: [
+                                Expanded(child: Placeholder(),flex: 2,),
+                                Expanded(child: Placeholder(),flex: 3,),
+                                Expanded(child: Placeholder(),flex: 2,),
+                              ],
                             )
                           ],
                         ),
