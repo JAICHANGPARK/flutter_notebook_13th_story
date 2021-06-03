@@ -17,6 +17,14 @@ class ClothingStoreDetailPage extends StatefulWidget {
 }
 
 class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
+  late PageController _pageController;
+  int _pageIndex = 0;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController(initialPage: 0)
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,6 +37,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
               right: 0,
               top: 0,
               child: PageView(
+                controller: _pageController,
                 children: [
                   Container(
                     decoration: BoxDecoration(
