@@ -57,7 +57,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        padding: EdgeInsets.all(16),
+
                         color: Colors.grey[100],
                         image: DecorationImage(image: NetworkImage(widget.imgString),
                             fit: BoxFit.cover)),
@@ -213,8 +213,18 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                               topRight: Radius.circular(16),
                               topLeft: Radius.circular(16),
                             )),
+                        padding: EdgeInsets.all(20),
                         child: Column(
-                          children: [],
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(widget.title),
+
+                                Text(widget.price.toString())
+                              ],
+                            )
+                          ],
                         ),
                       ),
                       flex: 10,
