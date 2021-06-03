@@ -230,12 +230,19 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                 ),)
                               ],
                             ),
-                            Row(
-                              children: [
-                                Expanded(child: Placeholder(),flex: 2,),
-                                Expanded(child: Placeholder(),flex: 3,),
-                                Expanded(child: Placeholder(),flex: 2,),
-                              ],
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  Expanded(child: Column(
+                                    children: [
+                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Placeholder()),
+                                    ],
+                                  ),flex: 2,),
+                                  Expanded(child: Placeholder(),flex: 3,),
+                                  Expanded(child: Placeholder(),flex: 2,),
+                                ],
+                              ),
                             )
                           ],
                         ),
