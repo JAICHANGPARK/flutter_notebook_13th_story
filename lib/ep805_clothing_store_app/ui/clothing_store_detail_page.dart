@@ -19,6 +19,8 @@ class ClothingStoreDetailPage extends StatefulWidget {
 class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
   late PageController _pageController;
   int _pageIndex = 0;
+  final String _img0 = "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899729_960_720.png";
+  final String _img1 = "https://cdn.pixabay.com/photo/2018/10/03/17/42/leather-3721996_960_720.jpg";
 
   @override
   void initState() {
@@ -147,7 +149,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                       borderRadius: BorderRadius.circular(8),
                                       image: DecorationImage(
                                           image: NetworkImage(
-                                            "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899729_960_720.png",
+                                            _img0,
                                           ),
                                           fit: BoxFit.cover),
                                     ),
@@ -174,7 +176,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                         borderRadius: BorderRadius.circular(8),
                                         image: DecorationImage(
                                             image: NetworkImage(
-                                              "https://cdn.pixabay.com/photo/2018/10/03/17/42/leather-3721996_960_720.jpg",
+                                              _img1 ,
                                             ),
                                             fit: BoxFit.cover)),
                                   )),
