@@ -51,22 +51,16 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                   Container(
                     padding: EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                        color: Colors.grey[100],
-                        image: DecorationImage(image: NetworkImage(_img0),
-                            fit: BoxFit.cover)),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-
-                        color: Colors.grey[100],
-                        image: DecorationImage(image: NetworkImage(widget.imgString),
-                            fit: BoxFit.cover)),
+                        color: Colors.grey[100], image: DecorationImage(image: NetworkImage(_img0), fit: BoxFit.cover)),
                   ),
                   Container(
                     decoration: BoxDecoration(
                         color: Colors.grey[100],
-                        image: DecorationImage(image: NetworkImage(_img1),
-                            fit: BoxFit.cover)),
+                        image: DecorationImage(image: NetworkImage(widget.imgString), fit: BoxFit.cover)),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[100], image: DecorationImage(image: NetworkImage(_img1), fit: BoxFit.cover)),
                   ),
                 ],
               ),
@@ -124,15 +118,16 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        IconButton(onPressed: () {
-
-                          _pageController.jumpToPage(_pageIndex - 1);
-
-                        }, icon: Icon(Icons.keyboard_arrow_left)),
-                        IconButton(onPressed: () {
-
-                          _pageController.jumpToPage(_pageIndex + 1);
-                        }, icon: Icon(Icons.keyboard_arrow_right)),
+                        IconButton(
+                            onPressed: () {
+                              _pageController.jumpToPage(_pageIndex - 1);
+                            },
+                            icon: Icon(Icons.keyboard_arrow_left)),
+                        IconButton(
+                            onPressed: () {
+                              _pageController.jumpToPage(_pageIndex + 1);
+                            },
+                            icon: Icon(Icons.keyboard_arrow_right)),
                       ],
                     ),
                   ),
@@ -153,44 +148,43 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                             children: [
                               Expanded(
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(8),
-                            border: _pageIndex == 0 ? Border.all() : null,
-                                      image: DecorationImage(
-                                          image: NetworkImage(
-                                            _img0,
-                                          ),
-                                          fit: BoxFit.cover),
-                                    ),
-                                  )),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: _pageIndex == 0 ? Border.all() : null,
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                        _img0,
+                                      ),
+                                      fit: BoxFit.cover),
+                                ),
+                              )),
                               SizedBox(
                                 width: 4,
                               ),
                               Expanded(
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                            image: NetworkImage(widget.imgString), fit: BoxFit.cover),
-                                        color: Colors.white,
-                                        borderRadius: BorderRadius.circular(8),
-                                        border: _pageIndex == 1 ? Border.all() : null),
-                                  )),
+                                decoration: BoxDecoration(
+                                    image: DecorationImage(image: NetworkImage(widget.imgString), fit: BoxFit.cover),
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: _pageIndex == 1 ? Border.all() : null),
+                              )),
                               SizedBox(
                                 width: 4,
                               ),
                               Expanded(
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        border: _pageIndex == 2 ? Border.all() : null,
-                                        borderRadius: BorderRadius.circular(8),
-                                        image: DecorationImage(
-                                            image: NetworkImage(
-                                              _img1 ,
-                                            ),
-                                            fit: BoxFit.cover)),
-                                  )),
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    border: _pageIndex == 2 ? Border.all() : null,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                          _img1,
+                                        ),
+                                        fit: BoxFit.cover)),
+                              )),
                             ],
                           )),
                     ),
@@ -219,28 +213,54 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(widget.title, style: TextStyle(
-                                  fontSize: 20,
-                                    fontWeight: FontWeight.bold
-                                ),),
-
-                                Text("\$${widget.price}", style: TextStyle(
-                                    fontSize: 18,
-                                  fontWeight: FontWeight.bold
-                                ),)
+                                Text(
+                                  widget.title,
+                                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  "\$${widget.price}",
+                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                )
                               ],
+                            ),
+                            SizedBox(
+                              height: 12,
                             ),
                             Expanded(
                               child: Row(
                                 children: [
-                                  Expanded(child: Column(
-                                    children: [
-                                      Expanded(child: Placeholder()),
-                                      Expanded(child: Placeholder()),
-                                    ],
-                                  ),flex: 2,),
-                                  Expanded(child: Placeholder(),flex: 3,),
-                                  Expanded(child: Placeholder(),flex: 2,),
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        Expanded(child: Placeholder()),
+                                        Expanded(child: Placeholder()),
+                                      ],
+                                    ),
+                                    flex: 2,
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        Expanded(child: Placeholder()),
+                                        Expanded(child: Placeholder()),
+                                      ],
+                                    ),
+                                    flex: 3,
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        Expanded(child: Placeholder()),
+                                      ],
+                                    ),
+                                    flex: 2,
+                                  ),
                                 ],
                               ),
                             )
