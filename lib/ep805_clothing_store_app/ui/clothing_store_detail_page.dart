@@ -251,7 +251,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               children: [
                                                 Text(
                                                   "Size",
-                                                  style: TextStyle(color: Colors.grey),
+                                                  style: TextStyle(color: Colors.grey, fontSize: 12),
                                                 ),
                                                 Text(
                                                   "Large",
@@ -279,7 +279,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               children: [
                                                 Text(
                                                   "Color",
-                                                  style: TextStyle(color: Colors.grey),
+                                                  style: TextStyle(color: Colors.grey, fontSize: 12),
                                                 ),
                                                 Container(
                                                   height: 8,
