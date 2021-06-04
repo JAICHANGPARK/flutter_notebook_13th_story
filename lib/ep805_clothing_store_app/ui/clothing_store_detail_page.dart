@@ -243,7 +243,10 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                                 borderRadius: BorderRadius.circular(8)),
                                             height: double.infinity,
                                             width: double.infinity,
+                                            padding: EdgeInsets.only(left: 8),
                                             child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 Text("Size"),
                                                 Text("Large"),
