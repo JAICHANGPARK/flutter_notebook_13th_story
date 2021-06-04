@@ -302,22 +302,39 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                       children: [
                                         Expanded(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(8.0),
-                                              child: Container(
-                                          decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(8),
-                                                border: Border.all(color: Colors.grey)),
-                                        ),
-                                            )),
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                              decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius.circular(8),
+                                                  border: Border.all(color: Colors.grey)),
+                                              child: Row(
+                                                children: [IconButton(onPressed: () {},
+                                                    icon: Icon(Icons.remove))],
+                                              )),
+                                        )),
                                         Expanded(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(8.0),
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                    borderRadius: BorderRadius.circular(8),
-                                                    border: Border.all(color: Colors.grey)),
-                                              ),
-                                            )),
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.circular(8),
+                                                border: Border.all(color: Colors.grey)),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                              children: [
+                                                Text(
+                                                  "Size",
+                                                  style: TextStyle(color: Colors.grey),
+                                                ),
+                                                Text(
+                                                  "Large",
+                                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        )),
                                       ],
                                     ),
                                     flex: 3,
