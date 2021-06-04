@@ -219,7 +219,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                                 ),
                                 Text(
-                                  "\$${widget.price}",
+                                  "\$${((widget.price) * _count).toStringAsFixed(2)}",
                                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                                 )
                               ],
