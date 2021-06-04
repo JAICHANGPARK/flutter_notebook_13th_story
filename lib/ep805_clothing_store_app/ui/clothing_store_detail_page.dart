@@ -311,6 +311,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                                   borderRadius: BorderRadius.circular(8),
                                                   border: Border.all(color: Colors.grey)),
                                               child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                 children: [IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
                                                   Text("$_count"),
                                                   IconButton(onPressed: () {}, icon: Icon(Icons.add)),
