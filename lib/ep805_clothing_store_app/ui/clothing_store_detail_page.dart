@@ -367,11 +367,15 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                     width: 8,
                                   ),
                                   Expanded(
-                                    child: Container(
-                                      padding: EdgeInsets.all(8),
-                                      decoration: BoxDecoration(
-                                          color: Colors.indigo,
-                                        borderRadius: BorderRadius.circular(8)
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Container(
+                                        padding: EdgeInsets.all(8),
+                                        decoration: BoxDecoration(
+                                            color: Colors.indigo,
+                                          borderRadius: BorderRadius.circular(8)
+                                        ),
+                                        
                                       ),
                                     ),
 
