@@ -375,7 +375,13 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                             color: Colors.indigo,
                                           borderRadius: BorderRadius.circular(8)
                                         ),
-                                        
+                                        child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: [
+                                            Icon(Icons.add_box_outlined, color: Colors.white,),
+                                            Text("Add")
+                                          ],
+                                        ),
                                       ),
                                     ),
 
