@@ -367,13 +367,12 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                     width: 8,
                                   ),
                                   Expanded(
-                                    child: Expanded(
-                                        child: Container(
-                                      decoration: BoxDecoration(color: Colors.indigo),
-                                      child: Column(
-                                        children: [],
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.indigo
                                       ),
-                                    )),
+                                    ),
+
                                     flex: 2,
                                   ),
                                 ],
