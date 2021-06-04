@@ -309,7 +309,15 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                                 border: Border.all(color: Colors.grey)),
                                         ),
                                             )),
-                                        Expanded(child: Placeholder()),
+                                        Expanded(
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                    borderRadius: BorderRadius.circular(8),
+                                                    border: Border.all(color: Colors.grey)),
+                                              ),
+                                            )),
                                       ],
                                     ),
                                     flex: 3,
