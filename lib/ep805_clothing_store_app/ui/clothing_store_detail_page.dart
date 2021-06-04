@@ -382,7 +382,9 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               Icons.add_box_outlined,
                                               color: Colors.white,
                                             ),
-                                            SizedBox(height: 8,),
+                                            SizedBox(
+                                              height: 8,
+                                            ),
                                             Text(
                                               "Add",
                                               style: TextStyle(fontSize: 14, color: Colors.white),
