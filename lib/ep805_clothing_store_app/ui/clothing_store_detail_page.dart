@@ -342,17 +342,18 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                             decoration: BoxDecoration(
                                                 borderRadius: BorderRadius.circular(8),
                                                 border: Border.all(color: Colors.grey)),
+                                            padding: EdgeInsets.fromLTRB(4, 4, 4, 4),
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 Text(
                                                   "Composition",
-                                                  style: TextStyle(color: Colors.grey),
+                                                  style: TextStyle(color: Colors.grey, fontSize: 12),
                                                 ),
                                                 Text(
                                                   "Silk Bamboo",
-                                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                                                 ),
                                               ],
                                             ),
