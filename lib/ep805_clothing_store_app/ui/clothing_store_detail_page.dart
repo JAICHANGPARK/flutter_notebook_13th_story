@@ -232,19 +232,18 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                   Expanded(
                                     child: Column(
                                       children: [
-                                        Expanded(child: Padding(
+                                        Expanded(
+                                            child: Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Container(
                                             decoration: BoxDecoration(
-                                              border: Border.all(
-                                                color: Colors.grey[300]!,
-                                              ),
-                                              borderRadius: BorderRadius.circular(8)
-                                            ),
+                                                border: Border.all(
+                                                  color: Colors.grey[300]!,
+                                                ),
+                                                borderRadius: BorderRadius.circular(8)),
                                             height: double.infinity,
                                             width: double.infinity,
                                             child: Column(
-
                                               children: [
                                                 Text("Size"),
                                                 Text("Large"),
@@ -252,7 +251,8 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                             ),
                                           ),
                                         )),
-                                        Expanded(child: Padding(
+                                        Expanded(
+                                            child: Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Container(
                                             height: double.infinity,
@@ -261,17 +261,14 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                                 border: Border.all(
                                                   color: Colors.grey[300]!,
                                                 ),
-                                                borderRadius: BorderRadius.circular(8)
-                                            ),
+                                                borderRadius: BorderRadius.circular(8)),
                                             child: Column(
                                               children: [
                                                 Text("Color"),
                                                 Container(
                                                   height: 4,
                                                   width: 42,
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.black
-                                                  ),
+                                                  decoration: BoxDecoration(color: Colors.black),
                                                 )
                                               ],
                                             ),
