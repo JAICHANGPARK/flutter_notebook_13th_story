@@ -248,7 +248,9 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
-                                                Text("Size"),
+                                                Text("Size", style: TextStyle(
+                                                  color: Colors.grey
+                                                ),),
                                                 Text(
                                                   "Large",
                                                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -273,7 +275,9 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
-                                                Text("Color"),
+                                                Text("Color", style: TextStyle(
+                                                    color: Colors.grey
+                                                ),),
                                                 Container(
                                                   height: 8,
                                                   width: 42,
