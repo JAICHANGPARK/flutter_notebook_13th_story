@@ -301,11 +301,14 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                     child: Column(
                                       children: [
                                         Expanded(
-                                            child: Container(
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Container(
                                           decoration: BoxDecoration(
-                                              borderRadius: BorderRadius.circular(8),
-                                              border: Border.all(color: Colors.grey)),
-                                        )),
+                                                borderRadius: BorderRadius.circular(8),
+                                                border: Border.all(color: Colors.grey)),
+                                        ),
+                                            )),
                                         Expanded(child: Placeholder()),
                                       ],
                                     ),
