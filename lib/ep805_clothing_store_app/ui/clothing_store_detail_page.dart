@@ -308,8 +308,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                                   borderRadius: BorderRadius.circular(8),
                                                   border: Border.all(color: Colors.grey)),
                                               child: Row(
-                                                children: [IconButton(onPressed: () {},
-                                                    icon: Icon(Icons.remove))],
+                                                children: [IconButton(onPressed: () {}, icon: Icon(Icons.remove))],
                                               )),
                                         )),
                                         Expanded(
@@ -324,11 +323,11 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 Text(
-                                                  "Size",
+                                                  "Composition",
                                                   style: TextStyle(color: Colors.grey),
                                                 ),
                                                 Text(
-                                                  "Large",
+                                                  "Silk Bamboo",
                                                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                                                 ),
                                               ],
