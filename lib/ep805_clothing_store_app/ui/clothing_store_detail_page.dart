@@ -19,6 +19,7 @@ class ClothingStoreDetailPage extends StatefulWidget {
 class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
   late PageController _pageController;
   int _pageIndex = 1;
+  int _count = 1;
   final String _img0 = "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899729_960_720.png";
   final String _img1 = "https://cdn.pixabay.com/photo/2018/10/03/17/42/leather-3721996_960_720.jpg";
 
@@ -304,17 +305,24 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                             child: Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Container(
+                                              height: double.infinity,
+                                              width: double.infinity,
                                               decoration: BoxDecoration(
                                                   borderRadius: BorderRadius.circular(8),
                                                   border: Border.all(color: Colors.grey)),
                                               child: Row(
-                                                children: [IconButton(onPressed: () {}, icon: Icon(Icons.remove))],
+                                                children: [IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
+                                                  Text("$_count"),
+                                                  IconButton(onPressed: () {}, icon: Icon(Icons.add)),
+                                                ],
                                               )),
                                         )),
                                         Expanded(
                                             child: Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Container(
+                                            height: double.infinity,
+                                            width: double.infinity,
                                             decoration: BoxDecoration(
                                                 borderRadius: BorderRadius.circular(8),
                                                 border: Border.all(color: Colors.grey)),
