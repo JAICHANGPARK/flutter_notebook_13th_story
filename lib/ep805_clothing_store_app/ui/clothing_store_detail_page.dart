@@ -272,9 +272,10 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               children: [
                                                 Text("Color"),
                                                 Container(
-                                                  height: 4,
+                                                  height: 8,
                                                   width: 42,
-                                                  decoration: BoxDecoration(color: Colors.black),
+                                                  decoration: BoxDecoration(color: Colors.black,
+                                                  borderRadius: BorderRadius.circular(4)),
                                                 )
                                               ],
                                             ),
