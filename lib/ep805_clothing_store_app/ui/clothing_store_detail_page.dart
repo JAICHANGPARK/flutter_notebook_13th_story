@@ -249,7 +249,10 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 Text("Size"),
-                                                Text("Large"),
+                                                Text(
+                                                  "Large",
+                                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                                ),
                                               ],
                                             ),
                                           ),
