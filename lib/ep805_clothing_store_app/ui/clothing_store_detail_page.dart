@@ -269,6 +269,8 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                                 ),
                                                 borderRadius: BorderRadius.circular(8)),
                                             child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 Text("Color"),
                                                 Container(
