@@ -312,9 +312,23 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                                   border: Border.all(color: Colors.grey)),
                                               child: Row(
                                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                children: [IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
+                                                children: [IconButton(onPressed: () {
+                                                  if(_count < 2){
+                                                    _count = 2;
+                                                  }
+                                                  _count -= 1;
+                                                  setState(() {
+
+                                                  });
+
+                                                }, icon: Icon(Icons.remove)),
                                                   Text(_count < 10 ? "0${_count}" : "${_count}"),
-                                                  IconButton(onPressed: () {}, icon: Icon(Icons.add)),
+                                                  IconButton(onPressed: () {
+                                                    setState(() {
+                                                      _count += 1;
+                                                    });
+
+                                                  }, icon: Icon(Icons.add)),
                                                 ],
                                               )),
                                         )),
