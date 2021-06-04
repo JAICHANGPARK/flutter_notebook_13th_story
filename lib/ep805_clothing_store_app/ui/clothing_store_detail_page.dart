@@ -268,6 +268,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                                   color: Colors.grey[300]!,
                                                 ),
                                                 borderRadius: BorderRadius.circular(8)),
+                                            padding: EdgeInsets.only(left: 8),
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               mainAxisAlignment: MainAxisAlignment.spaceAround,
