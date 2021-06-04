@@ -248,9 +248,10 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
-                                                Text("Size", style: TextStyle(
-                                                  color: Colors.grey
-                                                ),),
+                                                Text(
+                                                  "Size",
+                                                  style: TextStyle(color: Colors.grey),
+                                                ),
                                                 Text(
                                                   "Large",
                                                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -275,14 +276,15 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
-                                                Text("Color", style: TextStyle(
-                                                    color: Colors.grey
-                                                ),),
+                                                Text(
+                                                  "Color",
+                                                  style: TextStyle(color: Colors.grey),
+                                                ),
                                                 Container(
                                                   height: 8,
                                                   width: 42,
-                                                  decoration: BoxDecoration(color: Colors.black,
-                                                  borderRadius: BorderRadius.circular(4)),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.black, borderRadius: BorderRadius.circular(4)),
                                                 )
                                               ],
                                             ),
@@ -298,7 +300,12 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                   Expanded(
                                     child: Column(
                                       children: [
-                                        Expanded(child: Placeholder()),
+                                        Expanded(
+                                            child: Container(
+                                          decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.circular(8),
+                                              border: Border.all(color: Colors.grey)),
+                                        )),
                                         Expanded(child: Placeholder()),
                                       ],
                                     ),
