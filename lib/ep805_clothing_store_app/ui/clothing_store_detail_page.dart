@@ -313,7 +313,7 @@ class _ClothingStoreDetailPageState extends State<ClothingStoreDetailPage> {
                                               child: Row(
                                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                 children: [IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
-                                                  Text("$_count"),
+                                                  Text(_count < 10 ? "" : ""),
                                                   IconButton(onPressed: () {}, icon: Icon(Icons.add)),
                                                 ],
                                               )),
