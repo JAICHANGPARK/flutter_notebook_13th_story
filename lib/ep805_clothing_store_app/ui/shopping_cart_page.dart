@@ -40,7 +40,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                         child: Container(
                           height: 100,
                           decoration: BoxDecoration(
-                              color: Colors.grey
+                              
                           ),
                           child: Row(
                             children: [
@@ -58,7 +58,10 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                       Text('Dream Walker - Jacket'),
                                       IconButton(onPressed: (){}, icon: Icon(Icons.clear))
                                     ],
-                                  )
+                                  ),
+                                  Text("Size: Extra Large(XL)", style: TextStyle(
+                                    color: Colors.grey
+                                  ),)
                                 ],
                               )
                             ],
