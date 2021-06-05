@@ -29,39 +29,45 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
           child: Column(
             children: [
               Expanded(
-
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: ListView.builder(
                     itemCount: 4,
-                    itemBuilder: (context, index){
+                    itemBuilder: (context, index) {
                       return Padding(
                         padding: const EdgeInsets.only(bottom: 8),
                         child: Container(
                           height: 100,
-                          decoration: BoxDecoration(
-                              
-                          ),
+                          decoration: BoxDecoration(),
                           child: Row(
                             children: [
                               Container(
                                 height: 84,
                                 width: 84,
-                                decoration: BoxDecoration(
-                                  color: Colors.white
-                                ),
+                                decoration: BoxDecoration(color: Colors.white),
                               ),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Row(
                                     children: [
                                       Text('Dream Walker - Jacket'),
-                                      IconButton(onPressed: (){}, icon: Icon(Icons.clear))
+                                      IconButton(onPressed: () {}, icon: Icon(Icons.clear))
                                     ],
                                   ),
-                                  Text("Size: Extra Large(XL)", style: TextStyle(
-                                    color: Colors.grey
-                                  ),)
+                                  Text(
+                                    "Size: Extra Large(XL)",
+                                    style: TextStyle(color: Colors.grey),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text('\$0.99'),
+                                      Text(
+                                        "\$59.99",
+                                        style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
+                                      )
+                                    ],
+                                  )
                                 ],
                               )
                             ],
@@ -78,20 +84,15 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                   padding: EdgeInsets.symmetric(horizontal: 8),
                   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
                   child: Row(
-
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         "Promo Code",
                         style: TextStyle(color: Colors.grey),
                       ),
-
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 12),
-                        decoration: BoxDecoration(
-                          color: Colors.indigo,
-                          borderRadius: BorderRadius.circular(8)
-                        ),
+                        decoration: BoxDecoration(color: Colors.indigo, borderRadius: BorderRadius.circular(8)),
                         padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
                           child: Text(
