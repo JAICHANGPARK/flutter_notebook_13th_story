@@ -41,9 +41,11 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                         style: TextStyle(color: Colors.grey),
                       ),
                       Container(
+                        margin: EdgeInsets.symmetric(vertical: 8),
                         decoration: BoxDecoration(
                           color: Colors.indigo
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
                           child: Text(
                             'Apply',
