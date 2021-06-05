@@ -33,13 +33,17 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
               ),
               Expanded(
                 child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8),
                   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
                   child: Row(
+
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         "Promo Code",
                         style: TextStyle(color: Colors.grey),
                       ),
+
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 8),
                         decoration: BoxDecoration(
