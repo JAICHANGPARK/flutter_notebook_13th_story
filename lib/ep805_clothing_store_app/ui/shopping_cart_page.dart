@@ -23,9 +23,10 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
       ),
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder(), flex: 4,),
+          Expanded(child: Placeholder(), flex: 2,),
+          Expanded(child: Placeholder(), flex: 3,),
+          Expanded(child: Placeholder(), flex: 2,),
 
         ],
       ),
