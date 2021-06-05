@@ -10,6 +10,6 @@ class ShoppingChartPage extends StatefulWidget {
 class _ShoppingChartPageState extends State<ShoppingChartPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
