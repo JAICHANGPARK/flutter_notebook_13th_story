@@ -30,7 +30,12 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
               Expanded(child: Placeholder(), flex: 5,),
               Expanded(child: Placeholder(), flex: 1,),
               Expanded(child: Placeholder(), flex: 3,),
-              Expanded(child: Placeholder(), flex: 1,),
+              Expanded(child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.circular(8)
+                ),
+              ), flex: 1,),
 
             ],
           ),
