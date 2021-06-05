@@ -33,7 +33,10 @@ class _ClothingStoreMainPageState extends State<ClothingStoreMainPage> {
                       style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
                     ),
                     InkWell(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                        ShoppingChartPage()));
+                      },
                       child: Container(
                         height: 38,
                         width: 38,
