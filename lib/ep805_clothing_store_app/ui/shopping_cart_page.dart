@@ -11,6 +11,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.grey[100]!,
