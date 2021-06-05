@@ -83,7 +83,10 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                           ),
                                           child: Icon(Icons.remove, size: 16,),
                                         ),
-                                        Text("01"),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 12),
+                                          child: Text("01"),
+                                        ),
                                         Container(
                                           height: 24,
                                           width: 24,
