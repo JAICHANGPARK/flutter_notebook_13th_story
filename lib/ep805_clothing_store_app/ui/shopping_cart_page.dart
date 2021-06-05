@@ -43,7 +43,8 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 8),
                         decoration: BoxDecoration(
-                          color: Colors.indigo
+                          color: Colors.indigo,
+                          borderRadius: BorderRadius.circular(16)
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
