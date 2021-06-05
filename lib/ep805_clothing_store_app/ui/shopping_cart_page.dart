@@ -28,9 +28,9 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
 
             children: [
               Expanded(child: Placeholder(), flex: 5,),
-              Expanded(child: Placeholder(), flex: 2,),
+              Expanded(child: Placeholder(), flex: 1,),
               Expanded(child: Placeholder(), flex: 3,),
-              Expanded(child: Placeholder(), flex: 2,),
+              Expanded(child: Placeholder(), flex: 1,),
 
             ],
           ),
