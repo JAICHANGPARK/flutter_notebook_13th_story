@@ -29,7 +29,16 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
           child: Column(
             children: [
               Expanded(
-                child: Placeholder(),
+                child: ListView(
+                  children: [
+                    Container(
+                      height: 120,
+                      decoration: BoxDecoration(
+                        color: Colors.grey
+                      ),
+                    )
+                  ],
+                ),
                 flex: 5,
               ),
               Expanded(
