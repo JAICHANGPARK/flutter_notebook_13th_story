@@ -21,6 +21,22 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
         ),),
         foregroundColor: Colors.black,
       ),
+      body: Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
