@@ -66,6 +66,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                         "\$59.99",
                                         style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
                                       ),
+                                      Spacer(),
                                       Container(
                                         height: 24,
                                         width: 24,
