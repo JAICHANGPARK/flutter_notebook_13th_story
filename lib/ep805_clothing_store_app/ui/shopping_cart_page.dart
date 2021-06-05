@@ -16,45 +16,59 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
         backgroundColor: Colors.grey[100]!,
         elevation: 0,
         iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
-        title: Text("My Cart (3)",style: TextStyle(
-          color: Colors.black
-        ),),
+        title: Text(
+          "My Cart (3)",
+          style: TextStyle(color: Colors.black),
+        ),
         foregroundColor: Colors.black,
       ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-
             children: [
-              Expanded(child: Placeholder(), flex: 5,),
-              Expanded(child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(12)
+              Expanded(
+                child: Placeholder(),
+                flex: 5,
+              ),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Promo Code",
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                      Container(
+                        child: Center(
+                          child: Text(
+                            'Apply',
+                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
-                child: Row(
-                  children: [
-                    Text("Promo Code", style: TextStyle(
-                      color: Colors.grey
-                    ),)
-                  ],
+                flex: 1,
+              ),
+              Expanded(
+                child: Placeholder(),
+                flex: 3,
+              ),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.indigo, borderRadius: BorderRadius.circular(12)),
+                  child: Center(
+                    child: Text(
+                      "Proceed To Checkout",
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                  ),
                 ),
-              ), flex: 1,),
-              Expanded(child: Placeholder(), flex: 3,),
-              Expanded(child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.indigo,
-                  borderRadius: BorderRadius.circular(12)
-                ),
-                child: Center(
-                  child: Text("Proceed To Checkout", style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16
-                  ),),
-                ),
-              ), flex: 1,),
-
+                flex: 1,
+              ),
             ],
           ),
         ),
@@ -62,14 +76,3 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
