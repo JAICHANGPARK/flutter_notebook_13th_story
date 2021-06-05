@@ -17,6 +17,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
         elevation: 0,
         iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
         title: Text("My Cart (3)"),
+        foregroundColor: Colors.black,
       ),
     );
   }
