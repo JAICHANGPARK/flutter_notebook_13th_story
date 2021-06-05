@@ -29,15 +29,23 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
           child: Column(
             children: [
               Expanded(
-                child: ListView.builder(
-                  itemBuilder: (context, index){
-                    return Container(
-                      height: 120,
-                      decoration: BoxDecoration(
-                          color: Colors.grey
-                      ),
-                    );
-                  },
+
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: ListView.builder(
+                    itemCount: 4,
+                    itemBuilder: (context, index){
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: Container(
+                          height: 120,
+                          decoration: BoxDecoration(
+                              color: Colors.grey
+                          ),
+                        ),
+                      );
+                    },
+                  ),
                 ),
                 flex: 5,
               ),
