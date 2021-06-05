@@ -21,14 +21,16 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
         ),),
         foregroundColor: Colors.black,
       ),
-      body: Column(
-        children: [
-          Expanded(child: Placeholder(), flex: 4,),
-          Expanded(child: Placeholder(), flex: 2,),
-          Expanded(child: Placeholder(), flex: 3,),
-          Expanded(child: Placeholder(), flex: 2,),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Placeholder(), flex: 4,),
+            Expanded(child: Placeholder(), flex: 2,),
+            Expanded(child: Placeholder(), flex: 3,),
+            Expanded(child: Placeholder(), flex: 2,),
 
-        ],
+          ],
+        ),
       ),
     );
   }
