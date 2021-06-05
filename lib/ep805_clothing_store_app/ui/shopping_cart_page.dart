@@ -38,7 +38,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                       return Padding(
                         padding: const EdgeInsets.only(bottom: 8),
                         child: Container(
-                          height: 120,
+                          height: 100,
                           decoration: BoxDecoration(
                               color: Colors.grey
                           ),
