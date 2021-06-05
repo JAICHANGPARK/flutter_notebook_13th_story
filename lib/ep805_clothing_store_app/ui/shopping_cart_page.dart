@@ -50,6 +50,15 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.white
                                 ),
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text('Dream Walker - Jacket')
+                                    ],
+                                  )
+                                ],
                               )
                             ],
                           ),
