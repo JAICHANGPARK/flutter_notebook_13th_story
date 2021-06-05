@@ -10,6 +10,12 @@ class ShoppingChartPage extends StatefulWidget {
 class _ShoppingChartPageState extends State<ShoppingChartPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        elevation: 0,
+      ),
+    );
   }
 }
