@@ -22,14 +22,18 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
         foregroundColor: Colors.black,
       ),
       body: SafeArea(
-        child: Column(
-          children: [
-            Expanded(child: Placeholder(), flex: 4,),
-            Expanded(child: Placeholder(), flex: 2,),
-            Expanded(child: Placeholder(), flex: 3,),
-            Expanded(child: Placeholder(), flex: 2,),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
 
-          ],
+            children: [
+              Expanded(child: Placeholder(), flex: 5,),
+              Expanded(child: Placeholder(), flex: 2,),
+              Expanded(child: Placeholder(), flex: 3,),
+              Expanded(child: Placeholder(), flex: 2,),
+
+            ],
+          ),
         ),
       ),
     );
