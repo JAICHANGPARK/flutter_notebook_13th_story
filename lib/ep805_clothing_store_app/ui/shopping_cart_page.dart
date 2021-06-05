@@ -46,53 +46,57 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                 width: 84,
                                 decoration: BoxDecoration(color: Colors.white),
                               ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    children: [
-                                      Text('Dream Walker - Jacket'),
-                                      IconButton(onPressed: () {}, icon: Icon(Icons.clear))
-                                    ],
-                                  ),
-                                  Text(
-                                    "Size: Extra Large(XL)",
-                                    style: TextStyle(color: Colors.grey),
-                                  ),
-                                  Row(
-                                    children: [
-                                      Text('\$0.99'),
-                                      Text(
-                                        "\$59.99",
-                                        style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
-                                      ),
-                                      Spacer(),
-                                      Container(
-                                        height: 24,
-                                        width: 24,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          border: Border.all(
-                                            color: Colors.grey
-                                          ),
-                                          shape: BoxShape.circle
+                              
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Text('Dream Walker - Jacket'),
+                                        IconButton(onPressed: () {}, icon: Icon(Icons.clear))
+                                      ],
+                                    ),
+                                    Text(
+                                      "Size: Extra Large(XL)",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text('\$0.99'),
+                                        Text(
+                                          "\$59.99",
+                                          style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
                                         ),
-                                        child: Icon(Icons.remove, size: 16,),
-                                      ),
-                                      Text("01"),
-                                      Container(
-                                        height: 24,
-                                        width: 24,
-                                        decoration: BoxDecoration(
-                                            color: Colors.indigo,
+                                        Spacer(),
+                                        Container(
+                                          height: 24,
+                                          width: 24,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            border: Border.all(
+                                              color: Colors.grey
+                                            ),
                                             shape: BoxShape.circle
+                                          ),
+                                          child: Icon(Icons.remove, size: 16,),
                                         ),
-                                        child: Icon(Icons.add, size: 16,
-                                        color: Colors.white,),
-                                      )
-                                    ],
-                                  )
-                                ],
+                                        Text("01"),
+                                        Container(
+                                          height: 24,
+                                          width: 24,
+                                          decoration: BoxDecoration(
+                                              color: Colors.indigo,
+                                              shape: BoxShape.circle
+                                          ),
+                                          child: Icon(Icons.add, size: 16,
+                                          color: Colors.white,),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               )
                             ],
                           ),
