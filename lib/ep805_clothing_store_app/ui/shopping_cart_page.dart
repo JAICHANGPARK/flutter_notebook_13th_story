@@ -33,7 +33,12 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
               Expanded(child: Container(
                 decoration: BoxDecoration(
                   color: Colors.indigo,
-                  borderRadius: BorderRadius.circular(8)
+                  borderRadius: BorderRadius.circular(12)
+                ),
+                child: Center(
+                  child: Text("Proceed To Checkout", style: TextStyle(
+                    color: Colors.white
+                  ),),
                 ),
               ), flex: 1,),
 
