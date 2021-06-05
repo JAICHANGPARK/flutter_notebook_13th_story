@@ -42,6 +42,17 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                           decoration: BoxDecoration(
                               color: Colors.grey
                           ),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 84,
+                                width: 84,
+                                decoration: BoxDecoration(
+                                  color: Colors.white
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       );
                     },
