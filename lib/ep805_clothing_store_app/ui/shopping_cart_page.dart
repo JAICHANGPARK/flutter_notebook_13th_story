@@ -13,8 +13,9 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.grey[100]!,
         elevation: 0,
+        iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
       ),
     );
   }
