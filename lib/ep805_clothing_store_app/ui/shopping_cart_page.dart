@@ -28,7 +28,19 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
 
             children: [
               Expanded(child: Placeholder(), flex: 5,),
-              Expanded(child: Placeholder(), flex: 1,),
+              Expanded(child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12)
+                ),
+                child: Row(
+                  children: [
+                    Text("Promo Code", style: TextStyle(
+                      color: Colors.grey
+                    ),)
+                  ],
+                ),
+              ), flex: 1,),
               Expanded(child: Placeholder(), flex: 3,),
               Expanded(child: Container(
                 decoration: BoxDecoration(
@@ -37,7 +49,8 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                 ),
                 child: Center(
                   child: Text("Proceed To Checkout", style: TextStyle(
-                    color: Colors.white
+                    color: Colors.white,
+                    fontSize: 16
                   ),),
                 ),
               ), flex: 1,),
