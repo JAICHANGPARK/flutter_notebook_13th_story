@@ -76,7 +76,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                           ),
                                           shape: BoxShape.circle
                                         ),
-                                        child: Icon(Icons.remove),
+                                        child: Icon(Icons.remove, size: 16,),
                                       ),
                                       Text("01"),
                                       Container(
