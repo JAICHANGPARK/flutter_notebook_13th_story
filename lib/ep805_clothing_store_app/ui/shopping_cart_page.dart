@@ -55,6 +55,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                     Row(
                                       children: [
                                         Text('Dream Walker - Jacket'),
+                                        Spacer(),
                                         IconButton(onPressed: () {}, icon: Icon(Icons.clear))
                                       ],
                                     ),
