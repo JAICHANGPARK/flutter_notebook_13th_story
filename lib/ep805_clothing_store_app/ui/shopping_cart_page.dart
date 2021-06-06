@@ -170,15 +170,19 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        Text("Subtotal:"),
+                        Text(
+                          "Subtotal:",
+                          style: TextStyle(fontSize: 14, color: Colors.grey),
+                        ),
                         Spacer(),
                         Text(
-                          "\$${clothItems.map((e) => e.count * e.discountPrice!).toList()
-                              .reduce((value, element) => value + element).toStringAsFixed(2)}",
+                          "\$${clothItems.map((e) => e.count * e.discountPrice!).toList().reduce((value, element) => value + element).toStringAsFixed(2)}",
                           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(width: 4,),
-                        Text("USD")
+                        SizedBox(
+                          width: 4,
+                        ),
+                        Text("USD" ,style: TextStyle(fontSize: 14, color: Colors.grey),)
                       ],
                     )
                   ],
