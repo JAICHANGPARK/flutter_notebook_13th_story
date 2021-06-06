@@ -47,10 +47,12 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                 height: 84,
                                 width: 84,
                                 decoration: BoxDecoration(color: Colors.white,
+                                borderRadius: BorderRadius.circular(8),
                                 image: DecorationImage(
                                   image: NetworkImage(
-                                    clothItems[index]?.img
-                                  )
+                                    clothItems[index].img!,
+                                  ),
+                                  fit: BoxFit.cover
                                 )),
                               ),
                               
