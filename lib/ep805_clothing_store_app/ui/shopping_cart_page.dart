@@ -58,7 +58,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                               
                               Expanded(
                                 child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.only(left: 12),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
