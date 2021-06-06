@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep805_clothing_store_app/model/cloth.dart';
 
 class ShoppingChartPage extends StatefulWidget {
   const ShoppingChartPage({Key? key}) : super(key: key);
@@ -32,7 +33,8 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: ListView.builder(
-                    itemCount: 4,
+                    itemCount: clothItems.length,
+
                     itemBuilder: (context, index) {
                       return Padding(
                         padding: const EdgeInsets.only(bottom: 8),
@@ -44,7 +46,12 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                               Container(
                                 height: 84,
                                 width: 84,
-                                decoration: BoxDecoration(color: Colors.white),
+                                decoration: BoxDecoration(color: Colors.white,
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    clothItems[index]?.img
+                                  )
+                                )),
                               ),
                               
                               Expanded(
