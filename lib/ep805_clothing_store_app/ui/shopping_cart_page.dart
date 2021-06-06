@@ -64,7 +64,11 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                     children: [
                                       Row(
                                         children: [
-                                          Text('${clothItems[index].name}'),
+                                          Text('${clothItems[index].name}',
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold
+                                          ),),
                                           Spacer(),
                                           IconButton(onPressed: () {}, icon: Icon(Icons.clear))
                                         ],
