@@ -84,6 +84,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold
                                           ),),
+                                          SizedBox(width: 8,),
                                           Text(
                                             "\$${clothItems[index].originPrice}",
                                             style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
