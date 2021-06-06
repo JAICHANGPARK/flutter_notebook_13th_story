@@ -1,10 +1,13 @@
-
-
-class Cloth{
+class Cloth {
   String? img;
   String? name;
   String? size;
   double? price;
 
-  Cloth({this.img, this.name, this.size});
+  Cloth({this.img, this.name, this.size, this.price});
 }
+
+
+List<Cloth> clothItems =[
+  
+];
