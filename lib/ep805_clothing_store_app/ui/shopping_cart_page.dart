@@ -161,6 +161,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                           controller: _textEditingController,
                           decoration: InputDecoration(
                             hintText: "Promo Code",
+                            border: InputBorder.none
                           ),
                           style: TextStyle(color: Colors.grey),
                         ),
