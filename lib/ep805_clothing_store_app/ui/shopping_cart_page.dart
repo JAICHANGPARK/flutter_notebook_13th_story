@@ -34,7 +34,6 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                   padding: const EdgeInsets.only(bottom: 8),
                   child: ListView.builder(
                     itemCount: clothItems.length,
-
                     itemBuilder: (context, index) {
                       return Padding(
                         padding: const EdgeInsets.only(bottom: 8),
@@ -46,16 +45,15 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                               Container(
                                 height: 84,
                                 width: 84,
-                                decoration: BoxDecoration(color: Colors.white,
-                                borderRadius: BorderRadius.circular(8),
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                    clothItems[index].img!,
-                                  ),
-                                  fit: BoxFit.cover
-                                )),
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                          clothItems[index].img!,
+                                        ),
+                                        fit: BoxFit.cover)),
                               ),
-                              
                               Expanded(
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 12),
@@ -64,11 +62,10 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                     children: [
                                       Row(
                                         children: [
-                                          Text(clothItems[index].name!,
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.bold
-                                          ),),
+                                          Text(
+                                            clothItems[index].name!,
+                                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                          ),
                                           Spacer(),
                                           IconButton(onPressed: () {}, icon: Icon(Icons.clear))
                                         ],
@@ -79,35 +76,37 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                       ),
                                       Row(
                                         children: [
-                                          Text('\$${clothItems[index].discountPrice}',
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.bold
-                                          ),),
-                                          SizedBox(width: 8,),
+                                          Text(
+                                            '\$${clothItems[index].discountPrice}',
+                                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                          ),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
                                           Text(
                                             "\$${clothItems[index].originPrice}",
-                                            style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
+                                            style:
+                                                TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
                                           ),
                                           Spacer(),
                                           Container(
                                             height: 24,
                                             width: 24,
                                             decoration: BoxDecoration(
-                                              color: Colors.white,
-                                              border: Border.all(
-                                                color: Colors.grey
-                                              ),
-                                              shape: BoxShape.circle
+                                                color: Colors.white,
+                                                border: Border.all(color: Colors.grey),
+                                                shape: BoxShape.circle),
+                                            child: Icon(
+                                              Icons.remove,
+                                              size: 16,
                                             ),
-                                            child: Icon(Icons.remove, size: 16,),
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 12),
                                             child: Text("${clothItems[index].count}"),
                                           ),
                                           InkWell(
-                                            onTap: (){
+                                            onTap: () {
                                               setState(() {
                                                 clothItems[index].count += 1;
                                               });
@@ -115,12 +114,12 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                             child: Container(
                                               height: 24,
                                               width: 24,
-                                              decoration: BoxDecoration(
-                                                  color: Colors.indigo,
-                                                  shape: BoxShape.circle
+                                              decoration: BoxDecoration(color: Colors.indigo, shape: BoxShape.circle),
+                                              child: Icon(
+                                                Icons.add,
+                                                size: 16,
+                                                color: Colors.white,
                                               ),
-                                              child: Icon(Icons.add, size: 16,
-                                              color: Colors.white,),
                                             ),
                                           )
                                         ],
@@ -166,7 +165,24 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                 flex: 1,
               ),
               Expanded(
-                child: Placeholder(),
+                child: Column(
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text("Subtotal:"),
+                        Spacer(),
+                        Text(
+                          "\$${clothItems.map((e) => e.count * e.discountPrice!).toList()
+                              .reduce((value, element) => value + element).toStringAsFixed(2)}",
+                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(width: 4,),
+                        Text("USD")
+                      ],
+                    )
+                  ],
+                ),
                 flex: 3,
               ),
               Expanded(
