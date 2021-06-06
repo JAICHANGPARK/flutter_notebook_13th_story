@@ -57,58 +57,60 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                               ),
                               
                               Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Text('Dream Walker - Jacket'),
-                                        Spacer(),
-                                        IconButton(onPressed: () {}, icon: Icon(Icons.clear))
-                                      ],
-                                    ),
-                                    Text(
-                                      "Size: Extra Large(XL)",
-                                      style: TextStyle(color: Colors.grey),
-                                    ),
-                                    Row(
-                                      children: [
-                                        Text('\$0.99'),
-                                        Text(
-                                          "\$59.99",
-                                          style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
-                                        ),
-                                        Spacer(),
-                                        Container(
-                                          height: 24,
-                                          width: 24,
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            border: Border.all(
-                                              color: Colors.grey
-                                            ),
-                                            shape: BoxShape.circle
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Text('${clothItems[index].name}'),
+                                          Spacer(),
+                                          IconButton(onPressed: () {}, icon: Icon(Icons.clear))
+                                        ],
+                                      ),
+                                      Text(
+                                        "Size: Extra Large(XL)",
+                                        style: TextStyle(color: Colors.grey),
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text('\$0.99'),
+                                          Text(
+                                            "\$59.99",
+                                            style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
                                           ),
-                                          child: Icon(Icons.remove, size: 16,),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.symmetric(horizontal: 12),
-                                          child: Text("01"),
-                                        ),
-                                        Container(
-                                          height: 24,
-                                          width: 24,
-                                          decoration: BoxDecoration(
-                                              color: Colors.indigo,
+                                          Spacer(),
+                                          Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              border: Border.all(
+                                                color: Colors.grey
+                                              ),
                                               shape: BoxShape.circle
+                                            ),
+                                            child: Icon(Icons.remove, size: 16,),
                                           ),
-                                          child: Icon(Icons.add, size: 16,
-                                          color: Colors.white,),
-                                        )
-                                      ],
-                                    )
-                                  ],
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 12),
+                                            child: Text("01"),
+                                          ),
+                                          Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                                color: Colors.indigo,
+                                                shape: BoxShape.circle
+                                            ),
+                                            child: Icon(Icons.add, size: 16,
+                                            color: Colors.white,),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 ),
                               )
                             ],
