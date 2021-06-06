@@ -85,7 +85,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                             fontWeight: FontWeight.bold
                                           ),),
                                           Text(
-                                            "\$59.99",
+                                            "\$${clothItems[index].originPrice}",
                                             style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
                                           ),
                                           Spacer(),
@@ -103,17 +103,24 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 12),
-                                            child: Text("01"),
+                                            child: Text("${clothItems[index].count}"),
                                           ),
-                                          Container(
-                                            height: 24,
-                                            width: 24,
-                                            decoration: BoxDecoration(
-                                                color: Colors.indigo,
-                                                shape: BoxShape.circle
+                                          InkWell(
+                                            onTap: (){
+                                              setState(() {
+                                                clothItems[index].count += 1;
+                                              });
+                                            },
+                                            child: Container(
+                                              height: 24,
+                                              width: 24,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.indigo,
+                                                  shape: BoxShape.circle
+                                              ),
+                                              child: Icon(Icons.add, size: 16,
+                                              color: Colors.white,),
                                             ),
-                                            child: Icon(Icons.add, size: 16,
-                                            color: Colors.white,),
                                           )
                                         ],
                                       )
