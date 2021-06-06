@@ -271,12 +271,17 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                 flex: 3,
               ),
               Expanded(
-                child: Container(
-                  decoration: BoxDecoration(color: Colors.indigo, borderRadius: BorderRadius.circular(12)),
-                  child: Center(
-                    child: Text(
-                      "Proceed To Checkout",
-                      style: TextStyle(color: Colors.white, fontSize: 16),
+                child: InkWell(
+                  onTap: (){
+                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Completed")));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(color: Colors.indigo, borderRadius: BorderRadius.circular(12)),
+                    child: Center(
+                      child: Text(
+                        "Proceed To Checkout",
+                        style: TextStyle(color: Colors.white, fontSize: 16),
+                      ),
                     ),
                   ),
                 ),
