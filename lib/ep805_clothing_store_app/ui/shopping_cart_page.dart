@@ -89,16 +89,26 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                                 TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
                                           ),
                                           Spacer(),
-                                          Container(
-                                            height: 24,
-                                            width: 24,
-                                            decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                border: Border.all(color: Colors.grey),
-                                                shape: BoxShape.circle),
-                                            child: Icon(
-                                              Icons.remove,
-                                              size: 16,
+                                          InkWell(
+                                            onTap: (){
+                                              setState(() {
+                                                clothItems[index].count -= 1;
+                                              });
+                                              if(clothItems[index].count < 2){
+                                                clothItems[index].count = 1;
+                                              }
+                                            },
+                                            child: Container(
+                                              height: 24,
+                                              width: 24,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  border: Border.all(color: Colors.grey),
+                                                  shape: BoxShape.circle),
+                                              child: Icon(
+                                                Icons.remove,
+                                                size: 16,
+                                              ),
                                             ),
                                           ),
                                           Padding(
@@ -230,8 +240,8 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                           ),
                           Spacer(),
                           Text(
-                            "\$${clothItems.map((e) => e.count * e.discountPrice!).toList()
-                                .reduce((value, element) => value + element) + 3.78 }",
+                            "\$${(clothItems.map((e) => e.count * e.discountPrice!).toList()
+                                .reduce((value, element) => value + element) + 3.78 ).toStringAsFixed(2)}",
                             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
@@ -243,6 +253,8 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                           )
                         ],
                       ),
+
+                      SizedBox(height: 16,),
                     ],
                   ),
                 ),
