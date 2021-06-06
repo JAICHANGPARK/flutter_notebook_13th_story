@@ -64,7 +64,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                     children: [
                                       Row(
                                         children: [
-                                          Text('${clothItems[index].name}',
+                                          Text(clothItems[index].name!,
                                           style: TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold
@@ -74,12 +74,16 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                         ],
                                       ),
                                       Text(
-                                        "Size: Extra Large(XL)",
+                                        "Size: ${clothItems[index].size}",
                                         style: TextStyle(color: Colors.grey),
                                       ),
                                       Row(
                                         children: [
-                                          Text('\$0.99'),
+                                          Text('\$${clothItems[index].discountPrice}',
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold
+                                          ),),
                                           Text(
                                             "\$59.99",
                                             style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
