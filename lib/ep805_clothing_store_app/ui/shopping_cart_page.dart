@@ -165,43 +165,22 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                 flex: 1,
               ),
               Expanded(
-                child: Column(
-                  children: [
-                    Spacer(),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          "Subtotal:",
-                          style: TextStyle(fontSize: 14, color: Colors.grey),
-                        ),
-                        Spacer(),
-                        Text(
-                          "\$${clothItems.map((e) => e.count * e.discountPrice!).toList()
-                              .reduce((value, element) => value + element).toStringAsFixed(2)}",
-                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          width: 4,
-                        ),
-                        Text(
-                          "USD",
-                          style: TextStyle(fontSize: 14, color: Colors.grey),
-                        )
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      child: Row(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+                  child: Column(
+                    children: [
+                      Spacer(),
+                      Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Text(
-                            "Shipping:",
+                            "Subtotal:",
                             style: TextStyle(fontSize: 14, color: Colors.grey),
                           ),
                           Spacer(),
                           Text(
-                            "\$3.78",
+                            "\$${clothItems.map((e) => e.count * e.discountPrice!).toList()
+                                .reduce((value, element) => value + element).toStringAsFixed(2)}",
                             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
@@ -213,35 +192,59 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                           )
                         ],
                       ),
-                    ),
-                    Divider(
-                      color: Colors.grey,
-                      height: 32,
-                    ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text(
+                              "Shipping:",
+                              style: TextStyle(fontSize: 14, color: Colors.grey),
+                            ),
+                            Spacer(),
+                            Text(
+                              "\$3.78",
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              "USD",
+                              style: TextStyle(fontSize: 14, color: Colors.grey),
+                            )
+                          ],
+                        ),
+                      ),
+                      Divider(
+                        color: Colors.grey,
+                        height: 32,
+                      ),
 
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          "Bag Total:",
-                          style: TextStyle(fontSize: 14, color: Colors.grey),
-                        ),
-                        Spacer(),
-                        Text(
-                          "\$${clothItems.map((e) => e.count * e.discountPrice!).toList()
-                              .reduce((value, element) => value + element) + 3.78 }",
-                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          width: 4,
-                        ),
-                        Text(
-                          "USD",
-                          style: TextStyle(fontSize: 14, color: Colors.grey),
-                        )
-                      ],
-                    ),
-                  ],
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text(
+                            "Bag Total:",
+                            style: TextStyle(fontSize: 14, color: Colors.grey),
+                          ),
+                          Spacer(),
+                          Text(
+                            "\$${clothItems.map((e) => e.count * e.discountPrice!).toList()
+                                .reduce((value, element) => value + element) + 3.78 }",
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Text(
+                            "USD",
+                            style: TextStyle(fontSize: 14, color: Colors.grey),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
                 flex: 3,
               ),
