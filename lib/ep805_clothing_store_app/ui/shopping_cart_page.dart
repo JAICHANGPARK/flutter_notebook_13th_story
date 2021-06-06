@@ -154,9 +154,13 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        "Promo Code",
-                        style: TextStyle(color: Colors.grey),
+                      Expanded(
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: "Promo Code",
+                          ),
+                          style: TextStyle(color: Colors.grey),
+                        ),
                       ),
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 12),
