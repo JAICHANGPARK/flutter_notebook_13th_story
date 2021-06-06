@@ -115,7 +115,9 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 12),
-                                            child: Text("${clothItems[index].count}"),
+                                            child: Text(clothItems[index].count < 10 ?
+                                            "0${clothItems[index].count}" :
+                                            "${clothItems[index].count}"),
                                           ),
                                           InkWell(
                                             onTap: () {
