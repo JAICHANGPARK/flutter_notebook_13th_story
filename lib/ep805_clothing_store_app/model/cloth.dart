@@ -2,12 +2,17 @@ class Cloth {
   String? img;
   String? name;
   String? size;
-  double? price;
+  double? originPrice;
+  double? discountPrice;
 
-  Cloth({this.img, this.name, this.size, this.price});
+  Cloth({this.img, this.name, this.size, this.originPrice,
+  this.discountPrice});
 }
 
 
 List<Cloth> clothItems =[
-  
+  Cloth(img: "https://cdn.pixabay.com/photo/2019/07/30/11/16/coffee-4372724__340.jpg",
+  name: "Dream Walker - Jacket",
+  size: "Extra Large (XL)",
+  price: "42.99")
 ];
