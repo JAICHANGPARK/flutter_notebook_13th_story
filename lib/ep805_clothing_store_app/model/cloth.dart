@@ -4,8 +4,10 @@ class Cloth {
   String? size;
   double? originPrice;
   double? discountPrice;
+  int? count;
 
-  Cloth({this.img, this.name, this.size, this.originPrice, this.discountPrice});
+  Cloth({this.img, this.name, this.size, this.originPrice, this.discountPrice,
+  this.count = 1});
 }
 
 List<Cloth> clothItems = [
