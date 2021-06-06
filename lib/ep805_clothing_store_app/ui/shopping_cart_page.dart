@@ -9,6 +9,7 @@ class ShoppingChartPage extends StatefulWidget {
 }
 
 class _ShoppingChartPageState extends State<ShoppingChartPage> {
+  TextEditingController _textEditingController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -157,6 +158,7 @@ class _ShoppingChartPageState extends State<ShoppingChartPage> {
                     children: [
                       Expanded(
                         child: TextField(
+                          controller: _textEditingController,
                           decoration: InputDecoration(
                             hintText: "Promo Code",
                           ),
