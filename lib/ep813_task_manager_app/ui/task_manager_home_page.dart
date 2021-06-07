@@ -29,16 +29,49 @@ with SingleTickerProviderStateMixin
           IconButton(onPressed: (){}, icon:  Icon(Icons.filter_alt_outlined))
 
         ],
-        bottom: TabBar(tabs: [
+        bottom: TabBar(
+          controller: _tabController,
+          tabs: [
           Tab(child: Column(
             children: [
               Container(
                 child: Center(
                   child: Text("3"),
                 ),
-              )
+              ),
+              Text("New"),
             ],
-          ),)
+          ),),
+            Tab(child: Column(
+              children: [
+                Container(
+                  child: Center(
+                    child: Text("3"),
+                  ),
+                ),
+                Text("New"),
+              ],
+            ),),
+            Tab(child: Column(
+              children: [
+                Container(
+                  child: Center(
+                    child: Text("3"),
+                  ),
+                ),
+                Text("New"),
+              ],
+            ),),
+            Tab(child: Column(
+              children: [
+                Container(
+                  child: Center(
+                    child: Text("3"),
+                  ),
+                ),
+                Text("New"),
+              ],
+            ),)
         ],
 
         ),
