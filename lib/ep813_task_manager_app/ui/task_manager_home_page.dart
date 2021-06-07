@@ -10,6 +10,15 @@ class TaskManagerHomePage extends StatefulWidget {
 class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.grey[300],
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("My Tasks"),
+        actions: [
+          Icon(Icons.filter_alt_outlined)
+        ],
+      ),
+    );
   }
 }
