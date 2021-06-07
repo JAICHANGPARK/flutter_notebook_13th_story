@@ -48,9 +48,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                       child: Text("3"),
                     ),
                   ),
+                  SizedBox(height: 4,),
                   Text(
                     "New",
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Colors.black, fontSize: 12.5),
                   ),
                 ],
               ),
@@ -61,7 +62,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    width: 18,
+                    width: 24,
                     decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
                     child: Center(
                       child: Text("16"),
