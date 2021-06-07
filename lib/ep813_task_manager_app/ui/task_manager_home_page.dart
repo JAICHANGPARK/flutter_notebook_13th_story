@@ -20,7 +20,17 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
           IconButton(onPressed: (){}, icon:  Icon(Icons.filter_alt_outlined))
 
         ],
-        bottom: TabBar(
+        bottom: TabBar(tabs: [
+          Tab(child: Column(
+            children: [
+              Container(
+                child: Center(
+                  child: Text("3"),
+                ),
+              )
+            ],
+          ),)
+        ],
 
         ),
       ),
