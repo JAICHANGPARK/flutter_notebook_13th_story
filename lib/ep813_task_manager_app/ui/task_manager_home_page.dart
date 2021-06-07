@@ -22,6 +22,8 @@ with SingleTickerProviderStateMixin
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
+        foregroundColor: Colors.black,
+        iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
         backgroundColor: Colors.white,
         centerTitle: true,
         title: Text("My Tasks"),
