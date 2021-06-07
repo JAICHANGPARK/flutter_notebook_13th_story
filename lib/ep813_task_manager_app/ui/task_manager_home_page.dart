@@ -7,7 +7,9 @@ class TaskManagerHomePage extends StatefulWidget {
   _TaskManagerHomePageState createState() => _TaskManagerHomePageState();
 }
 
-class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
+class _TaskManagerHomePageState extends State<TaskManagerHomePage>
+with SingleTickerProviderStateMixin
+{
   TabController? _tabController ;
   @override
   void initState() {
