@@ -8,6 +8,13 @@ class TaskManagerHomePage extends StatefulWidget {
 }
 
 class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
+  TabController? _tabController ;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 4, vsync: this);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
