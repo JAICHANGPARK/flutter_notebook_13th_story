@@ -26,7 +26,9 @@ with SingleTickerProviderStateMixin
         iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
         backgroundColor: Colors.white,
         centerTitle: true,
-        title: Text("My Tasks"),
+        title: Text("My Tasks",style: TextStyle(
+          color: Colors.black
+        ),),
         actions: [
           IconButton(onPressed: (){}, icon:  Icon(Icons.filter_alt_outlined))
 
