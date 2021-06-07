@@ -28,7 +28,8 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
         centerTitle: true,
         title: Text(
           "My Tasks",
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.black,
+          fontSize: 18),
         ),
         actions: [IconButton(onPressed: () {}, icon: Icon(Icons.filter_alt_outlined))],
         bottom: TabBar(
