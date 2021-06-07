@@ -108,16 +108,31 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
             ),
             Tab(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
+                    width: 32,
+                    decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
                     child: Center(
-                      child: Text("3"),
+                      child: Text(
+                        "256",
+                        style: TextStyle(color: Colors.black),
+                      ),
                     ),
                   ),
-                  Text("New"),
+                  SizedBox(
+                    height: 4,
+                  ),
+                  Text(
+                    "Finished",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12.5,
+                    ),
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
