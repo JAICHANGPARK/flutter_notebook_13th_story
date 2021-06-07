@@ -16,7 +16,8 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
         centerTitle: true,
         title: Text("My Tasks"),
         actions: [
-          Icon(Icons.filter_alt_outlined)
+          IconButton(onPressed: (){}, icon:  Icon(Icons.filter_alt_outlined))
+
         ],
       ),
     );
