@@ -35,10 +35,16 @@ with SingleTickerProviderStateMixin
         ],
         bottom: TabBar(
           controller: _tabController,
+          indicatorColor: Colors.black,
           tabs: [
           Tab(child: Column(
             children: [
               Container(
+                width: 16,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(4)
+                ),
                 child: Center(
                   child: Text("3"),
                 ),
