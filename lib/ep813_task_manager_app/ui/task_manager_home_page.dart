@@ -35,7 +35,6 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
           controller: _tabController,
           indicatorColor: Colors.black,
           indicatorWeight: 4,
-
           tabs: [
             Tab(
               child: Column(
@@ -48,7 +47,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                       child: Text("3"),
                     ),
                   ),
-                  SizedBox(height: 4,),
+                  SizedBox(
+                    height: 4,
+                  ),
                   Text(
                     "New",
                     style: TextStyle(color: Colors.black, fontSize: 12.5),
@@ -57,7 +58,6 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
               ),
             ),
             Tab(
-
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -68,7 +68,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                       child: Text("16"),
                     ),
                   ),
-                  SizedBox(height: 4,),
+                  SizedBox(
+                    height: 4,
+                  ),
                   Text(
                     "In Progress",
                     style: TextStyle(color: Colors.black, fontSize: 12.5),
