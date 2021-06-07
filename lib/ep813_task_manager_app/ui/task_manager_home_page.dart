@@ -84,9 +84,12 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                 children: [
                   Container(
                     width: 16,
-                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
+                    decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
                     child: Center(
-                      child: Text("0"),
+                      child: Text(
+                        "0",
+                        style: TextStyle(color: Colors.grey),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -94,7 +97,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                   ),
                   Text(
                     "On Review",
-                    style: TextStyle(color: Colors.black, fontSize: 12.5),
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12.5,
+                    ),
                   ),
                 ],
               ),
