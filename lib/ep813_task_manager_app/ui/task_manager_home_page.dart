@@ -38,6 +38,7 @@ with SingleTickerProviderStateMixin
           indicatorColor: Colors.black,
           tabs: [
           Tab(child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
                 width: 16,
@@ -49,7 +50,9 @@ with SingleTickerProviderStateMixin
                   child: Text("3"),
                 ),
               ),
-              Text("New"),
+              Text("New",style: TextStyle(
+                color: Colors.black
+              ),),
             ],
           ),),
             Tab(child: Column(
