@@ -7,5 +7,5 @@ class Task{
   String? endDate;
   String? datetime;
 
-  Task(this.title, this.tag, this.startDate, this.endDate, this.datetime);
+  Task({this.title, this.tag, this.startDate, this.endDate, this.datetime});
 }
