@@ -7,16 +7,16 @@ class TaskManagerHomePage extends StatefulWidget {
   _TaskManagerHomePageState createState() => _TaskManagerHomePageState();
 }
 
-class _TaskManagerHomePageState extends State<TaskManagerHomePage>
-with SingleTickerProviderStateMixin
-{
-  TabController? _tabController ;
+class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTickerProviderStateMixin {
+  TabController? _tabController;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _tabController = TabController(length: 4, vsync: this);
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,67 +26,71 @@ with SingleTickerProviderStateMixin
         iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
         backgroundColor: Colors.white,
         centerTitle: true,
-        title: Text("My Tasks",style: TextStyle(
-          color: Colors.black
-        ),),
-        actions: [
-          IconButton(onPressed: (){}, icon:  Icon(Icons.filter_alt_outlined))
-
-        ],
+        title: Text(
+          "My Tasks",
+          style: TextStyle(color: Colors.black),
+        ),
+        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.filter_alt_outlined))],
         bottom: TabBar(
           controller: _tabController,
           indicatorColor: Colors.black,
+          indicatorWeight: 4,
           tabs: [
-          Tab(child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: 16,
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(4)
-                ),
-                child: Center(
-                  child: Text("3"),
-                ),
+            Tab(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 16,
+                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
+                    child: Center(
+                      child: Text("3"),
+                    ),
+                  ),
+                  Text(
+                    "New",
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ],
               ),
-              Text("New",style: TextStyle(
-                color: Colors.black
-              ),),
-            ],
-          ),),
-            Tab(child: Column(
-              children: [
-                Container(
-                  child: Center(
-                    child: Text("3"),
+            ),
+            Tab(
+              child: Column(
+                children: [
+                  Container(
+                    child: Center(
+                      child: Text("3"),
+                    ),
                   ),
-                ),
-                Text("New"),
-              ],
-            ),),
-            Tab(child: Column(
-              children: [
-                Container(
-                  child: Center(
-                    child: Text("3"),
+                  Text("New"),
+                ],
+              ),
+            ),
+            Tab(
+              child: Column(
+                children: [
+                  Container(
+                    child: Center(
+                      child: Text("3"),
+                    ),
                   ),
-                ),
-                Text("New"),
-              ],
-            ),),
-            Tab(child: Column(
-              children: [
-                Container(
-                  child: Center(
-                    child: Text("3"),
+                  Text("New"),
+                ],
+              ),
+            ),
+            Tab(
+              child: Column(
+                children: [
+                  Container(
+                    child: Center(
+                      child: Text("3"),
+                    ),
                   ),
-                ),
-                Text("New"),
-              ],
-            ),)
-        ],
-
+                  Text("New"),
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );
