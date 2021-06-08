@@ -143,9 +143,13 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 12),
-                child: Container(
-                  height: 120,
-                  decoration: BoxDecoration(color: Colors.white),
+                child: PhysicalModel(
+                  color: Colors.grey,
+                  elevation: 2,
+                  child: Container(
+                    height: 120,
+                    decoration: BoxDecoration(color: Colors.white),
+                  ),
                 ),
               );
             },
