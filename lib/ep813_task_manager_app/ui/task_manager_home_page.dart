@@ -149,13 +149,15 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                   child: Container(
                     height: 134,
                     decoration: BoxDecoration(color: Colors.white),
+                    padding: EdgeInsets.only(left: 8,right: 8, top: 8, bottom: 8),
                     child: Column(
                       children: [
                         Row(
                           children: [
-                            Text("Task #${taskItems[index].taskNumber}",style: TextStyle(
-                              
-                            ),)
+                            Text(
+                              "Task #${taskItems[index].taskNumber}",
+                              style: TextStyle(color: Colors.grey),
+                            )
                           ],
                         )
                       ],
