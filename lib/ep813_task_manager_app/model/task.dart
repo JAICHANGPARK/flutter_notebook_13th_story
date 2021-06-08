@@ -10,7 +10,7 @@ class Task {
   Task({this.taskNumber, this.title, this.tag, this.startDate, this.endDate, this.datetime, this.commentCount});
 }
 
-List<Task> taskItem = [
+List<Task> taskItems = [
   Task(
       taskNumber: "216",
       title: "Incorrect action message",
