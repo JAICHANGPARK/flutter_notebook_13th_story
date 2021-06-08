@@ -159,8 +159,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                               "Task #${taskItems[index].taskNumber}",
                               style: TextStyle(color: Colors.grey),
                             ),
+                            Spacer(),
                             Text(
-                              "${}",
+                              "${timeago.format(taskItems[index].datetime!)}",
                               style: TextStyle(color: Colors.grey),
                             ),
                           ],
