@@ -136,28 +136,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
         ),
       ),
       body: TabBarView(
-        children: [
-
-        ],
+        controller: _tabController,
+        children: [],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
