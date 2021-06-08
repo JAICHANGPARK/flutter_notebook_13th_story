@@ -185,6 +185,15 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        Row(
+                          children: [
+                            Icon(Icons.calendar_today_outlined),
+                            Text("${taskItems[index].startDate} - ${taskItems[index].endDate}"),
+                            Text("${taskItems[index].commentCount}"),
+                            Icon(Icons.chat_bubble_outline)
+
+                          ],
+                        )
                       ],
                     ),
                   ),
