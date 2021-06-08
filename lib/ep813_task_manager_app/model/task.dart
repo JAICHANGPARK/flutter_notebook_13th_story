@@ -35,4 +35,21 @@ List<Task> taskItem = [
       endDate: "June 20",
       commentCount: 8,
       datetime: DateTime.now().subtract(Duration(days: 10))),
+  Task(
+      taskNumber: "104",
+      title: "Verifying emails",
+      tag: "v2.0",
+      startDate: "June 17",
+      endDate: "June 20",
+      commentCount: 21,
+      datetime: DateTime.now().subtract(Duration(days: 10))),
+
+  Task(
+      taskNumber: "162",
+      title: "Flutter document",
+      tag: "features",
+      startDate: "June 17",
+      endDate: "June 20",
+      commentCount: 8,
+      datetime: DateTime.now().subtract(Duration(days: 2))),
 ];
