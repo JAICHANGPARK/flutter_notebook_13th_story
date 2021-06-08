@@ -150,22 +150,26 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                   child: Container(
                     height: 134,
                     decoration: BoxDecoration(color: Colors.white),
-                    padding: EdgeInsets.only(left: 8,right: 8, top: 8, bottom: 8),
+                    padding: EdgeInsets.only(left: 16, right: 16, top: 12, bottom: 12),
                     child: Column(
                       children: [
                         Row(
                           children: [
                             Text(
                               "Task #${taskItems[index].taskNumber}",
-                              style: TextStyle(color: Colors.grey),
+                              style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
                             ),
                             Spacer(),
                             Text(
                               "${timeago.format(taskItems[index].datetime!)}",
-                              style: TextStyle(color: Colors.grey),
+                              style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
                             ),
                           ],
-                        )
+                        ),
+                        Text(
+                          "${taskItems[index].title}",
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold,),
+                        ),
                       ],
                     ),
                   ),
