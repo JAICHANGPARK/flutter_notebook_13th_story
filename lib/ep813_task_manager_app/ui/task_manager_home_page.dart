@@ -152,6 +152,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                     decoration: BoxDecoration(color: Colors.white),
                     padding: EdgeInsets.only(left: 16, right: 16, top: 12, bottom: 12),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
@@ -168,7 +169,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                         ),
                         Text(
                           "${taskItems[index].title}",
-                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold,),
+                          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,),
                         ),
                       ],
                     ),
