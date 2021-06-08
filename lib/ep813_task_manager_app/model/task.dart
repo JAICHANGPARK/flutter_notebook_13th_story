@@ -1,3 +1,7 @@
+
+
+import 'package:flutter/material.dart';
+
 class Task {
   String? taskNumber;
   String? title;
@@ -6,8 +10,10 @@ class Task {
   String? endDate;
   DateTime? datetime;
   int? commentCount;
+  Color? tagColor;
 
-  Task({this.taskNumber, this.title, this.tag, this.startDate, this.endDate, this.datetime, this.commentCount});
+  Task({this.taskNumber, this.title, this.tag, this.startDate, this.endDate, this.datetime, this.commentCount,
+  this.tagColor});
 }
 
 List<Task> taskItems = [
@@ -18,6 +24,7 @@ List<Task> taskItems = [
       startDate: "June 8",
       endDate: "June 10",
       commentCount: 104,
+      tagColor: Colors.purple,
       datetime: DateTime.now()),
   Task(
       taskNumber: "208",
@@ -26,6 +33,7 @@ List<Task> taskItems = [
       startDate: "July 20",
       endDate: "July 25",
       commentCount: 0,
+      tagColor: Colors.green,
       datetime: DateTime.now().subtract(Duration(days: 30 * 4))),
   Task(
       taskNumber: "196",
@@ -34,6 +42,7 @@ List<Task> taskItems = [
       startDate: "June 17",
       endDate: "June 20",
       commentCount: 8,
+      tagColor: Colors.deepOrangeAccent,
       datetime: DateTime.now().subtract(Duration(days: 10))),
   Task(
       taskNumber: "104",
