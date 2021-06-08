@@ -201,6 +201,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                               Text("${taskItems[index].startDate} - ${taskItems[index].endDate}"),
                               Spacer(),
                               Text("${taskItems[index].commentCount}"),
+                              SizedBox(width: 4,),
                               Icon(Icons.chat_bubble_outline)
                             ],
                           ),
