@@ -16,6 +16,7 @@ dependencies:
   cupertino_icons: ^1.0.3
   flutter_staggered_grid_view: ^0.4.0
   get: any
+  timeago: any
 
 dev_dependencies:
   flutter_test:
