@@ -148,7 +148,6 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                   color: Colors.grey[400]!,
                   elevation: 1,
                   child: Container(
-                    height: 134,
                     decoration: BoxDecoration(color: Colors.white),
                     padding: EdgeInsets.only(left: 16, right: 16, top: 12, bottom: 12),
                     child: Column(
@@ -191,7 +190,6 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                             Text("${taskItems[index].startDate} - ${taskItems[index].endDate}"),
                             Text("${taskItems[index].commentCount}"),
                             Icon(Icons.chat_bubble_outline)
-
                           ],
                         )
                       ],
