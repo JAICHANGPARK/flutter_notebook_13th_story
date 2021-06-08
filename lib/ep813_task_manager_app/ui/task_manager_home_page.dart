@@ -166,22 +166,28 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                             ),
                           ],
                         ),
-                        Text(
-                          "${taskItems[index].title}",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Text(
+                            "${taskItems[index].title}",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
-                        Container(
-                          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: taskItems[index].tagColor,
-                          ),
-                          child: Text(
-                            "${taskItems[index].tag}",
-                            style: TextStyle(color: Colors.white),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(4),
+                              color: taskItems[index].tagColor,
+                            ),
+                            child: Text(
+                              "${taskItems[index].tag}",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                         Row(
