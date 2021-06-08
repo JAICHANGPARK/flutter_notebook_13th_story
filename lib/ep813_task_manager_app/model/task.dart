@@ -9,3 +9,5 @@ class Task{
 
   Task({this.title, this.tag, this.startDate, this.endDate, this.datetime});
 }
+
+List<Task> taskItem = [];
