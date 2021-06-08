@@ -143,7 +143,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
           ListView.builder(
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10),
+                padding: const EdgeInsets.symmetric(vertical: 8),
                 child: PhysicalModel(
                   color: Colors.grey[400]!,
                   elevation: 1,
@@ -190,13 +190,20 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                             ),
                           ),
                         ),
-                        Row(
-                          children: [
-                            Icon(Icons.calendar_today_outlined),
-                            Text("${taskItems[index].startDate} - ${taskItems[index].endDate}"),
-                            Text("${taskItems[index].commentCount}"),
-                            Icon(Icons.chat_bubble_outline)
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Row(
+                            children: [
+                              Icon(Icons.calendar_today_outlined),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Text("${taskItems[index].startDate} - ${taskItems[index].endDate}"),
+                              Spacer(),
+                              Text("${taskItems[index].commentCount}"),
+                              Icon(Icons.chat_bubble_outline)
+                            ],
+                          ),
                         )
                       ],
                     ),
