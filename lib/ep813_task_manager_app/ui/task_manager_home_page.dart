@@ -175,7 +175,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                           ),
                         ),
                         Container(
+                          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                           decoration: BoxDecoration(
+
+                            borderRadius: BorderRadius.circular(4),
                             color: taskItems[index].tagColor,
                           ),
                           child: Text(
