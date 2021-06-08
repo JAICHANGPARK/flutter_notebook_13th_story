@@ -51,6 +51,7 @@ List<Task> taskItems = [
       startDate: "June 17",
       endDate: "June 20",
       commentCount: 21,
+      tagColor: Colors.indigo,
       datetime: DateTime.now().subtract(Duration(days: 10))),
 
   Task(
