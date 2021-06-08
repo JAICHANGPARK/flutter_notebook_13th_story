@@ -174,9 +174,14 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(
-                          "${taskItems[index].tag}",
-                          style: TextStyle(color: Colors.white),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: taskItems[index].tagColor,
+                          ),
+                          child: Text(
+                            "${taskItems[index].tag}",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       ],
                     ),
