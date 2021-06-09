@@ -146,9 +146,11 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: InkWell(
-                  onTap: (){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context)
-                    => TaskEditPage(task: taskItems[index],)));
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => TaskEditPage(
+                              task: taskItems[index],
+                            )));
                   },
                   child: PhysicalModel(
                     color: Colors.grey[400]!,
