@@ -49,7 +49,9 @@ class _TaskEditPageState extends State<TaskEditPage> {
                           ),
                         ),
                         
-                        Expanded(child: IconButton(onPressed: () {}, icon: Icon(Icons.edit))),
+                        Expanded(child: Align(
+                            alignment: Alignment.centerRight,
+                            child: IconButton(onPressed: () {}, icon: Icon(Icons.edit)))),
                       ],
                     ),
                   ),
