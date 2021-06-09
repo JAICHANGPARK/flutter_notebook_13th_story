@@ -47,7 +47,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
             Expanded(child: Container(
               child: Row(
                 children: [
-                  TextField(),
+                  Expanded(child: TextField()),
                   IconButton(onPressed: (){}, icon: Icon(Icons.send)),
                 ],
               ),
