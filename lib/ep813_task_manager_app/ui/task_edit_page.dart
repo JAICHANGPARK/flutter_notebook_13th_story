@@ -34,10 +34,28 @@ class _TaskEditPageState extends State<TaskEditPage> {
                 Spacer(),
                 IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
               ],
-            ))
+            )),
+            Expanded(child: Placeholder(), flex: 20),
+            Expanded(child: Placeholder(), flex: 2),
+
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
