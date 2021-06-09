@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep813_task_manager_app/model/task.dart';
 import 'package:flutter_notebook_13th_story/ep813_task_manager_app/ui/task_edit_page.dart';
+import 'package:get/get.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
 class TaskManagerHomePage extends StatefulWidget {
@@ -147,10 +148,13 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: InkWell(
                   onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => TaskEditPage(
-                              task: taskItems[index],
-                            )));
+                    Get.to(TaskEditPage(
+                      task: taskItems[index],
+                    ));
+                    // Navigator.of(context).push(MaterialPageRoute(
+                    //     builder: (context) => TaskEditPage(
+                    //           task: taskItems[index],
+                    //         )));
                   },
                   child: PhysicalModel(
                     color: Colors.grey[400]!,
