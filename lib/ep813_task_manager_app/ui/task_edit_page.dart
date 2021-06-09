@@ -16,6 +16,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey[300],
+        iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
         leading: Row(
           children: [
             IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back))
