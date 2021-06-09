@@ -27,7 +27,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
                   elevation: 2,
                   color: Colors.grey,
                   child: Container(
-                    color: Colors.grey[200],
+                    color: Colors.grey[100],
                     child: Row(
                       children: [
                         Expanded(
@@ -69,9 +69,18 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       Expanded(
                           child: TextField(
                         controller: _textEditingController,
-                        decoration: InputDecoration(border: InputBorder.none),
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "Add a comment...",
+                            hintStyle: TextStyle(color: Colors.black54)),
                       )),
-                      IconButton(onPressed: () {}, icon: Icon(Icons.send)),
+                      IconButton(
+                          onPressed: () {
+                            if (_textEditingController.text.length > 0) {
+                              print(_textEditingController.text);
+                            }
+                          },
+                          icon: Icon(Icons.send)),
                     ],
                   ),
                 ),
