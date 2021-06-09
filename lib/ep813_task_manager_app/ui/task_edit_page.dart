@@ -14,7 +14,9 @@ class _TaskEditPageState extends State<TaskEditPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      appBar: AppBar(
+        title: Text("Task #${widget.task?.taskNumber}"),
+      ),
     );
   }
 }
