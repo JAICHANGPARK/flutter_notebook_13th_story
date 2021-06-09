@@ -15,11 +15,12 @@ class _TaskEditPageState extends State<TaskEditPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey[300],
+        backgroundColor: Colors.grey[200],
         iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
         leading: Row(
           children: [
-            IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back))
+            IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back)),
+            Text("Back",),
           ],
         ),
         centerTitle: true,
@@ -29,6 +30,17 @@ class _TaskEditPageState extends State<TaskEditPage> {
         actions: [
           IconButton(onPressed: (){}, icon: Icon(Icons.edit)),
         ],
+      ),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Row(
+              children: [
+                
+              ],
+            ))
+          ],
+        ),
       ),
     );
   }
