@@ -144,71 +144,76 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> with SingleTi
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
-                child: PhysicalModel(
-                  color: Colors.grey[400]!,
-                  elevation: 1,
-                  child: Container(
-                    decoration: BoxDecoration(color: Colors.white),
-                    padding: EdgeInsets.only(left: 16, right: 16, top: 12, bottom: 12),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Text(
-                              "Task #${taskItems[index].taskNumber}",
-                              style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
-                            ),
-                            Spacer(),
-                            Text(
-                              "${timeago.format(taskItems[index].datetime!)}",
-                              style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
-                            ),
-                          ],
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Text(
-                            "${taskItems[index].title}",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              color: taskItems[index].tagColor,
-                            ),
-                            child: Text(
-                              "${taskItems[index].tag}",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Row(
+                child: InkWell(
+                  onTap: (){
+                    
+                  },
+                  child: PhysicalModel(
+                    color: Colors.grey[400]!,
+                    elevation: 1,
+                    child: Container(
+                      decoration: BoxDecoration(color: Colors.white),
+                      padding: EdgeInsets.only(left: 16, right: 16, top: 12, bottom: 12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
                             children: [
-                              Icon(Icons.calendar_today_outlined),
-                              SizedBox(
-                                width: 8,
+                              Text(
+                                "Task #${taskItems[index].taskNumber}",
+                                style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
                               ),
-                              Text("${taskItems[index].startDate} - ${taskItems[index].endDate}"),
                               Spacer(),
-                              Text("${taskItems[index].commentCount}"),
-                              SizedBox(
-                                width: 4,
+                              Text(
+                                "${timeago.format(taskItems[index].datetime!)}",
+                                style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
                               ),
-                              Icon(Icons.chat_bubble_outline)
                             ],
                           ),
-                        )
-                      ],
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Text(
+                              "${taskItems[index].title}",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4),
+                                color: taskItems[index].tagColor,
+                              ),
+                              child: Text(
+                                "${taskItems[index].tag}",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Row(
+                              children: [
+                                Icon(Icons.calendar_today_outlined),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text("${taskItems[index].startDate} - ${taskItems[index].endDate}"),
+                                Spacer(),
+                                Text("${taskItems[index].commentCount}"),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                Icon(Icons.chat_bubble_outline)
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
