@@ -11,6 +11,7 @@ class TaskEditPage extends StatefulWidget {
 }
 
 class _TaskEditPageState extends State<TaskEditPage> {
+  TextEditingController _textEditingController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,19 +28,26 @@ class _TaskEditPageState extends State<TaskEditPage> {
                     color: Colors.grey[200],
                     child: Row(
                       children: [
-                        IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
-                        Text(
-                          "Back",
-                        ),
-                        Spacer(),
+                        Expanded(child: Row(
+                          children: [
+                            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                            Text(
+                              "Back",
+                            ),
+                          ],
+                        )),
+
+
                         Expanded(
                           child: Text(
                             "Task #${widget.task?.taskNumber}",
-                            style: TextStyle(color: Colors.black),
+                            style: TextStyle(color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Spacer(),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
+                        
+                        Expanded(child: IconButton(onPressed: () {}, icon: Icon(Icons.edit))),
                       ],
                     ),
                   ),
@@ -48,7 +56,9 @@ class _TaskEditPageState extends State<TaskEditPage> {
             Expanded(child: Container(
               child: Row(
                 children: [
-                  Expanded(child: TextField()),
+                  Expanded(child: TextField(
+                    controller: _textEditingController,
+                  )),
                   IconButton(onPressed: (){}, icon: Icon(Icons.send)),
                 ],
               ),
