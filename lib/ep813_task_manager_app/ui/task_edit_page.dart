@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep813_task_manager_app/model/task.dart';
 
-
 class TaskEditPage extends StatefulWidget {
   Task? task;
+
   TaskEditPage({Key? key, this.task}) : super(key: key);
 
   @override
@@ -14,29 +14,23 @@ class _TaskEditPageState extends State<TaskEditPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.grey[200],
-        iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
-        leading: Row(
-          children: [
-            IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back)),
-            Text("Back",),
-          ],
-        ),
-        centerTitle: true,
-        title: Text("Task #${widget.task?.taskNumber}",style: TextStyle(
-          color: Colors.black
-        ),),
-        actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.edit)),
-        ],
-      ),
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Row(
+            Expanded(
+                child: Row(
               children: [
-                
+                IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                Text(
+                  "Back",
+                ),
+                Spacer(),
+                Text(
+                  "Task #${widget.task?.taskNumber}",
+                  style: TextStyle(color: Colors.black),
+                ),
+                Spacer(),
+                IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
               ],
             ))
           ],
