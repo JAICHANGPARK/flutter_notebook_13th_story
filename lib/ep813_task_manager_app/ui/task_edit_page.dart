@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep813_task_manager_app/model/task.dart';
+import 'package:get/get.dart';
 
 class TaskEditPage extends StatefulWidget {
   Task? task;
@@ -30,7 +31,10 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       children: [
                         Expanded(child: Row(
                           children: [
-                            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                            IconButton(onPressed: () {
+                              Get.back();
+
+                            }, icon: Icon(Icons.arrow_back)),
                             Text(
                               "Back",
                               style: TextStyle(color: Colors.black,
