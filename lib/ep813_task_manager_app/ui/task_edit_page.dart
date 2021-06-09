@@ -18,52 +18,43 @@ class _TaskEditPageState extends State<TaskEditPage> {
         child: Column(
           children: [
             Expanded(
-              flex: 2,
+                flex: 2,
                 child: PhysicalModel(
                   elevation: 2,
                   color: Colors.grey,
                   child: Container(
                     color: Colors.grey[200],
                     child: Row(
-              children: [
-                    IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
-                    Text(
-                      "Back",
+                      children: [
+                        IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                        Text(
+                          "Back",
+                        ),
+                        Spacer(),
+                        Expanded(
+                          child: Text(
+                            "Task #${widget.task?.taskNumber}",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ),
+                        Spacer(),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
+                      ],
                     ),
-                    Spacer(),
-                    Expanded(
-                      child: Text(
-                        "Task #${widget.task?.taskNumber}",
-                        style: TextStyle(color: Colors.black),
-                      ),
-                    ),
-                    Spacer(),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
-              ],
-            ),
                   ),
                 )),
             Expanded(child: Placeholder(), flex: 20),
-            Expanded(child: Placeholder(), flex: 2),
-
+            Expanded(child: Container(
+              child: Row(
+                children: [
+                  TextField(),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.send)),
+                ],
+              ),
+            ), flex: 2),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
