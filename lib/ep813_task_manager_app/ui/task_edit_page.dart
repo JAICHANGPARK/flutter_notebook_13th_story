@@ -18,6 +18,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
         child: Column(
           children: [
             Expanded(
+              flex: 2,
                 child: Row(
               children: [
                 IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
