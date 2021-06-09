@@ -4,7 +4,7 @@ import 'package:flutter_notebook_13th_story/ep813_task_manager_app/model/task.da
 
 class TaskEditPage extends StatefulWidget {
   Task? task;
-  const TaskEditPage({Key? key, this.task}) : super(key: key);
+  TaskEditPage({Key? key, this.task}) : super(key: key);
 
   @override
   _TaskEditPageState createState() => _TaskEditPageState();
