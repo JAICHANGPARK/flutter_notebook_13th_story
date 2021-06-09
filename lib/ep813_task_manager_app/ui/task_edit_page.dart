@@ -19,23 +19,30 @@ class _TaskEditPageState extends State<TaskEditPage> {
           children: [
             Expanded(
               flex: 2,
-                child: Row(
+                child: PhysicalModel(
+                  elevation: 2,
+                  color: Colors.grey,
+                  child: Container(
+                    color: Colors.grey[200],
+                    child: Row(
               children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
-                Text(
-                  "Back",
-                ),
-                Spacer(),
-                Expanded(
-                  child: Text(
-                    "Task #${widget.task?.taskNumber}",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                ),
-                Spacer(),
-                IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                    Text(
+                      "Back",
+                    ),
+                    Spacer(),
+                    Expanded(
+                      child: Text(
+                        "Task #${widget.task?.taskNumber}",
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    ),
+                    Spacer(),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
               ],
-            )),
+            ),
+                  ),
+                )),
             Expanded(child: Placeholder(), flex: 20),
             Expanded(child: Placeholder(), flex: 2),
 
