@@ -25,9 +25,11 @@ class _TaskEditPageState extends State<TaskEditPage> {
                   "Back",
                 ),
                 Spacer(),
-                Text(
-                  "Task #${widget.task?.taskNumber}",
-                  style: TextStyle(color: Colors.black),
+                Expanded(
+                  child: Text(
+                    "Task #${widget.task?.taskNumber}",
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
                 Spacer(),
                 IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
