@@ -13,6 +13,7 @@ class TaskEditPage extends StatefulWidget {
 
 class _TaskEditPageState extends State<TaskEditPage> {
   TextEditingController _textEditingController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,51 +30,50 @@ class _TaskEditPageState extends State<TaskEditPage> {
                     color: Colors.grey[200],
                     child: Row(
                       children: [
-                        Expanded(child: Row(
+                        Expanded(
+                            child: Row(
                           children: [
-                            IconButton(onPressed: () {
-                              Get.back();
-
-                            }, icon: Icon(Icons.arrow_back)),
+                            IconButton(
+                                onPressed: () {
+                                  Get.back();
+                                },
+                                icon: Icon(Icons.arrow_back)),
                             Text(
                               "Back",
-                              style: TextStyle(color: Colors.black,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.normal),
+                              style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.normal),
                             ),
                           ],
                         )),
-
-
                         Expanded(
                           child: Center(
                             child: Text(
                               "Task #${widget.task?.taskNumber}",
-                              style: TextStyle(color: Colors.black,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold),
+                              style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
                             ),
                           ),
                         ),
-                        
-                        Expanded(child: Align(
-                            alignment: Alignment.centerRight,
-                            child: IconButton(onPressed: () {}, icon: Icon(Icons.edit)))),
+                        Expanded(
+                            child: Align(
+                                alignment: Alignment.centerRight,
+                                child: IconButton(onPressed: () {}, icon: Icon(Icons.edit)))),
                       ],
                     ),
                   ),
                 )),
             Expanded(child: Placeholder(), flex: 20),
-            Expanded(child: Container(
-              child: Row(
-                children: [
-                  Expanded(child: TextField(
-                    controller: _textEditingController,
-                  )),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.send)),
-                ],
-              ),
-            ), flex: 2),
+            Expanded(
+                child: Container(
+                  child: Row(
+                    children: [
+                      Expanded(
+                          child: TextField(
+                        controller: _textEditingController,
+                      )),
+                      IconButton(onPressed: () {}, icon: Icon(Icons.send)),
+                    ],
+                  ),
+                ),
+                flex: 2),
           ],
         ),
       ),
