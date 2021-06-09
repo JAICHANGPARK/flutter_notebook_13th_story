@@ -15,8 +15,19 @@ class _TaskEditPageState extends State<TaskEditPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.grey[300],
+        leading: Row(
+          children: [
+            IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back))
+          ],
+        ),
         centerTitle: true,
-        title: Text("Task #${widget.task?.taskNumber}"),
+        title: Text("Task #${widget.task?.taskNumber}",style: TextStyle(
+          color: Colors.black
+        ),),
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.edit)),
+        ],
       ),
     );
   }
