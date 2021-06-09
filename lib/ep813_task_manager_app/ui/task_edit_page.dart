@@ -63,11 +63,13 @@ class _TaskEditPageState extends State<TaskEditPage> {
             Expanded(child: Placeholder(), flex: 20),
             Expanded(
                 child: Container(
+                  padding: EdgeInsets.only(bottom: 8, left: 8, right: 8),
                   child: Row(
                     children: [
                       Expanded(
                           child: TextField(
                         controller: _textEditingController,
+                        decoration: InputDecoration(border: InputBorder.none),
                       )),
                       IconButton(onPressed: () {}, icon: Icon(Icons.send)),
                     ],
