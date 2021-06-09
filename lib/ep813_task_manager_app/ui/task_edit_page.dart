@@ -39,11 +39,13 @@ class _TaskEditPageState extends State<TaskEditPage> {
 
 
                         Expanded(
-                          child: Text(
-                            "Task #${widget.task?.taskNumber}",
-                            style: TextStyle(color: Colors.black,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold),
+                          child: Center(
+                            child: Text(
+                              "Task #${widget.task?.taskNumber}",
+                              style: TextStyle(color: Colors.black,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold),
+                            ),
                           ),
                         ),
                         
