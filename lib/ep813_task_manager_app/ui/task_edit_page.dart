@@ -128,6 +128,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       ),),
 
                       Container(
+                        padding: EdgeInsets.symmetric(horizontal: 8),
                         child: Row(
                           children: [
                             Icon(Icons.image_outlined),
