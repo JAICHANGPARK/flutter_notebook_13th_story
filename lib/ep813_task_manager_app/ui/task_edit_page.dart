@@ -196,6 +196,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
                             ],
                           )),
                           Expanded(child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Reporter"),
                               Row(
