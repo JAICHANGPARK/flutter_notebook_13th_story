@@ -65,6 +65,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 4),
