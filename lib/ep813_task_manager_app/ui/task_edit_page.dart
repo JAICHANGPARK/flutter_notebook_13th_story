@@ -105,26 +105,30 @@ class _TaskEditPageState extends State<TaskEditPage> {
                 ),
                 flex: 20),
             Expanded(
-                child: Container(
-                  padding: EdgeInsets.only(bottom: 8, left: 8, right: 8),
-                  child: Row(
-                    children: [
-                      Expanded(
-                          child: TextField(
-                        controller: _textEditingController,
-                        decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: "Add a comment...",
-                            hintStyle: TextStyle(color: Colors.black54)),
-                      )),
-                      IconButton(
-                          onPressed: () {
-                            if (_textEditingController.text.length > 0) {
-                              print(_textEditingController.text);
-                            }
-                          },
-                          icon: Icon(Icons.send)),
-                    ],
+                child: PhysicalModel(
+                  color: Colors.grey,
+                  elevation: 1,
+                  child: Container(
+                    padding: EdgeInsets.only(bottom: 8, left: 8, right: 8),
+                    child: Row(
+                      children: [
+                        Expanded(
+                            child: TextField(
+                          controller: _textEditingController,
+                          decoration: InputDecoration(
+                              border: InputBorder.none,
+                              hintText: "Add a comment...",
+                              hintStyle: TextStyle(color: Colors.black54)),
+                        )),
+                        IconButton(
+                            onPressed: () {
+                              if (_textEditingController.text.length > 0) {
+                                print(_textEditingController.text);
+                              }
+                            },
+                            icon: Icon(Icons.send)),
+                      ],
+                    ),
                   ),
                 ),
                 flex: 2),
