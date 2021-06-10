@@ -128,6 +128,10 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       ),),
 
                       Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+
+                        ),
                         padding: EdgeInsets.symmetric(horizontal: 8),
                         child: Row(
                           children: [
