@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep813_task_manager_app/model/task.dart';
 import 'package:get/get.dart';
 import 'package:timeago/timeago.dart' as timeago;
+
 class TaskEditPage extends StatefulWidget {
   Task? task;
 
@@ -10,7 +11,6 @@ class TaskEditPage extends StatefulWidget {
   @override
   _TaskEditPageState createState() => _TaskEditPageState();
 }
-
 
 class _TaskEditPageState extends State<TaskEditPage> {
   TextEditingController _textEditingController = TextEditingController();
@@ -61,35 +61,40 @@ class _TaskEditPageState extends State<TaskEditPage> {
                     ),
                   ),
                 )),
-            Expanded(child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 4),
-                    child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(4),
-                        color: widget.task?.tagColor,
-                      ),
-                      child: Text(
-                        "${widget.task?.tag}",
-                        style: TextStyle(color: Colors.white),
-                      ),
+            Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(4),
+                              color: widget.task?.tagColor,
+                            ),
+                            child: Text(
+                              "${widget.task?.tag}",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          "${timeago.format(widget.task!.datetime!)}",
+                          style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
-                  ),
-                  Text(
-                    "${timeago.format(widget.task!.datetime!)}",
-                    style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
-                  ),
-
-                ],
-              )
-              ],
-            ), flex: 20),
+                    Text(
+                      "${widget.task?.title}",
+                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
+                flex: 20),
             Expanded(
                 child: Container(
                   padding: EdgeInsets.only(bottom: 8, left: 8, right: 8),
