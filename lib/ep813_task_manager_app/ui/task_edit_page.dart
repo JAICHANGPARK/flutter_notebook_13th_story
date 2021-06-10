@@ -97,18 +97,32 @@ class _TaskEditPageState extends State<TaskEditPage> {
                           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                         ),
                       ),
-                      Text("Of course, deeply understanding your users and their needs is the foundation"
-                          "of any food product. But that also means understanding all types of users"
-                          "and cases", style: TextStyle(
-                        fontSize: 16
-                      ),),
-                      Row(
-                        children: [
-                          Icon(Icons.calendar_today_outlined),
-                          Text("Deadline: "),
-                          Text("${widget.task?.startDate} - ${widget.task?.startDate}")
-                        ],
-                      )
+                      Text(
+                        "Of course, deeply understanding your users and their needs is the foundation"
+                        "of any food product. But that also means understanding all types of users"
+                        "and cases",
+                        style: TextStyle(fontSize: 16),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: Row(
+                          children: [
+                            Icon(Icons.calendar_today_outlined),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8),
+                              child: Text("Deadline: "),
+                            ),
+                            Text(
+                              "${widget.task?.startDate} - ${widget.task?.endDate}",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Divider(
+                        color: Colors.grey,
+                      ),
+                      
                     ],
                   ),
                 ),
