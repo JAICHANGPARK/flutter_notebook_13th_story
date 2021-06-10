@@ -212,6 +212,18 @@ class _TaskEditPageState extends State<TaskEditPage> {
                         color: Colors.grey,
                         height: 24,
                       ),
+                      Text(
+                        "Comments",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          
+                        ],
+                      )
                     ],
                   ),
                 ),
