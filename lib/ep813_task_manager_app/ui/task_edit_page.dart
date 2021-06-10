@@ -151,6 +151,28 @@ class _TaskEditPageState extends State<TaskEditPage> {
                             ),
                           ],
                         ),
+                      ),
+                      SizedBox(height: 4,),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: Row(
+                          children: [
+                            Icon(Icons.attach_file),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Text("file_issue.zip"),
+                            Spacer(),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.more_horiz),
+                              color: Colors.grey,
+                            ),
+                          ],
+                        ),
                       )
                     ],
                   ),
