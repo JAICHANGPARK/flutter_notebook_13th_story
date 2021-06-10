@@ -88,16 +88,16 @@ class _TaskEditPageState extends State<TaskEditPage> {
                         ),
                       ],
                     ),
-                    Text(
-                      "${widget.task?.title}",
-                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                    ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text("Of course, deeply understanding your users and their needs is the foundation"
-                          "of any food product. But that also means understanding all types of users"
-                          "and cases"),
-                    )
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: Text(
+                        "${widget.task?.title}",
+                        style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Text("Of course, deeply understanding your users and their needs is the foundation"
+                        "of any food product. But that also means understanding all types of users"
+                        "and cases")
                   ],
                 ),
                 flex: 20),
