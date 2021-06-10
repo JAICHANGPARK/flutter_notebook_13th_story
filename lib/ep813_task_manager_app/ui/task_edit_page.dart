@@ -231,7 +231,11 @@ class _TaskEditPageState extends State<TaskEditPage> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Icon(Icons.chat, size: 32, color: Colors.grey[300],),
-                            Text("Leave the first comment"),
+                            SizedBox(height: 8,),
+                            Text("Leave the first comment", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey
+                            ),),
                           ],
                         ),
                       )
