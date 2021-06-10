@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep813_task_manager_app/model/task.dart';
 import 'package:get/get.dart';
-
+import 'package:timeago/timeago.dart' as timeago;
 class TaskEditPage extends StatefulWidget {
   Task? task;
 
@@ -79,6 +79,10 @@ class _TaskEditPageState extends State<TaskEditPage> {
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
+                  ),
+                  Text(
+                    "${timeago.format(widget.task?.datetime!)}",
+                    style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
                   ),
 
                 ],
