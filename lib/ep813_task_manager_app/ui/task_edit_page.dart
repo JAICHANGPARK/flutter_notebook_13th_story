@@ -62,43 +62,46 @@ class _TaskEditPageState extends State<TaskEditPage> {
                   ),
                 )),
             Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              color: widget.task?.tagColor,
-                            ),
-                            child: Text(
-                              "${widget.task?.tag}",
-                              style: TextStyle(color: Colors.white),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4),
+                                color: widget.task?.tagColor,
+                              ),
+                              child: Text(
+                                "${widget.task?.tag}",
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          "${timeago.format(widget.task!.datetime!)}",
-                          style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      child: Text(
-                        "${widget.task?.title}",
-                        style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                          Text(
+                            "${timeago.format(widget.task!.datetime!)}",
+                            style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
-                    ),
-                    Text("Of course, deeply understanding your users and their needs is the foundation"
-                        "of any food product. But that also means understanding all types of users"
-                        "and cases")
-                  ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: Text(
+                          "${widget.task?.title}",
+                          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Text("Of course, deeply understanding your users and their needs is the foundation"
+                          "of any food product. But that also means understanding all types of users"
+                          "and cases")
+                    ],
+                  ),
                 ),
                 flex: 20),
             Expanded(
