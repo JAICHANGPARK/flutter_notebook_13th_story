@@ -122,28 +122,36 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       Divider(
                         color: Colors.grey,
                       ),
-
-                      Text("Attachment",style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),),
-                      SizedBox(height: 8,),
+                      Text(
+                        "Attachment",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
-
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 8),
                         child: Row(
                           children: [
                             Icon(Icons.image_outlined),
-                            SizedBox(width: 8,),
+                            SizedBox(
+                              width: 8,
+                            ),
                             Text("screenshoot_Image.png"),
                             Spacer(),
-                            IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.more_horiz),
+                              color: Colors.grey,
+                            ),
                           ],
                         ),
                       )
-
                     ],
                   ),
                 ),
