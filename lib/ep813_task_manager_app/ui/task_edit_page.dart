@@ -107,7 +107,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
             Expanded(
                 child: PhysicalModel(
                   color: Colors.grey,
-                  elevation: 1,
+                  elevation: 2,
                   child: Container(
                     color: Colors.grey[200],
                     padding: EdgeInsets.only(bottom: 8, left: 8, right: 8),
