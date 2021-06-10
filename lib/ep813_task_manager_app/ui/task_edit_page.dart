@@ -104,7 +104,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
                         style: TextStyle(fontSize: 16),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        padding: const EdgeInsets.symmetric(vertical: 16),
                         child: Row(
                           children: [
                             Icon(Icons.calendar_today_outlined),
@@ -122,7 +122,22 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       Divider(
                         color: Colors.grey,
                       ),
-                      
+
+                      Text("Attachment",style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),),
+
+                      Container(
+                        child: Row(
+                          children: [
+                            Icon(Icons.image_outlined),
+                            Text("screenshoot_Image.png"),
+                            Spacer(),
+                            IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
+                          ],
+                        ),
+                      )
+
                     ],
                   ),
                 ),
