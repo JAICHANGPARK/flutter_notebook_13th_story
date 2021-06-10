@@ -185,6 +185,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       Row(
                         children: [
                           Expanded(child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Assigned to"),
                               Row(
@@ -194,7 +195,16 @@ class _TaskEditPageState extends State<TaskEditPage> {
                               )
                             ],
                           )),
-                          Expanded(child: Placeholder()),
+                          Expanded(child: Column(
+                            children: [
+                              Text("Reporter"),
+                              Row(
+                                children: [
+                                  CircleAvatar(),
+                                ],
+                              )
+                            ],
+                          )),
                         ],
                       )
                     ],
