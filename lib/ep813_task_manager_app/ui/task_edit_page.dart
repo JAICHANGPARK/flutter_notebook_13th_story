@@ -180,7 +180,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
 
                       Divider(
                         color: Colors.grey,
-                        height: 32,
+                        height: 24,
                       ),
                       Row(
                         children: [
@@ -207,7 +207,11 @@ class _TaskEditPageState extends State<TaskEditPage> {
                             ],
                           )),
                         ],
-                      )
+                      ),
+                      Divider(
+                        color: Colors.grey,
+                        height: 24,
+                      ),
                     ],
                   ),
                 ),
