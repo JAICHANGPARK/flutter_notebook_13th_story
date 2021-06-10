@@ -121,11 +121,14 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       ),
                       Divider(
                         color: Colors.grey,
+                        height: 32,
                       ),
+
                       Text(
                         "Attachment",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 18
                         ),
                       ),
                       SizedBox(
@@ -173,6 +176,16 @@ class _TaskEditPageState extends State<TaskEditPage> {
                             ),
                           ],
                         ),
+                      ),
+
+                      Divider(
+                        color: Colors.grey,
+                        height: 32,
+                      ),
+                      Row(
+                        children: [
+                          
+                        ],
                       )
                     ],
                   ),
