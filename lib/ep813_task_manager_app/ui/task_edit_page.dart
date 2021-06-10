@@ -81,7 +81,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
                     ),
                   ),
                   Text(
-                    "${timeago.format(widget.task?.datetime!)}",
+                    "${timeago.format(widget.task!.datetime!)}",
                     style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
                   ),
 
