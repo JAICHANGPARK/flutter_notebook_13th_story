@@ -62,9 +62,27 @@ class _TaskEditPageState extends State<TaskEditPage> {
                   ),
                 )),
             Expanded(child: Column(
-              
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4),
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(4),
+                        color: widget.task?.tagColor,
+                      ),
+                      child: Text(
+                        "${widget.task?.tag}",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
 
+                ],
+              )
               ],
             ), flex: 20),
             Expanded(
