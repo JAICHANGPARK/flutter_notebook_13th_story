@@ -184,7 +184,17 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       ),
                       Row(
                         children: [
-                          
+                          Expanded(child: Column(
+                            children: [
+                              Text("Assigned to"),
+                              Row(
+                                children: [
+                                  CircleAvatar(),
+                                ],
+                              )
+                            ],
+                          )),
+                          Expanded(child: Placeholder()),
                         ],
                       )
                     ],
