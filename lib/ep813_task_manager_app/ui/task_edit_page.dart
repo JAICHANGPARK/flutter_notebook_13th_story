@@ -99,7 +99,16 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       ),
                       Text("Of course, deeply understanding your users and their needs is the foundation"
                           "of any food product. But that also means understanding all types of users"
-                          "and cases")
+                          "and cases", style: TextStyle(
+                        fontSize: 16
+                      ),),
+                      Row(
+                        children: [
+                          Icon(Icons.calendar_today_outlined),
+                          Text("Deadline: "),
+                          Text("${widget.task?.startDate} - ${widget.task?.startDate}")
+                        ],
+                      )
                     ],
                   ),
                 ),
