@@ -123,13 +123,9 @@ class _TaskEditPageState extends State<TaskEditPage> {
                         color: Colors.grey,
                         height: 32,
                       ),
-
                       Text(
                         "Attachment",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                       SizedBox(
                         height: 8,
@@ -155,7 +151,9 @@ class _TaskEditPageState extends State<TaskEditPage> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 4,),
+                      SizedBox(
+                        height: 4,
+                      ),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
@@ -177,18 +175,20 @@ class _TaskEditPageState extends State<TaskEditPage> {
                           ],
                         ),
                       ),
-
                       Divider(
                         color: Colors.grey,
                         height: 24,
                       ),
                       Row(
                         children: [
-                          Expanded(child: Column(
+                          Expanded(
+                              child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Assigned to"),
-                              SizedBox(height: 8,),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Row(
                                 children: [
                                   CircleAvatar(
@@ -198,11 +198,14 @@ class _TaskEditPageState extends State<TaskEditPage> {
                               )
                             ],
                           )),
-                          Expanded(child: Column(
+                          Expanded(
+                              child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Reporter"),
-                              SizedBox(height: 8,),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Row(
                                 children: [
                                   CircleAvatar(
@@ -220,22 +223,25 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       ),
                       Text(
                         "Comments",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                       SizedBox(
                         width: double.infinity,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(Icons.chat, size: 32, color: Colors.grey[300],),
-                            SizedBox(height: 8,),
-                            Text("Leave the first comment", style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey
-                            ),),
+                            Icon(
+                              Icons.chat,
+                              size: 32,
+                              color: Colors.grey[300],
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "Leave the first comment",
+                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                            ),
                           ],
                         ),
                       )
