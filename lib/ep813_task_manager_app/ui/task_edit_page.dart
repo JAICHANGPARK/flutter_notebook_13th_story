@@ -188,9 +188,12 @@ class _TaskEditPageState extends State<TaskEditPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Assigned to"),
+                              SizedBox(height: 8,),
                               Row(
                                 children: [
-                                  CircleAvatar(),
+                                  CircleAvatar(
+                                    radius: 16,
+                                  ),
                                 ],
                               )
                             ],
@@ -199,9 +202,12 @@ class _TaskEditPageState extends State<TaskEditPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Reporter"),
+                              SizedBox(height: 8,),
                               Row(
                                 children: [
-                                  CircleAvatar(),
+                                  CircleAvatar(
+                                    radius: 16,
+                                  ),
                                 ],
                               )
                             ],
