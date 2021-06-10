@@ -126,7 +126,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
                       Text("Attachment",style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),),
-
+                      SizedBox(height: 8,),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
