@@ -219,10 +219,15 @@ class _TaskEditPageState extends State<TaskEditPage> {
                             fontSize: 18
                         ),
                       ),
-                      Column(
-                        children: [
-                          
-                        ],
+                      SizedBox(
+                        width: double.infinity,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Icon(Icons.chat, size: 32, color: Colors.grey[300],),
+                            Text("Leave the first comment"),
+                          ],
+                        ),
                       )
                     ],
                   ),
