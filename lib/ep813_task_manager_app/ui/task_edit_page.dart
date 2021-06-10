@@ -136,6 +136,7 @@ class _TaskEditPageState extends State<TaskEditPage> {
                         child: Row(
                           children: [
                             Icon(Icons.image_outlined),
+                            SizedBox(width: 8,),
                             Text("screenshoot_Image.png"),
                             Spacer(),
                             IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
