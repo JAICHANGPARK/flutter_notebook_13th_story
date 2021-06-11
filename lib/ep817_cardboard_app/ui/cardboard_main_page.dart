@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 class CardboardMainPage extends StatefulWidget {
-  CardboardMainPage({Key key}) : super(key: key);
+  CardboardMainPage({Key? key}) : super(key: key);
 
   @override
   _CardboardMainPageState createState() => _CardboardMainPageState();
@@ -11,6 +11,6 @@ class CardboardMainPage extends StatefulWidget {
 class _CardboardMainPageState extends State<CardboardMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
