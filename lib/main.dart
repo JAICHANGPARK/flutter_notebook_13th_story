@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
+import 'ep817_cardboard_app/cardboard_app.dart';
 
-import 'ep813_task_manager_app/task_manager_app.dart';
-
-void main() => runApp(TaskManagerApp());
+void main() => runApp(CardboardApp());
