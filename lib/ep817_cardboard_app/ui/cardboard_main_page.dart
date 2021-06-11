@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep817_cardboard_app/styles/cardboard_app_style.dart';
 
 class CardboardMainPage extends StatefulWidget {
   CardboardMainPage({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.green,
+        backgroundColor: CardboardAppStyle.mainColor,
         title: Text("Stats"),
       ),
     );
