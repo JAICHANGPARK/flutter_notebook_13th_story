@@ -11,6 +11,12 @@ class CardboardMainPage extends StatefulWidget {
 class _CardboardMainPageState extends State<CardboardMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.green,
+        title: Text("Stats"),
+      ),
+    );
   }
 }
