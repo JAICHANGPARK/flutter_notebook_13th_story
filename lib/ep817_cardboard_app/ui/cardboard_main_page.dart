@@ -19,6 +19,13 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
         title: Text("Stats"),
         elevation: 0,
       ),
+      floatingActionButton: Container(
+        height: 48,
+        width: 120,
+        decoration: BoxDecoration(
+          color:  CardboardAppStyle.mainColor,
+        ),
+      ),
     );
   }
 }
