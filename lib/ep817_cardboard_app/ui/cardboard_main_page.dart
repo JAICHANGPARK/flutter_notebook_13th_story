@@ -27,15 +27,27 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
           Expanded(child: Placeholder(), flex: 9,),
         ],
       ),
-      floatingActionButton: Container(
-        padding: EdgeInsets.symmetric(horizontal: 32, vertical: 24),
-        decoration: BoxDecoration(
-          color: CardboardAppStyle.mainColor,
-          borderRadius: BorderRadius.circular(8)
-        ),
-        child: Text(
-          "Record Play",
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+      floatingActionButton: InkWell(
+        onTap: (){
+           ScaffoldMessenger.of(context).showMaterialBanner(MaterialBanner(content: Text("asd"), actions: [
+             TextButton(
+               child: Text("Close"),
+               onPressed: (){
+                 Navigator.of(context).pop();
+               },
+             )
+           ]));
+        },
+        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 32, vertical: 24),
+          decoration: BoxDecoration(
+            color: CardboardAppStyle.mainColor,
+            borderRadius: BorderRadius.circular(8)
+          ),
+          child: Text(
+            "Record Play",
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+          ),
         ),
       ),
     );
