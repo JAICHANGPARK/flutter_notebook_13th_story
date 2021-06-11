@@ -29,14 +29,16 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
       ),
       floatingActionButton: InkWell(
         onTap: (){
-           ScaffoldMessenger.of(context).showMaterialBanner(MaterialBanner(content: Text("asd"), actions: [
-             TextButton(
-               child: Text("Close"),
-               onPressed: (){
-                 Navigator.of(context).pop();
-               },
-             )
-           ]));
+           // ScaffoldMessenger.of(context).showMaterialBanner(MaterialBanner(content: Text("asd"), actions: [
+           //   TextButton(
+           //     child: Text("Close"),
+           //     onPressed: (){
+           //       Navigator.of(context).pop();
+           //     },
+           //   )
+           // ]));
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('on'
+              'Button pressed record play')));
         },
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 32, vertical: 24),
