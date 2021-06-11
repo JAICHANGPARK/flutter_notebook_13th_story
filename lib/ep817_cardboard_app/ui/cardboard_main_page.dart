@@ -20,10 +20,17 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
         elevation: 0,
       ),
       floatingActionButton: Container(
-        height: 48,
+        height: 64,
         width: 120,
         decoration: BoxDecoration(
           color:  CardboardAppStyle.mainColor,
+        ),
+        child: Center(
+          child: Text("Record Play", style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: Colors.white
+          ),),
         ),
       ),
     );
