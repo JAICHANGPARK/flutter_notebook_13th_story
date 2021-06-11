@@ -18,6 +18,12 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
         title: Text("Stats"),
         elevation: 0,
       ),
+      body: Column(
+        children: [
+          Expanded(child: Placeholder(), flex: 3,),
+          Expanded(child: Placeholder(), flex: 12,),
+        ],
+      ),
       floatingActionButton: Container(
         padding: EdgeInsets.symmetric(horizontal: 32, vertical: 24),
         decoration: BoxDecoration(
