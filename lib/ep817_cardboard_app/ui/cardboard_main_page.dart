@@ -22,6 +22,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
         padding: EdgeInsets.symmetric(horizontal: 32, vertical: 24),
         decoration: BoxDecoration(
           color: CardboardAppStyle.mainColor,
+          borderRadius: BorderRadius.circular(8)
         ),
         child: Text(
           "Record Play",
