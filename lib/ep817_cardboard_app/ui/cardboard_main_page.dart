@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep817_cardboard_app/styles/cardboard_app_style.dart';
 
@@ -20,15 +19,14 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
         elevation: 0,
       ),
       floatingActionButton: Container(
-      padding: EdgeInsets.symmetric(horizontal: 32 , vertical: 24),
+        padding: EdgeInsets.symmetric(horizontal: 32, vertical: 24),
         decoration: BoxDecoration(
-          color:  CardboardAppStyle.mainColor,
+          color: CardboardAppStyle.mainColor,
         ),
-        child: Text("Record Play", style: TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.bold,
-          color: Colors.white
-        ),),
+        child: Text(
+          "Record Play",
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+        ),
       ),
     );
   }
