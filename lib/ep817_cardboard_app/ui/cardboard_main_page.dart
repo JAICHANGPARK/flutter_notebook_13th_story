@@ -21,7 +21,10 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
       body: Column(
         children: [
           Expanded(child: Placeholder(), flex: 3,),
-          Expanded(child: Placeholder(), flex: 12,),
+          Divider(color: Colors.grey,
+          thickness: 2,
+          ),
+          Expanded(child: Placeholder(), flex: 9,),
         ],
       ),
       floatingActionButton: Container(
