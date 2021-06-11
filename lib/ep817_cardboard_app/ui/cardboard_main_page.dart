@@ -17,6 +17,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
         centerTitle: true,
         backgroundColor: CardboardAppStyle.mainColor,
         title: Text("Stats"),
+        elevation: 0,
       ),
     );
   }
