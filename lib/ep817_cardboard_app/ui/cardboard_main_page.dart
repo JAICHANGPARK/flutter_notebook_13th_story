@@ -33,10 +33,11 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                           Container(
                             child: Row(
                               children: [
-                                Icon(Icons.arrow_upward,),
+                                Icon(Icons.arrow_upward, size: 12,
+                                  color: CardboardAppStyle.mainColor ,),
                                 Text("4%", style: TextStyle(
                                   color: CardboardAppStyle.mainColor
-                                ),)
+                                ),),
                               ],
                             ),
                           )
