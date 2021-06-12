@@ -143,8 +143,8 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          height: 48,
-                          width: 120,
+                          height: 38,
+                          width: 100,
                           decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                           child: Stack(
                             children: [
@@ -165,15 +165,25 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          height: 48,
-                          width: 120,
+                            height: 38,
+                            width: 100,
                           decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                           child: Center(
                             child: Text("All Stats"),
                           )
                         ),
                       ),
-                      Expanded(child: Placeholder()),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            height: 38,
+                            width: 100,
+                            decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+                            child: Center(
+                              child: Text("All Stats"),
+                            )
+                        ),
+                      ),
                     ],
                   ),
                   flex: 2,
