@@ -26,7 +26,11 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                 Expanded(
                   child: Row(
                     children: [
-                      Expanded(child: Placeholder()),
+                      Expanded(child: Column(
+                        children: [
+                            Text("Wins")
+                        ],
+                      )),
                       Expanded(child: Placeholder()),
                       Expanded(child: Placeholder()),
                     ],
