@@ -26,23 +26,30 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                 Expanded(
                   child: Row(
                     children: [
-                      Expanded(child: Column(
+                      Expanded(
+                          child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                            Text("Wins"),
+                          Text("Wins"),
                           Text("154"),
                           Container(
+                            width: 48,
                             decoration: BoxDecoration(
-                              color: Colors.green[200],
+                              color: Colors.green[50],
+                              borderRadius: BorderRadius.circular(8),
                             ),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Icon(Icons.arrow_upward, size: 12,
-                                  color: CardboardAppStyle.mainColor ,),
-                                Text("4%", style: TextStyle(
-                                  color: CardboardAppStyle.mainColor
-                                ),),
+                                Icon(
+                                  Icons.arrow_upward,
+                                  size: 12,
+                                  color: CardboardAppStyle.mainColor,
+                                ),
+                                Text(
+                                  "4%",
+                                  style: TextStyle(color: CardboardAppStyle.mainColor),
+                                ),
                               ],
                             ),
                           )
