@@ -25,7 +25,9 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
               children: [
                 Expanded(child: Row(
                   children: [
-                    
+                      Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
                   ],
                 ), flex: 3,),
                 Expanded(child: Placeholder(), flex: 2,),
