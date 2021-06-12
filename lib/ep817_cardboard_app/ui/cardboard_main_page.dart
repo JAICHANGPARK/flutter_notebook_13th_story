@@ -145,7 +145,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                         child: Container(
                           height: 48,
                           width: 120,
-                          decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                          decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                           child: Stack(
                             children: [
                               Positioned(
@@ -167,7 +167,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                         child: Container(
                           height: 48,
                           width: 120,
-                          decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                          decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                           child: Center(
                             child: Text("All Stats"),
                           )
