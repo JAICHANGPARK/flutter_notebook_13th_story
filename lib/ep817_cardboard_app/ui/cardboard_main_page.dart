@@ -28,7 +28,18 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                     children: [
                       Expanded(child: Column(
                         children: [
-                            Text("Wins")
+                            Text("Wins"),
+                          Text("154"),
+                          Container(
+                            child: Row(
+                              children: [
+                                Icon(Icons.arrow_upward,),
+                                Text("4%", style: TextStyle(
+                                  color: CardboardAppStyle.mainColor
+                                ),)
+                              ],
+                            ),
+                          )
                         ],
                       )),
                       Expanded(child: Placeholder()),
