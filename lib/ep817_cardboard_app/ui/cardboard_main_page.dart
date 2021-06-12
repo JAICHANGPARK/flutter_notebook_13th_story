@@ -70,11 +70,11 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  "Wins",
+                                  "Win Rate",
                                   style: TextStyle(color: Colors.grey),
                                 ),
                                 Text(
-                                  "154",
+                                  "61.5%",
                                   style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
                                 ),
                                 Container(
@@ -100,7 +100,42 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                 )
                               ],
                             )),
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Unique Games",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                                Text(
+                                  "23",
+                                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                                ),
+                                Container(
+                                  width: 48,
+                                  decoration: BoxDecoration(
+                                    color: Colors.red[50],
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.arrow_downward,
+                                        size: 12,
+                                        color: Colors.red
+                                      ),
+                                      Text(
+                                        "-2%",
+                                        style: TextStyle(color: Colors.red),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            )),
                       ],
                     ),
                   ),
