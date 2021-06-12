@@ -28,6 +28,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                     children: [
                       Expanded(
                           child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text(
