@@ -152,7 +152,11 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                         ),
                         child: Stack(
                           children: [
-                            Positioned(child: CircleAvatar(backgroundColor: Colors.red,))
+                            Positioned(
+                                right: 0,
+                                top: 0,
+                                child: CircleAvatar(backgroundColor: Colors.red,
+                                radius: 8,))
                           ],
                         ),
                       ),
