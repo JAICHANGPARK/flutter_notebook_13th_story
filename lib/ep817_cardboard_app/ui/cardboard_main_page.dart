@@ -30,8 +30,14 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                           child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text("Wins"),
-                          Text("154"),
+                          Text(
+                            "Wins",
+                            style: TextStyle(color: Colors.grey),
+                          ),
+                          Text(
+                            "154",
+                            style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                          ),
                           Container(
                             width: 48,
                             decoration: BoxDecoration(
