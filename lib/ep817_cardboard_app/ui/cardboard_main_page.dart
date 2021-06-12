@@ -21,7 +21,12 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
       body: Column(
         children: [
           Expanded(
-            child: Placeholder(),
+            child: Column(
+              children: [
+                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder()),
+              ],
+            ),
             flex: 3,
           ),
           Divider(
