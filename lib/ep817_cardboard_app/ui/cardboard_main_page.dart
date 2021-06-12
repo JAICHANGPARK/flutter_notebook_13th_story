@@ -24,47 +24,85 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
             child: Column(
               children: [
                 Expanded(
-                  child: Row(
-                    children: [
-                      Expanded(
-                          child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Wins",
-                            style: TextStyle(color: Colors.grey),
-                          ),
-                          Text(
-                            "154",
-                            style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-                          ),
-                          Container(
-                            width: 48,
-                            decoration: BoxDecoration(
-                              color: Colors.green[50],
-                              borderRadius: BorderRadius.circular(8),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Expanded(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Wins",
+                              style: TextStyle(color: Colors.grey),
                             ),
-                            child: Row(
+                            Text(
+                              "154",
+                              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                            ),
+                            Container(
+                              width: 48,
+                              decoration: BoxDecoration(
+                                color: Colors.green[50],
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.arrow_upward,
+                                    size: 12,
+                                    color: CardboardAppStyle.mainColor,
+                                  ),
+                                  Text(
+                                    "4%",
+                                    style: TextStyle(color: CardboardAppStyle.mainColor),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        )),
+                        Expanded(
+                            child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Icon(
-                                  Icons.arrow_upward,
-                                  size: 12,
-                                  color: CardboardAppStyle.mainColor,
+                                Text(
+                                  "Wins",
+                                  style: TextStyle(color: Colors.grey),
                                 ),
                                 Text(
-                                  "4%",
-                                  style: TextStyle(color: CardboardAppStyle.mainColor),
+                                  "154",
+                                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
                                 ),
+                                Container(
+                                  width: 48,
+                                  decoration: BoxDecoration(
+                                    color: Colors.green[50],
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.arrow_upward,
+                                        size: 12,
+                                        color: CardboardAppStyle.mainColor,
+                                      ),
+                                      Text(
+                                        "4%",
+                                        style: TextStyle(color: CardboardAppStyle.mainColor),
+                                      ),
+                                    ],
+                                  ),
+                                )
                               ],
-                            ),
-                          )
-                        ],
-                      )),
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder()),
-                    ],
+                            )),
+                        Expanded(child: Placeholder()),
+                      ],
+                    ),
                   ),
                   flex: 3,
                 ),
