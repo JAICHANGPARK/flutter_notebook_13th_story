@@ -66,76 +66,72 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                         )),
                         Expanded(
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "Win Rate",
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                                Text(
-                                  "61.5%",
-                                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-                                ),
-                                Container(
-                                  width: 48,
-                                  decoration: BoxDecoration(
-                                    color: Colors.green[50],
-                                    borderRadius: BorderRadius.circular(8),
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Win Rate",
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                            Text(
+                              "61.5%",
+                              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                            ),
+                            Container(
+                              width: 48,
+                              decoration: BoxDecoration(
+                                color: Colors.green[50],
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.arrow_upward,
+                                    size: 12,
+                                    color: CardboardAppStyle.mainColor,
                                   ),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Icon(
-                                        Icons.arrow_upward,
-                                        size: 12,
-                                        color: CardboardAppStyle.mainColor,
-                                      ),
-                                      Text(
-                                        "4%",
-                                        style: TextStyle(color: CardboardAppStyle.mainColor),
-                                      ),
-                                    ],
+                                  Text(
+                                    "4%",
+                                    style: TextStyle(color: CardboardAppStyle.mainColor),
                                   ),
-                                )
-                              ],
-                            )),
+                                ],
+                              ),
+                            )
+                          ],
+                        )),
                         Expanded(
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "Unique Games",
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                                Text(
-                                  "23",
-                                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-                                ),
-                                Container(
-                                  width: 48,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red[50],
-                                    borderRadius: BorderRadius.circular(8),
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Unique Games",
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                            Text(
+                              "23",
+                              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                            ),
+                            Container(
+                              width: 48,
+                              decoration: BoxDecoration(
+                                color: Colors.red[50],
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.arrow_downward, size: 12, color: Colors.red),
+                                  Text(
+                                    "-2%",
+                                    style: TextStyle(color: Colors.red),
                                   ),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Icon(
-                                        Icons.arrow_downward,
-                                        size: 12,
-                                        color: Colors.red
-                                      ),
-                                      Text(
-                                        "-2%",
-                                        style: TextStyle(color: Colors.red),
-                                      ),
-                                    ],
-                                  ),
-                                )
-                              ],
-                            )),
+                                ],
+                              ),
+                            )
+                          ],
+                        )),
                       ],
                     ),
                   ),
@@ -145,18 +141,18 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                   child: Row(
                     children: [
                       Container(
+                        height: 48,
                         width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[100],
-                          borderRadius: BorderRadius.circular(8)
-                        ),
+                        decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
                         child: Stack(
                           children: [
                             Positioned(
                                 right: 0,
                                 top: 0,
-                                child: CircleAvatar(backgroundColor: Colors.red,
-                                radius: 8,))
+                                child: CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 8,
+                                ))
                           ],
                         ),
                       ),
