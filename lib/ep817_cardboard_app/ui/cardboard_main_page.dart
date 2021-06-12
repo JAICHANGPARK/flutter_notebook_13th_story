@@ -140,26 +140,39 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                 Expanded(
                   child: Row(
                     children: [
-                      Container(
-                        height: 48,
-                        width: 120,
-                        decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
-                        child: Stack(
-                          children: [
-                            Positioned(
-                                right: 0,
-                                top: 0,
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.red,
-                                  radius: 8,
-                                )),
-                            Center(
-                              child: Text("My Plays"),
-                            )
-                          ],
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          height: 48,
+                          width: 120,
+                          decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                  right: 0,
+                                  top: 0,
+                                  child: CircleAvatar(
+                                    backgroundColor: Colors.red,
+                                    radius: 8,
+                                  )),
+                              Center(
+                                child: Text("My Plays"),
+                              )
+                            ],
+                          ),
                         ),
                       ),
-                      Expanded(child: Placeholder()),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          height: 48,
+                          width: 120,
+                          decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                          child: Center(
+                            child: Text("All Stats"),
+                          )
+                        ),
+                      ),
                       Expanded(child: Placeholder()),
                     ],
                   ),
