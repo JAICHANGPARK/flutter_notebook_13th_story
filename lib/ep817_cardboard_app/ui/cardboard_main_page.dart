@@ -139,6 +139,8 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                 ),
                 Expanded(
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -153,7 +155,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                   top: 0,
                                   child: CircleAvatar(
                                     backgroundColor: Colors.red,
-                                    radius: 8,
+                                    radius: 6,
                                   )),
                               Center(
                                 child: Text("My Plays"),
