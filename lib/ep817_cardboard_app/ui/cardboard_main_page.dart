@@ -179,8 +179,14 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                             height: 38,
                             width: 100,
                             decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
-                            child: Center(
-                              child: Text("All Stats"),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Center(
+                                  child: Text("Week"),
+                                ),
+                                Icon(Icons.arrow_drop_down)
+                              ],
                             )
                         ),
                       ),
