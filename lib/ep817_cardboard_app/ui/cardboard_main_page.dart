@@ -152,7 +152,10 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                 child: CircleAvatar(
                                   backgroundColor: Colors.red,
                                   radius: 8,
-                                ))
+                                )),
+                            Center(
+                              child: Text("My Plays"),
+                            )
                           ],
                         ),
                       ),
