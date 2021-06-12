@@ -144,7 +144,18 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                 Expanded(
                   child: Row(
                     children: [
-                      Expanded(child: Placeholder()),
+                      Container(
+                        width: 120,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[100],
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned(child: CircleAvatar(backgroundColor: Colors.red,))
+                          ],
+                        ),
+                      ),
                       Expanded(child: Placeholder()),
                       Expanded(child: Placeholder()),
                     ],
