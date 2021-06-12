@@ -23,8 +23,8 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
           Expanded(
             child: Column(
               children: [
-                Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder(), flex: 3,),
+                Expanded(child: Placeholder(), flex: 2,),
               ],
             ),
             flex: 3,
