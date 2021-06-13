@@ -238,7 +238,10 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Recent Plays"),
-                
+                Expanded(child: ListView.builder(itemBuilder: (_, index){
+
+                })),
+
               ],
             ),
             flex: 9,
