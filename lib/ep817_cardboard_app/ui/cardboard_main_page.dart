@@ -252,8 +252,8 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                             child: Row(
                               children: [
                                 Container(
-                                  height: 72,
-                                  width: 72,
+                                  height: 84,
+                                  width: 84,
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
                                     borderRadius: BorderRadius.circular(8),
