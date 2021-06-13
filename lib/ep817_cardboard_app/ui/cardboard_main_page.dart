@@ -11,7 +11,32 @@ class CardboardMainPage extends StatefulWidget {
 
 class _CardboardMainPageState extends State<CardboardMainPage> {
 
-  List<RecentPlay> recentPlayItems = [];
+  List<RecentPlay> recentPlayItems = [
+    RecentPlay(
+      title: "Grail",
+      subtitle: "A brief description of the board game can maybe be put here.",
+      img: "https://cdn.pixabay.com/photo/2019/10/15/10/31/gin-4551299__340.jpg",
+      rate: 4.8
+    ),
+    RecentPlay(
+        title: "Ticket to Ride",
+        subtitle: "A brief description of the board game can maybe be put here.",
+        img: "https://upload.wikimedia.org/wikipedia/en/9/92/Ticket_to_Ride_Board_Game_Box_EN.jpg",
+        rate: 4.8
+    ),
+    RecentPlay(
+        title: "Glooomhaven",
+        subtitle: "A brief description of the board game can maybe be put here.",
+        img: "https://849310.smushcdn.com/1803394/wp-content/uploads/2017/12/gloomhaven-overview-header-1024x576.jpg?lossy=1&strip=1&webp=1",
+        rate: 4.8
+    ),
+    RecentPlay(
+        title: "Wingspan",
+        subtitle: "A brief description of the board game can maybe be put here.",
+        img: "https://cdn.pixabay.com/photo/2019/10/15/10/31/gin-4551299__340.jpg",
+        rate: 4.8
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -209,7 +234,13 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
             thickness: 2,
           ),
           Expanded(
-            child: Placeholder(),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Recent Plays"),
+                
+              ],
+            ),
             flex: 9,
           ),
         ],
