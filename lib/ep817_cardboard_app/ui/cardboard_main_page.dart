@@ -271,8 +271,30 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.only(right: 48),
                                     child: Column(
+
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
+                                        Container(
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                            color: Colors.green[50],
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                          child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Icon(
+                                                Icons.star,
+                                                size: 12,
+                                                color: CardboardAppStyle.mainColor,
+                                              ),
+                                              Text(
+                                                "${recentPlayItems[index].rate}",
+                                                style: TextStyle(color: CardboardAppStyle.mainColor),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
                                           Text( recentPlayItems[index].title ?? "no title"),
                                         Text(recentPlayItems[index].subtitle ?? "no subtitle",
                                         style: TextStyle(
