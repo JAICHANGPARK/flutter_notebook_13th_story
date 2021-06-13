@@ -269,6 +269,8 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                 SizedBox(height: 16,),
                                 Column(
                                   children: [
+                                      Text( recentPlayItems[index].title ?? "no title"),
+                                    Text(recentPlayItems[index].subtitle ?? "no subtitle")
 
                                   ],
                                 )
