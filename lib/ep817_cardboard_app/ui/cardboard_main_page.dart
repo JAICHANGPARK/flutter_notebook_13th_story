@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_13th_story/ep817_cardboard_app/styles/cardboard_app_style.dart';
+import '../model/recent_play.dart';
+import '../styles/cardboard_app_style.dart';
 
 class CardboardMainPage extends StatefulWidget {
   CardboardMainPage({Key? key}) : super(key: key);
@@ -9,6 +10,9 @@ class CardboardMainPage extends StatefulWidget {
 }
 
 class _CardboardMainPageState extends State<CardboardMainPage> {
+
+  List<RecentPlay> recentPlayItems = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
