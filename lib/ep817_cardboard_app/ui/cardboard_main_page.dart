@@ -255,8 +255,16 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                   height: 72,
                                   width: 72,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        recentPlayItems[index].img!,
+                                      ),
+                                      fit: BoxFit.cover
+                                    )
                                   ),
+
                                 )
                               ],
                             ),
