@@ -265,6 +265,12 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                     )
                                   ),
 
+                                ),
+                                SizedBox(height: 16,),
+                                Column(
+                                  children: [
+
+                                  ],
                                 )
                               ],
                             ),
