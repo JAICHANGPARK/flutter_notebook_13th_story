@@ -279,7 +279,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                           padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
                                           decoration: BoxDecoration(
                                             color: Colors.green[50],
-                                            borderRadius: BorderRadius.circular(8),
+                                            borderRadius: BorderRadius.circular(12),
                                           ),
                                           child: Row(
                                             mainAxisAlignment: MainAxisAlignment.center,
