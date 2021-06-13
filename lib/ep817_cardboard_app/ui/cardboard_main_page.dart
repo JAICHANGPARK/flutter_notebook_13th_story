@@ -239,10 +239,23 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
               children: [
                 Text("Recent Plays"),
                 Expanded(child: ListView.separated(itemBuilder: (_, index){
-                      return Container();
+                      return Container(
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                color: Colors.blue
+                              ),
+                            )
+                          ],
+                        ),
+                      );
                 },
                 separatorBuilder: (_,index){
-                  return Divider();
+                  return Divider(color: Colors.grey,
+                  );
                 }, itemCount: recentPlayItems.length,
                 
                 ),
