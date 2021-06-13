@@ -285,7 +285,8 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                               ),
                                               Text(
                                                 "${recentPlayItems[index].rate}",
-                                                style: TextStyle(color: CardboardAppStyle.mainColor),
+                                                style: TextStyle(
+                                                    color: CardboardAppStyle.mainColor, fontWeight: FontWeight.bold),
                                               ),
                                             ],
                                           ),
@@ -293,7 +294,14 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                         SizedBox(
                                           height: 8,
                                         ),
-                                        Text(recentPlayItems[index].title ?? "no title"),
+                                        Text(recentPlayItems[index].title ?? "no title",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold
+                                        ),),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
                                         Text(
                                           recentPlayItems[index].subtitle ?? "no subtitle",
                                           style: TextStyle(fontSize: 12, color: Colors.grey),
