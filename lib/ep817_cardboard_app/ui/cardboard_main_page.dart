@@ -266,14 +266,22 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                   ),
 
                                 ),
-                                SizedBox(height: 16,),
+                                SizedBox(width: 16,),
                                 Flexible(
-                                  child: Column(
-                                    children: [
-                                        Text( recentPlayItems[index].title ?? "no title"),
-                                      Text(recentPlayItems[index].subtitle ?? "no subtitle")
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(right: 48),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                          Text( recentPlayItems[index].title ?? "no title"),
+                                        Text(recentPlayItems[index].subtitle ?? "no subtitle",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.grey
+                                        ),)
 
-                                    ],
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],
