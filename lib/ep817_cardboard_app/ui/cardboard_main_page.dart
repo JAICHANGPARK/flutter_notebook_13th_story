@@ -234,35 +234,46 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
             thickness: 2,
           ),
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("Recent Plays"),
-                Expanded(child: ListView.separated(itemBuilder: (_, index){
-                      return Container(
-                        child: Row(
-                          children: [
-                            Container(
-                              height: 64,
-                              width: 64,
-                              decoration: BoxDecoration(
-                                color: Colors.blue
-                              ),
-                            )
-                          ],
-                        ),
-                      );
-                },
-                separatorBuilder: (_,index){
-                  return Divider(color: Colors.grey,
-                  );
-                }, itemCount: recentPlayItems.length,
-                
-                ),
-                
-                ),
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Recent Plays", style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold
 
-              ],
+                  ),),
+                  SizedBox(height: 16,),
+                  Expanded(child: ListView.separated(itemBuilder: (_, index){
+                        return Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        );
+                  },
+                  separatorBuilder: (_,index){
+                    return Divider(color: Colors.grey,
+                    );
+                  }, itemCount: recentPlayItems.length,
+
+                  ),
+
+                  ),
+
+                ],
+              ),
             ),
             flex: 9,
           ),
