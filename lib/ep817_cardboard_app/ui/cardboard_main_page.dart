@@ -247,7 +247,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                   SizedBox(height: 16,),
                   Expanded(child: ListView.separated(itemBuilder: (_, index){
                         return Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.only(left: 0, right: 0, top: 8, bottom: 8),
                           child: Container(
                             child: Row(
                               children: [
