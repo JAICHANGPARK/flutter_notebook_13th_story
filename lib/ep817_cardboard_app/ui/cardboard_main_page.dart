@@ -10,32 +10,28 @@ class CardboardMainPage extends StatefulWidget {
 }
 
 class _CardboardMainPageState extends State<CardboardMainPage> {
-
   List<RecentPlay> recentPlayItems = [
     RecentPlay(
-      title: "Grail",
-      subtitle: "A brief description of the board game can maybe be put here.",
-      img: "https://cdn.pixabay.com/photo/2019/10/15/10/31/gin-4551299__340.jpg",
-      rate: 4.8
-    ),
+        title: "Grail",
+        subtitle: "A brief description of the board game can maybe be put here.",
+        img: "https://cdn.pixabay.com/photo/2019/10/15/10/31/gin-4551299__340.jpg",
+        rate: 4.8),
     RecentPlay(
         title: "Ticket to Ride",
         subtitle: "A brief description of the board game can maybe be put here.",
         img: "https://upload.wikimedia.org/wikipedia/en/9/92/Ticket_to_Ride_Board_Game_Box_EN.jpg",
-        rate: 4.8
-    ),
+        rate: 4.8),
     RecentPlay(
         title: "Glooomhaven",
         subtitle: "A brief description of the board game can maybe be put here.",
-        img: "https://849310.smushcdn.com/1803394/wp-content/uploads/2017/12/gloomhaven-overview-header-1024x576.jpg?lossy=1&strip=1&webp=1",
-        rate: 4.8
-    ),
+        img:
+            "https://849310.smushcdn.com/1803394/wp-content/uploads/2017/12/gloomhaven-overview-header-1024x576.jpg?lossy=1&strip=1&webp=1",
+        rate: 4.8),
     RecentPlay(
         title: "Wingspan",
         subtitle: "A brief description of the board game can maybe be put here.",
         img: "https://cdn.pixabay.com/photo/2019/10/15/10/31/gin-4551299__340.jpg",
-        rate: 4.8
-    ),
+        rate: 4.8),
   ];
 
   @override
@@ -169,7 +165,6 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                 Expanded(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -198,11 +193,10 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                         child: Container(
                             height: 38,
                             width: 100,
-                          decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text("All Stats"),
-                          )
-                        ),
+                            decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+                            child: Center(
+                              child: Text("All Stats"),
+                            )),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -218,8 +212,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                 ),
                                 Icon(Icons.arrow_drop_down)
                               ],
-                            )
-                        ),
+                            )),
                       ),
                     ],
                   ),
@@ -239,13 +232,16 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Recent Plays", style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-
-                  ),),
-                  SizedBox(height: 16,),
-                  Expanded(child: ListView.separated(itemBuilder: (_, index){
+                  Text(
+                    "Recent Plays",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Expanded(
+                    child: ListView.separated(
+                      itemBuilder: (_, index) {
                         return Padding(
                           padding: const EdgeInsets.only(left: 0, right: 0, top: 8, bottom: 8),
                           child: Container(
@@ -255,23 +251,21 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                   height: 84,
                                   width: 84,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(8),
-                                    image: DecorationImage(
-                                      image: NetworkImage(
-                                        recentPlayItems[index].img!,
-                                      ),
-                                      fit: BoxFit.cover
-                                    )
-                                  ),
-
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                            recentPlayItems[index].img!,
+                                          ),
+                                          fit: BoxFit.cover)),
                                 ),
-                                SizedBox(width: 16,),
+                                SizedBox(
+                                  width: 16,
+                                ),
                                 Flexible(
                                   child: Padding(
                                     padding: const EdgeInsets.only(right: 48),
                                     child: Column(
-
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Container(
@@ -296,14 +290,14 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                             ],
                                           ),
                                         ),
-                                          SizedBox(height: 8,),
-                                          Text( recentPlayItems[index].title ?? "no title"),
-                                        Text(recentPlayItems[index].subtitle ?? "no subtitle",
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.grey
-                                        ),)
-
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Text(recentPlayItems[index].title ?? "no title"),
+                                        Text(
+                                          recentPlayItems[index].subtitle ?? "no subtitle",
+                                          style: TextStyle(fontSize: 12, color: Colors.grey),
+                                        )
                                       ],
                                     ),
                                   ),
@@ -312,16 +306,15 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                             ),
                           ),
                         );
-                  },
-                  separatorBuilder: (_,index){
-                    return Divider(color: Colors.grey,
-                    );
-                  }, itemCount: recentPlayItems.length,
-
+                      },
+                      separatorBuilder: (_, index) {
+                        return Divider(
+                          color: Colors.grey,
+                        );
+                      },
+                      itemCount: recentPlayItems.length,
+                    ),
                   ),
-
-                  ),
-
                 ],
               ),
             ),
