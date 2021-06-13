@@ -276,6 +276,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                       children: [
                                         Container(
                                           width: 48,
+                                          padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
                                           decoration: BoxDecoration(
                                             color: Colors.green[50],
                                             borderRadius: BorderRadius.circular(8),
@@ -295,6 +296,7 @@ class _CardboardMainPageState extends State<CardboardMainPage> {
                                             ],
                                           ),
                                         ),
+                                          SizedBox(height: 8,),
                                           Text( recentPlayItems[index].title ?? "no title"),
                                         Text(recentPlayItems[index].subtitle ?? "no subtitle",
                                         style: TextStyle(
