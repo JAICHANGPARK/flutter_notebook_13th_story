@@ -11,7 +11,11 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            
+          ],
+        ),
     );
   }
 }
