@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../nitori_app_style.dart';
+
 class NitoriHomePage extends StatefulWidget {
   const NitoriHomePage({Key? key}) : super(key: key);
 
@@ -11,9 +13,18 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
         bottomNavigationBar: BottomNavigationBar(
+          unselectedItemColor: Colors.grey,
+          selectedIconTheme: IconTheme.of(context).copyWith(
+            color:  NitoriAppStyle.mainColor,
+          ),
+          selectedLabelStyle: TextStyle(
+            color:  NitoriAppStyle.mainColor,
+          ),
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home))
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "おうちでニトリ"),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "ニトリネット")
           ],
         ),
     );
