@@ -16,6 +16,7 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
 
         bottomNavigationBar: BottomNavigationBar(
           unselectedItemColor: Colors.grey,
+          selectedItemColor:  NitoriAppStyle.mainColor,
           selectedIconTheme: IconTheme.of(context).copyWith(
             color:  NitoriAppStyle.mainColor,
           ),
