@@ -10,7 +10,9 @@ class NitoriHomePage extends StatefulWidget {
 class _NitoriHomePageState extends State<NitoriHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+    );
   }
 }
 
