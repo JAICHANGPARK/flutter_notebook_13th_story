@@ -13,7 +13,7 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
     return Scaffold(
         bottomNavigationBar: BottomNavigationBar(
           items: [
-            
+            BottomNavigationBarItem(icon: Icon(Icons.home))
           ],
         ),
     );
