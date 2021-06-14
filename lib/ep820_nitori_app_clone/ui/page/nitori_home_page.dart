@@ -15,6 +15,10 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
     return Scaffold(
 
         bottomNavigationBar: BottomNavigationBar(
+          onTap: (idx){
+
+          },
+          type: BottomNavigationBarType.fixed,
           unselectedItemColor: Colors.grey,
           selectedItemColor:  NitoriAppStyle.mainColor,
           selectedIconTheme: IconTheme.of(context).copyWith(
