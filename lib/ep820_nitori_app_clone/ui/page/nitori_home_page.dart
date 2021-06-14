@@ -27,8 +27,7 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
         unselectedItemColor: Colors.grey,
         selectedItemColor: NitoriAppStyle.mainColor,
         selectedLabelStyle: TextStyle(color: NitoriAppStyle.mainColor, fontSize: 10),
-        unselectedLabelStyle: TextStyle(color: Colors.grey,
-        fontSize: 10),
+        unselectedLabelStyle: TextStyle(color: Colors.grey, fontSize: 10),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "おうちでニトリ"),
           BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "ニトリネット"),
