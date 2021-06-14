@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ep817_cardboard_app/cardboard_app.dart';
+import 'ep820_nitori_app_clone/nitori_app_clone.dart';
 
-void main() => runApp(CardboardApp());
+
+void main() => runApp(NitoriAppClone());
