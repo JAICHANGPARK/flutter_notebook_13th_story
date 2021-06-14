@@ -26,15 +26,15 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
         type: BottomNavigationBarType.fixed,
         unselectedItemColor: Colors.grey,
         selectedItemColor: NitoriAppStyle.mainColor,
-        selectedIconTheme: IconTheme.of(context).copyWith(
-          color: NitoriAppStyle.mainColor,
-        ),
-        selectedLabelStyle: TextStyle(
-          color: NitoriAppStyle.mainColor,
-        ),
+        selectedLabelStyle: TextStyle(color: NitoriAppStyle.mainColor, fontSize: 10),
+        unselectedLabelStyle: TextStyle(color: Colors.grey,
+        fontSize: 10),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "おうちでニトリ"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "ニトリネット")
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "ニトリネット"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "お気に入り商品"),
+          BottomNavigationBarItem(icon: Icon(Icons.work_outline), label: "便利機能"),
+          BottomNavigationBarItem(icon: Icon(Icons.badge), label: "会員証")
         ],
       ),
     );
