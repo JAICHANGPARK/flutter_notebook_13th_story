@@ -10,29 +10,31 @@ class NitoriHomePage extends StatefulWidget {
 }
 
 class _NitoriHomePageState extends State<NitoriHomePage> {
+  int _bottomTabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-        bottomNavigationBar: BottomNavigationBar(
-          onTap: (idx){
-
-          },
-          type: BottomNavigationBarType.fixed,
-          unselectedItemColor: Colors.grey,
-          selectedItemColor:  NitoriAppStyle.mainColor,
-          selectedIconTheme: IconTheme.of(context).copyWith(
-            color:  NitoriAppStyle.mainColor,
-          ),
-          selectedLabelStyle: TextStyle(
-            color:  NitoriAppStyle.mainColor,
-          ),
-          items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "おうちでニトリ"),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "ニトリネット")
-          ],
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (idx) {
+          setState(() {
+            _bottomTabIndex = idx;
+          });
+        },
+        type: BottomNavigationBarType.fixed,
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: NitoriAppStyle.mainColor,
+        selectedIconTheme: IconTheme.of(context).copyWith(
+          color: NitoriAppStyle.mainColor,
         ),
+        selectedLabelStyle: TextStyle(
+          color: NitoriAppStyle.mainColor,
+        ),
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "おうちでニトリ"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "ニトリネット")
+        ],
+      ),
     );
   }
 }
-
