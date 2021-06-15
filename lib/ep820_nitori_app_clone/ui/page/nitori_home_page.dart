@@ -16,11 +16,9 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: IndexedStack(
-        children: [
-          
-        ],
+        index: _bottomTabIndex,
+        children: [],
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         elevation: 2,
         currentIndex: _bottomTabIndex,
