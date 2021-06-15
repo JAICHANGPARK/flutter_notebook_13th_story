@@ -63,7 +63,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  decoration: BoxDecoration(color: Colors.grey),
+                  decoration: BoxDecoration(color: Colors.grey[300]),
                   child: Row(
                     children: [
                       Container(
@@ -87,7 +87,8 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                             ),
                           ],
                         ),
-                      )
+                      ),
+                      DropdownButton(items: [])
                     ],
                   ),
                 )
