@@ -11,7 +11,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
