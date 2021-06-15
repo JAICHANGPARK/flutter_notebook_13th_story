@@ -25,7 +25,9 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
       body: NestedScrollView(
         controller: _scrollController,
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-
+          return [
+            
+          ];
       }, body: TabBarView(
         children: [
           Container(),
