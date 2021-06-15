@@ -39,12 +39,13 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                 collapseMode: CollapseMode.pin,
                 centerTitle: true,
               ),
+              elevation: 2,
               bottom: TabBar(
                 labelColor: NitoriAppStyle.mainColor,
                 unselectedLabelColor: Colors.black87,
                 controller: _tabController,
                 indicatorColor: NitoriAppStyle.mainColor,
-                indicatorWeight: 4,
+                indicatorWeight: 2,
                 indicatorSize: TabBarIndicatorSize.label,
                 tabs: [
                   Tab(
@@ -103,25 +104,25 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                         SizedBox(
                           width: 16,
                         ),
-                        DropdownButton<String>(value: categories, isExpanded: false,
-                            onChanged: (s){
+                        DropdownButton<String>(
+                            value: categories,
+                            isExpanded: false,
+                            onChanged: (s) {
                               setState(() {
                                 categories = s;
                               });
                             },
-                            onTap: (){
-
-                            },
+                            onTap: () {},
                             items: [
-                          DropdownMenuItem(
-                            child: Text("カテゴリ"),
-                            value: "カテゴリ",
-                          ),
-                          DropdownMenuItem(
-                            child: Text("カテゴリ2"),
-                            value: "カテゴリ2",
-                          )
-                        ])
+                              DropdownMenuItem(
+                                child: Text("カテゴリ"),
+                                value: "カテゴリ",
+                              ),
+                              DropdownMenuItem(
+                                child: Text("カテゴリ2"),
+                                value: "カテゴリ2",
+                              )
+                            ])
                       ],
                     ),
                   ),
