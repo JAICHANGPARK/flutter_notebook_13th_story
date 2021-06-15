@@ -63,36 +63,37 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  height: 64,
+                  height: 52,
                   width: 160,
                   decoration: BoxDecoration(color: Colors.grey[300]),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Center(
-                        child: Container(
-                          height: 48,
-                          width: 48,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                child: Icon(Icons.list,
-                                size: 32,),
-                                right: 0,
-                                top: 0,
+                      Container(
+                        height: 48,
+                        width: 48,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              child: Icon(Icons.list,
+                              size: 32,),
+                              right: 0,
+                              left: 0,
+                              bottom: 0,
+                              top: 0,
+                            ),
+                            Positioned(
+                              child: CircleAvatar(
+                                radius: 4,
+                                backgroundColor: Colors.red,
                               ),
-                              Positioned(
-                                child: CircleAvatar(
-                                  radius: 4,
-                                  backgroundColor: Colors.red,
-                                ),
-                                right: 0,
-                                top: 3,
-                              ),
-                            ],
-                          ),
+                              right: 0,
+                              top: 3,
+                            ),
+                          ],
                         ),
                       ),
+                      SizedBox(width: 16,),
                       DropdownButton<String>(items: [
                         DropdownMenuItem(child: Text("カテゴリ"),)
 
