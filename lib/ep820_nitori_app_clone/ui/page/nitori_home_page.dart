@@ -20,6 +20,27 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
         index: _bottomTabIndex,
         children: [
           NitoriOuchiPage(),
+          Container(
+            child: Center(
+              child: Text("Page2"),
+            ),
+          ),
+          Container(
+            child: Center(
+              child: Text("Page3"),
+            ),
+          ),
+          Container(
+            child: Center(
+              child: Text("Page4"),
+            ),
+          ),
+          Container(
+            child: Center(
+              child: Text("Page5"),
+            ),
+          )
+
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
