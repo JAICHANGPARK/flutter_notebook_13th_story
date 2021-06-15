@@ -8,10 +8,22 @@ class NitoriOuchiPage extends StatefulWidget {
 }
 
 class _NitoriOuchiPageState extends State<NitoriOuchiPage> {
+  ScrollController? _scrollController;
+  TabController? _tabController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: NestedScrollView(headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {  }, body: TabBarView(),
+        
+      ),
     );
   }
 }
