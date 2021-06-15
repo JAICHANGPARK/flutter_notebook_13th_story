@@ -60,6 +60,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
           controller: _tabController,
           children: [
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   decoration: BoxDecoration(color: Colors.grey),
@@ -78,7 +79,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                             ),
                             Positioned(
                               child: CircleAvatar(
-                                radius: 3,
+                                radius: 4,
                                 backgroundColor: Colors.red,
                               ),
                               right: 0,
