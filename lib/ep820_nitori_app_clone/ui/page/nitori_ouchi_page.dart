@@ -65,6 +65,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                 Container(
                   decoration: BoxDecoration(color: Colors.grey[300]),
                   child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
                         height: 64,
@@ -88,7 +89,10 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                           ],
                         ),
                       ),
-                      DropdownButton(items: [])
+                      DropdownButton<String>(items: [
+                        DropdownMenuItem(child: Text("カテゴリ"),)
+
+                      ])
                     ],
                   ),
                 )
