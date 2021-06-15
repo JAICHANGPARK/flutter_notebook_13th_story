@@ -15,13 +15,22 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    
+
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: NestedScrollView(headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {  }, body: TabBarView(),
+      body: NestedScrollView(
+        controller: _scrollController,
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+
+      }, body: TabBarView(
+        children: [
+          Container(),
+          Container()
+        ],
+      ),
         
       ),
     );
