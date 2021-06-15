@@ -31,17 +31,26 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
             SliverAppBar(
               pinned: true,
               floating: true,
+              backgroundColor: Colors.white,
               forceElevated: innerBoxIsScrolled,
               flexibleSpace:  FlexibleSpaceBar(
                 collapseMode: CollapseMode.pin,
                 centerTitle: true,
               ),
               bottom: TabBar(
+                labelColor: NitoriAppStyle.mainColor,
+                unselectedLabelColor: Colors.black54,
                 controller: _tabController,
                 indicatorColor: NitoriAppStyle.mainColor,
+                indicatorWeight: 4,
+                indicatorSize: TabBarIndicatorSize.label,
                 tabs: [
-                  Tab(),
-                  Tab(),
+                  Tab(
+                  text: "トピックス",
+                  ),
+                  Tab(
+                    text: "コーディネーター",
+                  ),
                 ],
               ),
             ),
