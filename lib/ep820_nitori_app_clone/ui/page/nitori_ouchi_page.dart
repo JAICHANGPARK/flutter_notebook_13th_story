@@ -7,7 +7,7 @@ class NitoriOuchiPage extends StatefulWidget {
   _NitoriOuchiPageState createState() => _NitoriOuchiPageState();
 }
 
-class _NitoriOuchiPageState extends State<NitoriOuchiPage> {
+class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProviderStateMixin{
   ScrollController? _scrollController;
   TabController? _tabController;
 
@@ -15,7 +15,8 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-
+    _scrollController =ScrollController();
+    _tabController = TabController(length: 2, vsync: this);
   }
 
   @override
