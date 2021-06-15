@@ -80,6 +80,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                                 child: Icon(
                                   Icons.list,
                                   size: 32,
+                                  color: Colors.black45,
                                 ),
                                 right: 0,
                                 left: 0,
@@ -103,6 +104,9 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                         DropdownButton<String>(items: [
                           DropdownMenuItem(
                             child: Text("カテゴリ"),
+                          ),
+                          DropdownMenuItem(
+                            child: Text("カテゴリ2"),
                           )
                         ])
                       ],
