@@ -58,7 +58,17 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
       }, body: TabBarView(
         controller: _tabController,
         children: [
-          Container(),
+          Column(
+            children: [
+              Container(
+                child: Row(
+                  children: [
+                      Container()
+                  ],
+                ),
+              )
+            ],
+          ),
           Container()
         ],
       ),
