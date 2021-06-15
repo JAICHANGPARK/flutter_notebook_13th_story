@@ -62,43 +62,52 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  height: 52,
-                  width: 160,
-                  decoration: BoxDecoration(color: Colors.grey[300]),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 48,
-                        width: 48,
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              child: Icon(Icons.list,
-                              size: 32,),
-                              right: 0,
-                              left: 0,
-                              bottom: 0,
-                              top: 0,
-                            ),
-                            Positioned(
-                              child: CircleAvatar(
-                                radius: 4,
-                                backgroundColor: Colors.red,
+                Padding(
+                  padding: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
+                  child: Container(
+                    height: 48,
+                    width: 180,
+                    decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(8)),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 48,
+                          width: 48,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                child: Icon(
+                                  Icons.list,
+                                  size: 32,
+                                ),
+                                right: 0,
+                                left: 0,
+                                bottom: 0,
+                                top: 0,
                               ),
-                              right: 0,
-                              top: 3,
-                            ),
-                          ],
+                              Positioned(
+                                child: CircleAvatar(
+                                  radius: 4,
+                                  backgroundColor: Colors.red,
+                                ),
+                                right: 4,
+                                top: 8,
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      SizedBox(width: 16,),
-                      DropdownButton<String>(items: [
-                        DropdownMenuItem(child: Text("カテゴリ"),)
-
-                      ])
-                    ],
+                        SizedBox(
+                          width: 16,
+                        ),
+                        DropdownButton<String>(items: [
+                          DropdownMenuItem(
+                            child: Text("カテゴリ"),
+                          )
+                        ])
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(child: Placeholder()),
