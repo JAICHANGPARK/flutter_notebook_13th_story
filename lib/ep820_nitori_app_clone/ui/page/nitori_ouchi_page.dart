@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../nitori_app_style.dart';
+
 class NitoriOuchiPage extends StatefulWidget {
   const NitoriOuchiPage({Key? key}) : super(key: key);
 
@@ -34,9 +36,18 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                 collapseMode: CollapseMode.pin,
                 centerTitle: true,
               ),
+              bottom: TabBar(
+                controller: _tabController,
+                indicatorColor: NitoriAppStyle.mainColor,
+                tabs: [
+                  Tab(),
+                  Tab(),
+                ],
+              ),
             ),
           ];
       }, body: TabBarView(
+        controller: _tabController,
         children: [
           Container(),
           Container()
