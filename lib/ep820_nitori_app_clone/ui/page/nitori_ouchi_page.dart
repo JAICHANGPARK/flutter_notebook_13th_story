@@ -63,30 +63,34 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
+                  height: 64,
+                  width: 160,
                   decoration: BoxDecoration(color: Colors.grey[300]),
                   child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        height: 64,
-                        width: 64,
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              child: Icon(Icons.list,
-                              size: 32,),
-                              right: 0,
-                              top: 0,
-                            ),
-                            Positioned(
-                              child: CircleAvatar(
-                                radius: 4,
-                                backgroundColor: Colors.red,
+                      Center(
+                        child: Container(
+                          height: 48,
+                          width: 48,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                child: Icon(Icons.list,
+                                size: 32,),
+                                right: 0,
+                                top: 0,
                               ),
-                              right: 0,
-                              top: 0,
-                            ),
-                          ],
+                              Positioned(
+                                child: CircleAvatar(
+                                  radius: 4,
+                                  backgroundColor: Colors.red,
+                                ),
+                                right: 0,
+                                top: 3,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       DropdownButton<String>(items: [
