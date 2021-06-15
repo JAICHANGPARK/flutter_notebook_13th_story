@@ -28,6 +28,11 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
         controller: _scrollController,
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return [
+            Row(
+              children: [
+                Icon(Icons.menu),
+              ],
+            ),
             SliverAppBar(
               pinned: true,
               floating: true,
@@ -39,7 +44,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
               ),
               bottom: TabBar(
                 labelColor: NitoriAppStyle.mainColor,
-                unselectedLabelColor: Colors.black54,
+                unselectedLabelColor: Colors.black87,
                 controller: _tabController,
                 indicatorColor: NitoriAppStyle.mainColor,
                 indicatorWeight: 4,
