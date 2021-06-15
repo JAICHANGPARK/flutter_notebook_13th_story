@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../nitori_app_style.dart';
+import 'nitori_ouchi_page.dart';
 
 class NitoriHomePage extends StatefulWidget {
   const NitoriHomePage({Key? key}) : super(key: key);
@@ -17,7 +18,9 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
     return Scaffold(
       body: IndexedStack(
         index: _bottomTabIndex,
-        children: [],
+        children: [
+          NitoriOuchiPage(),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         elevation: 2,
