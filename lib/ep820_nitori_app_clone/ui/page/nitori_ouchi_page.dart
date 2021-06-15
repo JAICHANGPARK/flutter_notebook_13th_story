@@ -99,7 +99,8 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                       ])
                     ],
                   ),
-                )
+                ),
+                Expanded(child: Placeholder()),
               ],
             ),
             Container()
