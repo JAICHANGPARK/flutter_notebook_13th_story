@@ -9,7 +9,7 @@ class NitoriOuchiPage extends StatefulWidget {
   _NitoriOuchiPageState createState() => _NitoriOuchiPageState();
 }
 
-class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProviderStateMixin{
+class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProviderStateMixin {
   ScrollController? _scrollController;
   TabController? _tabController;
 
@@ -17,7 +17,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
   void initState() {
     // TODO: implement initState
     super.initState();
-    _scrollController =ScrollController();
+    _scrollController = ScrollController();
     _tabController = TabController(length: 2, vsync: this);
   }
 
@@ -33,7 +33,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
               floating: true,
               backgroundColor: Colors.white,
               forceElevated: innerBoxIsScrolled,
-              flexibleSpace:  FlexibleSpaceBar(
+              flexibleSpace: FlexibleSpaceBar(
                 collapseMode: CollapseMode.pin,
                 centerTitle: true,
               ),
@@ -46,7 +46,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                 indicatorSize: TabBarIndicatorSize.label,
                 tabs: [
                   Tab(
-                  text: "トピックス",
+                    text: "トピックス",
                   ),
                   Tab(
                     text: "コーディネーター",
@@ -55,24 +55,46 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
               ),
             ),
           ];
-      }, body: TabBarView(
-        controller: _tabController,
-        children: [
-          Column(
-            children: [
-              Container(
-                child: Row(
-                  children: [
-                      Container()
-                  ],
-                ),
-              )
-            ],
-          ),
-          Container()
-        ],
-      ),
-        
+        },
+        body: TabBarView(
+          controller: _tabController,
+          children: [
+            Column(
+              children: [
+                Container(
+                  decoration: BoxDecoration(color: Colors.grey),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 64,
+                        width: 64,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              child: Icon(Icons.list,
+                              size: 32,),
+                              right: 0,
+                              top: 0,
+                            ),
+                            Positioned(
+                              child: CircleAvatar(
+                                radius: 3,
+                                backgroundColor: Colors.red,
+                              ),
+                              right: 0,
+                              top: 0,
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+            Container()
+          ],
+        ),
       ),
     );
   }
