@@ -13,6 +13,8 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
   ScrollController? _scrollController;
   TabController? _tabController;
 
+  String? categories = "カテゴリ";
+
   @override
   void initState() {
     // TODO: implement initState
@@ -101,12 +103,23 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                         SizedBox(
                           width: 16,
                         ),
-                        DropdownButton<String>(items: [
+                        DropdownButton<String>(value: categories, isExpanded: false,
+                            onChanged: (s){
+                              setState(() {
+                                categories = s;
+                              });
+                            },
+                            onTap: (){
+
+                            },
+                            items: [
                           DropdownMenuItem(
                             child: Text("カテゴリ"),
+                            value: "カテゴリ",
                           ),
                           DropdownMenuItem(
                             child: Text("カテゴリ2"),
+                            value: "カテゴリ2",
                           )
                         ])
                       ],
