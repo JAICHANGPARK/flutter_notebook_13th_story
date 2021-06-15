@@ -26,7 +26,15 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
         controller: _scrollController,
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return [
-            
+            SliverAppBar(
+              pinned: true,
+              floating: true,
+              forceElevated: innerBoxIsScrolled,
+              flexibleSpace:  FlexibleSpaceBar(
+                collapseMode: CollapseMode.pin,
+                centerTitle: true,
+              ),
+            ),
           ];
       }, body: TabBarView(
         children: [
