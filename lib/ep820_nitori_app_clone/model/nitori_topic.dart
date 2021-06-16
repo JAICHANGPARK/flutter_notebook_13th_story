@@ -17,3 +17,5 @@ class NitoriTopic {
     this.isLike,
   });
 }
+
+
