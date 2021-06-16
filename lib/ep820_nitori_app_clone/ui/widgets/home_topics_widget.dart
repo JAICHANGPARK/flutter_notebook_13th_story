@@ -12,9 +12,20 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      itemCount: 10,
       itemBuilder: (context, index){
-        
-      }, gridDelegate: null,
+
+        return Container(
+          decoration: BoxDecoration(
+            color: Colors.grey
+          ),
+        );
+      }, gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      crossAxisCount: 2,
+      childAspectRatio: 1,
+      crossAxisSpacing: 4,
+      mainAxisSpacing: 4
+    ),
     );
   }
 }
