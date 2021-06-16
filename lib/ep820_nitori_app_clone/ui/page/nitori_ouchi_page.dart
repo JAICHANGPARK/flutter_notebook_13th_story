@@ -29,6 +29,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
+      resizeToAvoidBottomInset: false,
       body: NestedScrollView(
         controller: _scrollController,
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
