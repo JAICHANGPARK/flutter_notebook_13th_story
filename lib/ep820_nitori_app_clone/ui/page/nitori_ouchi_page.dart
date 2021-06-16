@@ -46,28 +46,36 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
-                      IconButton(onPressed: (){}, icon:  Icon(Icons.menu, ), color:  NitoriAppStyle.mainColor,),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.menu,
+                        ),
+                        color: NitoriAppStyle.mainColor,
+                      ),
                       Expanded(
                         child: Container(
                           height: 38,
                           width: double.infinity,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[100],
-                            borderRadius: BorderRadius.circular(3)
-                          ),
+                          decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(3)),
                           padding: EdgeInsets.symmetric(horizontal: 8),
                           child: TextField(
                             controller: _textEditingController,
                             decoration: InputDecoration(
-                              icon: Icon(Icons.search),
-                              hintText: "商品を探す",
-                              suffixIcon: Icon(Icons.mic_none),
-                              border: InputBorder.none
-                            ),
+                                icon: Icon(Icons.search),
+                                hintText: "商品を探す",
+                                suffixIcon: Icon(Icons.mic_none),
+                                border: InputBorder.none),
                           ),
                         ),
                       ),
-                      IconButton(onPressed: (){}, icon:  Icon(Icons.shopping_cart_outlined, ), color:  NitoriAppStyle.mainColor,),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.shopping_cart_outlined,
+                        ),
+                        color: NitoriAppStyle.mainColor,
+                      ),
                     ],
                   ),
                 ),
