@@ -59,7 +59,8 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                             decoration: InputDecoration(
                               icon: Icon(Icons.search),
                               hintText: "商品を探す",
-                              suffixIcon: Icon(Icons.mic_none)
+                              suffixIcon: Icon(Icons.mic_none),
+                              border: InputBorder.none
                             ),
                           ),
                         ),
