@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/ui/widgets/home_topics_widget.dart';
 
 import '../../nitori_app_style.dart';
 
@@ -159,7 +160,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                     ),
                   ),
                 ),
-                Expanded(child: Placeholder()),
+                Expanded(child: HomeTopicsWidget()),
               ],
             ),
             Container()
