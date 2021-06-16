@@ -47,7 +47,9 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                   child: Row(
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          _scaffoldKey.currentState!.openDrawer();
+                        },
                         icon: Icon(
                           Icons.menu,
                         ),
