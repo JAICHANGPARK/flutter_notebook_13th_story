@@ -40,7 +40,6 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                 forceElevated: innerBoxIsScrolled,
                 flexibleSpace: FlexibleSpaceBar(
                   collapseMode: CollapseMode.pin,
-                  centerTitle: true,
                   background: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
@@ -48,15 +47,14 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                         IconButton(onPressed: (){}, icon:  Icon(Icons.menu, ), color:  NitoriAppStyle.mainColor,),
                         Expanded(
                           child: Container(
-                            height: 48,
+                            height: 32,
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: Colors.grey[200]
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(8)
                             ),
                           ),
                         ),
-
-
                       ],
                     ),
                   ),
