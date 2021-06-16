@@ -171,7 +171,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                     ),
                   ),
                 ),
-                Expanded(child: HomeTopicsWidget()),
+                Flexible(child: HomeTopicsWidget()),
               ],
             ),
             Container()
