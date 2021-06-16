@@ -8,5 +8,12 @@ class NitoriTopic {
   int? likeCount;
   bool? isLike;
 
-  NitoriTopic({this.date, this.title, this.img, this.type, this.likeCount, this.isLike});
+  NitoriTopic({
+    required this.date,
+    required this.title,
+    required this.img,
+    this.type,
+    this.likeCount,
+    this.isLike,
+  });
 }
