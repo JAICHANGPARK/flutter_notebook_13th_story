@@ -1,8 +1,6 @@
-
-
 import '../enums/sns_type.dart';
 
-class nitoriTopic{
+class NitoriTopic {
   String? date;
   String? title;
   String? img;
@@ -10,4 +8,5 @@ class nitoriTopic{
   int? likeCount;
   bool? isLike;
 
+  NitoriTopic({this.date, this.title, this.img, this.type, this.likeCount, this.isLike});
 }
