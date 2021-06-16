@@ -11,9 +11,10 @@ class HomeTopicsWidget extends StatefulWidget {
 class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
   @override
   Widget build(BuildContext context) {
-    return GridView.count(crossAxisCount: 2,
-    children: [
-
-    ],);
+    return GridView.builder(
+      itemBuilder: (context, index){
+        
+      }, gridDelegate: null,
+    );
   }
 }
