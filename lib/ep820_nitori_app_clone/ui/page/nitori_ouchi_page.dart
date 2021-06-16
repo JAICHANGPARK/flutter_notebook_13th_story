@@ -15,6 +15,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
 
   String? categories = "カテゴリ";
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
+  TextEditingController _textEditingController = TextEditingController();
 
   @override
   void initState() {
@@ -52,8 +53,14 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                             color: Colors.grey[100],
                             borderRadius: BorderRadius.circular(3)
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
                           child: TextField(
-                            
+                            controller: _textEditingController,
+                            decoration: InputDecoration(
+                              icon: Icon(Icons.search),
+                              hintText: "商品を探す",
+                              suffixIcon: Icon(Icons.mic_none)
+                            ),
                           ),
                         ),
                       ),
