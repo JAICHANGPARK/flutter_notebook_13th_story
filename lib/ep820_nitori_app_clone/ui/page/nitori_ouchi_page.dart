@@ -44,7 +44,9 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
-                      Icon(Icons.menu, ),
+                      IconButton(onPressed: (){}, icon:  Icon(Icons.menu, ), ),
+                      
+
                     ],
                   ),
                 ),
