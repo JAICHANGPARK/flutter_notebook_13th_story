@@ -14,6 +14,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
   TabController? _tabController;
 
   String? categories = "カテゴリ";
+  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
 
   @override
   void initState() {
@@ -26,6 +27,7 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       body: NestedScrollView(
         controller: _scrollController,
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
@@ -38,6 +40,14 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
               flexibleSpace: FlexibleSpaceBar(
                 collapseMode: CollapseMode.pin,
                 centerTitle: true,
+                background: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Icon(Icons.menu, ),
+                    ],
+                  ),
+                ),
               ),
               elevation: 2,
               bottom: TabBar(
