@@ -46,6 +46,8 @@ class _NitoriOuchiPageState extends State<NitoriOuchiPage> with SingleTickerProv
                     children: [
                       IconButton(onPressed: (){}, icon:  Icon(Icons.menu, ), color:  NitoriAppStyle.mainColor,),
                       Container(
+                        height: 48,
+                        width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.grey[200]
                         ),
