@@ -44,9 +44,13 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                 ),
                 Expanded(
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("${nitoriTopicItems[index].date}", style: TextStyle(
                               fontSize: 12
