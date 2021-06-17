@@ -43,9 +43,12 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                     children: [
                       Expanded(child: Placeholder(),flex: 8,),
                       Expanded(child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                             CircleAvatar(
                               backgroundColor: Colors.grey[300],
+                              child: Icon(Icons.favorite_border),
+                              foregroundColor: Colors.grey,
                             )
                         ],
                       ), flex: 3,),
