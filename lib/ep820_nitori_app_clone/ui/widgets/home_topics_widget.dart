@@ -19,7 +19,6 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
         itemCount: nitoriTopicItems.length,
         itemBuilder: (context, index) {
           return Container(
-            decoration: BoxDecoration(color: Colors.grey),
             child: Column(
               children: [
                 Expanded(
