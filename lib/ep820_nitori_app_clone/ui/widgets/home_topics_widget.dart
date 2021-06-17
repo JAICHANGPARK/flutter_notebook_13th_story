@@ -41,8 +41,12 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                 Expanded(
                   child: Row(
                     children: [
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder(),flex: 8,),
+                      Expanded(child: Column(
+                        children: [
+                          
+                        ],
+                      ), flex: 2,),
 
                     ],
                   ),
