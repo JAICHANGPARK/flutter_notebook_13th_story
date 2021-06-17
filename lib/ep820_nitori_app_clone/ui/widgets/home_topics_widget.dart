@@ -48,7 +48,7 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                             CircleAvatar(
                               backgroundColor: Colors.grey[300],
                               child: nitoriTopicItems[index].isLike! ? Icon(Icons.favorite) :Icon(Icons.favorite_border)  ,
-                              foregroundColor: Colors.grey,
+                              foregroundColor: nitoriTopicItems[index].isLike! ? Colors.red[400] : Colors.grey,
                             )
                         ],
                       ), flex: 3,),
