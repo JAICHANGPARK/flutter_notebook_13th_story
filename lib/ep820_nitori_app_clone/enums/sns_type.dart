@@ -2,5 +2,6 @@
 enum SnsType{
   twitter,
   instagram,
-  kiji
+  kiji,
+  open,
 }
