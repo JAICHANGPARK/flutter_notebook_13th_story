@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/enums/sns_type.dart';
 import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/mock/nitori_topic_items.dart';
 
 class HomeTopicsWidget extends StatefulWidget {
@@ -27,6 +28,11 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                         color: Colors.greenAccent,
                         image: DecorationImage(image: NetworkImage(nitoriTopicItems[index].img!),
                             fit: BoxFit.cover),),
+                    child: Stack(
+                      children: [
+
+                      ],
+                    ),
                   ),
                   flex: 4,
                 ),
@@ -42,5 +48,10 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
             crossAxisCount: 2, childAspectRatio: 0.7, crossAxisSpacing: 4, mainAxisSpacing: 4),
       ),
     );
+  }
+  Widget buildSnsTypeWidget(SnsType snsType){
+    if(snsType == SnsType.kiji){
+      return 
+    }
   }
 }
