@@ -49,7 +49,12 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                               backgroundColor: Colors.grey[300],
                               child: nitoriTopicItems[index].isLike! ? Icon(Icons.favorite) :Icon(Icons.favorite_border)  ,
                               foregroundColor: nitoriTopicItems[index].isLike! ? Colors.red[400] : Colors.grey,
-                            )
+                            ),
+                          SizedBox(height: 4,),
+                          Text("${nitoriTopicItems[index].likeCount}" ,style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey
+                          ),)
                         ],
                       ), flex: 3,),
 
