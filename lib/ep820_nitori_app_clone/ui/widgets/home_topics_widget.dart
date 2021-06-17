@@ -31,8 +31,8 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                     child: Stack(
                       children: [
                           Positioned(child: buildSnsTypeWidget(nitoriTopicItems[index].type!),
-                          left: 16,
-                          top: 16,),
+                          left: 8,
+                          top: 8,),
                       ],
                     ),
                   ),
@@ -62,7 +62,8 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
         child: Center(
           child: Text("記事",style: TextStyle(
-            fontSize: 10,
+            fontSize: 11,
+            color: Colors.orange
           ),)
         ),
       );
@@ -70,6 +71,7 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
     else if(snsType == SnsType.twitter || snsType == SnsType.instagram){
       return CircleAvatar(
         backgroundColor: Colors.white,
+        radius: 12,
       );
 
     }
