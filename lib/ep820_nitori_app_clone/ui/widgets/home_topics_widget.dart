@@ -56,12 +56,13 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
       return Container(
         decoration: BoxDecoration(
           color: Colors.white,
-
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: Colors.orange)
         ),
-        padding: EdgeInsets.symmetric(horizontal: 8),
+        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
         child: Center(
           child: Text("記事",style: TextStyle(
-            fontSize: 12,
+            fontSize: 10,
           ),)
         ),
       );
