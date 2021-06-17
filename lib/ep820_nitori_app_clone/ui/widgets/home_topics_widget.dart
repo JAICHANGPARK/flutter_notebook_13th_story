@@ -24,40 +24,52 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.greenAccent,
-                        image: DecorationImage(image: NetworkImage(nitoriTopicItems[index].img!),
-                            fit: BoxFit.cover),),
+                      color: Colors.greenAccent,
+                      image: DecorationImage(image: NetworkImage(nitoriTopicItems[index].img!), fit: BoxFit.cover),
+                    ),
                     child: Stack(
                       children: [
-                          Positioned(child: buildSnsTypeWidget(nitoriTopicItems[index].type!),
+                        Positioned(
+                          child: buildSnsTypeWidget(nitoriTopicItems[index].type!),
                           left: 8,
-                          top: 8,),
+                          top: 8,
+                        ),
                       ],
                     ),
                   ),
                   flex: 4,
                 ),
-                SizedBox(height: 4,),
+                SizedBox(
+                  height: 4,
+                ),
                 Expanded(
                   child: Row(
                     children: [
-                      Expanded(child: Placeholder(),flex: 8,),
-                      Expanded(child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                      Expanded(
+                        child: Placeholder(),
+                        flex: 8,
+                      ),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
                             CircleAvatar(
                               backgroundColor: Colors.grey[300],
-                              child: nitoriTopicItems[index].isLike! ? Icon(Icons.favorite) :Icon(Icons.favorite_border)  ,
+                              child:
+                                  nitoriTopicItems[index].isLike! ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
                               foregroundColor: nitoriTopicItems[index].isLike! ? Colors.red[400] : Colors.grey,
                             ),
-                          SizedBox(height: 4,),
-                          Text("${nitoriTopicItems[index].likeCount}" ,style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.grey
-                          ),)
-                        ],
-                      ), flex: 3,),
-
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text(
+                              "${nitoriTopicItems[index].likeCount}",
+                              style: TextStyle(fontSize: 12, color: Colors.grey),
+                            )
+                          ],
+                        ),
+                        flex: 3,
+                      ),
                     ],
                   ),
                   flex: 2,
@@ -71,31 +83,25 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
       ),
     );
   }
-  Widget buildSnsTypeWidget(SnsType snsType){
-    if(snsType == SnsType.kiji){
+
+  Widget buildSnsTypeWidget(SnsType snsType) {
+    if (snsType == SnsType.kiji) {
       return Container(
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Colors.orange)
-        ),
+            color: Colors.white, borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.orange)),
         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
         child: Center(
-          child: Text("記事",style: TextStyle(
-            fontSize: 11,
-            color: Colors.orange
-          ),)
-        ),
+            child: Text(
+          "記事",
+          style: TextStyle(fontSize: 11, color: Colors.orange),
+        )),
       );
-    }
-    else if(snsType == SnsType.twitter || snsType == SnsType.instagram){
+    } else if (snsType == SnsType.twitter || snsType == SnsType.instagram) {
       return CircleAvatar(
         backgroundColor: Colors.white,
         radius: 14,
       );
-
-    }
-    else{
+    } else {
       return Container();
     }
   }
