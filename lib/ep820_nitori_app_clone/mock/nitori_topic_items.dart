@@ -17,5 +17,19 @@ List<NitoriTopic> nitoriTopicItems = [
       title: "Dream 8月 オフショット",
       isLike: true,
       likeCount: 145,
-      type: SnsType.instagram)
+      type: SnsType.instagram),
+  NitoriTopic(
+      date: "${nowDateTime.year}/${nowDateTime.month}/${nowDateTime.day}",
+      img: "https://cdn.pixabay.com/photo/2016/02/16/21/07/books-1204029_960_720.jpg",
+      title: "Dream 8月 オフショット",
+      isLike: true,
+      likeCount: 145,
+      type: SnsType.twitter),
+  NitoriTopic(
+      date: "${nowDateTime.year}/${nowDateTime.month}/${nowDateTime.day}",
+      img: "https://cdn.pixabay.com/photo/2017/03/19/01/43/living-room-2155376_960_720.jpg",
+      title: "Dream 8月 オフショット",
+      isLike:false,
+      likeCount: 0,
+      type: SnsType.kiji)
 ];
