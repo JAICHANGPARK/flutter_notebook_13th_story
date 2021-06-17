@@ -39,7 +39,13 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                   flex: 4,
                 ),
                 Expanded(
-                  child: Placeholder(),
+                  child: Row(
+                    children: [
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder()),
+
+                    ],
+                  ),
                   flex: 2,
                 ),
               ],
@@ -71,7 +77,7 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
     else if(snsType == SnsType.twitter || snsType == SnsType.instagram){
       return CircleAvatar(
         backgroundColor: Colors.white,
-        radius: 12,
+        radius: 14,
       );
 
     }
