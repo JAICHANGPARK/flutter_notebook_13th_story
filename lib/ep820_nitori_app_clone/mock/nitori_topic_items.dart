@@ -29,7 +29,21 @@ List<NitoriTopic> nitoriTopicItems = [
       date: "${nowDateTime.year}/${nowDateTime.month}/${nowDateTime.day}",
       img: "https://cdn.pixabay.com/photo/2017/03/19/01/43/living-room-2155376_960_720.jpg",
       title: "Dream 8月 オフショット",
-      isLike:false,
+      isLike: false,
+      likeCount: 0,
+      type: SnsType.kiji),
+  NitoriTopic(
+      date: "${nowDateTime.year}/${nowDateTime.month}/${nowDateTime.day}",
+      img: "https://cdn.pixabay.com/photo/2017/03/19/01/43/living-room-2155376_960_720.jpg",
+      title: "Dream 8月 オフショット",
+      isLike: false,
+      likeCount: 0,
+      type: SnsType.open),
+  NitoriTopic(
+      date: "${nowDateTime.year}/${nowDateTime.month}/${nowDateTime.day}",
+      img: "https://cdn.pixabay.com/photo/2017/03/19/01/43/living-room-2155376_960_720.jpg",
+      title: "Dream 8月 オフショット",
+      isLike: false,
       likeCount: 0,
       type: SnsType.kiji)
 ];
