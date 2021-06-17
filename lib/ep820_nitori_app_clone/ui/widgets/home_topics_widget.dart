@@ -46,7 +46,11 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Placeholder(),
+                        child: Column(
+                          children: [
+                            Text("${nitoriTopicItems[index].date}", style: TextStyle(),)
+                          ],
+                        ),
                         flex: 8,
                       ),
                       Expanded(
