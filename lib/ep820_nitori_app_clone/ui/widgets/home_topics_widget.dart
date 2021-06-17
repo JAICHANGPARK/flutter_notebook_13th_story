@@ -30,7 +30,9 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                             fit: BoxFit.cover),),
                     child: Stack(
                       children: [
-
+                          Positioned(child: buildSnsTypeWidget(nitoriTopicItems[index].type!),
+                          left: 16,
+                          top: 16,),
                       ],
                     ),
                   ),
@@ -52,8 +54,15 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
   Widget buildSnsTypeWidget(SnsType snsType){
     if(snsType == SnsType.kiji){
       return Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+
+        ),
+        padding: EdgeInsets.symmetric(horizontal: 8),
         child: Center(
-          child: Text("記事",)
+          child: Text("記事",style: TextStyle(
+            fontSize: 12,
+          ),)
         ),
       );
     }
