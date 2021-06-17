@@ -37,6 +37,7 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                   ),
                   flex: 4,
                 ),
+                SizedBox(height: 4,),
                 Expanded(
                   child: Row(
                     children: [
