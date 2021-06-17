@@ -57,8 +57,11 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
         ),
       );
     }
-    else if(){
-      
+    else if(snsType == SnsType.twitter || snsType == SnsType.instagram){
+      return CircleAvatar(
+        backgroundColor: Colors.white,
+      );
+
     }
     else{
       return Container();
