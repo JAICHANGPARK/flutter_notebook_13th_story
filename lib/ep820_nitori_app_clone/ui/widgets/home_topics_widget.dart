@@ -52,12 +52,16 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("${nitoriTopicItems[index].date}", style: TextStyle(
-                              fontSize: 12
-                            ),),
-                            Text("${nitoriTopicItems[index].title}", style: TextStyle(
+                            Text(
+                              "${nitoriTopicItems[index].date}",
+                              style: TextStyle(fontSize: 12),
+                            ),
+                            Text(
+                              "${nitoriTopicItems[index].title}",
+                              style: TextStyle(
                                 fontSize: 14,
-                            ),)
+                              ),
+                            )
                           ],
                         ),
                         flex: 8,
@@ -101,12 +105,29 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
     if (snsType == SnsType.kiji) {
       return Container(
         decoration: BoxDecoration(
-            color: Colors.white, borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.orange)),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: Colors.orange),
+        ),
         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
         child: Center(
             child: Text(
           "記事",
           style: TextStyle(fontSize: 11, color: Colors.orange),
+        )),
+      );
+    } else if (snsType == SnsType.open) {
+      return Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: Colors.green),
+        ),
+        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+        child: Center(
+            child: Text(
+          "オープン",
+          style: TextStyle(fontSize: 11, color: Colors.green),
         )),
       );
     } else if (snsType == SnsType.twitter || snsType == SnsType.instagram) {
