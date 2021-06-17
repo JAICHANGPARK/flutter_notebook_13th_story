@@ -51,7 +51,11 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
   }
   Widget buildSnsTypeWidget(SnsType snsType){
     if(snsType == SnsType.kiji){
-      return 
+      return Container(
+        child: Center(
+          child: Text("記事",)
+        ),
+      );
     }
   }
 }
