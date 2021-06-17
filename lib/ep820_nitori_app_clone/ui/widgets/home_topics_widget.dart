@@ -44,9 +44,11 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                       Expanded(child: Placeholder(),flex: 8,),
                       Expanded(child: Column(
                         children: [
-                          
+                            CircleAvatar(
+                              backgroundColor: Colors.grey[300],
+                            )
                         ],
-                      ), flex: 2,),
+                      ), flex: 3,),
 
                     ],
                   ),
