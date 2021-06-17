@@ -50,6 +50,9 @@ class _HomeTopicsWidgetState extends State<HomeTopicsWidget> {
                           children: [
                             Text("${nitoriTopicItems[index].date}", style: TextStyle(
                               fontSize: 12
+                            ),),
+                            Text("${nitoriTopicItems[index].title}", style: TextStyle(
+                                fontSize: 14,
                             ),)
                           ],
                         ),
