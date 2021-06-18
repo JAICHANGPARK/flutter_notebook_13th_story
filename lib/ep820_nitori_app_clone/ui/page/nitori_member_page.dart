@@ -26,10 +26,11 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
         actions: [
           Row(
             children: [
-              IconButton(onPressed: (){}, icon: Icon(Icons.add_shopping_cart)),
+              IconButton(onPressed: (){}, icon: Icon(Icons.add_shopping_cart),
+                color: NitoriAppStyle.mainColor,),
               Text("カート",style: TextStyle(
                 fontSize: 12,
-                
+                color: NitoriAppStyle.mainColor,
               ),)
             ],
           )
