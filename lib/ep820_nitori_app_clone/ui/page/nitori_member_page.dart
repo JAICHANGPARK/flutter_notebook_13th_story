@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/nitori_app_style.dart';
 
@@ -78,7 +79,7 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        height: 160,
+                        height: 140,
                         decoration:
                             BoxDecoration(color: NitoriAppStyle.mainColor, borderRadius: BorderRadius.circular(3)),
                         child: Stack(
@@ -89,6 +90,7 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                                 top: 0,
                                 bottom: 0,
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
                                       "NITORI",
