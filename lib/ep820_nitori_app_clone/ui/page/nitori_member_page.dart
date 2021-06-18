@@ -42,7 +42,9 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
               )
             ],
           ),
-          SizedBox(width: 12,),
+          SizedBox(
+            width: 12,
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -70,19 +72,15 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
               elevation: 1,
               child: Container(
                 height: MediaQuery.of(context).size.height / 1.9,
-                decoration: BoxDecoration(
-                  color: Colors.white
-                ),
+                decoration: BoxDecoration(color: Colors.white),
                 child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
                         height: 160,
-                        decoration: BoxDecoration(
-                          color: NitoriAppStyle.mainColor,
-                          borderRadius: BorderRadius.circular(3)
-                        ),
+                        decoration:
+                            BoxDecoration(color: NitoriAppStyle.mainColor, borderRadius: BorderRadius.circular(3)),
                         child: Stack(
                           children: [
                             Positioned(
@@ -90,18 +88,30 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                                 right: 0,
                                 top: 0,
                                 bottom: 0,
-                                child: Column(children: [
-                              Text("NITORI", style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 48,
-                              ),)
-                            ],))
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "NITORI",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 48,
+                                      ),
+                                    ),
+                                    Text(
+                                      "アプリ会員証",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 24,
+                                      ),
+                                    )
+                                  ],
+                                ))
                           ],
                         ),
                       ),
                     ),
-
                   ],
                 ),
               ),
