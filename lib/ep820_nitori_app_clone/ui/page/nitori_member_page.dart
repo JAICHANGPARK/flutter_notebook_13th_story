@@ -10,6 +10,11 @@ class NitoriMemberPage extends StatefulWidget {
 class _NitoriMemberPageState extends State<NitoriMemberPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        leading: IconButton(Icons.menu),
+      ),
+    );
   }
 }
