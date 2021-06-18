@@ -15,22 +15,31 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.white,
-
-        leading: IconButton(icon: Icon(Icons.menu), onPressed: () {  },
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {},
           color: NitoriAppStyle.mainColor,
         ),
-        title: Text("会員証", style: TextStyle(
-          color: Colors.black,
-          fontSize: 15
-        ),),
+        title: Text(
+          "会員証",
+          style: TextStyle(color: Colors.black, fontSize: 15),
+        ),
         actions: [
           Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-            Icon(Icons.add_shopping_cart, color: NitoriAppStyle.mainColor,),
-              Text("カート",style: TextStyle(
-                fontSize: 10,
+              Icon(
+                Icons.add_shopping_cart,
                 color: NitoriAppStyle.mainColor,
-              ),)
+              ),
+              Text(
+                "カート",
+                style: TextStyle(
+                  fontSize: 10,
+                  color: NitoriAppStyle.mainColor,
+                ),
+              )
             ],
           )
         ],
