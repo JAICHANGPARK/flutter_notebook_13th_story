@@ -132,11 +132,10 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                     ),
                     Text.rich(TextSpan(children: [
                       TextSpan(
-                        text: "500"
+                        text: "500",
+                        style: TextStyle(),
                       ),
-                      TextSpan(
-                        text: "pt"
-                      )
+                      TextSpan(text: "pt")
                     ]))
                   ],
                 ),
