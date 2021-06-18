@@ -41,6 +41,24 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                 ),
               )
             ],
+          ),
+          SizedBox(width: 12,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.message_outlined,
+                color: NitoriAppStyle.mainColor,
+              ),
+              Text(
+                "お知らせ",
+                style: TextStyle(
+                  fontSize: 10,
+                  color: NitoriAppStyle.mainColor,
+                ),
+              )
+            ],
           )
         ],
       ),
