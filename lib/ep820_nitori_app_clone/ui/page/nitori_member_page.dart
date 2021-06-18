@@ -69,9 +69,18 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
               color: Colors.black87,
               elevation: 1,
               child: Container(
-                height: MediaQuery.of(context).size.height / 1.8,
+                height: MediaQuery.of(context).size.height / 1.9,
                 decoration: BoxDecoration(
                   color: Colors.white
+                ),
+                child: Column(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: NitoriAppStyle.mainColor,
+                      ),
+                    )
+                  ],
                 ),
               ),
             )
