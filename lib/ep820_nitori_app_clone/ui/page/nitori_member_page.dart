@@ -109,7 +109,10 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                                       ),
                                     )
                                   ],
-                                ))
+                                )),
+                            Positioned(child: CircleAvatar(
+                              backgroundColor: Colors.white.withOpacity(0.4),
+                            ), right: 8 , top: 8,),
                           ],
                         ),
                       ),
