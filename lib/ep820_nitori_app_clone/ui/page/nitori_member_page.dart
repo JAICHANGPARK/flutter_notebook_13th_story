@@ -24,12 +24,11 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
           fontSize: 15
         ),),
         actions: [
-          Row(
+          Column(
             children: [
-              IconButton(onPressed: (){}, icon: Icon(Icons.add_shopping_cart),
-                color: NitoriAppStyle.mainColor,),
+            Icon(Icons.add_shopping_cart, color: NitoriAppStyle.mainColor,),
               Text("カート",style: TextStyle(
-                fontSize: 12,
+                fontSize: 10,
                 color: NitoriAppStyle.mainColor,
               ),)
             ],
