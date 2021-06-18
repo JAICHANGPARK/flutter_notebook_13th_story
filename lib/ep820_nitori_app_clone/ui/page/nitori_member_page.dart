@@ -124,6 +124,20 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                         ),
                       ),
                     ),
+                    Container(
+                      height: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Text.rich(TextSpan(children: [
+                      TextSpan(
+                        text: "500"
+                      ),
+                      TextSpan(
+                        text: "pt"
+                      )
+                    ]))
                   ],
                 ),
               ),
