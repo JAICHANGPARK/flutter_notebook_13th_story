@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../nitori_app_style.dart';
+import 'nitori_member_page.dart';
 import 'nitori_ouchi_page.dart';
 
 class NitoriHomePage extends StatefulWidget {
@@ -35,11 +36,7 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
               child: Text("Page4"),
             ),
           ),
-          Container(
-            child: Center(
-              child: Text("Page5"),
-            ),
-          )
+          NitoriMemberPage(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
