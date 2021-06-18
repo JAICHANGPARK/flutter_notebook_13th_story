@@ -1,5 +1,4 @@
-
-enum SnsType{
+enum SnsType {
   twitter,
   instagram,
   kiji,
