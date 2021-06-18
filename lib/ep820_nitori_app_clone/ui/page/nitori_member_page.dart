@@ -62,6 +62,22 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
           )
         ],
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            PhysicalModel(
+              color: Colors.black87,
+              elevation: 1,
+              child: Container(
+                height: MediaQuery.of(context).size.height / 1.8,
+                decoration: BoxDecoration(
+                  color: Colors.white
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
