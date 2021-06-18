@@ -75,9 +75,14 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                 ),
                 child: Column(
                   children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: NitoriAppStyle.mainColor,
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: 160,
+                        decoration: BoxDecoration(
+                          color: NitoriAppStyle.mainColor,
+                          borderRadius: BorderRadius.circular(3)
+                        ),
                       ),
                     )
                   ],
