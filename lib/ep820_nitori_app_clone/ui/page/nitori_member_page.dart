@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NitoriMemberPage extends StatefulWidget {
-  NitoriMemberPage({Key key}) : super(key: key);
+  NitoriMemberPage({Key? key}) : super(key: key);
 
   @override
   _NitoriMemberPageState createState() => _NitoriMemberPageState();
