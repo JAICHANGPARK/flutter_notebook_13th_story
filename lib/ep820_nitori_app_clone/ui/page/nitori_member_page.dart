@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/nitori_app_style.dart';
 
 class NitoriMemberPage extends StatefulWidget {
   NitoriMemberPage({Key? key}) : super(key: key);
@@ -13,8 +14,26 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        backgroundColor: Colors.white,
+
         leading: IconButton(icon: Icon(Icons.menu), onPressed: () {  },
+          color: NitoriAppStyle.mainColor,
         ),
+        title: Text("会員証", style: TextStyle(
+          color: Colors.black,
+          fontSize: 15
+        ),),
+        actions: [
+          Row(
+            children: [
+              IconButton(onPressed: (){}, icon: Icon(Icons.add_shopping_cart)),
+              Text("カート",style: TextStyle(
+                fontSize: 12,
+                
+              ),)
+            ],
+          )
+        ],
       ),
     );
   }
