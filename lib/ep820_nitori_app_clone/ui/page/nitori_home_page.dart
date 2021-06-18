@@ -40,7 +40,6 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
               child: Text("Page5"),
             ),
           )
-
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
