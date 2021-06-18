@@ -13,7 +13,8 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        leading: IconButton(Icons.menu),
+        leading: IconButton(icon: Icon(Icons.menu), onPressed: () {  },
+        ),
       ),
     );
   }
