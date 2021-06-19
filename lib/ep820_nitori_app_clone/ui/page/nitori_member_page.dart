@@ -184,7 +184,13 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                 ),
               ),
             ),
-            Text("会員情報"),
+            Padding(
+              padding: const EdgeInsets.only(left: 16, bottom: 4, top: 4),
+              child: Text("会員情報", style: TextStyle(
+                fontSize: 12,
+                color: Colors.grey
+              ),),
+            ),
             Container(
               height: 150,
               decoration: BoxDecoration(color: Colors.grey),
