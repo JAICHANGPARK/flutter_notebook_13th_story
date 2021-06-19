@@ -1,3 +1,4 @@
+import 'package:barcode/barcode.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/nitori_app_style.dart';
@@ -13,14 +14,16 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
 
 
   Future generateBarcode()async {
-
+   final dm =  Barcode.dataMatrix();
+   final svg = dm.toSvg("Nitori member", width: 200, height: 150);
+   print(svg);
   }
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-
+    generateBarcode();
   }
 
   @override
