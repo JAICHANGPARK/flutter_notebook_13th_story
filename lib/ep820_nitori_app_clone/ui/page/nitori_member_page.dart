@@ -1,6 +1,7 @@
 import 'package:barcode/barcode.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/mock/nitori_topic_items.dart';
 import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/nitori_app_style.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -197,7 +198,7 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
               child: ListView.separated(
                 separatorBuilder: (context,index){
                   return Divider();
-                }, itemCount: 3, itemBuilder: (BuildContext context, int index) {
+                }, itemCount: memberInformationItems.length, itemBuilder: (BuildContext context, int index) {
                   return ListTile();
               },
               ),
