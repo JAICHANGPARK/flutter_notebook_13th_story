@@ -16,7 +16,7 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
   String? svg;
   Future generateBarcode()async {
    final dm =  Barcode.code39();
-   svg = dm.toSvg("Nitori member", width: 200, height: 150);
+   svg = dm.toSvg("0000 0000 0000", width: 360, height: 150);
    setState(() {
 
    });
