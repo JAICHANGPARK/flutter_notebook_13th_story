@@ -18,6 +18,7 @@ dependencies:
   get: any
   timeago: any
   barcode: ^2.1.0
+  flutter_svg: any
 
 dev_dependencies:
   flutter_test:
