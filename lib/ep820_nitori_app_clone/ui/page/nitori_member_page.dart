@@ -14,7 +14,7 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
 
 
   Future generateBarcode()async {
-   final dm =  Barcode.dataMatrix();
+   final dm =  Barcode.code39();
    final svg = dm.toSvg("Nitori member", width: 200, height: 150);
    print(svg);
   }
