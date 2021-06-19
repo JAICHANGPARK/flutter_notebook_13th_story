@@ -194,7 +194,13 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
             Container(
               height: 150,
               decoration: BoxDecoration(color: Colors.grey),
-              child: ListView(),
+              child: ListView.separated(
+                separatorBuilder: (context,index){
+                  return Divider();
+                }, itemCount: 3, itemBuilder: (BuildContext context, int index) {
+                  return ListTile();
+              },
+              ),
             )
           ],
         ),
