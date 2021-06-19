@@ -145,9 +145,7 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                     ),
                     Container(
                       height: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
+                      
                       child: svg  == null ? Center():SvgPicture.string(svg!),
                     ),
                     Text.rich(TextSpan(children: [
