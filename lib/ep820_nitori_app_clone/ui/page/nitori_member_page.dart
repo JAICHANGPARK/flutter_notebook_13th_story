@@ -194,12 +194,20 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
             ),
             Container(
               height: 150,
-              decoration: BoxDecoration(color: Colors.grey),
+              decoration: BoxDecoration(color: Colors.white),
               child: ListView.separated(
                 separatorBuilder: (context,index){
-                  return Divider();
+                  return Divider(
+                    color: Colors.grey[400],
+                    height: 8,
+                    thickness: 1,
+                  );
                 }, itemCount: memberInformationItems.length, itemBuilder: (BuildContext context, int index) {
-                  return ListTile();
+                  return ListTile(
+                    title: Text("${memberInformationItems[index]}",style: TextStyle(
+                      fontSize: 13
+                    ),),
+                  );
               },
               ),
             )
