@@ -47,3 +47,22 @@ List<NitoriTopic> nitoriTopicItems = [
       likeCount: 0,
       type: SnsType.kiji)
 ];
+
+
+final List<String> memberInformationItems = [
+  "会員情報変更",
+  "購入歴史",
+  "配送情報検索",
+  "商品レビューを書く"
+
+
+
+
+
+
+
+
+
+
+];
+
