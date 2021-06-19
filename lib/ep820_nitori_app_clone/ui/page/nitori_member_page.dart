@@ -186,6 +186,14 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                   ],
                 ),
               ),
+            ),
+            Text("会員情報"),
+            Container(
+              height: 150,
+              decoration: BoxDecoration(
+                color: Colors.grey
+              ),
+              child: ListView(),
             )
           ],
         ),
