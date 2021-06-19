@@ -10,6 +10,19 @@ class NitoriMemberPage extends StatefulWidget {
 }
 
 class _NitoriMemberPageState extends State<NitoriMemberPage> {
+
+
+  Future generateBarcode()async {
+
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
