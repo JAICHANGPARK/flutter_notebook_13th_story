@@ -143,10 +143,14 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                         ),
                       ),
                     ),
-                    Container(
-                      height: 100,
-                      
-                      child: svg  == null ? Center():SvgPicture.string(svg!),
+
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      child: Container(
+                        height: 100,
+
+                        child: svg  == null ? Center():SvgPicture.string(svg!),
+                      ),
                     ),
                     Text.rich(TextSpan(children: [
                       TextSpan(
