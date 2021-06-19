@@ -164,7 +164,12 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                     ])),
                     Text(
                       "今年12月31日失効予定 : 10pt",
-                      style: TextStyle(fontSize: 16),
+                      style: TextStyle(fontSize: 14),
+                    ),
+                    Text(
+                      "付与されたポイントは翌日反映されます",
+                      style: TextStyle(fontSize: 12,
+                      color: Colors.grey,),
                     ),
                     SizedBox(
                       height: 16,
