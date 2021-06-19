@@ -133,24 +133,24 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                     Text.rich(TextSpan(children: [
                       TextSpan(
                         text: "500",
-                        style: TextStyle(
-                          fontSize: 48
-                        ),
+                        style: TextStyle(fontSize: 48),
                       ),
-                      TextSpan(text: " pt",
-                        style: TextStyle(
-                            fontSize: 18
-                        ),)
+                      TextSpan(
+                        text: " pt",
+                        style: TextStyle(fontSize: 18),
+                      )
                     ])),
-                    Text("今年12月31日失効予定 : 10pt",style: TextStyle(
-                      fontSize: 16
-                    ),),
-                    SizedBox(height: 16,),
-                    Text("別のアカウントでログイン",
-                      style: TextStyle(
-                        fontSize: 14,
-                        decoration: TextDecoration.underline
-                    ),)
+                    Text(
+                      "今年12月31日失効予定 : 10pt",
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Text(
+                      "別のアカウントでログイン",
+                      style: TextStyle(fontSize: 14, decoration: TextDecoration.underline),
+                    )
                   ],
                 ),
               ),
