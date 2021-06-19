@@ -2,6 +2,7 @@ import 'package:barcode/barcode.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/nitori_app_style.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class NitoriMemberPage extends StatefulWidget {
   NitoriMemberPage({Key? key}) : super(key: key);
@@ -12,11 +13,13 @@ class NitoriMemberPage extends StatefulWidget {
 
 class _NitoriMemberPageState extends State<NitoriMemberPage> {
 
-
+  String? svg;
   Future generateBarcode()async {
    final dm =  Barcode.code39();
-   final svg = dm.toSvg("Nitori member", width: 200, height: 150);
-   print(svg);
+   svg = dm.toSvg("Nitori member", width: 200, height: 150);
+   setState(() {
+
+   });
   }
 
   @override
@@ -145,6 +148,7 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                       decoration: BoxDecoration(
                         color: Colors.grey,
                       ),
+                      child: svg  == null ? Center():SvgPicture.string(svg!),
                     ),
                     Text.rich(TextSpan(children: [
                       TextSpan(
