@@ -12,15 +12,12 @@ class NitoriMemberPage extends StatefulWidget {
 }
 
 class _NitoriMemberPageState extends State<NitoriMemberPage> {
-
   String? svg;
 
   Future generateBarcode() async {
     final dm = Barcode.code39();
     svg = dm.toSvg("0000 0000 0000", width: 360, height: 150);
-    setState(() {
-
-    });
+    setState(() {});
   }
 
   @override
@@ -87,15 +84,13 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
       ),
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             PhysicalModel(
               color: Colors.black87,
               elevation: 1,
               child: Container(
-                height: MediaQuery
-                    .of(context)
-                    .size
-                    .height / 1.8,
+                height: MediaQuery.of(context).size.height / 1.8,
                 decoration: BoxDecoration(color: Colors.white),
                 child: Column(
                   children: [
@@ -104,7 +99,7 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                       child: Container(
                         height: 140,
                         decoration:
-                        BoxDecoration(color: NitoriAppStyle.mainColor, borderRadius: BorderRadius.circular(3)),
+                            BoxDecoration(color: NitoriAppStyle.mainColor, borderRadius: BorderRadius.circular(3)),
                         child: Stack(
                           children: [
                             Positioned(
@@ -147,12 +142,10 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                         ),
                       ),
                     ),
-
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: Container(
                         height: 100,
-
                         child: svg == null ? Center() : SvgPicture.string(svg!),
                       ),
                     ),
@@ -166,15 +159,19 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
                         style: TextStyle(fontSize: 18),
                       )
                     ])),
-                    SizedBox(height: 16,),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Text(
                       "今年12月31日失効予定 : 10pt",
                       style: TextStyle(fontSize: 14),
                     ),
                     Text(
                       "付与されたポイントは翌日反映されます",
-                      style: TextStyle(fontSize: 12,
-                        color: Colors.grey,),
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.grey,
+                      ),
                     ),
                     SizedBox(
                       height: 16,
@@ -190,9 +187,7 @@ class _NitoriMemberPageState extends State<NitoriMemberPage> {
             Text("会員情報"),
             Container(
               height: 150,
-              decoration: BoxDecoration(
-                color: Colors.grey
-              ),
+              decoration: BoxDecoration(color: Colors.grey),
               child: ListView(),
             )
           ],
