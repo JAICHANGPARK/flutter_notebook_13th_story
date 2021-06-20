@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class NitoriFavoritePage extends StatefulWidget {
   const NitoriFavoritePage({Key? key}) : super(key: key);
 
@@ -11,6 +10,13 @@ class NitoriFavoritePage extends StatefulWidget {
 class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return SafeArea(
+      child: Column(
+        children: [
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+        ],
+      ),
+    );
   }
 }
