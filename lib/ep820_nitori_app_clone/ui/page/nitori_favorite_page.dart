@@ -181,10 +181,27 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                     ),
                     child: Column(
                       children: [
-                        Expanded(child: Placeholder(), flex: 2,),
-                        Divider(color: Colors.grey,),
-                        Expanded(child: Placeholder() ,flex: 6,),
-
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 16),
+                            child: Row(
+                              children: [
+                                Text(
+                                  "注文する商品",
+                                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            ),
+                          ),
+                          flex: 2,
+                        ),
+                        Divider(
+                          color: Colors.grey,
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                          flex: 6,
+                        ),
                       ],
                     ),
                   ),
