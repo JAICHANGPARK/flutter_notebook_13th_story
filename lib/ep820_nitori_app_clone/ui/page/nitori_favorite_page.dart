@@ -164,10 +164,21 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.only(top: 8),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-
+                child: PhysicalModel(
+                  color: Colors.black87,
+                  elevation: 2,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  ),
+                    ),
                   ),
                 ),
               ),
