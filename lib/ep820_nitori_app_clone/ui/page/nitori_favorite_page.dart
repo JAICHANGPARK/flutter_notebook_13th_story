@@ -26,6 +26,9 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                         border: Border.all( color: NitoriAppStyle.mainColor, width: 1.5),
                         borderRadius: BorderRadius.circular(4)
                       ),
+                      child: Center(
+                        child: Text("すべてを選択"),
+                      ),
                     ),
                   )),
                   Expanded(child: Placeholder()),
@@ -34,7 +37,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
               )),
             ],
           ), flex: 3,),
-          Expanded(child: Placeholder(),flex: 12,),
+          Expanded(child: Placeholder(),flex: 14,),
           Expanded(child: Placeholder(), flex: 4,),
         ],
       ),
