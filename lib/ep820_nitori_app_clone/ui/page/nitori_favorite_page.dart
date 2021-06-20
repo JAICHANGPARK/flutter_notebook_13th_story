@@ -22,15 +22,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black,
-                      offset: Offset(0, 2
-                      )
-                    )
-                  ]
-                ),
+                    color: Colors.white, boxShadow: [BoxShadow(color: Colors.black, offset: Offset(0, 2))]),
                 child: Column(
                   children: [
                     Expanded(
@@ -174,9 +166,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
               thickness: 1.2,
             ),
             Expanded(
-              child: Container(
-                color: Colors.grey[300]
-              ),
+              child: Container(color: Colors.grey[300]),
               flex: 4,
             ),
             Divider(
@@ -220,7 +210,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                   "注文する商品",
                                   style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                 ),
-                                IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_down))
+                                IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_down))
                               ],
                             ),
                           ),
