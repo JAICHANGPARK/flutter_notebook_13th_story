@@ -16,7 +16,13 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
           Expanded(child: Column(
             children: [
               Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
+              Expanded(child: Row(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
+
+                ],
+              )),
             ],
           ), flex: 3,),
           Expanded(child: Placeholder(),flex: 12,),
