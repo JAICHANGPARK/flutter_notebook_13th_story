@@ -13,140 +13,168 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
   TextEditingController _textEditingController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Column(
-        children: [
-          Expanded(
-            child: Column(
-              children: [
-                Expanded(child:  Row(
+    return Container(
+      color: Colors.grey[200],
+      child: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              child: Container(
+                color: Colors.white,
+                child: Column(
                   children: [
-                    IconButton(
-                      onPressed: () {
-                        _scaffoldKey.currentState!.openDrawer();
-                      },
-                      icon: Icon(
-                        Icons.menu,
-                      ),
-                      color: NitoriAppStyle.mainColor,
-                    ),
-                    Expanded(
-                      child: Container(
-                        height: 38,
-                        width: double.infinity,
-                        decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(3)),
-                        padding: EdgeInsets.symmetric(horizontal: 8),
-                        child: TextField(
-                          controller: _textEditingController,
-                          decoration: InputDecoration(
-                              icon: Icon(Icons.search),
-                              hintText: "商品を探す",
-                              suffixIcon: Icon(Icons.mic_none),
-                              border: InputBorder.none),
-                        ),
-                      ),
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    Expanded(child:  Row(
                       children: [
-                        Icon(
-                          Icons.add_shopping_cart,
+                        IconButton(
+                          onPressed: () {
+                            _scaffoldKey.currentState!.openDrawer();
+                          },
+                          icon: Icon(
+                            Icons.menu,
+                          ),
                           color: NitoriAppStyle.mainColor,
                         ),
-                        Text(
-                          "カート",
-                          style: TextStyle(
-                            fontSize: 10,
-                            color: NitoriAppStyle.mainColor,
-                          ),
-                        )
-                      ],
-                    ),
-                    SizedBox(
-                      width: 12,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.message_outlined,
-                          color: NitoriAppStyle.mainColor,
-                        ),
-                        Text(
-                          "お知らせ",
-                          style: TextStyle(
-                            fontSize: 10,
-                            color: NitoriAppStyle.mainColor,
-                          ),
-                        )
-                      ],
-                    )
-                  ],
-                ),),
-                Expanded(
-                    child: Row(
-                  children: [
-                    Expanded(
-                        child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: InkWell(
-                        focusColor: NitoriAppStyle.mainColor,
-                        hoverColor: NitoriAppStyle.mainColor,
-                        splashColor: NitoriAppStyle.mainColor,
-                        onTap: () {},
-                        child: Container(
-                          decoration: BoxDecoration(
-                              border: Border.all(color: NitoriAppStyle.mainColor, width: 1.5),
-                              borderRadius: BorderRadius.circular(4)),
-                          child: Center(
-                            child: Text(
-                              "すべてを選択",
-                              style: TextStyle(
-                                color: NitoriAppStyle.mainColor,
-                              ),
+                        Expanded(
+                          child: Container(
+                            height: 38,
+                            width: double.infinity,
+                            decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(3)),
+                            padding: EdgeInsets.symmetric(horizontal: 8),
+                            child: TextField(
+                              controller: _textEditingController,
+                              decoration: InputDecoration(
+                                  icon: Icon(Icons.search),
+                                  hintText: "商品を探す",
+                                  suffixIcon: Icon(Icons.mic_none),
+                                  border: InputBorder.none),
                             ),
                           ),
                         ),
-                      ),
-                    )),
-                    Expanded(
-                        child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: InkWell(
-                        splashColor: NitoriAppStyle.mainColor,
-                        onTap: () {},
-                        child: Container(
-                          decoration: BoxDecoration(
-                              border: Border.all(color: NitoriAppStyle.mainColor, width: 1.5),
-                              borderRadius: BorderRadius.circular(4)),
-                          child: Center(
-                            child: Text(
-                              "すべてを選択を解除",
-                              style: TextStyle(
+                        InkWell(
+                          onTap: (){
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(
+                              "Pressed Cart icon"
+                            )));
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.add_shopping_cart,
                                 color: NitoriAppStyle.mainColor,
+                              ),
+                              Text(
+                                "カート",
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: NitoriAppStyle.mainColor,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 12,
+                        ),
+                        InkWell(
+                          onTap: (){
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(
+                                "Pressed info icon"
+                            )));
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.message_outlined,
+                                color: NitoriAppStyle.mainColor,
+                              ),
+                              Text(
+                                "お知らせ",
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: NitoriAppStyle.mainColor,
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),),
+                    Expanded(
+                        child: Row(
+                      children: [
+                        Expanded(
+                            child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: InkWell(
+                            focusColor: NitoriAppStyle.mainColor,
+                            hoverColor: NitoriAppStyle.mainColor,
+                            splashColor: NitoriAppStyle.mainColor,
+                            onTap: () {},
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: NitoriAppStyle.mainColor, width: 1.5),
+                                  borderRadius: BorderRadius.circular(4)),
+                              child: Center(
+                                child: Text(
+                                  "すべてを選択",
+                                  style: TextStyle(
+                                    color: NitoriAppStyle.mainColor,
+                                  ),
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                      ),
+                        )),
+                        Expanded(
+                            child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: InkWell(
+                            splashColor: NitoriAppStyle.mainColor,
+                            onTap: () {},
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: NitoriAppStyle.mainColor, width: 1.5),
+                                  borderRadius: BorderRadius.circular(4)),
+                              child: Center(
+                                child: Text(
+                                  "すべてを選択を解除",
+                                  style: TextStyle(
+                                    color: NitoriAppStyle.mainColor,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        )),
+                      ],
                     )),
                   ],
-                )),
-              ],
+                ),
+              ),
+              flex: 3,
             ),
-            flex: 3,
-          ),
-          Expanded(
-            child: Placeholder(),
-            flex: 14,
-          ),
-          Expanded(
-            child: Placeholder(),
-            flex: 4,
-          ),
-        ],
+            Expanded(
+              child: Placeholder(),
+              flex: 14,
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.only(top: 8),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+
+                  ),
+                ),
+              ),
+              flex: 4,
+            ),
+          ],
+        ),
       ),
     );
   }
