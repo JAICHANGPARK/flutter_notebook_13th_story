@@ -21,17 +21,34 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                 children: [
                   Expanded(child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        border: Border.all( color: NitoriAppStyle.mainColor, width: 1.5),
-                        borderRadius: BorderRadius.circular(4)
-                      ),
-                      child: Center(
-                        child: Text("すべてを選択"),
+                    child: InkWell(
+                      focusColor: NitoriAppStyle.mainColor,
+                      hoverColor:  NitoriAppStyle.mainColor,
+                      splashColor:  NitoriAppStyle.mainColor,
+                      onTap: (){},
+                      child: Container(
+                        decoration: BoxDecoration(
+                          border: Border.all( color: NitoriAppStyle.mainColor, width: 1.5),
+                          borderRadius: BorderRadius.circular(4)
+                        ),
+                        child: Center(
+                          child: Text("すべてを選択"),
+                        ),
                       ),
                     ),
                   )),
-                  Expanded(child: Placeholder()),
+                  Expanded(child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all( color: NitoriAppStyle.mainColor, width: 1.5),
+                          borderRadius: BorderRadius.circular(4)
+                      ),
+                      child: Center(
+                        child: Text("すべてを選択を解除"),
+                      ),
+                    ),
+                  )),
 
                 ],
               )),
