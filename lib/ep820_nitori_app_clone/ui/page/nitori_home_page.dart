@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../nitori_app_style.dart';
+import 'nitori_favorite_page.dart';
 import 'nitori_member_page.dart';
 import 'nitori_ouchi_page.dart';
 
@@ -26,11 +27,7 @@ class _NitoriHomePageState extends State<NitoriHomePage> {
               child: Text("Page2"),
             ),
           ),
-          Container(
-            child: Center(
-              child: Text("Page3"),
-            ),
-          ),
+          NitoriFavoritePage(),
           Container(
             child: Center(
               child: Text("Page4"),
