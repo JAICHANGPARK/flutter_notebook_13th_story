@@ -181,15 +181,16 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                     ),
                     child: Column(
                       children: [
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder(), flex: 2,),
+                        Divider(color: Colors.grey,),
+                        Expanded(child: Placeholder() ,flex: 6,),
 
                       ],
                     ),
                   ),
                 ),
               ),
-              flex: 4,
+              flex: 5,
             ),
           ],
         ),
