@@ -21,7 +21,16 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
           children: [
             Expanded(
               child: Container(
-                color: Colors.white,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black,
+                      offset: Offset(0, 2
+                      )
+                    )
+                  ]
+                ),
                 child: Column(
                   children: [
                     Expanded(
@@ -53,7 +62,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                               ),
                             ),
                           ),
-                          InkWell(
+                          GestureDetector(
                             onTap: () {
                               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Pressed Cart icon")));
                             },
@@ -78,7 +87,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                           SizedBox(
                             width: 12,
                           ),
-                          InkWell(
+                          GestureDetector(
                             onTap: () {
                               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Pressed info icon")));
                             },
@@ -109,20 +118,20 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                         Expanded(
                             child: Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: InkWell(
-                            focusColor: NitoriAppStyle.mainColor,
-                            hoverColor: NitoriAppStyle.mainColor,
-                            splashColor: NitoriAppStyle.mainColor,
-                            onTap: () {},
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: NitoriAppStyle.mainColor, width: 1.5),
-                                  borderRadius: BorderRadius.circular(4)),
-                              child: Center(
-                                child: Text(
-                                  "すべてを選択",
-                                  style: TextStyle(
-                                    color: NitoriAppStyle.mainColor,
+                          child: Material(
+                            child: InkWell(
+                              splashColor: NitoriAppStyle.mainColor,
+                              onTap: () {},
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: NitoriAppStyle.mainColor, width: 1.5),
+                                    borderRadius: BorderRadius.circular(4)),
+                                child: Center(
+                                  child: Text(
+                                    "すべてを選択",
+                                    style: TextStyle(
+                                      color: NitoriAppStyle.mainColor,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -132,18 +141,20 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                         Expanded(
                             child: Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: InkWell(
-                            splashColor: NitoriAppStyle.mainColor,
-                            onTap: () {},
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: NitoriAppStyle.mainColor, width: 1.5),
-                                  borderRadius: BorderRadius.circular(4)),
-                              child: Center(
-                                child: Text(
-                                  "すべてを選択を解除",
-                                  style: TextStyle(
-                                    color: NitoriAppStyle.mainColor,
+                          child: Material(
+                            child: InkWell(
+                              splashColor: NitoriAppStyle.mainColor,
+                              onTap: () {},
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: NitoriAppStyle.mainColor, width: 1.5),
+                                    borderRadius: BorderRadius.circular(4)),
+                                child: Center(
+                                  child: Text(
+                                    "すべてを選択を解除",
+                                    style: TextStyle(
+                                      color: NitoriAppStyle.mainColor,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -155,11 +166,29 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                   ],
                 ),
               ),
-              flex: 3,
+              flex: 6,
+            ),
+            Divider(
+              color: Colors.grey,
+              height: 0,
+              thickness: 1.2,
             ),
             Expanded(
-              child: Placeholder(),
-              flex: 14,
+              child: Container(
+                color: Colors.grey[300]
+              ),
+              flex: 4,
+            ),
+            Divider(
+              color: Colors.grey,
+              height: 0,
+              thickness: 1.2,
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.white,
+              ),
+              flex: 20,
             ),
             Expanded(
               child: Padding(
@@ -185,6 +214,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                           child: Padding(
                             padding: const EdgeInsets.only(left: 16),
                             child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
                                   "注文する商品",
@@ -208,7 +238,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                   ),
                 ),
               ),
-              flex: 5,
+              flex: 8,
             ),
           ],
         ),
