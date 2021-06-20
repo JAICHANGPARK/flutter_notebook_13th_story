@@ -11,6 +11,7 @@ class NitoriFavoritePage extends StatefulWidget {
 class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   TextEditingController _textEditingController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,86 +24,85 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                 color: Colors.white,
                 child: Column(
                   children: [
-                    Expanded(child:  Row(
-                      children: [
-                        IconButton(
-                          onPressed: () {
-                            _scaffoldKey.currentState!.openDrawer();
-                          },
-                          icon: Icon(
-                            Icons.menu,
+                    Expanded(
+                      child: Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {
+                              _scaffoldKey.currentState!.openDrawer();
+                            },
+                            icon: Icon(
+                              Icons.menu,
+                            ),
+                            color: NitoriAppStyle.mainColor,
                           ),
-                          color: NitoriAppStyle.mainColor,
-                        ),
-                        Expanded(
-                          child: Container(
-                            height: 38,
-                            width: double.infinity,
-                            decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(3)),
-                            padding: EdgeInsets.symmetric(horizontal: 8),
-                            child: TextField(
-                              controller: _textEditingController,
-                              decoration: InputDecoration(
-                                  icon: Icon(Icons.search),
-                                  hintText: "商品を探す",
-                                  suffixIcon: Icon(Icons.mic_none),
-                                  border: InputBorder.none),
+                          Expanded(
+                            child: Container(
+                              height: 38,
+                              width: double.infinity,
+                              decoration:
+                                  BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(3)),
+                              padding: EdgeInsets.symmetric(horizontal: 8),
+                              child: TextField(
+                                controller: _textEditingController,
+                                decoration: InputDecoration(
+                                    icon: Icon(Icons.search),
+                                    hintText: "商品を探す",
+                                    suffixIcon: Icon(Icons.mic_none),
+                                    border: InputBorder.none),
+                              ),
                             ),
                           ),
-                        ),
-                        InkWell(
-                          onTap: (){
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(
-                              "Pressed Cart icon"
-                            )));
-                          },
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(
-                                Icons.add_shopping_cart,
-                                color: NitoriAppStyle.mainColor,
-                              ),
-                              Text(
-                                "カート",
-                                style: TextStyle(
-                                  fontSize: 10,
+                          InkWell(
+                            onTap: () {
+                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Pressed Cart icon")));
+                            },
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(
+                                  Icons.add_shopping_cart,
                                   color: NitoriAppStyle.mainColor,
                                 ),
-                              )
-                            ],
+                                Text(
+                                  "カート",
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    color: NitoriAppStyle.mainColor,
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 12,
-                        ),
-                        InkWell(
-                          onTap: (){
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(
-                                "Pressed info icon"
-                            )));
-                          },
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(
-                                Icons.message_outlined,
-                                color: NitoriAppStyle.mainColor,
-                              ),
-                              Text(
-                                "お知らせ",
-                                style: TextStyle(
-                                  fontSize: 10,
+                          SizedBox(
+                            width: 12,
+                          ),
+                          InkWell(
+                            onTap: () {
+                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Pressed info icon")));
+                            },
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(
+                                  Icons.message_outlined,
                                   color: NitoriAppStyle.mainColor,
                                 ),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
-                    ),),
+                                Text(
+                                  "お知らせ",
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    color: NitoriAppStyle.mainColor,
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                     Expanded(
                         child: Row(
                       children: [
@@ -174,10 +174,10 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
-  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(16),
-                    topRight: Radius.circular(16),
-                  ),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(16),
+                        topRight: Radius.circular(16),
+                      ),
                     ),
                   ),
                 ),
