@@ -189,7 +189,8 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                 Text(
                                   "注文する商品",
                                   style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
-                                )
+                                ),
+                                IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_down))
                               ],
                             ),
                           ),
