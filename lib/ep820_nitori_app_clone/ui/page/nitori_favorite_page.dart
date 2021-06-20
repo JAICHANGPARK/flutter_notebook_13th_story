@@ -46,13 +46,43 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                         ),
                       ),
                     ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.shopping_cart_outlined,
-                      ),
-                      color: NitoriAppStyle.mainColor,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.add_shopping_cart,
+                          color: NitoriAppStyle.mainColor,
+                        ),
+                        Text(
+                          "カート",
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: NitoriAppStyle.mainColor,
+                          ),
+                        )
+                      ],
                     ),
+                    SizedBox(
+                      width: 12,
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.message_outlined,
+                          color: NitoriAppStyle.mainColor,
+                        ),
+                        Text(
+                          "お知らせ",
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: NitoriAppStyle.mainColor,
+                          ),
+                        )
+                      ],
+                    )
                   ],
                 ),),
                 Expanded(
