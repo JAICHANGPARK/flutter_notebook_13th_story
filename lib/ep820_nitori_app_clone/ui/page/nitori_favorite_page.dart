@@ -13,7 +13,12 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
     return SafeArea(
       child: Column(
         children: [
-          Expanded(child: Placeholder(), flex: 3,),
+          Expanded(child: Column(
+            children: [
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+            ],
+          ), flex: 3,),
           Expanded(child: Placeholder(),flex: 12,),
           Expanded(child: Placeholder(), flex: 4,),
         ],
