@@ -179,6 +179,13 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                         topRight: Radius.circular(16),
                       ),
                     ),
+                    child: Column(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+
+                      ],
+                    ),
                   ),
                 ),
               ),
