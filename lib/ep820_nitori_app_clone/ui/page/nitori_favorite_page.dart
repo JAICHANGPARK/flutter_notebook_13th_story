@@ -14,52 +14,71 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
     return SafeArea(
       child: Column(
         children: [
-          Expanded(child: Column(
-            children: [
-              Expanded(child: Placeholder()),
-              Expanded(child: Row(
-                children: [
-                  Expanded(child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: InkWell(
-                      focusColor: NitoriAppStyle.mainColor,
-                      hoverColor:  NitoriAppStyle.mainColor,
-                      splashColor:  NitoriAppStyle.mainColor,
-                      onTap: (){},
-                      child: Container(
-                        decoration: BoxDecoration(
-                          border: Border.all( color: NitoriAppStyle.mainColor, width: 1.5),
-                          borderRadius: BorderRadius.circular(4)
+          Expanded(
+            child: Column(
+              children: [
+                Expanded(child: Placeholder()),
+                Expanded(
+                    child: Row(
+                  children: [
+                    Expanded(
+                        child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: InkWell(
+                        focusColor: NitoriAppStyle.mainColor,
+                        hoverColor: NitoriAppStyle.mainColor,
+                        splashColor: NitoriAppStyle.mainColor,
+                        onTap: () {},
+                        child: Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(color: NitoriAppStyle.mainColor, width: 1.5),
+                              borderRadius: BorderRadius.circular(4)),
+                          child: Center(
+                            child: Text(
+                              "すべてを選択",
+                              style: TextStyle(
+                                color: NitoriAppStyle.mainColor,
+                              ),
+                            ),
+                          ),
                         ),
-                        child: Center(
-                          child: Text("すべてを選択", style: TextStyle(
-                            color: NitoriAppStyle.mainColor,
-                          ),),
+                      ),
+                    )),
+                    Expanded(
+                        child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: InkWell(
+                        splashColor: NitoriAppStyle.mainColor,
+                        onTap: () {},
+                        child: Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(color: NitoriAppStyle.mainColor, width: 1.5),
+                              borderRadius: BorderRadius.circular(4)),
+                          child: Center(
+                            child: Text(
+                              "すべてを選択を解除",
+                              style: TextStyle(
+                                color: NitoriAppStyle.mainColor,
+                              ),
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  )),
-                  Expanded(child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all( color: NitoriAppStyle.mainColor, width: 1.5),
-                          borderRadius: BorderRadius.circular(4)
-                      ),
-                      child: Center(
-                        child: Text("すべてを選択を解除", style: TextStyle(
-                          color: NitoriAppStyle.mainColor,
-                        ),),
-                      ),
-                    ),
-                  )),
-
-                ],
-              )),
-            ],
-          ), flex: 3,),
-          Expanded(child: Placeholder(),flex: 14,),
-          Expanded(child: Placeholder(), flex: 4,),
+                    )),
+                  ],
+                )),
+              ],
+            ),
+            flex: 3,
+          ),
+          Expanded(
+            child: Placeholder(),
+            flex: 14,
+          ),
+          Expanded(
+            child: Placeholder(),
+            flex: 4,
+          ),
         ],
       ),
     );
