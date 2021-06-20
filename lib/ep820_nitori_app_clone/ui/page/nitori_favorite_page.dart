@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/nitori_app_style.dart';
 
 class NitoriFavoritePage extends StatefulWidget {
   const NitoriFavoritePage({Key? key}) : super(key: key);
@@ -18,7 +19,15 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
               Expanded(child: Placeholder()),
               Expanded(child: Row(
                 children: [
-                  Expanded(child: Placeholder()),
+                  Expanded(child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all( color: NitoriAppStyle.mainColor, width: 1.5),
+                        borderRadius: BorderRadius.circular(4)
+                      ),
+                    ),
+                  )),
                   Expanded(child: Placeholder()),
 
                 ],
