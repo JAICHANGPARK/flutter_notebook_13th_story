@@ -173,14 +173,20 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("お届けでの注文に限ります。お届けは最短で4日かかります。",
-                    style: TextStyle(
-                      fontSize: 12,
-                    ),),
-                    Text("価格はニトリネットの価格です。店舗とニトリネットでは、価格、在庫状況、お届け日、"
-                        "送料が異なります。" ,style: TextStyle(
-    fontSize: 12,
-    ),),
+                    Text(
+                      "お届けでの注文に限ります。お届けは最短で4日かかります。",
+                      style: TextStyle(
+                        fontSize: 12,
+                      ),
+                    ),
+                    Text(
+                      "価格はニトリネットの価格です。店舗とニトリネットでは、価格、在庫状況、お届け日、"
+                      "送料が異なります。",
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.red,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -237,7 +243,18 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                           color: Colors.grey,
                         ),
                         Expanded(
-                          child: Placeholder(),
+                          child: Column(
+                            children: [
+                              Text("合計 99,999円 (税込) /12点 (10種類)"),
+                              Expanded(
+                                child: Row(
+                                  children: [
+                                    
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                           flex: 6,
                         ),
                       ],
