@@ -186,7 +186,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                       "送料が異なります。",
                       style: TextStyle(
                         fontSize: 12,
-                        color: Colors.red,
+                        color: Colors.red[300],
                       ),
                     ),
                   ],
