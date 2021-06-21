@@ -249,7 +249,20 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                               Expanded(
                                 child: Row(
                                   children: [
-                                    
+                                    Container(
+                                      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                                      decoration: BoxDecoration(
+                                        color: NitoriAppStyle.mainColor,
+                                      ),
+                                      height: 48,
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.store_outlined),
+                                          SizedBox(width: 8,),
+                                          Text("店舗注文"),
+                                        ],
+                                      ),
+                                    )
                                   ],
                                 ),
                               )
