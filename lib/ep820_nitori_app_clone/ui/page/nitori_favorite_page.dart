@@ -258,9 +258,12 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                       height: 48,
                                       child: Row(
                                         children: [
-                                          Icon(Icons.store_outlined),
-                                          SizedBox(width: 8,),
-                                          Text("店舗注文"),
+                                          Icon(Icons.store_outlined, color: Colors.white,),
+                                          SizedBox(width: 12,),
+                                          Text("店舗注文", style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 13,
+                                          ),),
                                         ],
                                       ),
                                     )
