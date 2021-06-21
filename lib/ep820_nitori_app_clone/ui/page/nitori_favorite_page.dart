@@ -253,6 +253,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                                       decoration: BoxDecoration(
                                         color: NitoriAppStyle.mainColor,
+                                        borderRadius: BorderRadius.circular(4)
                                       ),
                                       height: 48,
                                       child: Row(
