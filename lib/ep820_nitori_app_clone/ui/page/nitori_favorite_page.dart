@@ -278,9 +278,9 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                       height: 48,
                                       child: Row(
                                         children: [
-                                          Icon(Icons.store_outlined, color: Colors.white,),
+                                          Icon(Icons.shopping_cart_outlined, color: Colors.white,),
                                           SizedBox(width: 12,),
-                                          Text("店舗注文", style: TextStyle(
+                                          Text("ネット注文", style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 13,
                                           ),),
