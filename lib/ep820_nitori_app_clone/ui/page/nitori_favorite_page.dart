@@ -285,28 +285,34 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                     SizedBox(
                                       width: 8,
                                     ),
-                                    Container(
-                                      padding: EdgeInsets.symmetric(horizontal: 25, vertical: 8),
-                                      decoration: BoxDecoration(
-                                          color: NitoriAppStyle.mainColor, borderRadius: BorderRadius.circular(4)),
-                                      height: 48,
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.shopping_cart_outlined,
-                                            color: Colors.white,
-                                          ),
-                                          SizedBox(
-                                            width: 12,
-                                          ),
-                                          Text(
-                                            "ネット注文",
-                                            style: TextStyle(
+                                    GestureDetector(
+                                      onTap: (){
+                                        ScaffoldMessenger.of(context).clearSnackBars();
+                                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("ネット注文")));
+                                      },
+                                      child: Container(
+                                        padding: EdgeInsets.symmetric(horizontal: 25, vertical: 8),
+                                        decoration: BoxDecoration(
+                                            color: NitoriAppStyle.mainColor, borderRadius: BorderRadius.circular(4)),
+                                        height: 48,
+                                        child: Row(
+                                          children: [
+                                            Icon(
+                                              Icons.shopping_cart_outlined,
                                               color: Colors.white,
-                                              fontSize: 13,
                                             ),
-                                          ),
-                                        ],
+                                            SizedBox(
+                                              width: 12,
+                                            ),
+                                            Text(
+                                              "ネット注文",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 13,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],
