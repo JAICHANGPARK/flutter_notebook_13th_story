@@ -169,10 +169,16 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
               child: Container(
                 width: double.infinity,
                 color: Colors.grey[300],
+                padding: EdgeInsets.all(7),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("お届けでの注文に限ります。お届けは最短で4日かかります。"),
-                    Text("価格はニトリネットの価格です。"),
+                    Text("お届けでの注文に限ります。お届けは最短で4日かかります。",
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),),
+                    Text("価格はニトリネットの価格です。店舗とニトリネットでは、価格、在庫状況、お届け日、"
+                        "送料が異なります。"),
                   ],
                 ),
               ),
