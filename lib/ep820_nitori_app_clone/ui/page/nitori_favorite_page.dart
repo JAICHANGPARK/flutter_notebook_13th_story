@@ -56,6 +56,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                           ),
                           GestureDetector(
                             onTap: () {
+                              ScaffoldMessenger.of(context).clearSnackBars();
                               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Pressed Cart icon")));
                             },
                             child: Column(
@@ -81,6 +82,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                           ),
                           GestureDetector(
                             onTap: () {
+                              ScaffoldMessenger.of(context).clearSnackBars();
                               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Pressed info icon")));
                             },
                             child: Column(
@@ -255,6 +257,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                   children: [
                                     GestureDetector(
                                       onTap: () {
+                                        ScaffoldMessenger.of(context).clearSnackBars();
                                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("店舗注文")));
                                       },
                                       child: Container(
