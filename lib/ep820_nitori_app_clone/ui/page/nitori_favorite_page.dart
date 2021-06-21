@@ -166,14 +166,17 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
               thickness: 1.2,
             ),
             Expanded(
-              child: Container(color: Colors.grey[300],
-              child: Column(
-                children: [
-                  Text("お届けでの注文に限ります。")
-                ],
-              ),),
+              child: Container(
+                width: double.infinity,
+                color: Colors.grey[300],
+                child: Column(
+                  children: [
+                    Text("お届けでの注文に限ります。お届けは最短で4日かかります。"),
+                    Text("価格はニトリネットの価格です。"),
+                  ],
+                ),
+              ),
               flex: 4,
-
             ),
             Divider(
               color: Colors.grey,
