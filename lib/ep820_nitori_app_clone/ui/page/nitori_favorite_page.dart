@@ -248,12 +248,32 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                               Text("合計 99,999円 (税込) /12点 (10種類)"),
                               Expanded(
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Container(
                                       padding: EdgeInsets.symmetric(horizontal: 25, vertical: 8),
                                       decoration: BoxDecoration(
                                         color: NitoriAppStyle.mainColor,
                                         borderRadius: BorderRadius.circular(4)
+                                      ),
+                                      height: 48,
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.store_outlined, color: Colors.white,),
+                                          SizedBox(width: 12,),
+                                          Text("店舗注文", style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 13,
+                                          ),),
+                                        ],
+                                      ),
+                                    ),
+                                    SizedBox(width: 8,),
+                                    Container(
+                                      padding: EdgeInsets.symmetric(horizontal: 25, vertical: 8),
+                                      decoration: BoxDecoration(
+                                          color: NitoriAppStyle.mainColor,
+                                          borderRadius: BorderRadius.circular(4)
                                       ),
                                       height: 48,
                                       child: Row(
