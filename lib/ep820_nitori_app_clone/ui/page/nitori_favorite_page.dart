@@ -226,12 +226,15 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                   Text(
                                     "${nitoriFavoriteItems[index].title}",
                                   ),
+                                  SizedBox(height: 4,),
                                   Text(
                                     "${nitoriFavoriteItems[index].price}",
                                   ),
+                                  SizedBox(height: 4,),
                                   Text(
                                     "${nitoriFavoriteItems[index].itemCode}",
                                   ),
+                                  SizedBox(height: 4,),
                                   Row(
                                     children: [
                                       Expanded(
