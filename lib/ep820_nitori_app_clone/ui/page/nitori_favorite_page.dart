@@ -249,6 +249,12 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                             )
                                             
                                           ),
+                                          child: Row(
+                                            children: [
+                                              Icon(Icons.check_box_outlined,   color: NitoriAppStyle.mainColor),
+                                              Text("")
+                                            ],
+                                          ),
                                         ),
                                       ),
                                       SizedBox(
