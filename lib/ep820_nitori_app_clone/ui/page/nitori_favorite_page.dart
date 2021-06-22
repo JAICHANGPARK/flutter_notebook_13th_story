@@ -279,6 +279,16 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                   ) :
                                   Container(
                                     height: 36,
+                                    decoration: BoxDecoration(
+                                      color: NitoriAppStyle.mainColor,
+                                      borderRadius: BorderRadius.circular(4)
+                                    ),
+                                    child: Row(
+
+                                      children: [
+                                        Icon(Icons.search),
+                                      ],
+                                    ),
                                   ),
                                 ],
                               ),
