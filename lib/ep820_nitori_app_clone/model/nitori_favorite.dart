@@ -3,5 +3,9 @@ class NitoriFavotite{
   String? title;
   double? price;
   String? itemCode;
-  
+  bool? isSelect;
+
+  NitoriFavotite({
+    this.img, this.title, this.price, this.itemCode, this.isSelect
+});
 }
