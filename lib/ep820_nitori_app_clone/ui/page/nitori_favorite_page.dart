@@ -213,14 +213,48 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                               height: 84,
                               width: 84,
                               decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                    "${nitoriFavoriteItems[index].img}",
+                                  image: DecorationImage(
+                                image: NetworkImage(
+                                  "${nitoriFavoriteItems[index].img}",
+                                ),
+                                fit: BoxFit.cover,
+                              )),
+                            ),
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "${nitoriFavoriteItems[index].title}",
                                   ),
-                                  fit: BoxFit.cover,
-                                )
+                                  Text(
+                                    "${nitoriFavoriteItems[index].price}",
+                                  ),
+                                  Text(
+                                    "${nitoriFavoriteItems[index].itemCode}",
+                                  ),
+                                  Row(
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+                                          height: 42,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 7,
+                                      ),
+                                      Container(
+                                        height: 36,
+                                        width: 84,
+                                        decoration: BoxDecoration(color: Colors.grey),
+                                      )
+                                    ],
+                                  ),
+                                ],
                               ),
-                            )
+                            ),
                           ],
                         ),
                       );
