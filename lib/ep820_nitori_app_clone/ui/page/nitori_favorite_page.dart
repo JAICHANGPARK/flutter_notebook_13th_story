@@ -287,8 +287,10 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
-                                        Icon(Icons.search),
-                                        Text("店舗在庫")
+                                        Icon(Icons.search, color: Colors.white,),
+                                        Text("店舗在庫", style: TextStyle(
+                                          color: Colors.white
+                                        ),)
                                       ],
                                     ),
                                   ),
