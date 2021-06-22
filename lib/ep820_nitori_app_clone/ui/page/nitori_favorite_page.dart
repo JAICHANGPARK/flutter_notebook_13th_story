@@ -227,8 +227,8 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                     },
                     separatorBuilder: (context, index) {
                       return Divider(
-                        color: Colors.grey,
-                        thickness: 2,
+                        color: Colors.grey[400],
+                        thickness: 1.2,
                         height: 0,
                       );
                     },
