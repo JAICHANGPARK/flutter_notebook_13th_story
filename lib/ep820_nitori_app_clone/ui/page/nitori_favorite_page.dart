@@ -303,6 +303,9 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                                       child: Container(
                                                     decoration: BoxDecoration(
                                                       color: Colors.grey[300]!,
+                                                      border: Border.all(
+                                                        color: Colors.grey[200]!,
+                                                      ),
                                                     ),
                                                     child: Center(
                                                       child: Icon(Icons.arrow_drop_down),
