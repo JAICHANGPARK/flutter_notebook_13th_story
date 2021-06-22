@@ -283,10 +283,12 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                       color: NitoriAppStyle.mainColor,
                                       borderRadius: BorderRadius.circular(4)
                                     ),
+                                    padding: EdgeInsets.symmetric(horizontal: 12),
                                     child: Row(
+                                      mainAxisSize: MainAxisSize.min,
                                       children: [
                                         Icon(Icons.search),
-                                        Text("")
+                                        Text("店舗在庫")
                                       ],
                                     ),
                                   ),
