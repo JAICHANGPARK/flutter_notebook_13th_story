@@ -236,7 +236,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                     children: [
                                       Expanded(
                                         child: Container(
-                                          height: 42,
+                                          height: 36,
                                           decoration: BoxDecoration(
                                             color: Colors.grey,
                                           ),
