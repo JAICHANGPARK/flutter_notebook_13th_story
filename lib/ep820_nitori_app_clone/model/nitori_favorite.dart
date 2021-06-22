@@ -6,6 +6,10 @@ class NitoriFavotite{
   bool? isSelect;
 
   NitoriFavotite({
-    this.img, this.title, this.price, this.itemCode, this.isSelect
+    required this.img, 
+    required this.title,
+    required this.price,
+    required this.itemCode,
+    this.isSelect
 });
 }
