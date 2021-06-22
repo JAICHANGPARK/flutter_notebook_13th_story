@@ -257,6 +257,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Icon(Icons.check_box_outlined, color: NitoriAppStyle.mainColor),
+                                              SizedBox(width: 4,),
                                               Text("選択済み"
                                               ,style: TextStyle(
                                                     color: NitoriAppStyle.mainColor,
