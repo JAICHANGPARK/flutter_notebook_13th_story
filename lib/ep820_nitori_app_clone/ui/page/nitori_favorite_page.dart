@@ -284,9 +284,9 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                       borderRadius: BorderRadius.circular(4)
                                     ),
                                     child: Row(
-
                                       children: [
                                         Icon(Icons.search),
+                                        Text("")
                                       ],
                                     ),
                                   ),
