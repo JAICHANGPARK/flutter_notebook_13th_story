@@ -289,7 +289,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                       width: 8,
                                     ),
                                     GestureDetector(
-                                      onTap: (){
+                                      onTap: () {
                                         ScaffoldMessenger.of(context).clearSnackBars();
                                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("ネット注文")));
                                       },
