@@ -208,6 +208,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                       return Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
                               height: 84,
