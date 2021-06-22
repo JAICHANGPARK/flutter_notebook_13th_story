@@ -6,7 +6,7 @@ class NitoriFavotite{
   bool? isSelect;
 
   NitoriFavotite({
-    required this.img, 
+    required this.img,
     required this.title,
     required this.price,
     required this.itemCode,
