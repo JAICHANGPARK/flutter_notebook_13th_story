@@ -304,7 +304,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                                     decoration: BoxDecoration(
                                                       color: Colors.grey[300]!,
                                                       border: Border.all(
-                                                        color: Colors.grey[200]!,
+                                                        color: Colors.grey[400]!,
                                                       ),
                                                     ),
                                                     child: Center(
