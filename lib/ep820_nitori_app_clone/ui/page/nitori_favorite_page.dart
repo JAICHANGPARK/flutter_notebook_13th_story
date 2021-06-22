@@ -203,7 +203,36 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
             Expanded(
               child: Container(
                 color: Colors.white,
-                child: ListView.separated(itemBuilder: (context, index){}, separatorBuilder: (context,index){}, itemCount: nitoriFavoriteItems.length),
+                child: ListView.separated(
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 84,
+                              width: 84,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "${nitoriFavoriteItems[index].img}",
+                                  ),
+                                  fit: BoxFit.cover,
+                                )
+                              ),
+                            )
+                          ],
+                        ),
+                      );
+                    },
+                    separatorBuilder: (context, index) {
+                      return Divider(
+                        color: Colors.grey,
+                        thickness: 2,
+                        height: 0,
+                      );
+                    },
+                    itemCount: nitoriFavoriteItems.length),
               ),
               flex: 20,
             ),
