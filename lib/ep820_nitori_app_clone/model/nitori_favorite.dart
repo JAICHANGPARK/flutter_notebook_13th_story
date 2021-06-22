@@ -1,4 +1,4 @@
-class NitoriFavotite{
+class NitoriFavotite {
   String? img;
   String? title;
   int? price;
@@ -12,6 +12,6 @@ class NitoriFavotite{
     required this.price,
     required this.itemCode,
     this.count,
-    this.isSelect
-});
+    this.isSelect,
+  });
 }
