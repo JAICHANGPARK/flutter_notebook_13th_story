@@ -230,11 +230,11 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                   ),
                                   SizedBox(height: 4,),
                                   Text(
-                                    "${nitoriFavoriteItems[index].price}",
+                                    "${nitoriFavoriteItems[index].price}円(税込)",
                                   ),
                                   SizedBox(height: 4,),
                                   Text(
-                                    "${nitoriFavoriteItems[index].itemCode}",
+                                    "商品コード：${nitoriFavoriteItems[index].itemCode}",
                                   ),
                                   SizedBox(height: 4,),
                                   Row(
@@ -243,7 +243,11 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                         child: Container(
                                           height: 36,
                                           decoration: BoxDecoration(
-                                            color: Colors.grey,
+                                            borderRadius: BorderRadius.circular(4),
+                                            border: Border.all(
+                                              color: NitoriAppStyle.mainColor
+                                            )
+                                            
                                           ),
                                         ),
                                       ),
