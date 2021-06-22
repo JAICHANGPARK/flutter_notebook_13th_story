@@ -245,7 +245,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                   SizedBox(
                                     height: 4,
                                   ),
-                                  Row(
+                                  !nitoriFavoriteItems[index].isSelect! ? Row(
                                     children: [
                                       Expanded(
                                         child: Container(
@@ -276,6 +276,9 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                         decoration: BoxDecoration(color: Colors.grey),
                                       )
                                     ],
+                                  ) :
+                                  Container(
+                                    height: 36,
                                   ),
                                 ],
                               ),
