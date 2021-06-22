@@ -220,7 +220,9 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                 fit: BoxFit.cover,
                               )),
                             ),
-                            SizedBox(width: 8,),
+                            SizedBox(
+                              width: 8,
+                            ),
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -228,31 +230,34 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                   Text(
                                     "${nitoriFavoriteItems[index].title}",
                                   ),
-                                  SizedBox(height: 4,),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
                                   Text(
                                     "${nitoriFavoriteItems[index].price}円(税込)",
                                   ),
-                                  SizedBox(height: 4,),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
                                   Text(
                                     "商品コード：${nitoriFavoriteItems[index].itemCode}",
                                   ),
-                                  SizedBox(height: 4,),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
                                   Row(
                                     children: [
                                       Expanded(
                                         child: Container(
                                           height: 36,
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(4),
-                                            border: Border.all(
-                                              color: NitoriAppStyle.mainColor
-                                            )
-                                            
-                                          ),
+                                              borderRadius: BorderRadius.circular(4),
+                                              border: Border.all(color: NitoriAppStyle.mainColor)),
                                           child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
-                                              Icon(Icons.check_box_outlined,   color: NitoriAppStyle.mainColor),
-                                              Text("")
+                                              Icon(Icons.check_box_outlined, color: NitoriAppStyle.mainColor),
+                                              Text("選択済み")
                                             ],
                                           ),
                                         ),
