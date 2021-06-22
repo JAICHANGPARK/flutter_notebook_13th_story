@@ -220,8 +220,10 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                 fit: BoxFit.cover,
                               )),
                             ),
+                            SizedBox(width: 8,),
                             Expanded(
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
                                     "${nitoriFavoriteItems[index].title}",
