@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/mock/nitori_favorite_items.dart';
 import 'package:flutter_notebook_13th_story/ep820_nitori_app_clone/nitori_app_style.dart';
 
 class NitoriFavoritePage extends StatefulWidget {
@@ -202,6 +203,7 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
             Expanded(
               child: Container(
                 color: Colors.white,
+                child: ListView.separated(itemBuilder: (context, index){}, separatorBuilder: (context,index){}, itemCount: nitoriFavoriteItems.length),
               ),
               flex: 20,
             ),
