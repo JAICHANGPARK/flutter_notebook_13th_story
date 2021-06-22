@@ -254,17 +254,25 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                                 height: 36,
                                                 decoration: BoxDecoration(
                                                     borderRadius: BorderRadius.circular(4),
-                                                    border: Border.all(color: NitoriAppStyle.mainColor)),
+                                                    border: Border.all(
+                                                      color: NitoriAppStyle.mainColor,
+                                                    )),
                                                 child: Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
                                                   children: [
-                                                    Icon(Icons.check_box_outlined, color: NitoriAppStyle.mainColor),
+                                                    Icon(
+                                                      Icons.check_box_outlined,
+                                                      color: NitoriAppStyle.mainColor,
+                                                    ),
                                                     SizedBox(
                                                       width: 4,
                                                     ),
                                                     Text(
                                                       "選択済み",
-                                                      style: TextStyle(color: NitoriAppStyle.mainColor, fontSize: 12),
+                                                      style: TextStyle(
+                                                        color: NitoriAppStyle.mainColor,
+                                                        fontSize: 12,
+                                                      ),
                                                     )
                                                   ],
                                                 ),
@@ -284,20 +292,24 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                               ),
                                               child: Row(
                                                 children: [
-                                                  Expanded(child: Text("")),
-                                                  Expanded(child: Container(
+                                                  Expanded(
+                                                      flex: 3,
+                                                      child: Padding(
+                                                    padding: const EdgeInsets.all(8.0),
+                                                    child: Text("${nitoriFavoriteItems[index].count}"),
+                                                  )),
+                                                  Expanded(
+                                                    flex: 2,
+                                                      child: Container(
                                                     decoration: BoxDecoration(
                                                       color: Colors.grey[300]!,
-
                                                     ),
                                                     child: Center(
                                                       child: Icon(Icons.arrow_drop_down),
                                                     ),
                                                   )),
-
                                                 ],
                                               ),
-
                                             )
                                           ],
                                         )
