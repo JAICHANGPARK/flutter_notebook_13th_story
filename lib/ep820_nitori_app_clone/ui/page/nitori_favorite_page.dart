@@ -246,55 +246,80 @@ class _NitoriFavoritePageState extends State<NitoriFavoritePage> {
                                   SizedBox(
                                     height: 4,
                                   ),
-                                  nitoriFavoriteItems[index].isSelect! ? Row(
-                                    children: [
-                                      Expanded(
-                                        child: Container(
+                                  nitoriFavoriteItems[index].isSelect!
+                                      ? Row(
+                                          children: [
+                                            Expanded(
+                                              child: Container(
+                                                height: 36,
+                                                decoration: BoxDecoration(
+                                                    borderRadius: BorderRadius.circular(4),
+                                                    border: Border.all(color: NitoriAppStyle.mainColor)),
+                                                child: Row(
+                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  children: [
+                                                    Icon(Icons.check_box_outlined, color: NitoriAppStyle.mainColor),
+                                                    SizedBox(
+                                                      width: 4,
+                                                    ),
+                                                    Text(
+                                                      "選択済み",
+                                                      style: TextStyle(color: NitoriAppStyle.mainColor, fontSize: 12),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              width: 7,
+                                            ),
+                                            Container(
+                                              height: 36,
+                                              width: 84,
+                                              decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  color: Colors.grey[200]!,
+                                                ),
+                                                borderRadius: BorderRadius.circular(4),
+                                              ),
+                                              child: Row(
+                                                children: [
+                                                  Expanded(child: Text("")),
+                                                  Expanded(child: Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[300]!,
+
+                                                    ),
+                                                    child: Center(
+                                                      child: Icon(Icons.arrow_drop_down),
+                                                    ),
+                                                  )),
+
+                                                ],
+                                              ),
+
+                                            )
+                                          ],
+                                        )
+                                      : Container(
                                           height: 36,
                                           decoration: BoxDecoration(
-                                              borderRadius: BorderRadius.circular(4),
-                                              border: Border.all(color: NitoriAppStyle.mainColor)),
+                                              color: NitoriAppStyle.mainColor, borderRadius: BorderRadius.circular(4)),
+                                          padding: EdgeInsets.symmetric(horizontal: 12),
                                           child: Row(
-                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            mainAxisSize: MainAxisSize.min,
                                             children: [
-                                              Icon(Icons.check_box_outlined, color: NitoriAppStyle.mainColor),
-                                              SizedBox(width: 4,),
-                                              Text("選択済み"
-                                              ,style: TextStyle(
-                                                    color: NitoriAppStyle.mainColor,
-                                                  fontSize: 12
-                                                ),)
+                                              Icon(
+                                                Icons.search,
+                                                color: Colors.white,
+                                              ),
+                                              Text(
+                                                "店舗在庫",
+                                                style: TextStyle(color: Colors.white),
+                                              )
                                             ],
                                           ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 7,
-                                      ),
-                                      Container(
-                                        height: 36,
-                                        width: 84,
-                                        decoration: BoxDecoration(color: Colors.grey),
-                                      )
-                                    ],
-                                  ) :
-                                  Container(
-                                    height: 36,
-                                    decoration: BoxDecoration(
-                                      color: NitoriAppStyle.mainColor,
-                                      borderRadius: BorderRadius.circular(4)
-                                    ),
-                                    padding: EdgeInsets.symmetric(horizontal: 12),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        Icon(Icons.search, color: Colors.white,),
-                                        Text("店舗在庫", style: TextStyle(
-                                          color: Colors.white
-                                        ),)
-                                      ],
-                                    ),
-                                  ),
                                 ],
                               ),
                             ),
