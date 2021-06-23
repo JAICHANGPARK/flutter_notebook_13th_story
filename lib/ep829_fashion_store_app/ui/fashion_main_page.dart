@@ -57,7 +57,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                   ),
                 ),
               ),
-              flex:10,
+              flex: 10,
             ),
             Expanded(
               child: Placeholder(),
@@ -66,15 +66,26 @@ class _FashionMainPageState extends State<FashionMainPage> {
             Expanded(
               child: Row(
                 children: [
-                  Expanded(child: Placeholder()),
+                  Expanded(child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 16,
+                        backgroundColor: Colors.grey,
+                        child: Icon(Icons.remove),
+                        foregroundColor: Colors.black,
+                      ),
+                      CircleAvatar(
+                        radius: 16,
+                        backgroundColor: Colors.grey,
+                        child: Icon(Icons.add),
+                        foregroundColor: Colors.black,
+                      )
+                    ],
+                  )),
                   Expanded(
                       child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16,),
-                        decoration: BoxDecoration(
-                          color: Colors.black87 ,
-                          borderRadius: BorderRadius.circular(16)
-                          
-                        ),
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    decoration: BoxDecoration(color: Colors.black87, borderRadius: BorderRadius.circular(16)),
                     child: Center(
                       child: Text(
                         "Add to cart",
