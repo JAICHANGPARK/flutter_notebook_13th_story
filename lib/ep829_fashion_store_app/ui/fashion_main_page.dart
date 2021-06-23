@@ -44,15 +44,16 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       Positioned(child: Center(
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12)
                           ),
-                          height: MediaQuery.of(context).size.height / 4,
+                          height: MediaQuery.of(context).size.height / 3.5,
                           width: 84,
+                          
                         ),
                       ),
                       right: 12,
                       top: 0,
-
                       bottom: 0,),
                     ],
                   ),
