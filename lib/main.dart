@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep820_nitori_app_clone/nitori_app_clone.dart';
+import 'ep829_fashion_store_app/fashion_store_app.dart';
 
-void main() => runApp(NitoriAppClone());
+void main() => runApp(FashionStoreApp());
