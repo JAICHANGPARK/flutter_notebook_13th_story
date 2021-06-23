@@ -74,6 +74,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         child: Icon(Icons.remove),
                         foregroundColor: Colors.black,
                       ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("1"),
+                      ),
                       CircleAvatar(
                         radius: 16,
                         backgroundColor: Colors.grey[400],
