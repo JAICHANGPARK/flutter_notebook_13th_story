@@ -31,30 +31,28 @@ class _FashionMainPageState extends State<FashionMainPage> {
                   child: Stack(
                     children: [
                       Positioned(
-                        left: 8,
+                          left: 8,
                           top: 16,
                           right: 8,
                           child: Row(
-                        children: [
-                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back)),
-                          Spacer(),
-                          IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)),
-                        ],
-                      )),
-                      Positioned(child: Center(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12)
+                            children: [
+                              IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                              Spacer(),
+                              IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
+                            ],
+                          )),
+                      Positioned(
+                        child: Center(
+                          child: Container(
+                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
+                            height: MediaQuery.of(context).size.height / 3.2,
+                            width: 72,
                           ),
-                          height: MediaQuery.of(context).size.height / 3.2,
-                          width: 72,
-                          
                         ),
+                        right: 12,
+                        top: 64,
+                        bottom: 0,
                       ),
-                      right: 12,
-                      top: 64,
-                      bottom: 0,),
                     ],
                   ),
                 ),
@@ -66,7 +64,22 @@ class _FashionMainPageState extends State<FashionMainPage> {
               flex: 3,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Row(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Expanded(
+                      child: Container(
+                    child: Center(
+                      child: Text(
+                        "Add to cart",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  )),
+                ],
+              ),
               flex: 2,
             ),
           ],
