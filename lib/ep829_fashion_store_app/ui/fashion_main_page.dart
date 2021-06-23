@@ -47,13 +47,13 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(12)
                           ),
-                          height: MediaQuery.of(context).size.height / 3.5,
-                          width: 84,
+                          height: MediaQuery.of(context).size.height / 3.2,
+                          width: 72,
                           
                         ),
                       ),
                       right: 12,
-                      top: 0,
+                      top: 64,
                       bottom: 0,),
                     ],
                   ),
