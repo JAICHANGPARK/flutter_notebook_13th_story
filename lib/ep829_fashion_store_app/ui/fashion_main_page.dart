@@ -14,9 +14,9 @@ class _FashionMainPageState extends State<FashionMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder(), flex: 8,),
+            Expanded(child: Placeholder(), flex: 3,),
+            Expanded(child: Placeholder(), flex: 2,),
           ],
         ),
       ),
