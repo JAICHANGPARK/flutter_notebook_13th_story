@@ -70,13 +70,13 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     children: [
                       CircleAvatar(
                         radius: 16,
-                        backgroundColor: Colors.grey,
+                        backgroundColor: Colors.grey[400],
                         child: Icon(Icons.remove),
                         foregroundColor: Colors.black,
                       ),
                       CircleAvatar(
                         radius: 16,
-                        backgroundColor: Colors.grey,
+                        backgroundColor: Colors.grey[400],
                         child: Icon(Icons.add),
                         foregroundColor: Colors.black,
                       )
