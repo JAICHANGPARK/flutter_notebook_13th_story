@@ -11,7 +11,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ,
+      body: Column(
+        children: [
+          
+        ],
+      ),
     );
   }
 }
