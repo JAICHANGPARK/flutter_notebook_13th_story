@@ -41,15 +41,18 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)),
                         ],
                       )),
-                      Positioned(child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white
+                      Positioned(child: Center(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white
+                          ),
+                          height: MediaQuery.of(context).size.height / 4,
+                          width: 84,
                         ),
-                        height: MediaQuery.of(context).size.height / 4,
                       ),
                       right: 12,
                       top: 0,
-                      left: 0,
+
                       bottom: 0,),
                     ],
                   ),
