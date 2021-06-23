@@ -72,6 +72,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16,),
                         decoration: BoxDecoration(
                           color: Colors.black87 ,
+                          borderRadius: BorderRadius.circular(16)
                           
                         ),
                     child: Center(
