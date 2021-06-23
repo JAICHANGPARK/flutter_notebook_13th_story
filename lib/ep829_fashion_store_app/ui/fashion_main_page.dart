@@ -73,7 +73,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       CircleAvatar(
                         radius: 16,
                         backgroundColor: Colors.grey[300],
-                        child: Icon(Icons.remove),
+                        child: Icon(Icons.remove, size: 18,),
                         foregroundColor: Colors.black,
                       ),
                       Padding(
@@ -83,7 +83,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       CircleAvatar(
                         radius: 16,
                         backgroundColor: Colors.grey[300],
-                        child: Icon(Icons.add),
+                        child: Icon(Icons.add,size: 18,),
                         foregroundColor: Colors.black,
                       )
                     ],
