@@ -69,6 +69,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                   Expanded(child: Placeholder()),
                   Expanded(
                       child: Container(
+                        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16,),
+                        decoration: BoxDecoration(
+                          color: Colors.black87 ,
+                          
+                        ),
                     child: Center(
                       child: Text(
                         "Add to cart",
