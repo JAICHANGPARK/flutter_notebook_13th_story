@@ -5,6 +5,8 @@ class FashionStoreApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      title: "Fashion Store App"
+    );
   }
 }
