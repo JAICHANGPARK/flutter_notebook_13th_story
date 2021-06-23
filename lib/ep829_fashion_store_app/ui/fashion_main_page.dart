@@ -36,9 +36,9 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           right: 8,
                           child: Row(
                         children: [
-                          
                           IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back)),
                           Spacer(),
+                          IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)),
                         ],
                       ))
                     ],
