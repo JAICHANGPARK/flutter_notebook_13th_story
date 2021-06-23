@@ -25,10 +25,23 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       image: NetworkImage(
                         "https://cdn.pixabay.com/photo/2016/11/29/06/46/adult-1867889_960_720.jpg",
                       ),
+                      fit: BoxFit.cover,
                     ),
                   ),
                   child: Stack(
-                    children: [],
+                    children: [
+                      Positioned(
+                        left: 8,
+                          top: 16,
+                          right: 8,
+                          child: Row(
+                        children: [
+                          
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back)),
+                          Spacer(),
+                        ],
+                      ))
+                    ],
                   ),
                 ),
               ),
