@@ -57,11 +57,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                   ),
                 ),
               ),
-              flex: 8,
+              flex:10,
             ),
             Expanded(
               child: Placeholder(),
-              flex: 3,
+              flex: 4,
             ),
             Expanded(
               child: Row(
