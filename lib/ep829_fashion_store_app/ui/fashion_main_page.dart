@@ -67,20 +67,22 @@ class _FashionMainPageState extends State<FashionMainPage> {
               child: Row(
                 children: [
                   Expanded(child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       CircleAvatar(
                         radius: 16,
-                        backgroundColor: Colors.grey[400],
+                        backgroundColor: Colors.grey[300],
                         child: Icon(Icons.remove),
                         foregroundColor: Colors.black,
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Text("1"),
                       ),
                       CircleAvatar(
                         radius: 16,
-                        backgroundColor: Colors.grey[400],
+                        backgroundColor: Colors.grey[300],
                         child: Icon(Icons.add),
                         foregroundColor: Colors.black,
                       )
