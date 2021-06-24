@@ -88,8 +88,12 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         Expanded(
                             child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Text("Color"),
+                            Text("Color", style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold
+                            ),),
                             Row(
                               children: [
                                 Container(
