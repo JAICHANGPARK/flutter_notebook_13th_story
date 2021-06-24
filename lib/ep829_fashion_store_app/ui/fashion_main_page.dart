@@ -78,8 +78,20 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         ),
                       ],
                     ),
+                    SizedBox(height: 24,),
                     Expanded(child: Row(children: [
-                      Expanded(child: Placeholder()),
+                      Expanded(child: Column(
+                        children: [
+                          Text("Color"),
+                          Row(
+                            children: [
+                              Container(
+                                
+                              )
+                            ],
+                          )
+                        ],
+                      )),
                       Expanded(child: Placeholder()),
                     ],))
                   ],
