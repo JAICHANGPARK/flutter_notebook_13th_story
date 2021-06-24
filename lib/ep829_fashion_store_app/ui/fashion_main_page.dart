@@ -183,7 +183,102 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             )
                           ],
                         )),
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text("Color", style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold
+                                ),),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    GestureDetector(
+                                      onTap: (){
+                                        setState(() {
+                                          _colorIndex = 0;
+                                        });
+                                      },
+                                      child: Container(
+                                        height: 48,
+                                        width: 48,
+                                        child: Stack(
+                                          children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
+                                              child: CircleAvatar(
+                                                backgroundColor: Colors.greenAccent,
+                                              )),
+                                            _colorIndex == 0 ?  Positioned( top: 0, right: 0,
+                                                child: CircleAvatar(
+                                                  radius: 8,
+                                                  backgroundColor: Colors.black,
+                                                  child: Icon(Icons.check, color: Colors.white,
+                                                    size: 12,),
+                                                )) : Container()
+
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(width: 8,),
+                                    GestureDetector(
+                                      onTap: (){
+                                        setState(() {
+                                          _colorIndex = 1;
+                                        });
+                                      },
+                                      child: Container(
+                                        height: 48,
+                                        width: 48,
+                                        child: Stack(
+                                          children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
+                                              child: CircleAvatar(
+                                                backgroundColor: Colors.lightGreen,
+                                              )),
+                                            _colorIndex == 1 ?  Positioned( top: 0, right: 0,
+                                                child: CircleAvatar(
+                                                  radius: 8,
+                                                  backgroundColor: Colors.black,
+                                                  child: Icon(Icons.check, color: Colors.white,
+                                                    size: 12,),
+                                                )) : Container()
+
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(width: 8,),
+                                    GestureDetector(
+                                      onTap: (){
+                                        setState(() {
+                                          _colorIndex = 2;
+                                        });
+                                      },
+                                      child: Container(
+                                        height: 48,
+                                        width: 48,
+                                        child: Stack(
+                                          children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
+                                              child: CircleAvatar(
+                                                backgroundColor: Colors.brown,
+                                              )),
+                                            _colorIndex == 2 ?  Positioned( top: 0, right: 0,
+                                                child: CircleAvatar(
+                                                  radius: 8,
+                                                  backgroundColor: Colors.black,
+                                                  child: Icon(Icons.check, color: Colors.white,
+                                                    size: 12,),
+                                                )) : Container()
+
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            )),
                       ],
                     ))
                   ],
