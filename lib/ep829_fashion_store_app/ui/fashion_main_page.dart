@@ -138,7 +138,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                     child: Stack(
                                       children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
                                           child: CircleAvatar(
-                                            backgroundColor: Colors.greenAccent,
+                                            backgroundColor: Colors.lightGreen,
                                           )),
                                         _colorIndex == 1 ?  Positioned( top: 0, right: 0,
                                             child: CircleAvatar(
@@ -165,7 +165,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                     child: Stack(
                                       children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
                                           child: CircleAvatar(
-                                            backgroundColor: Colors.greenAccent,
+                                            backgroundColor: Colors.brown,
                                           )),
                                         _colorIndex == 2 ?  Positioned( top: 0, right: 0,
                                             child: CircleAvatar(
