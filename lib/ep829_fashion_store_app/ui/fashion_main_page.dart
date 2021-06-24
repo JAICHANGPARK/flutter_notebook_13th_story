@@ -10,6 +10,8 @@ class FashionMainPage extends StatefulWidget {
 class _FashionMainPageState extends State<FashionMainPage> {
   final ValueNotifier<int> _count = ValueNotifier<int>(1);
 
+  int _colorIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -99,17 +101,16 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                 Container(
                                   height: 48,
                                   width: 48,
-                                  color: Colors.grey,
                                   child: Stack(
                                     children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
                                         child: CircleAvatar()),
-                                      Positioned( top: 0, right: 0,
+                                      _colorIndex == 0 ?  Positioned( top: 0, right: 0,
                                           child: CircleAvatar(
                                             radius: 8,
                                             backgroundColor: Colors.black,
                                             child: Icon(Icons.check, color: Colors.white,
                                             size: 12,),
-                                          ))
+                                          )) : Container()
 
                                     ],
                                   ),
