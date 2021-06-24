@@ -97,6 +97,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                               fontWeight: FontWeight.bold
                             ),),
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 GestureDetector(
                                   onTap: (){
@@ -123,6 +124,58 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                       ],
                                     ),
                                   ),
+                                ),
+                                GestureDetector(
+                                  onTap: (){
+                                    setState(() {
+                                      _colorIndex = 1;
+                                    });
+                                  },
+                                  child: Container(
+                                    height: 48,
+                                    width: 48,
+                                    child: Stack(
+                                      children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
+                                          child: CircleAvatar(
+                                            backgroundColor: Colors.greenAccent,
+                                          )),
+                                        _colorIndex == 1 ?  Positioned( top: 0, right: 0,
+                                            child: CircleAvatar(
+                                              radius: 8,
+                                              backgroundColor: Colors.black,
+                                              child: Icon(Icons.check, color: Colors.white,
+                                                size: 12,),
+                                            )) : Container()
+
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                GestureDetector(
+                                  onTap: (){
+                                    setState(() {
+                                      _colorIndex = 2;
+                                    });
+                                  },
+                                  child: Container(
+                                    height: 48,
+                                    width: 48,
+                                    child: Stack(
+                                      children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
+                                          child: CircleAvatar(
+                                            backgroundColor: Colors.greenAccent,
+                                          )),
+                                        _colorIndex == 2 ?  Positioned( top: 0, right: 0,
+                                            child: CircleAvatar(
+                                              radius: 8,
+                                              backgroundColor: Colors.black,
+                                              child: Icon(Icons.check, color: Colors.white,
+                                                size: 12,),
+                                            )) : Container()
+
+                                      ],
+                                    ),
+                                  ),
                                 )
                               ],
                             )
@@ -140,48 +193,51 @@ class _FashionMainPageState extends State<FashionMainPage> {
               child: Row(
                 children: [
                   Expanded(
-                      child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          _count.value -= 1;
-                          if (_count.value <= 1) {
-                            _count.value = 1;
-                          }
-                        },
-                        child: CircleAvatar(
-                          radius: 16,
-                          backgroundColor: Colors.grey[300],
-                          child: Icon(
-                            Icons.remove,
-                            size: 18,
+                        GestureDetector(
+                          onTap: () {
+                            _count.value -= 1;
+                            if (_count.value <= 1) {
+                              _count.value = 1;
+                            }
+                          },
+                          child: CircleAvatar(
+                            radius: 16,
+                            backgroundColor: Colors.grey[300],
+                            child: Icon(
+                              Icons.remove,
+                              size: 18,
+                            ),
+                            foregroundColor: Colors.black,
                           ),
-                          foregroundColor: Colors.black,
                         ),
-                      ),
-                      Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: ValueListenableBuilder<int>(
-                            valueListenable: _count,
-                            builder: (BuildContext context, value, Widget? child) {
-                              return Text(value.toString());
-                            },
-                          )),
-                      GestureDetector(
-                        onTap: () {
-                          _count.value += 1;
-                        },
-                        child: CircleAvatar(
-                          radius: 16,
-                          backgroundColor: Colors.grey[300],
-                          child: Icon(Icons.add, size: 18),
-                          foregroundColor: Colors.black,
-                        ),
-                      )
+                        Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: ValueListenableBuilder<int>(
+                              valueListenable: _count,
+                              builder: (BuildContext context, value, Widget? child) {
+                                return Text(value.toString());
+                              },
+                            )),
+                        GestureDetector(
+                          onTap: () {
+                            _count.value += 1;
+                          },
+                          child: CircleAvatar(
+                            radius: 16,
+                            backgroundColor: Colors.grey[300],
+                            child: Icon(Icons.add, size: 18),
+                            foregroundColor: Colors.black,
+                          ),
+                        )
                     ],
-                  )),
+                  ),
+                      )),
                   Expanded(
                       child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
