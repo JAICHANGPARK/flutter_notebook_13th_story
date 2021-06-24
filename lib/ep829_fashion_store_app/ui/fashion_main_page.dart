@@ -75,7 +75,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     children: [
                       GestureDetector(
                         onTap: (){
+
                           _count.value -= 1;
+                          if(_count.value <= 1){
+                            _count.value = 1;
+                          }
                         },
                         child: CircleAvatar(
                           radius: 16,
