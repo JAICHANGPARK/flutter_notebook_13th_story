@@ -8,6 +8,7 @@ class FashionMainPage extends StatefulWidget {
 }
 
 class _FashionMainPageState extends State<FashionMainPage> {
+  ValueNotifier<int> _count = ValueNotifier(0);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
