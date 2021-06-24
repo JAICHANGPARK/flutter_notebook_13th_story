@@ -73,14 +73,19 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      CircleAvatar(
-                        radius: 16,
-                        backgroundColor: Colors.grey[300],
-                        child: Icon(
-                          Icons.remove,
-                          size: 18,
+                      GestureDetector(
+                        onTap: (){
+                          _count.value -= 1;
+                        },
+                        child: CircleAvatar(
+                          radius: 16,
+                          backgroundColor: Colors.grey[300],
+                          child: Icon(
+                            Icons.remove,
+                            size: 18,
+                          ),
+                          foregroundColor: Colors.black,
                         ),
-                        foregroundColor: Colors.black,
                       ),
                       Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16),
