@@ -98,7 +98,14 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                   color: Colors.grey,
                                   child: Stack(
                                     children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
-                                        child: CircleAvatar())],
+                                        child: CircleAvatar()),
+                                      Positioned( top: 0, right: 0,
+                                          child: CircleAvatar(
+                                            backgroundColor: Colors.black,
+                                            child: Icon(Icons.check, color: Colors.white,),
+                                          ))
+
+                                    ],
                                   ),
                                 )
                               ],
