@@ -101,8 +101,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                         child: CircleAvatar()),
                                       Positioned( top: 0, right: 0,
                                           child: CircleAvatar(
+                                            radius: 8,
                                             backgroundColor: Colors.black,
-                                            child: Icon(Icons.check, color: Colors.white,),
+                                            child: Icon(Icons.check, color: Colors.white,
+                                            size: 12,),
                                           ))
 
                                     ],
