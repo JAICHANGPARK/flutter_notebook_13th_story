@@ -86,7 +86,13 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           Row(
                             children: [
                               Container(
-                                
+                                height: 48,
+                                width: 48,
+                                child: Stack(
+                                  children: [
+                                    
+                                  ],
+                                ),
                               )
                             ],
                           )
