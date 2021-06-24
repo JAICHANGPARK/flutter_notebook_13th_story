@@ -98,21 +98,30 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             ),),
                             Row(
                               children: [
-                                Container(
-                                  height: 48,
-                                  width: 48,
-                                  child: Stack(
-                                    children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
-                                        child: CircleAvatar()),
-                                      _colorIndex == 0 ?  Positioned( top: 0, right: 0,
+                                GestureDetector(
+                                  onTap: (){
+                                    setState(() {
+                                      _colorIndex = 0;
+                                    });
+                                  },
+                                  child: Container(
+                                    height: 48,
+                                    width: 48,
+                                    child: Stack(
+                                      children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
                                           child: CircleAvatar(
-                                            radius: 8,
-                                            backgroundColor: Colors.black,
-                                            child: Icon(Icons.check, color: Colors.white,
-                                            size: 12,),
-                                          )) : Container()
+                                            backgroundColor: Colors.greenAccent,
+                                          )),
+                                        _colorIndex == 0 ?  Positioned( top: 0, right: 0,
+                                            child: CircleAvatar(
+                                              radius: 8,
+                                              backgroundColor: Colors.black,
+                                              child: Icon(Icons.check, color: Colors.white,
+                                              size: 12,),
+                                            )) : Container()
 
-                                    ],
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],
