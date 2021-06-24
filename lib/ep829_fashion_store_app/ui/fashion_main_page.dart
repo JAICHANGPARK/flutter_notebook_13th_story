@@ -81,6 +81,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     SizedBox(height: 24,),
                     Expanded(child: Row(children: [
                       Expanded(child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Color"),
                           Row(
@@ -88,9 +89,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                               Container(
                                 height: 48,
                                 width: 48,
+                                color: Colors.grey,
                                 child: Stack(
                                   children: [
-                                    
+                                    CircleAvatar()
                                   ],
                                 ),
                               )
