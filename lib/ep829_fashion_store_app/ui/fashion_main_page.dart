@@ -62,7 +62,23 @@ class _FashionMainPageState extends State<FashionMainPage> {
               flex: 10,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Jean jacket",
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        Text("\$109.00"),
+                      ],
+                    )
+                  ],
+                ),
+              ),
               flex: 4,
             ),
             Expanded(
