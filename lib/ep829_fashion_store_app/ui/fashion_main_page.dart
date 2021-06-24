@@ -8,7 +8,7 @@ class FashionMainPage extends StatefulWidget {
 }
 
 class _FashionMainPageState extends State<FashionMainPage> {
-  ValueNotifier<int> _count = ValueNotifier<int>(1);
+  final ValueNotifier<int> _count = ValueNotifier<int>(1);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -83,7 +83,12 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Text("1"),
+                        child: ValueListenableBuilder<int>(
+                          valueListenable: _count,
+                          builder: (BuildContext context, value, Widget? child){
+                            return Text(value);
+                          },
+                        )
                       ),
                       CircleAvatar(
                         radius: 16,
