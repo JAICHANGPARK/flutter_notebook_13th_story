@@ -74,10 +74,9 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       GestureDetector(
-                        onTap: (){
-
+                        onTap: () {
                           _count.value -= 1;
-                          if(_count.value <= 1){
+                          if (_count.value <= 1) {
                             _count.value = 1;
                           }
                         },
@@ -100,7 +99,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             },
                           )),
                       GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           _count.value += 1;
                         },
                         child: CircleAvatar(
