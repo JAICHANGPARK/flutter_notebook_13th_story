@@ -73,35 +73,41 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           "Jean jacket",
                           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                         ),
-                        Text("\$109.00",
+                        Text(
+                          "\$109.00",
                           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
-                    SizedBox(height: 24,),
-                    Expanded(child: Row(children: [
-                      Expanded(child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Color"),
-                          Row(
-                            children: [
-                              Container(
-                                height: 48,
-                                width: 48,
-                                color: Colors.grey,
-                                child: Stack(
-                                  children: [
-                                    CircleAvatar()
-                                  ],
-                                ),
-                              )
-                            ],
-                          )
-                        ],
-                      )),
-                      Expanded(child: Placeholder()),
-                    ],))
+                    SizedBox(
+                      height: 24,
+                    ),
+                    Expanded(
+                        child: Row(
+                      children: [
+                        Expanded(
+                            child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Color"),
+                            Row(
+                              children: [
+                                Container(
+                                  height: 48,
+                                  width: 48,
+                                  color: Colors.grey,
+                                  child: Stack(
+                                    children: [Positioned(left: 0, top: 0, bottom: 0, right: 0,
+                                        child: CircleAvatar())],
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        )),
+                        Expanded(child: Placeholder()),
+                      ],
+                    ))
                   ],
                 ),
               ),
