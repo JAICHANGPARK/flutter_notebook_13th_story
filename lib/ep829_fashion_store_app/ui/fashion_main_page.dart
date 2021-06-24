@@ -71,9 +71,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       children: [
                         Text(
                           "Jean jacket",
-                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                         ),
-                        Text("\$109.00"),
+                        Text("\$109.00",
+                          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                        ),
                       ],
                     )
                   ],
