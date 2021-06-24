@@ -97,7 +97,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                               fontWeight: FontWeight.bold
                             ),),
                             Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 GestureDetector(
                                   onTap: (){
@@ -125,6 +125,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                     ),
                                   ),
                                 ),
+                                SizedBox(width: 8,),
                                 GestureDetector(
                                   onTap: (){
                                     setState(() {
@@ -151,6 +152,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                     ),
                                   ),
                                 ),
+                                SizedBox(width: 8,),
                                 GestureDetector(
                                   onTap: (){
                                     setState(() {
