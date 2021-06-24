@@ -77,7 +77,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                         ),
                       ],
-                    )
+                    ),
+                    Expanded(child: Row(children: [
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder()),
+                    ],))
                   ],
                 ),
               ),
