@@ -9,6 +9,7 @@ class FashionMainPage extends StatefulWidget {
 
 class _FashionMainPageState extends State<FashionMainPage> {
   final ValueNotifier<int> _count = ValueNotifier<int>(1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,22 +83,23 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         foregroundColor: Colors.black,
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: ValueListenableBuilder<int>(
-                          valueListenable: _count,
-                          builder: (BuildContext context, value, Widget? child){
-                            return Text(value.toString());
-                          },
-                        )
-                      ),
-                      CircleAvatar(
-                        radius: 16,
-                        backgroundColor: Colors.grey[300],
-                        child: Icon(
-                          Icons.add,
-                          size: 18,
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: ValueListenableBuilder<int>(
+                            valueListenable: _count,
+                            builder: (BuildContext context, value, Widget? child) {
+                              return Text(value.toString());
+                            },
+                          )),
+                      GestureDetector(
+                        onTap: (){
+                          _count.value += 1;
+                        },
+                        child: CircleAvatar(
+                          radius: 16,
+                          backgroundColor: Colors.grey[300],
+                          child: Icon(Icons.add, size: 18),
+                          foregroundColor: Colors.black,
                         ),
-                        foregroundColor: Colors.black,
                       )
                     ],
                   )),
