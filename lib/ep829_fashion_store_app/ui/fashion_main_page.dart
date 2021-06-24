@@ -369,9 +369,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             child: ValueListenableBuilder<int>(
                               valueListenable: _count,
                               builder: (BuildContext context, value, Widget? child) {
-                                return Text(value.toString(), style: TextStyle(
-                                  fontSize: 16
-                                ),);
+                                return Text(
+                                  value.toString(),
+                                  style: TextStyle(fontSize: 16),
+                                );
                               },
                             )),
                         GestureDetector(
