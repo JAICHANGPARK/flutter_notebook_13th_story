@@ -250,7 +250,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                             bottom: 0,
                                             right: 0,
                                             child: CircleAvatar(
-                                              backgroundColor: _sizeIndex == 0 ? Colors.black : Colors.grey[400],
+                                              backgroundColor: _sizeIndex == 0 ? Colors.black : Colors.grey[200],
                                               child: Text(
                                                 "S",
                                                 style: TextStyle(
@@ -282,9 +282,9 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                             bottom: 0,
                                             right: 0,
                                             child: CircleAvatar(
-                                              backgroundColor: _sizeIndex == 1 ? Colors.black : Colors.grey[400],
+                                              backgroundColor: _sizeIndex == 1 ? Colors.black : Colors.grey[200],
                                               child: Text(
-                                                "S",
+                                                "M",
                                                 style: TextStyle(
                                                   color: _sizeIndex == 1 ? Colors.white : Colors.black,
                                                 ),
@@ -314,7 +314,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                             bottom: 0,
                                             right: 0,
                                             child: CircleAvatar(
-                                              backgroundColor: _sizeIndex == 2 ? Colors.black : Colors.grey[400],
+                                              backgroundColor: _sizeIndex == 2 ? Colors.black : Colors.grey[200],
                                               child: Text(
                                                 "L",
                                                 style: TextStyle(
