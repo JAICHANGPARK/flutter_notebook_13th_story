@@ -30,7 +30,31 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
               flex: 8,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Container(
+                margin: EdgeInsets.fromLTRB(8, 8, 8, 8),
+                child: Row(
+                  children: [
+                      Expanded(child: Container(),
+                      flex: 6,),
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.fromLTRB(8, 4, 8, 4),
+                        decoration: BoxDecoration(
+                            color: Colors.black87,
+                            borderRadius: BorderRadius.circular(16)
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Apply",
+                            style: TextStyle(fontSize: 16, color: Colors.white),
+                          ),
+                        ),
+                      ),
+                      flex: 2,
+                    ),
+                  ],
+                ),
+              ),
               flex: 2,
             ),
             Expanded(
