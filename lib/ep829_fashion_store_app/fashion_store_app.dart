@@ -13,19 +13,19 @@ class FashionStoreApp extends StatelessWidget {
     return MaterialApp(
       title: "Fashion Store App",
       initialRoute: "/",
-      routes: {
-        "/" : (context) => FashionStoreHomePage(),
-        "/main" :(context) => FashionMainPage(),
-        "/shopping_bag" :(context) => ShoppingBagPage(),
-      },
+      // routes: {
+      //   "/" : (context) => FashionStoreHomePage(),
+      //   "/main" :(context) => FashionMainPage(),
+      //   "/shopping_bag" :(context) => ShoppingBagPage(),
+      // },
       onGenerateRoute: (settings){
         switch(settings.name){
           case "/" :
             return PageTransition(child: FashionStoreHomePage(), type: PageTransitionType.fade);
           case "/main" :
-            return PageTransition(child: FashionMainPage(), type: PageTransitionType.leftToRight);
+            return PageTransition(child: FashionMainPage(), type: PageTransitionType.rightToLeft);
           case "/shopping_bag" :
-            return PageTransition(child: ShoppingBagPage(), type: PageTransitionType.rightToLeft);
+            return PageTransition(child: ShoppingBagPage(), type: PageTransitionType.bottomToTop);
         }
       },
     );
