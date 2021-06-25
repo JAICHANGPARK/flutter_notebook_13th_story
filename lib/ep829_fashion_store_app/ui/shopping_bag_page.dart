@@ -36,13 +36,15 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                   children: [
                     Expanded(
                       child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 16),
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
-                          borderRadius: BorderRadius.circular(16),
+                          borderRadius: BorderRadius.circular(8),
                         ),
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
+                            hintText: "Promo Code"
                           ),
                         ),
                       ),
