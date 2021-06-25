@@ -56,14 +56,33 @@ class _FashionMainPageState extends State<FashionMainPage> {
                               children: [
                                 Expanded(
                                     child: Container(
+                                      margin: EdgeInsets.all(4),
                                   decoration: BoxDecoration(
                                     color: Colors.blue[300],
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 )),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
+                                Expanded(
+                                    child: Container( margin: EdgeInsets.all(4),
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue[300],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                    )),
+                                Expanded(
+                                    child: Container( margin: EdgeInsets.all(4),
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue[300],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                    )),
+                                Expanded(
+                                    child: Container( margin: EdgeInsets.all(4),
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue[300],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                    )),
                               ],
                             ),
                           ),
