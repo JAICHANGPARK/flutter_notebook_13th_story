@@ -52,6 +52,20 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
                             height: MediaQuery.of(context).size.height / 3.2,
                             width: 72,
+                            child: Column(
+                              children: [
+                                Expanded(
+                                    child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue[300],
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                )),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                              ],
+                            ),
                           ),
                         ),
                         right: 12,
