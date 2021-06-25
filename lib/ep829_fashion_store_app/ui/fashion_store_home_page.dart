@@ -11,12 +11,20 @@ class _FashionStoreHomePageState extends State<FashionStoreHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          OutlinedButton(onPressed: (){}, child: Text("Main")),
-          OutlinedButton(onPressed: (){}, child: Text("Shopping Bag"))
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            OutlinedButton(onPressed: (){
+              Navigator.of(context).pushNamed("/main");
+            }, child: Text("Main")),
+            OutlinedButton(onPressed: (){
+              Navigator.of(context).pushNamed("/shopping_bag");
+
+            }, child: Text("Shopping Bag"))
+          ],
+        ),
       ),
     );
   }
