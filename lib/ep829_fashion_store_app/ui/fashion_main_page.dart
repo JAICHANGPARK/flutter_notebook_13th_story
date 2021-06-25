@@ -41,7 +41,8 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           right: 8,
                           child: Row(
                             children: [
-                              IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                              IconButton(onPressed: () => Navigator.of(context).pop(),
+                                  icon: Icon(Icons.arrow_back)),
                               Spacer(),
                               IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
                             ],
@@ -56,33 +57,36 @@ class _FashionMainPageState extends State<FashionMainPage> {
                               children: [
                                 Expanded(
                                     child: Container(
-                                      margin: EdgeInsets.all(4),
+                                  margin: EdgeInsets.all(4),
                                   decoration: BoxDecoration(
                                     color: Colors.blue[300],
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 )),
                                 Expanded(
-                                    child: Container( margin: EdgeInsets.all(4),
-                                      decoration: BoxDecoration(
-                                        color: Colors.blue[300],
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
-                                    )),
+                                    child: Container(
+                                  margin: EdgeInsets.all(4),
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue[300],
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                )),
                                 Expanded(
-                                    child: Container( margin: EdgeInsets.all(4),
-                                      decoration: BoxDecoration(
-                                        color: Colors.blue[300],
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
-                                    )),
+                                    child: Container(
+                                  margin: EdgeInsets.all(4),
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue[300],
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                )),
                                 Expanded(
-                                    child: Container( margin: EdgeInsets.all(4),
-                                      decoration: BoxDecoration(
-                                        color: Colors.blue[300],
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
-                                    )),
+                                    child: Container(
+                                  margin: EdgeInsets.all(4),
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue[300],
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                )),
                               ],
                             ),
                           ),
