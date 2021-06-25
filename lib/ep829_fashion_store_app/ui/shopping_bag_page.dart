@@ -39,6 +39,11 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
             ),
             Expanded(
               child: Container(
+                margin: EdgeInsets.fromLTRB(8, 4, 8, 4),
+                decoration: BoxDecoration(
+                  color: Colors.black87,
+                  borderRadius: BorderRadius.circular(24)
+                ),
                 child: Center(
                   child: Text(
                     "Proceed to Checkout",
