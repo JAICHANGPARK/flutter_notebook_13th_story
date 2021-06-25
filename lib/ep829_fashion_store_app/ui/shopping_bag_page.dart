@@ -52,7 +52,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                     ),
                     Expanded(
                       child: Container(
-                        margin: EdgeInsets.fromLTRB(8, 4, 8, 4),
+                        margin: EdgeInsets.fromLTRB(8, 8, 8, 8),
                         decoration: BoxDecoration(color: Colors.black87, borderRadius: BorderRadius.circular(16)),
                         child: Center(
                           child: Text(
