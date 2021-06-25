@@ -22,7 +22,10 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
               ),),
               IconButton(onPressed: (){}, icon: Icon(Icons.mail_outline))],
               
-            )
+            ),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
