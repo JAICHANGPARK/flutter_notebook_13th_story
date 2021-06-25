@@ -22,6 +22,8 @@ dependencies:
 
   riverpod: any
 
+  page_transition: ^2.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
