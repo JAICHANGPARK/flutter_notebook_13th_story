@@ -15,6 +15,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [IconButton(onPressed: () => Navigator.of(context).pop(), icon: Icon(Icons.arrow_back)),
               Text("Shopping Bag", style: TextStyle(
                 fontSize: 24
