@@ -34,15 +34,24 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                 margin: EdgeInsets.fromLTRB(8, 8, 8, 8),
                 child: Row(
                   children: [
-                      Expanded(child: Container(),
-                      flex: 6,),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                          ),
+                        ),
+                      ),
+                      flex: 6,
+                    ),
                     Expanded(
                       child: Container(
                         margin: EdgeInsets.fromLTRB(8, 4, 8, 4),
-                        decoration: BoxDecoration(
-                            color: Colors.black87,
-                            borderRadius: BorderRadius.circular(16)
-                        ),
+                        decoration: BoxDecoration(color: Colors.black87, borderRadius: BorderRadius.circular(16)),
                         child: Center(
                           child: Text(
                             "Apply",
@@ -64,10 +73,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
             Expanded(
               child: Container(
                 margin: EdgeInsets.fromLTRB(8, 4, 8, 4),
-                decoration: BoxDecoration(
-                  color: Colors.black87,
-                  borderRadius: BorderRadius.circular(24)
-                ),
+                decoration: BoxDecoration(color: Colors.black87, borderRadius: BorderRadius.circular(24)),
                 child: Center(
                   child: Text(
                     "Proceed to Checkout",
