@@ -15,7 +15,11 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
         child: Column(
           children: [
             Row(
-              children: [IconButton(onPressed: () => Navigator.of(context).pop(), icon: Icon(Icons.arrow_back))],
+              children: [IconButton(onPressed: () => Navigator.of(context).pop(), icon: Icon(Icons.arrow_back)),
+              Text("Shopping Bag", style: TextStyle(
+                fontSize: 24
+              ),),
+              IconButton(onPressed: (){}, icon: Icon(Icons.mail_outline))],
               
             )
           ],
