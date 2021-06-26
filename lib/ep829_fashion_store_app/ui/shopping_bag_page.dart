@@ -76,6 +76,18 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                       child: Center(
                                         child: Icon(Icons.remove),
                                       ),
+                                    ),
+                                    Container(
+                                      height: 32,
+                                      width: 32,
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                            color: Colors.grey[200]!),
+                                        shape: BoxShape.circle,
+                                      ),
+                                      child: Center(
+                                        child: Icon(Icons.remove),
+                                      ),
                                     )
                                   ],
                                 )
