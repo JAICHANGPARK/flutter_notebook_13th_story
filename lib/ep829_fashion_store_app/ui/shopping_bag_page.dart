@@ -61,6 +61,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                   "${shoppingBagItems[index].title}",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
+                                SizedBox(height: 4),
                                 Text(
                                   "\$${shoppingBagItems[index].price}",
                                 ),
