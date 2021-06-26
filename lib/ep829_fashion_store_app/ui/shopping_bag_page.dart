@@ -77,6 +77,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                         child: Icon(Icons.remove),
                                       ),
                                     ),
+                                    Text(""),
                                     Container(
                                       height: 28,
                                       width: 28,
@@ -86,7 +87,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                         shape: BoxShape.circle,
                                       ),
                                       child: Center(
-                                        child: Icon(Icons.remove),
+                                        child: Icon(Icons.add),
                                       ),
                                     )
                                   ],
