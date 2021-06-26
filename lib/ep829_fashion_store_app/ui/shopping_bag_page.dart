@@ -41,7 +41,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                             height: 92,
                             width: 84,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8),
+                                borderRadius: BorderRadius.circular(8),
                                 image: DecorationImage(
                                     image: NetworkImage(
                                       "${shoppingBagItems[index].img}",
@@ -50,10 +50,15 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                           ),
                           Column(),
                           Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("${shoppingBagItems[index].size}"),
-                              IconButton(onPressed: (){}, icon: Icon(Icons.delete_outline,color:
-                                Colors.red,))
+                              IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.delete_outline,
+                                    color: Colors.red,
+                                  ))
                             ],
                           )
                         ],
