@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep829_fashion_store_app/mocks/shopping_bag_items.dart';
 
 class ShoppingBagPage extends StatefulWidget {
   const ShoppingBagPage({Key? key}) : super(key: key);
@@ -29,7 +30,9 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
               ],
             ),
             Expanded(
-              child: ListView.builder(itemBuilder: (context, index) {
+              child: ListView.builder(
+                  itemCount: shoppingBagItems.length,
+                  itemBuilder: (context, index) {
                 return Row(
                   children: [],
                 );
