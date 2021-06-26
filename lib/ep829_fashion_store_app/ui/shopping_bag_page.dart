@@ -33,10 +33,21 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
               child: ListView.builder(
                   itemCount: shoppingBagItems.length,
                   itemBuilder: (context, index) {
-                return Row(
-                  children: [],
-                );
-              }),
+                    return Row(
+                      children: [
+                        Container(
+                          height: 72,
+                          width: 64,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    "${shoppingBagItems[index].img}",
+                                  ),
+                                  fit: BoxFit.cover)),
+                        )
+                      ],
+                    );
+                  }),
               flex: 8,
             ),
             Expanded(
