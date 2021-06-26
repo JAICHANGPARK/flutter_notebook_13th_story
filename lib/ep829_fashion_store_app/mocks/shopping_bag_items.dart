@@ -3,12 +3,18 @@ import 'package:flutter_notebook_13th_story/ep829_fashion_store_app/model/shoppi
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 
-List<ShoppingBag> shoppingBagItems = [];
+List<ShoppingBag> shoppingBagItems = [
 
-class shoppingBagList extends StateNotifier<List<shoppingBagList>>{
-  shoppingBagList(List<shoppingBagList>? state) : super(state ?? []);
+  ShoppingBag(
+    count: 1,
+    price: 
+  ),
 
-  
+];
 
+class shoppingBagList extends StateNotifier<List<ShoppingBag>>{
+  shoppingBagList(List<ShoppingBag>? state) : super(state ?? []);
 
+  increment(int index){
+  }
 }
