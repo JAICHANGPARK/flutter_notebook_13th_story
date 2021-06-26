@@ -66,8 +66,8 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                 Row(
                                   children: [
                                     Container(
-                                      height: 32,
-                                      width: 32,
+                                      height: 28,
+                                      width: 28,
                                       decoration: BoxDecoration(
                                         border: Border.all(
                                             color: Colors.grey[200]!),
