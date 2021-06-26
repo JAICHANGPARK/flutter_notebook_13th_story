@@ -51,7 +51,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                           Column(
                             children: [
                               Text("${shoppingBagItems[index].title}",),
-                              Text("${shoppingBagItems[index].price}",),
+                              Text("\$${shoppingBagItems[index].price}",),
 
                             ],
                           ),
