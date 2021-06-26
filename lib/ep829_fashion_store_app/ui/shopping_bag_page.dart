@@ -55,6 +55,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                               children: [
                                 Text(
                                   "${shoppingBagItems[index].title}",
+                                  style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   "\$${shoppingBagItems[index].price}",
