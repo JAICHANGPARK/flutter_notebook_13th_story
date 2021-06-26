@@ -1,0 +1,3 @@
+class ShoppingBag{
+  String  ? img;
+}
