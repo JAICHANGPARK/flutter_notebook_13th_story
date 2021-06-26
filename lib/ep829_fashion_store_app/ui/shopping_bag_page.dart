@@ -48,7 +48,11 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                     ),
                                     fit: BoxFit.cover)),
                           ),
-                          Column(),
+                          Column(
+                            children: [
+                              
+                            ],
+                          ),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
