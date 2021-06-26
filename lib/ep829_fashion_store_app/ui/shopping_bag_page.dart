@@ -33,20 +33,31 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
               child: ListView.builder(
                   itemCount: shoppingBagItems.length,
                   itemBuilder: (context, index) {
-                    return Row(
-                      children: [
-                        Container(
-                          height: 100,
-                          width: 84,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8),
-                              image: DecorationImage(
-                                  image: NetworkImage(
-                                    "${shoppingBagItems[index].img}",
-                                  ),
-                                  fit: BoxFit.cover)),
-                        )
-                      ],
+                    return Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 92,
+                            width: 84,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                    image: NetworkImage(
+                                      "${shoppingBagItems[index].img}",
+                                    ),
+                                    fit: BoxFit.cover)),
+                          ),
+                          Column(),
+                          Column(
+                            children: [
+                              Text("${shoppingBagItems[index].size}"),
+                              IconButton(onPressed: (){}, icon: Icon(Icons.delete_outline,color:
+                                Colors.red,))
+                            ],
+                          )
+                        ],
+                      ),
                     );
                   }),
               flex: 8,
