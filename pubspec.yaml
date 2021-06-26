@@ -21,6 +21,9 @@ dependencies:
   flutter_svg: any
 
   riverpod: any
+  flutter_hooks: ^0.17.0
+  hooks_riverpod: ^1.0.0-dev.1
+
 
   page_transition: ^2.0.2
 
