@@ -48,7 +48,9 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                     ),
                                     fit: BoxFit.cover)),
                           ),
-                          SizedBox(width: 16,),
+                          SizedBox(
+                            width: 16,
+                          ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
@@ -62,7 +64,9 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                 Text(
                                   "\$${shoppingBagItems[index].price}",
                                 ),
-                                SizedBox(height: 16,),
+                                SizedBox(
+                                  height: 16,
+                                ),
                                 Row(
                                   children: [
                                     Container(
@@ -78,8 +82,11 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                                      child: Text( "${shoppingBagItems[index].count}",),
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 16),
+                                      child: Text(
+                                        "${shoppingBagItems[index].count}",
+                                      ),
                                     ),
                                     Container(
                                       height: 28,
@@ -102,8 +109,15 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("${shoppingBagItems[index].size}"),
-                              SizedBox(height: 24,),
+                              Text(
+                                "${shoppingBagItems[index].size}",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey),
+                              ),
+                              SizedBox(
+                                height: 24,
+                              ),
                               IconButton(
                                   onPressed: () {},
                                   icon: Icon(
