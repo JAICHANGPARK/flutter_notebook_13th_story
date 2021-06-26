@@ -77,7 +77,10 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                         child: Icon(Icons.remove),
                                       ),
                                     ),
-                                    Text(""),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                                      child: Text( "${shoppingBagItems[index].count}",),
+                                    ),
                                     Container(
                                       height: 28,
                                       width: 28,
