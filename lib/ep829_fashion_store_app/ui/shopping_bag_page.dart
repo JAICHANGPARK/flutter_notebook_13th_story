@@ -98,10 +98,12 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                               ],
                             ),
                           ),
+                          Spacer(),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("${shoppingBagItems[index].size}"),
+                              SizedBox(height: 24,),
                               IconButton(
                                   onPressed: () {},
                                   icon: Icon(
