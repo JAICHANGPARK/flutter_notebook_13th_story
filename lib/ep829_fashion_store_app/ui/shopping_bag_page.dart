@@ -48,14 +48,33 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                     ),
                                     fit: BoxFit.cover)),
                           ),
-                          Column(
-                            children: [
-                              Text("${shoppingBagItems[index].title}",),
-                              Text("\$${shoppingBagItems[index].price}",),
-
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "${shoppingBagItems[index].title}",
+                                ),
+                                Text(
+                                  "\$${shoppingBagItems[index].price}",
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      height: 42,
+                                      width: 42,
+                                      decoration: BoxDecoration(
+                                        border: Border.all(color: Colors.grey[200]!)
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                           Column(
+
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("${shoppingBagItems[index].size}"),
