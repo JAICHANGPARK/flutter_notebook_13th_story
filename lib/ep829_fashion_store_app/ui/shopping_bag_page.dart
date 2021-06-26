@@ -38,8 +38,8 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                       child: Row(
                         children: [
                           Container(
-                            height: 72,
-                            width: 68,
+                            height: 84,
+                            width: 84,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
                                 image: DecorationImage(
@@ -53,7 +53,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text(
                                   "${shoppingBagItems[index].title}",
@@ -62,6 +62,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                 Text(
                                   "\$${shoppingBagItems[index].price}",
                                 ),
+                                SizedBox(height: 16,),
                                 Row(
                                   children: [
                                     Container(
