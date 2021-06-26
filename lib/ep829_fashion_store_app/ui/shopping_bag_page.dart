@@ -18,7 +18,9 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                IconButton(onPressed: () => Navigator.of(context).pop(), icon: Icon(Icons.arrow_back)),
+                IconButton(
+                    onPressed: () => Navigator.of(context).pop(),
+                    icon: Icon(Icons.arrow_back)),
                 Text(
                   "Shopping Bag",
                   style: TextStyle(fontSize: 24),
@@ -44,9 +46,7 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                         ),
                         child: TextField(
                           decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: "Promo Code"
-                          ),
+                              border: InputBorder.none, hintText: "Promo Code"),
                         ),
                       ),
                       flex: 6,
@@ -54,7 +54,9 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                     Expanded(
                       child: Container(
                         margin: EdgeInsets.fromLTRB(8, 8, 8, 8),
-                        decoration: BoxDecoration(color: Colors.black87, borderRadius: BorderRadius.circular(16)),
+                        decoration: BoxDecoration(
+                            color: Colors.black87,
+                            borderRadius: BorderRadius.circular(16)),
                         child: Center(
                           child: Text(
                             "Apply",
@@ -76,7 +78,9 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
             Expanded(
               child: Container(
                 margin: EdgeInsets.fromLTRB(8, 4, 8, 4),
-                decoration: BoxDecoration(color: Colors.black87, borderRadius: BorderRadius.circular(24)),
+                decoration: BoxDecoration(
+                    color: Colors.black87,
+                    borderRadius: BorderRadius.circular(24)),
                 child: Center(
                   child: Text(
                     "Proceed to Checkout",
