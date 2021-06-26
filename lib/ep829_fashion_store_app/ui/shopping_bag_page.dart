@@ -62,10 +62,15 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                                 Row(
                                   children: [
                                     Container(
-                                      height: 42,
-                                      width: 42,
+                                      height: 32,
+                                      width: 32,
                                       decoration: BoxDecoration(
-                                        border: Border.all(color: Colors.grey[200]!)
+                                        border: Border.all(
+                                            color: Colors.grey[200]!),
+                                        shape: BoxShape.circle,
+                                      ),
+                                      child: Center(
+                                        child: Icon(Icons.remove),
                                       ),
                                     )
                                   ],
@@ -74,7 +79,6 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                             ),
                           ),
                           Column(
-
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("${shoppingBagItems[index].size}"),
