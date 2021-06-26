@@ -36,9 +36,10 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
                     return Row(
                       children: [
                         Container(
-                          height: 72,
-                          width: 64,
+                          height: 100,
+                          width: 84,
                           decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
                               image: DecorationImage(
                                   image: NetworkImage(
                                     "${shoppingBagItems[index].img}",
