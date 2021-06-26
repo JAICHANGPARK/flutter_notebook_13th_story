@@ -5,6 +5,7 @@ class ShoppingBag{
   int? count;
   String? size;
 
-
-
+  ShoppingBag({
+    this.img, this.title, this.price, this.count, this.size
+});
 }
