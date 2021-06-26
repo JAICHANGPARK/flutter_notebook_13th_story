@@ -29,7 +29,11 @@ class _ShoppingBagPageState extends State<ShoppingBagPage> {
               ],
             ),
             Expanded(
-              child: Placeholder(),
+              child: ListView.builder(itemBuilder: (context, index) {
+                return Row(
+                  children: [],
+                );
+              }),
               flex: 8,
             ),
             Expanded(
