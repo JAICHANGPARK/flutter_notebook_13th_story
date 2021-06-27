@@ -53,6 +53,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                       color: Colors.white,
                       border: Border.all(color: Colors.black, width: 1)),
                 ),
+                SizedBox(width: 16,),
                 Container(
                   width: 20,
                   height: 7,
@@ -61,6 +62,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                       color: ColorSystem.green,
                       border: Border.all(color: Colors.black, width: 1)),
                 ),
+                SizedBox(width: 16,),
                 Container(
                   width: 20,
                   height: 7,
