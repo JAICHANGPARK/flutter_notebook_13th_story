@@ -44,6 +44,8 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
           ),
           Expanded(
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
                   width: 20,
@@ -53,7 +55,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                       color: Colors.white,
                       border: Border.all(color: Colors.black, width: 1)),
                 ),
-                SizedBox(width: 12,),
+                SizedBox(width: 8,),
                 Container(
                   width: 20,
                   height: 7,
@@ -62,7 +64,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                       color: ColorSystem.green,
                       border: Border.all(color: Colors.black, width: 1)),
                 ),
-                SizedBox(width: 12,),
+                SizedBox(width: 8,),
                 Container(
                   width: 20,
                   height: 7,
