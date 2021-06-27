@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep833_health_app/health_app_string.dart';
 import 'package:flutter_notebook_13th_story/ep833_health_app/health_app_style.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -21,7 +22,8 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
             Expanded(child: Placeholder(), flex: 6,),
             Expanded(child: PageView(
               children: [
-                SvgPicture.asset(assetName)
+                SvgPicture.asset(HealthAppString.JOGGING_IMG,
+                fit: BoxFit.cover,),
               ],
             ), flex: 14,),
             Expanded(child: Row(
