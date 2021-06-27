@@ -12,6 +12,14 @@ class HealthOnboardPage extends StatefulWidget {
 }
 
 class _HealthOnboardPageState extends State<HealthOnboardPage> {
+  late PageController _pageController;
+  int _pageIndex = 0;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController(initialPage: _pageIndex);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
