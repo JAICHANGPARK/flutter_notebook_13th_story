@@ -1,4 +1,4 @@
 
 class HealthAppString{
-  static const JOGGING_IMG = "";
+  static const JOGGING_IMG = "assets/img/pixeltrue-jogging.svg";
 }
