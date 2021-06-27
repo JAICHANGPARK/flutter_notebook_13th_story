@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep833_health_app/health_app_string.dart';
 import 'package:flutter_notebook_13th_story/ep833_health_app/health_app_style.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HealthOnboardPage extends StatefulWidget {
   const HealthOnboardPage({Key? key}) : super(key: key);
@@ -89,12 +90,15 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                     color: ColorSystem.green,
                   ),
                   child: Center(
-                    child: Text(""),
+                    child: Text("Try for free", style: GoogleFonts.kanit(fontSize: 18),),
                   ),
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(""),
+                    Text("Already Have an Account?", style: GoogleFonts.kanit(fontSize: 18),),
+                    Text("Log In", style: GoogleFonts.kanit(fontSize: 18,
+                    decoration: TextDecoration.underline),),
                   ],
                 )
               ],
