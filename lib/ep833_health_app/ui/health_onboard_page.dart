@@ -14,10 +14,15 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorSystem.yellow,
-      body: Column(
-        children: [
-          
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Placeholder(), flex: 6,),
+            Expanded(child: Placeholder(), flex: 14,),
+            Expanded(child: Placeholder(), flex: 1,),
+            Expanded(child: Placeholder(), flex: 4,),
+          ]
+        ),
       ),
     );
   }
