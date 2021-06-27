@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep833_health_app/ui/health_onboard_page.dart';
 import 'package:get/get.dart';
 
 
@@ -8,7 +9,7 @@ class HealthApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-
+      home: HealthOnboardPage(),
     );
   }
 }
