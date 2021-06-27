@@ -19,7 +19,11 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
           children: [
             Expanded(child: Placeholder(), flex: 6,),
             Expanded(child: Placeholder(), flex: 14,),
-            Expanded(child: Placeholder(), flex: 1,),
+            Expanded(child: Row(
+              children: [
+
+              ],
+            ), flex: 1,),
             Expanded(child: Placeholder(), flex: 4,),
           ]
         ),
