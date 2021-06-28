@@ -66,9 +66,9 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                       ],
                     )),
                 Positioned(
-                  left: 0,
+                  top: 120,
                   right: 0,
-                  top: 0,
+                  left: 0,
                   bottom: 0,
                   child: Image.asset("${HealthAppString.CIRCLE_IMG}"),
                 ),
