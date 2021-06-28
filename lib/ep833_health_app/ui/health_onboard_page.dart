@@ -83,18 +83,12 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                 });
               },
               children: [
-                SvgPicture.asset(
-                  HealthAppString.JOGGING_IMG,
-                  fit: BoxFit.cover,
-                ),
-                SvgPicture.asset(
-                  HealthAppString.JOGGING_IMG,
-                  fit: BoxFit.cover,
-                ),
-                SvgPicture.asset(
-                  HealthAppString.JOGGING_IMG,
-                  fit: BoxFit.cover,
-                ),
+                SvgPicture.asset(HealthAppString.JOGGING_IMG,
+                    fit: BoxFit.cover),
+                SvgPicture.asset(HealthAppString.JOGGING_IMG,
+                    fit: BoxFit.cover),
+                SvgPicture.asset(HealthAppString.JOGGING_IMG,
+                    fit: BoxFit.cover),
               ],
             ),
             flex: 14,
