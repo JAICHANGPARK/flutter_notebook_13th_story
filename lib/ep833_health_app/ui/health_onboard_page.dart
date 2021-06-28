@@ -79,6 +79,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
             ),
           ),
           Expanded(
+            flex: 14,
             child: PageView(
               onPageChanged: (value) {
                 setState(() {
@@ -94,9 +95,9 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                     fit: BoxFit.cover),
               ],
             ),
-            flex: 14,
           ),
           Expanded(
+            flex: 1,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -109,9 +110,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                       color: _pageIndex == 0 ? Colors.white : ColorSystem.green,
                       border: Border.all(color: Colors.black, width: 1)),
                 ),
-                SizedBox(
-                  width: 8,
-                ),
+                SizedBox(width: 8),
                 Container(
                   width: 20,
                   height: 7,
@@ -133,7 +132,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                 )
               ],
             ),
-            flex: 1,
+
           ),
           SizedBox(height: 16),
           Expanded(
