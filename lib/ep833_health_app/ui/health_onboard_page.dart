@@ -70,7 +70,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                   right: 0,
                   top: 0,
                   bottom: 0,
-                  child: Image.asset("");
+                  child: Image.asset("${HealthAppString.CIRCLE_IMG}"),
                 ),
               ],
             ),
