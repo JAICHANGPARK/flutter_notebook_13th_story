@@ -56,7 +56,9 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                       color: Colors.white,
                       border: Border.all(color: Colors.black, width: 1)),
                 ),
-                SizedBox(width: 8,),
+                SizedBox(
+                  width: 8,
+                ),
                 Container(
                   width: 20,
                   height: 7,
@@ -65,7 +67,9 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                       color: ColorSystem.green,
                       border: Border.all(color: Colors.black, width: 1)),
                 ),
-                SizedBox(width: 8,),
+                SizedBox(
+                  width: 8,
+                ),
                 Container(
                   width: 20,
                   height: 7,
@@ -78,7 +82,9 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
             ),
             flex: 1,
           ),
-          SizedBox(height: 16,),
+          SizedBox(
+            height: 16,
+          ),
           Expanded(
             child: Column(
               children: [
@@ -90,15 +96,24 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                     color: ColorSystem.green,
                   ),
                   child: Center(
-                    child: Text("Try for free", style: GoogleFonts.kanit(fontSize: 18),),
+                    child: Text(
+                      "Try for free",
+                      style: GoogleFonts.kanit(fontSize: 18),
+                    ),
                   ),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Already Have an Account?", style: GoogleFonts.kanit(fontSize: 18),),
-                    Text("Log In", style: GoogleFonts.kanit(fontSize: 18,
-                    decoration: TextDecoration.underline),),
+                    Text(
+                      "Already Have an Account?",
+                      style: GoogleFonts.kanit(fontSize: 18),
+                    ),
+                    Text(
+                      "Log In",
+                      style: GoogleFonts.kanit(
+                          fontSize: 18, decoration: TextDecoration.underline),
+                    ),
                   ],
                 )
               ],
