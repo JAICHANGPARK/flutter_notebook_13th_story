@@ -31,7 +31,15 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
           Expanded(
             child: Stack(
               children: [
-                
+
+                Positioned(child: Column(
+                  children: [
+                    Text("A complete"),
+                    Text("app for your"),
+                    Text("health"),
+                  ],
+                ))
+
               ],
             ),
             flex: 6,
