@@ -64,7 +64,8 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                           style: GoogleFonts.kanit(fontSize: 42),
                         ),
                       ],
-                    ))
+                    )),
+                
               ],
             ),
           ),
