@@ -77,6 +77,9 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
           ),
           Expanded(
             child: PageView(
+              onPageChanged: (value){
+              
+              },
               children: [
                 SvgPicture.asset(
                   HealthAppString.JOGGING_IMG,
