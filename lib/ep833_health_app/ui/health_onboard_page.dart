@@ -136,6 +136,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
           ),
           SizedBox(height: 16),
           Expanded(
+            flex: 4,
             child: Column(
               children: [
                 InkWell(
@@ -168,7 +169,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                 )
               ],
             ),
-            flex: 4,
+
           ),
         ]),
       ),
