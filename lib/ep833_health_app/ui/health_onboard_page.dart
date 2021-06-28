@@ -34,7 +34,10 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
 
                 Positioned(child: Column(
                   children: [
-                    Text("A complete"),
+                    Text("A complete",style: GoogleFonts.kanit(
+                      fontSize: 48,
+                      fontWeight: FontWeight.bold
+                    ),),
                     Text("app for your"),
                     Text("health"),
                   ],
