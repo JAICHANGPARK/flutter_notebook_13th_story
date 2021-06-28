@@ -135,9 +135,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
             ),
             flex: 1,
           ),
-          SizedBox(
-            height: 16,
-          ),
+          SizedBox(height: 16),
           Expanded(
             child: Column(
               children: [
