@@ -29,7 +29,11 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
       body: SafeArea(
         child: Column(children: [
           Expanded(
-            child: Placeholder(),
+            child: Stack(
+              children: [
+                
+              ],
+            ),
             flex: 6,
           ),
           Expanded(
