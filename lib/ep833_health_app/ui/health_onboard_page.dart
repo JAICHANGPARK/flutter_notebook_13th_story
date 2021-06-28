@@ -33,12 +33,11 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
             child: Stack(
               children: [
               Positioned(
-              left: 0,
-              right: 0,
-              top: 0,
-              bottom: 0,
+              right: 86,
+              top: 36,
               child: Container(
-                    height: 32,
+                    height: 16,
+                    width: 176,
                     decoration: BoxDecoration(
                       color: ColorSystem.green,
                     ),
