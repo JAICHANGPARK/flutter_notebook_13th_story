@@ -66,7 +66,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                       ],
                     )),
                 Positioned(
-                  top: 120,
+                  top: 132,
                   right: 0,
                   left: 0,
                   bottom: 0,
