@@ -77,8 +77,10 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
           ),
           Expanded(
             child: PageView(
-              onPageChanged: (value){
-              
+              onPageChanged: (value) {
+                setState(() {
+                  _pageIndex = value;
+                });
               },
               children: [
                 SvgPicture.asset(
