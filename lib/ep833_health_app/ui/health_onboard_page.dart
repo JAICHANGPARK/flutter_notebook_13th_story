@@ -31,17 +31,34 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
           Expanded(
             child: Stack(
               children: [
-
-                Positioned(child: Column(
-                  children: [
-                    Text("A complete",style: GoogleFonts.kanit(
-                      fontSize: 42,
-                    ),),
-                    Text("app for your"),
-                    Text("health"),
-                  ],
-                ))
-
+                Positioned(
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "A complete",
+                          style: GoogleFonts.kanit(
+                            fontSize: 40,
+                          ),
+                        ),
+                        Text(
+                          "App for your",
+                          style: GoogleFonts.kanit(
+                            fontSize: 40,
+                          ),
+                        ),
+                        Text(
+                          "health",
+                          style: GoogleFonts.kanit(
+                            fontSize: 42,
+                          ),
+                        ),
+                      ],
+                    ))
               ],
             ),
             flex: 6,
