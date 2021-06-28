@@ -29,6 +29,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
       body: SafeArea(
         child: Column(children: [
           Expanded(
+            flex: 6,
             child: Stack(
               children: [
                 Positioned(
@@ -42,7 +43,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                         Text(
                           "A complete",
                           style: GoogleFonts.kanit(
-                            fontSize: 40,
+                            fontSize: 42,
                           ),
                         ),
                         Text(
@@ -61,7 +62,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                     ))
               ],
             ),
-            flex: 6,
+
           ),
           Expanded(
             child: PageView(
