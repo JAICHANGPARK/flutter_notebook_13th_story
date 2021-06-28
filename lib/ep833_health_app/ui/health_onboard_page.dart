@@ -142,14 +142,11 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                   height: 64,
                   width: 364,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(17),
-                    color: ColorSystem.green,
-                  ),
+                      borderRadius: BorderRadius.circular(17),
+                      color: ColorSystem.green),
                   child: Center(
-                    child: Text(
-                      "Try for free",
-                      style: GoogleFonts.kanit(fontSize: 18),
-                    ),
+                    child: Text("Try for free",
+                        style: GoogleFonts.kanit(fontSize: 18)),
                   ),
                 ),
                 Row(
