@@ -29,9 +29,17 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
       body: SafeArea(
         child: Column(children: [
           Expanded(
-            flex: 6,
+            flex: 7,
             child: Stack(
               children: [
+              Positioned(
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0,
+              child: Container(
+
+              ),),
                 Positioned(
                     left: 0,
                     right: 0,
@@ -41,7 +49,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          "A complete",
+                          "A Complete",
                           style: GoogleFonts.kanit(
                             fontSize: 42,
                           ),
@@ -49,7 +57,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                         Text(
                           "App for your",
                           style: GoogleFonts.kanit(
-                            fontSize: 40,
+                            fontSize: 42,
                           ),
                         ),
                         Text(
