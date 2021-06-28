@@ -103,7 +103,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                   height: 7,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(14),
-                      color: Colors.white,
+                      color: _pageIndex == 0 ? Colors.white : ColorSystem.green,
                       border: Border.all(color: Colors.black, width: 1)),
                 ),
                 SizedBox(
@@ -114,7 +114,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                   height: 7,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(14),
-                      color: ColorSystem.green,
+                      color: _pageIndex == 1 ? Colors.white : ColorSystem.green,
                       border: Border.all(color: Colors.black, width: 1)),
                 ),
                 SizedBox(
@@ -125,7 +125,7 @@ class _HealthOnboardPageState extends State<HealthOnboardPage> {
                   height: 7,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(14),
-                      color: ColorSystem.green,
+                      color: _pageIndex == 2 ? Colors.white : ColorSystem.green,
                       border: Border.all(color: Colors.black, width: 1)),
                 )
               ],
