@@ -21,7 +21,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
               child: Stack(
                 children: [
                   Positioned(
-                      bottom: 24,
+                      bottom: 32,
                       left: 112,
                       right: 112,
                       child: Center(
@@ -103,7 +103,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                   )
                 ],
               ),
-              flex: 7,
+              flex: 6,
             ),
             Expanded(
               child: Stack(
@@ -195,7 +195,6 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
               ),
               flex: 8,
             ),
-            Expanded(child: Placeholder()),
           ],
         ),
       ),
