@@ -133,6 +133,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                         color: Colors.white,
                         border: Border.all(color: Colors.black),
                         borderRadius: BorderRadius.circular(17)),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       child:Center(
                         child: TextField(
                           decoration: InputDecoration(
@@ -154,18 +155,27 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: "Enter your full name",
+                          hintText: "Enter your email",
                         ),
                       ),
                     )
                   ),
                   Container(
-                    height: 64,
-                    width: 364,
-                    decoration: BoxDecoration(
-                        color: ColorSystem.darkBlue,
-                        borderRadius: BorderRadius.circular(17)),
-                    child: TextField()
+                      height: 64,
+                      width: 364,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(17)),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child:Center(
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "Enter your password",
+                          ),
+                        ),
+                      )
                   ),
                   InkWell(
                     onTap: (){},
