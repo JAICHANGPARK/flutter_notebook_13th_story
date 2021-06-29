@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep833_health_app/health_app_style.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HealthSignUpPage extends StatefulWidget {
@@ -36,7 +37,15 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                             style: GoogleFonts.kanit(fontSize: 38),
                           ),
                         ],
-                      ))
+                      )),
+                  Positioned(
+                      child: Container(
+                    height: 42,
+                    width: 200,
+                    decoration: BoxDecoration(
+                      color: ColorSystem.yellow,
+                    ),
+                  )),
                 ],
               ),
               flex: 4,
