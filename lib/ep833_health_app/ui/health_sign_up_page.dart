@@ -131,26 +131,33 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                     width: 364,
                     decoration: BoxDecoration(
                         color: Colors.white,
+                        border: Border.all(color: Colors.black),
                         borderRadius: BorderRadius.circular(17)),
-                    child: Center(
-                      child: Text(
-                        "Continue with Apple",
-                        style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
-                      ),
-                    ),
+                      child:Center(
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "Enter your full name",
+                          ),
+                        ),
+                      )
                   ),
                   Container(
                     height: 64,
                     width: 364,
                     decoration: BoxDecoration(
-                        color: ColorSystem.blue,
+                        color: Colors.white,
+                        border: Border.all(color: Colors.black),
                         borderRadius: BorderRadius.circular(17)),
-                    child: Center(
-                      child: Text(
-                        "Continue with Google",
-                        style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child:Center(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Enter your full name",
+                        ),
                       ),
-                    ),
+                    )
                   ),
                   Container(
                     height: 64,
@@ -158,12 +165,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                     decoration: BoxDecoration(
                         color: ColorSystem.darkBlue,
                         borderRadius: BorderRadius.circular(17)),
-                    child: Center(
-                      child: Text(
-                        "Continue with Facebook",
-                        style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
-                      ),
-                    ),
+                    child: TextField()
                   ),
                   InkWell(
                     onTap: (){},
