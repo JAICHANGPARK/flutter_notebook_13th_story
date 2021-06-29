@@ -90,7 +90,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                     height: 64,
                     width: 364,
                     decoration: BoxDecoration(
-                        color: ColorSystem.blue,
+                        color: ColorSystem.darkBlue,
                         borderRadius: BorderRadius.circular(17)),
                     child: Center(
                       child: Text(
