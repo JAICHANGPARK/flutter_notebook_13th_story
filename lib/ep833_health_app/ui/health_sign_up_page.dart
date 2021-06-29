@@ -39,13 +39,16 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                         ],
                       )),
                   Positioned(
+                      bottom: 24,
+                      left: 0,
+                      right: 0,
                       child: Container(
-                    height: 42,
-                    width: 200,
-                    decoration: BoxDecoration(
-                      color: ColorSystem.yellow,
-                    ),
-                  )),
+                        height: 42,
+                        width: 200,
+                        decoration: BoxDecoration(
+                          color: ColorSystem.yellow,
+                        ),
+                      )),
                 ],
               ),
               flex: 4,
