@@ -14,14 +14,32 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Stack(
-              children: [
-                
-              ],
-            ), flex: 4,),
-            Expanded(child: Placeholder(), flex: 5,),
-            Expanded(child: Placeholder(), flex: 1,),
-            Expanded(child: Placeholder(), flex: 6,),
+            Expanded(
+              child: Stack(
+                children: [
+                  Positioned(
+                      child: Column(
+                    children: [
+                      Text("Welcome to"),
+                      Text("Ideate Fit"),
+                    ],
+                  ))
+                ],
+              ),
+              flex: 4,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 5,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 1,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 6,
+            ),
             Expanded(child: Placeholder()),
           ],
         ),
