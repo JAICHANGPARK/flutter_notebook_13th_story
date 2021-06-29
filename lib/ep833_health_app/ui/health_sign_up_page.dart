@@ -21,8 +21,8 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                 children: [
                   Positioned(
                       bottom: 32,
-                      left: 78,
-                      right: 78,
+                      left: 92,
+                      right: 92,
                       child: Center(
                         child: Container(
                           height: 24,
