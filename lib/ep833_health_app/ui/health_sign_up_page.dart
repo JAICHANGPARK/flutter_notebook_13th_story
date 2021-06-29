@@ -61,8 +61,13 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                     height: 64,
                     width: 364,
                     decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(17)
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(17)),
+                    child: Center(
+                      child: Text(
+                        "Continue with Apple",
+                        style: GoogleFonts.kanit(fontSize: 18),
+                      ),
                     ),
                   )
                 ],
