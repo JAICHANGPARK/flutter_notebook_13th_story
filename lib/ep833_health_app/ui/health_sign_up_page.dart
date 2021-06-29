@@ -70,16 +70,19 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                       ),
                     ),
                   ),
-                  Container(
-                    height: 64,
-                    width: 364,
-                    decoration: BoxDecoration(
-                        color: ColorSystem.blue,
-                        borderRadius: BorderRadius.circular(17)),
-                    child: Center(
-                      child: Text(
-                        "Continue with Google",
-                        style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Container(
+                      height: 64,
+                      width: 364,
+                      decoration: BoxDecoration(
+                          color: ColorSystem.blue,
+                          borderRadius: BorderRadius.circular(17)),
+                      child: Center(
+                        child: Text(
+                          "Continue with Google",
+                          style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
+                        ),
                       ),
                     ),
                   ),
@@ -98,7 +101,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                   )
                 ],
               ),
-              flex: 5,
+              flex: 6,
             ),
             Expanded(
               child: Placeholder(),
