@@ -20,6 +20,17 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
               child: Stack(
                 children: [
                   Positioned(
+                      bottom: 24,
+                      child: Center(
+                        child: Container(
+                          height: 38,
+                          width: 200,
+                          decoration: BoxDecoration(
+                            color: ColorSystem.yellow,
+                          ),
+                        ),
+                      )),
+                  Positioned(
                       left: 0,
                       right: 0,
                       top: 0,
@@ -37,17 +48,6 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                             style: GoogleFonts.kanit(fontSize: 38),
                           ),
                         ],
-                      )),
-                  Positioned(
-                      bottom: 24,
-                      left: 0,
-                      right: 0,
-                      child: Container(
-                        height: 42,
-                        width: 200,
-                        decoration: BoxDecoration(
-                          color: ColorSystem.yellow,
-                        ),
                       )),
                 ],
               ),
