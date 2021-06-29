@@ -122,7 +122,50 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
               flex: 1,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    height: 64,
+                    width: 364,
+                    decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(17)),
+                    child: Center(
+                      child: Text(
+                        "Continue with Apple",
+                        style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 64,
+                    width: 364,
+                    decoration: BoxDecoration(
+                        color: ColorSystem.blue,
+                        borderRadius: BorderRadius.circular(17)),
+                    child: Center(
+                      child: Text(
+                        "Continue with Google",
+                        style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 64,
+                    width: 364,
+                    decoration: BoxDecoration(
+                        color: ColorSystem.darkBlue,
+                        borderRadius: BorderRadius.circular(17)),
+                    child: Center(
+                      child: Text(
+                        "Continue with Facebook",
+                        style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
               flex: 8,
             ),
             Expanded(child: Placeholder()),
