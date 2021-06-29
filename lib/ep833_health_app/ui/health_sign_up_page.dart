@@ -56,6 +56,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
             ),
             Expanded(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     height: 64,
@@ -101,7 +102,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                   )
                 ],
               ),
-              flex: 6,
+              flex: 7,
             ),
             Expanded(
               child: Stack(
@@ -122,7 +123,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
             ),
             Expanded(
               child: Placeholder(),
-              flex: 6,
+              flex: 8,
             ),
             Expanded(child: Placeholder()),
           ],
