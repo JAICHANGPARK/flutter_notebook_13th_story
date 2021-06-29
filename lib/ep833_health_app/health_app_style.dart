@@ -7,6 +7,11 @@ class ColorSystem {
   static const Color black = Color(0xff010001);
   static const Color white = Color(0xffffffff);
   static const Color grey = Color(0xfff2f2f2);
+
+  static const Color blue = Color(0xff307CEF);
+  static const Color darkBlue = Color(0xff32508D);
+
+
 }
 
 class HealthAppTextStyle{
