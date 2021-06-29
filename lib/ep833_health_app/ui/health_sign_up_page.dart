@@ -26,8 +26,12 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text("Welcome to"),
-                          Text("Ideate Fit"),
+                          Text("Welcome to", style: TextStyle(
+                            fontSize: 38
+                          ),),
+                          Text("Ideate Fit", style: TextStyle(
+                              fontSize: 38
+                          ),),
                         ],
                       ))
                 ],
