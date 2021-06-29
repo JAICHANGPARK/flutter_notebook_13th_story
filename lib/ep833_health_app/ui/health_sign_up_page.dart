@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep833_health_app/health_app_style.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HealthSignUpPage extends StatefulWidget {
@@ -20,7 +21,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
               child: Stack(
                 children: [
                   Positioned(
-                      bottom: 42,
+                      bottom: 24,
                       left: 112,
                       right: 112,
                       child: Center(
@@ -129,7 +130,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                     height: 64,
                     width: 364,
                     decoration: BoxDecoration(
-                        color: Colors.black,
+                        color: Colors.white,
                         borderRadius: BorderRadius.circular(17)),
                     child: Center(
                       child: Text(
@@ -161,6 +162,20 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                       child: Text(
                         "Continue with Facebook",
                         style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: (){},
+                    child: Container(
+                      height: 64,
+                      width: 364,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(17),
+                          color: ColorSystem.green),
+                      child: Center(
+                        child: Text("Try for free",
+                            style: GoogleFonts.kanit(fontSize: 18)),
                       ),
                     ),
                   ),
