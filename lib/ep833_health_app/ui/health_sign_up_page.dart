@@ -12,7 +12,13 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
     );
   }
 }
