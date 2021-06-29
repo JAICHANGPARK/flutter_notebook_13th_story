@@ -104,7 +104,20 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
               flex: 6,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Stack(
+                children: [  Center(
+                  child: Container(
+                    height: 8,
+                    width: 24,
+                    color: ColorSystem.yellow,
+                  ),
+                ),
+                  Center(
+                    child: Text("Or",style:  GoogleFonts.kanit(fontSize: 18, color: Colors.black)),
+                  ),
+
+                ],
+              ),
               flex: 1,
             ),
             Expanded(
