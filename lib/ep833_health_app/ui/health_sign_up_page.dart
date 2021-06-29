@@ -20,12 +20,12 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
               child: Stack(
                 children: [
                   Positioned(
-                      bottom: 32,
-                      left: 100,
-                      right: 100,
+                      bottom: 42,
+                      left: 112,
+                      right: 112,
                       child: Center(
                         child: Container(
-                          height: 24,
+                          height: 16,
                           decoration: BoxDecoration(
                             color: ColorSystem.yellow,
                           ),
