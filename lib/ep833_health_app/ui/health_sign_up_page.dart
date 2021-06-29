@@ -56,7 +56,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
             ),
             Expanded(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
                     height: 64,
@@ -72,7 +72,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Container(
                       height: 64,
                       width: 364,
