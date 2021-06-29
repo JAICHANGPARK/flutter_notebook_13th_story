@@ -55,7 +55,18 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
               flex: 4,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  Container(
+                    height: 64,
+                    width: 364,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(17)
+                    ),
+                  )
+                ],
+              ),
               flex: 5,
             ),
             Expanded(
