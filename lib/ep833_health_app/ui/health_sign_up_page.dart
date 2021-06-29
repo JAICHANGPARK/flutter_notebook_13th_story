@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HealthSignUpPage extends StatefulWidget {
   const HealthSignUpPage({Key? key}) : super(key: key);
 
