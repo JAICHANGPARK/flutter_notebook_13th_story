@@ -21,10 +21,11 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                 children: [
                   Positioned(
                       bottom: 32,
+                      left: 78,
+                      right: 78,
                       child: Center(
                         child: Container(
-                          height: 38,
-                          width: 200,
+                          height: 24,
                           decoration: BoxDecoration(
                             color: ColorSystem.yellow,
                           ),
