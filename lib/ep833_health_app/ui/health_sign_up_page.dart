@@ -66,7 +66,33 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                     child: Center(
                       child: Text(
                         "Continue with Apple",
-                        style: GoogleFonts.kanit(fontSize: 18),
+                        style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 64,
+                    width: 364,
+                    decoration: BoxDecoration(
+                        color: ColorSystem.,
+                        borderRadius: BorderRadius.circular(17)),
+                    child: Center(
+                      child: Text(
+                        "Continue with Google",
+                        style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 64,
+                    width: 364,
+                    decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(17)),
+                    child: Center(
+                      child: Text(
+                        "Continue with Apple",
+                        style: GoogleFonts.kanit(fontSize: 18, color: Colors.white),
                       ),
                     ),
                   )
