@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep833_health_app/health_app_style.dart';
 
 class HealthHomePage extends StatefulWidget {
   const HealthHomePage({Key? key}) : super(key: key);
@@ -23,6 +24,19 @@ class _HealthHomePageState extends State<HealthHomePage> {
                   topRight: Radius.circular(17),
                   topLeft: Radius.circular(17),
                 ),
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    height: 50,
+                    width: 101,
+                    decoration: BoxDecoration(
+                      color: ColorSystem.green,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(17)
+                    ),
+                  )
+                ],
               ),
             ),
             left: 0,
