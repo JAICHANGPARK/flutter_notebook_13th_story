@@ -38,6 +38,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                           border: Border.all(color: Colors.black),
                           borderRadius: BorderRadius.circular(17)),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           SvgPicture.asset(HealthAppString.DISCOVERY_IMG),
                           Text(
@@ -45,7 +46,9 @@ class _HealthHomePageState extends State<HealthHomePage> {
                             style: GoogleFonts.kanit(fontSize: 18),
                           )
                         ],
-                      ))
+                      )),
+                  SvgPicture.asset(HealthAppString.DISCOVERY_IMG),
+                  SvgPicture.asset(HealthAppString.DISCOVERY_IMG),
                 ],
               ),
             ),
