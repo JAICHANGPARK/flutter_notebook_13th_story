@@ -28,27 +28,32 @@ class _HealthHomePageState extends State<HealthHomePage> {
                   topLeft: Radius.circular(17),
                 ),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                      height: 50,
-                      width: 101,
-                      decoration: BoxDecoration(
-                          color: ColorSystem.green,
-                          border: Border.all(color: Colors.black),
-                          borderRadius: BorderRadius.circular(17)),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          SvgPicture.asset(HealthAppString.DISCOVERY_IMG),
-                          Text(
-                            "Home",
-                            style: GoogleFonts.kanit(fontSize: 18),
-                          )
-                        ],
-                      )),
-                  SvgPicture.asset(HealthAppString.DISCOVERY_IMG),
-                  SvgPicture.asset(HealthAppString.DISCOVERY_IMG),
+                  Expanded(
+                    child: Container(
+                        height: 50,
+                        width: 101,
+                        decoration: BoxDecoration(
+                            color: ColorSystem.green,
+                            border: Border.all(color: Colors.black),
+                            borderRadius: BorderRadius.circular(17)),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            SvgPicture.asset(HealthAppString.DISCOVERY_IMG),
+                            Text(
+                              "Home",
+                              style: GoogleFonts.kanit(fontSize: 18),
+                            )
+                          ],
+                        )),
+                  ),
+                  Expanded(child: SvgPicture.asset(HealthAppString.CHART_IMG)),
+                  Expanded(
+                      child: SvgPicture.asset(HealthAppString.PROFILE_IMG)),
                 ],
               ),
             ),
