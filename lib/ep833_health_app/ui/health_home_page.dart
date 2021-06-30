@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_13th_story/ep833_health_app/health_app_string.dart';
 import 'package:flutter_notebook_13th_story/ep833_health_app/health_app_style.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HealthHomePage extends StatefulWidget {
   const HealthHomePage({Key? key}) : super(key: key);
@@ -28,14 +31,21 @@ class _HealthHomePageState extends State<HealthHomePage> {
               child: Row(
                 children: [
                   Container(
-                    height: 50,
-                    width: 101,
-                    decoration: BoxDecoration(
-                      color: ColorSystem.green,
-                      border: Border.all(color: Colors.black),
-                      borderRadius: BorderRadius.circular(17)
-                    ),
-                  )
+                      height: 50,
+                      width: 101,
+                      decoration: BoxDecoration(
+                          color: ColorSystem.green,
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(17)),
+                      child: Row(
+                        children: [
+                          SvgPicture.asset(HealthAppString.DISCOVERY_IMG),
+                          Text(
+                            "Home",
+                            style: GoogleFonts.kanit(fontSize: 18),
+                          )
+                        ],
+                      ))
                 ],
               ),
             ),
