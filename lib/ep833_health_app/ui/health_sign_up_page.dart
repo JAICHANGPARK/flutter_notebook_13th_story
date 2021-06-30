@@ -3,6 +3,8 @@ import 'package:flutter_notebook_13th_story/ep833_health_app/health_app_style.da
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'health_home_page.dart';
+
 class HealthSignUpPage extends StatefulWidget {
   const HealthSignUpPage({Key? key}) : super(key: key);
 
@@ -178,7 +180,7 @@ class _HealthSignUpPageState extends State<HealthSignUpPage> {
                       )
                   ),
                   InkWell(
-                    onTap: (){},
+                    onTap: ()=> Get.to(HealthHomePage()),
                     child: Container(
                       height: 64,
                       width: 364,
