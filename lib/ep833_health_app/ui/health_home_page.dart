@@ -14,7 +14,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
       body: Stack(
         children: [
           Positioned(child: Container(
-            height: ,
+            height: 72,
 
           ), left: 0, right: 0, bottom: 0,
           ),
