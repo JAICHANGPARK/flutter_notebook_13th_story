@@ -88,7 +88,16 @@ class _HealthHomePageState extends State<HealthHomePage> {
                           ),),
                         ),
                       ),
-                      
+                      Container(
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                            borderRadius: BorderRadius.circular(9.95),
+                            border: Border.all(color: Colors.black)
+                        ),
+                        child: SvgPicture.asset(HealthAppString.NOTIFICATION_IMG,color: Colors.black,),
+                      )
                     ],
                   )
               ],
