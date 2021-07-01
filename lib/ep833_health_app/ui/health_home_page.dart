@@ -75,19 +75,20 @@ class _HealthHomePageState extends State<HealthHomePage> {
                     children: [
                       Container(
                         height: 40,
-                        width: 154,
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(9.95),
                           border: Border.all(color: Colors.black)
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 8),
                         child: Center(
                           child: Text("Hello, Dream Walker", style: GoogleFonts.kanit(
                             fontWeight: FontWeight.w300,
                             fontSize: 18
                           ),),
                         ),
-                      )
+                      ),
+                      
                     ],
                   )
               ],
