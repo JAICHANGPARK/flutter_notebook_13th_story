@@ -12,56 +12,15 @@ class HealthHomePage extends StatefulWidget {
 }
 
 class _HealthHomePageState extends State<HealthHomePage> {
+
+  int _bottomIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(
-              child: Container(
-                height: 72,
-                decoration: BoxDecoration(
-                  color: Color(0xffF7F8F7),
-                  border: Border.all(color: Colors.black),
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(17),
-                    topLeft: Radius.circular(17),
-                  ),
-                ),
-                padding: EdgeInsets.symmetric(horizontal: 16),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Expanded(
-                      child: Container(
-                          height: 50,
-                          width: 101,
-                          decoration: BoxDecoration(
-                              color: ColorSystem.green,
-                              border: Border.all(color: Colors.black),
-                              borderRadius: BorderRadius.circular(17)),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              SvgPicture.asset(HealthAppString.DISCOVERY_IMG),
-                              Text(
-                                "Home",
-                                style: GoogleFonts.kanit(fontSize: 18),
-                              )
-                            ],
-                          )),
-                    ),
-                    Expanded(child: SvgPicture.asset(HealthAppString.CHART_IMG)),
-                    Expanded(
-                        child: SvgPicture.asset(HealthAppString.PROFILE_IMG)),
-                  ],
-                ),
-              ),
-              left: 0,
-              right: 0,
-              bottom: 0,
-            ),
+
             Positioned(
                 bottom: 0,
                 top: 24,
@@ -110,6 +69,63 @@ class _HealthHomePageState extends State<HealthHomePage> {
               ],
             ),
                 )),
+            Positioned(
+              child: Container(
+                height: 72,
+                decoration: BoxDecoration(
+                  color: Color(0xffF7F8F7),
+                  border: Border.all(color: Colors.black),
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(17),
+                    topLeft: Radius.circular(17),
+                  ),
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Expanded(
+                      child:  _bottomIndex == 0? GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            _bottomIndex =0;
+                          });
+                        },
+                        child: Container(
+                            height: 50,
+                            width: 101,
+                            decoration: BoxDecoration(
+                                color: ColorSystem.green,
+                                border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(17)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                SvgPicture.asset(HealthAppString.DISCOVERY_IMG),
+                                Text(
+                                  "Home",
+                                  style: GoogleFonts.kanit(fontSize: 18),
+                                )
+                              ],
+                            )),
+                      ) : GestureDetector(
+                          onTap: (){
+                            setState(() {
+                              _bottomIndex =0;
+                            });
+                          },
+                          child: SvgPicture.asset(HealthAppString.DISCOVERY_IMG)),
+                    ),
+                    Expanded(child: SvgPicture.asset(HealthAppString.CHART_IMG)),
+                    Expanded(
+                        child: SvgPicture.asset(HealthAppString.PROFILE_IMG)),
+                  ],
+                ),
+              ),
+              left: 0,
+              right: 0,
+              bottom: 0,
+            ),
           ],
         ),
       ),
