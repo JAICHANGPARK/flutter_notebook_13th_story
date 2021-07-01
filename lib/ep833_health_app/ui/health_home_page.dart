@@ -121,6 +121,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                     ],
                   ),
                 ),
+                SizedBox(height: 8,),
                 SizedBox(
                   height: 99,
                   width: double.infinity,
@@ -143,7 +144,24 @@ class _HealthHomePageState extends State<HealthHomePage> {
                             borderRadius: BorderRadius.circular(26.3),
                             border: Border.all(color: Colors.black)
                         ),
-                      )
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 16),
+                        height: 99,
+                        width: 99,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(26.3),
+                            border: Border.all(color: Colors.black)
+                        ),
+                      ),Container(
+                        margin: EdgeInsets.only(right: 16),
+                        height: 99,
+                        width: 99,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(26.3),
+                            border: Border.all(color: Colors.black)
+                        ),
+                      ),
                     ],
                   ),
                 )
