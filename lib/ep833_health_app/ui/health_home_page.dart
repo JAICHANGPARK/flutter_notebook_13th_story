@@ -70,34 +70,39 @@ class _HealthHomePageState extends State<HealthHomePage> {
                     fontSize: 36
                 ),),
                 SizedBox(height: 16,),
-                Container(
-                  height: 84,
-                  width: 364,
-                  decoration: BoxDecoration(
-                    color: ColorSystem.yellow,
-                      borderRadius: BorderRadius.circular(26.3),
-                      border: Border.all(color: Colors.black)
-                  ),
+                Column(
+                  children: [
+                    Container(
+                      height: 84,
+                      width: 364,
+                      decoration: BoxDecoration(
+                          color: ColorSystem.yellow,
+                          borderRadius: BorderRadius.circular(26.3),
+                          border: Border.all(color: Colors.black)
+                      ),
+                    ),
+                    SizedBox(height: 16,),
+                    Container(
+                      height: 84,
+                      width: 364,
+                      decoration: BoxDecoration(
+                          color: ColorSystem.white,
+                          borderRadius: BorderRadius.circular(26.3),
+                          border: Border.all(color: Colors.black)
+                      ),
+                    ),SizedBox(height: 16,),
+                    Container(
+                      height: 84,
+                      width: 364,
+                      decoration: BoxDecoration(
+                          color: ColorSystem.white,
+                          borderRadius: BorderRadius.circular(26.3),
+                          border: Border.all(color: Colors.black)
+                      ),
+                    ),
+                  ],
                 ),
-                SizedBox(height: 16,),
-                Container(
-                  height: 84,
-                  width: 364,
-                  decoration: BoxDecoration(
-                      color: ColorSystem.white,
-                      borderRadius: BorderRadius.circular(26.3),
-                      border: Border.all(color: Colors.black)
-                  ),
-                ),SizedBox(height: 16,),
-                Container(
-                  height: 84,
-                  width: 364,
-                  decoration: BoxDecoration(
-                      color: ColorSystem.white,
-                      borderRadius: BorderRadius.circular(26.3),
-                      border: Border.all(color: Colors.black)
-                  ),
-                ),
+
                 SizedBox(height: 16,),
                 Row(
                   children: [
@@ -108,6 +113,10 @@ class _HealthHomePageState extends State<HealthHomePage> {
                         fontSize: 24
                     ),)
                   ],
+                ),
+                SizedBox(
+                  height: 99,
+                  width: double.infinity,
                 )
               ],
             ),
