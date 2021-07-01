@@ -70,49 +70,55 @@ class _HealthHomePageState extends State<HealthHomePage> {
                     fontSize: 36
                 ),),
                 SizedBox(height: 16,),
-                Column(
-                  children: [
-                    Container(
-                      height: 84,
-                      width: 364,
-                      decoration: BoxDecoration(
-                          color: ColorSystem.yellow,
-                          borderRadius: BorderRadius.circular(26.3),
-                          border: Border.all(color: Colors.black)
+                Padding(
+                  padding: const EdgeInsets.only(right: 16),
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 84,
+                        width: 364,
+                        decoration: BoxDecoration(
+                            color: ColorSystem.yellow,
+                            borderRadius: BorderRadius.circular(26.3),
+                            border: Border.all(color: Colors.black)
+                        ),
                       ),
-                    ),
-                    SizedBox(height: 16,),
-                    Container(
-                      height: 84,
-                      width: 364,
-                      decoration: BoxDecoration(
-                          color: ColorSystem.white,
-                          borderRadius: BorderRadius.circular(26.3),
-                          border: Border.all(color: Colors.black)
+                      SizedBox(height: 16,),
+                      Container(
+                        height: 84,
+                        width: 364,
+                        decoration: BoxDecoration(
+                            color: ColorSystem.white,
+                            borderRadius: BorderRadius.circular(26.3),
+                            border: Border.all(color: Colors.black)
+                        ),
+                      ),SizedBox(height: 16,),
+                      Container(
+                        height: 84,
+                        width: 364,
+                        decoration: BoxDecoration(
+                            color: ColorSystem.white,
+                            borderRadius: BorderRadius.circular(26.3),
+                            border: Border.all(color: Colors.black)
+                        ),
                       ),
-                    ),SizedBox(height: 16,),
-                    Container(
-                      height: 84,
-                      width: 364,
-                      decoration: BoxDecoration(
-                          color: ColorSystem.white,
-                          borderRadius: BorderRadius.circular(26.3),
-                          border: Border.all(color: Colors.black)
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
 
                 SizedBox(height: 16,),
-                Row(
-                  children: [
-                    Text("Water Tracker", style: GoogleFonts.kanit(
-                        fontSize: 24
-                    ),),
-                    Text("2/5", style: GoogleFonts.kanit(
-                        fontSize: 24
-                    ),)
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(right: 16),
+                  child: Row(
+                    children: [
+                      Text("Water Tracker", style: GoogleFonts.kanit(
+                          fontSize: 24
+                      ),),
+                      Text("2/5", style: GoogleFonts.kanit(
+                          fontSize: 24
+                      ),)
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 99,
