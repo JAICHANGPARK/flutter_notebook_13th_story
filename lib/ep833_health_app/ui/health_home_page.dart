@@ -110,6 +110,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                 Padding(
                   padding: const EdgeInsets.only(right: 16),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Water Tracker", style: GoogleFonts.kanit(
                           fontSize: 24
@@ -123,6 +124,28 @@ class _HealthHomePageState extends State<HealthHomePage> {
                 SizedBox(
                   height: 99,
                   width: double.infinity,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                        Container(
+                          margin: EdgeInsets.only(right: 16),
+                          height: 99,
+                          width: 99,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(26.3),
+                              border: Border.all(color: Colors.black)
+                          ),
+                        ),
+                      Container( margin: EdgeInsets.only(right: 16),
+                        height: 99,
+                        width: 99,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(26.3),
+                            border: Border.all(color: Colors.black)
+                        ),
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
