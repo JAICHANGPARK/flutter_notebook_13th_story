@@ -65,7 +65,50 @@ class _HealthHomePageState extends State<HealthHomePage> {
                         )
                       ],
                     ),
-                  )
+                  ),
+                Text("Today's Challenge", style: GoogleFonts.kanit(
+                    fontSize: 36
+                ),),
+                SizedBox(height: 16,),
+                Container(
+                  height: 84,
+                  width: 364,
+                  decoration: BoxDecoration(
+                    color: ColorSystem.yellow,
+                      borderRadius: BorderRadius.circular(26.3),
+                      border: Border.all(color: Colors.black)
+                  ),
+                ),
+                SizedBox(height: 16,),
+                Container(
+                  height: 84,
+                  width: 364,
+                  decoration: BoxDecoration(
+                      color: ColorSystem.white,
+                      borderRadius: BorderRadius.circular(26.3),
+                      border: Border.all(color: Colors.black)
+                  ),
+                ),SizedBox(height: 16,),
+                Container(
+                  height: 84,
+                  width: 364,
+                  decoration: BoxDecoration(
+                      color: ColorSystem.white,
+                      borderRadius: BorderRadius.circular(26.3),
+                      border: Border.all(color: Colors.black)
+                  ),
+                ),
+                SizedBox(height: 16,),
+                Row(
+                  children: [
+                    Text("Water Tracker", style: GoogleFonts.kanit(
+                        fontSize: 24
+                    ),),
+                    Text("2/5", style: GoogleFonts.kanit(
+                        fontSize: 24
+                    ),)
+                  ],
+                )
               ],
             ),
                 )),
