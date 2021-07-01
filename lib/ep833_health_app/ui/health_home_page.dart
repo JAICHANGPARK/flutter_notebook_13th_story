@@ -146,8 +146,37 @@ class _HealthHomePageState extends State<HealthHomePage> {
                           });
                         },
                         child: SvgPicture.asset(HealthAppString.CHART_IMG))),
-                    Expanded(
-                        child: SvgPicture.asset(HealthAppString.PROFILE_IMG)),
+                    Expanded(child: _bottomIndex == 2 ? GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          _bottomIndex =2;
+                        });
+                      },
+                      child: Container(
+                          height: 50,
+                          width: 101,
+                          decoration: BoxDecoration(
+                              color: ColorSystem.green,
+                              border: Border.all(color: Colors.black),
+                              borderRadius: BorderRadius.circular(17)),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              SvgPicture.asset(HealthAppString.PROFILE_IMG),
+                              Text(
+                                "Profile",
+                                style: GoogleFonts.kanit(fontSize: 18),
+                              )
+                            ],
+                          )),
+                    ) : GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            _bottomIndex =2;
+                          });
+                        },
+                        child: SvgPicture.asset(HealthAppString.PROFILE_IMG))),
+
                   ],
                 ),
               ),
