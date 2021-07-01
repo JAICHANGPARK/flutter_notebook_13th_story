@@ -116,7 +116,36 @@ class _HealthHomePageState extends State<HealthHomePage> {
                           },
                           child: SvgPicture.asset(HealthAppString.DISCOVERY_IMG)),
                     ),
-                    Expanded(child: SvgPicture.asset(HealthAppString.CHART_IMG)),
+                    Expanded(child: _bottomIndex == 1 ? GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          _bottomIndex =1;
+                        });
+                      },
+                      child: Container(
+                          height: 50,
+                          width: 101,
+                          decoration: BoxDecoration(
+                              color: ColorSystem.green,
+                              border: Border.all(color: Colors.black),
+                              borderRadius: BorderRadius.circular(17)),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              SvgPicture.asset(HealthAppString.CHART_IMG),
+                              Text(
+                                "Chart",
+                                style: GoogleFonts.kanit(fontSize: 18),
+                              )
+                            ],
+                          )),
+                    ) : GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            _bottomIndex =1;
+                          });
+                        },
+                        child: SvgPicture.asset(HealthAppString.CHART_IMG))),
                     Expanded(
                         child: SvgPicture.asset(HealthAppString.PROFILE_IMG)),
                   ],
