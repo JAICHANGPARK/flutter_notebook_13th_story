@@ -72,6 +72,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                   child: ListView(
               children: [
                   Row(
+                    
                     children: [
                       Container(
                         height: 40,
@@ -96,7 +97,10 @@ class _HealthHomePageState extends State<HealthHomePage> {
                             borderRadius: BorderRadius.circular(9.95),
                             border: Border.all(color: Colors.black)
                         ),
-                        child: SvgPicture.asset(HealthAppString.NOTIFICATION_IMG,color: Colors.black,),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: SvgPicture.asset(HealthAppString.NOTIFICATION_IMG,color: Colors.black,),
+                        ),
                       )
                     ],
                   )
