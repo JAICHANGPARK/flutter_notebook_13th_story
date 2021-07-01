@@ -64,45 +64,48 @@ class _HealthHomePageState extends State<HealthHomePage> {
             ),
             Positioned(
                 bottom: 0,
-                top: 0,
+                top: 24,
                 left: 16,
                 right: 0,
                 child: Container(
-                  color: Colors.green,
+                  color: Colors.grey[300],
                   child: ListView(
               children: [
-                  Row(
-                    
-                    children: [
-                      Container(
-                        height: 40,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(9.95),
-                          border: Border.all(color: Colors.black)
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 8),
-                        child: Center(
-                          child: Text("Hello, Dream Walker", style: GoogleFonts.kanit(
-                            fontWeight: FontWeight.w300,
-                            fontSize: 18
-                          ),),
-                        ),
-                      ),
-                      Container(
-                        height: 40,
-                        width: 40,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 40,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
                             borderRadius: BorderRadius.circular(9.95),
                             border: Border.all(color: Colors.black)
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: Center(
+                            child: Text("Hello, Dream Walker", style: GoogleFonts.kanit(
+                              fontWeight: FontWeight.w300,
+                              fontSize: 18
+                            ),),
+                          ),
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: SvgPicture.asset(HealthAppString.NOTIFICATION_IMG,color: Colors.black,),
-                        ),
-                      )
-                    ],
+                        Container(
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                              borderRadius: BorderRadius.circular(9.95),
+                              border: Border.all(color: Colors.black)
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: SvgPicture.asset(HealthAppString.NOTIFICATION_IMG,color: Colors.black,),
+                          ),
+                        )
+                      ],
+                    ),
                   )
               ],
             ),
