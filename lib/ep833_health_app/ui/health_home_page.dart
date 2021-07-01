@@ -81,6 +81,12 @@ class _HealthHomePageState extends State<HealthHomePage> {
                           borderRadius: BorderRadius.circular(9.95),
                           border: Border.all(color: Colors.black)
                         ),
+                        child: Center(
+                          child: Text("Hello, Dream Walker", style: GoogleFonts.kanit(
+                            fontWeight: FontWeight.w300,
+                            fontSize: 18
+                          ),),
+                        ),
                       )
                     ],
                   )
