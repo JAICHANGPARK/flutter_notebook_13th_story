@@ -62,21 +62,29 @@ class _HealthHomePageState extends State<HealthHomePage> {
               right: 0,
               bottom: 0,
             ),
-            Positioned(child: ListView(
+            Positioned(
+                bottom: 0,
+                top: 0,
+                left: 16,
+                right: 0,
+                child: Container(
+                  color: Colors.green,
+                  child: ListView(
               children: [
-                Row(
-                  children: [
-                    Container(
-                      height: 40,
-                      width: 154,
-                      decoration: BoxDecoration(
-                        color: Colors.white
-                      ),
-                    )
-                  ],
-                )
+                  Row(
+                    children: [
+                      Container(
+                        height: 40,
+                        width: 154,
+                        decoration: BoxDecoration(
+                          color: Colors.white
+                        ),
+                      )
+                    ],
+                  )
               ],
-            )),
+            ),
+                )),
           ],
         ),
       ),
