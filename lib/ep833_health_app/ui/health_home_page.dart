@@ -113,7 +113,10 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                     border: Border.all(color: Colors.black,),
                                     borderRadius: BorderRadius.circular(17)
                                 ),
-                                
+                                child: Center(
+                                  child: Text("Done",),
+                                )
+
                               )
 
                                   ],
