@@ -100,8 +100,8 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                     ),
                                     Column(
                                       children: [
-                                        Text("Day 18"),
-                                        Text("100 Push Up"),
+                                        Text("Day 18",style: GoogleFonts.kanit(),),
+                                        Text("100 Push Up",style: GoogleFonts.kanit(),),
                                       ],
                                     ),
 
@@ -114,7 +114,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                     borderRadius: BorderRadius.circular(17)
                                 ),
                                 child: Center(
-                                  child: Text("Done",),
+                                  child: Text("Done",style: GoogleFonts.kanit(),),
                                 )
 
                               )
