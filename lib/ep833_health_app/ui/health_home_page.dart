@@ -142,9 +142,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                 ],
                               ),
                             ),
-                            SizedBox(
-                              height: 16
-                            ),
+                            SizedBox(height: 16),
                             Container(
                               height: 84,
                               width: 364,
@@ -208,9 +206,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                 ],
                               ),
                             ),
-                            SizedBox(
-                              height: 16
-                            ),
+                            SizedBox(height: 16),
                             Container(
                               height: 84,
                               width: 364,
@@ -230,7 +226,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                           color: Colors.black,
                                         ),
                                         borderRadius:
-                                        BorderRadius.circular(17)),
+                                            BorderRadius.circular(17)),
                                     padding: EdgeInsets.all(8),
                                     child: SvgPicture.asset(
                                         "assets/img/treadmill.svg"),
@@ -239,7 +235,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           "Day 07",
@@ -249,7 +245,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                         Text(
                                           "10 Min Run",
                                           style:
-                                          GoogleFonts.kanit(fontSize: 24),
+                                              GoogleFonts.kanit(fontSize: 24),
                                         ),
                                       ],
                                     ),
@@ -261,9 +257,9 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                       decoration: BoxDecoration(
                                           color: ColorSystem.green,
                                           border:
-                                          Border.all(color: Colors.black),
+                                              Border.all(color: Colors.black),
                                           borderRadius:
-                                          BorderRadius.circular(17)),
+                                              BorderRadius.circular(17)),
                                       child: Center(
                                         child: Text(
                                           "Start",
@@ -310,8 +306,10 @@ class _HealthHomePageState extends State<HealthHomePage> {
                               height: 99,
                               width: 99,
                               decoration: BoxDecoration(
+                                  color: ColorSystem.green,
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
+                              child: SvgPicture.asset("assets/img/water_green.svg"),
                             ),
                             Container(
                               margin: EdgeInsets.only(right: 16),
