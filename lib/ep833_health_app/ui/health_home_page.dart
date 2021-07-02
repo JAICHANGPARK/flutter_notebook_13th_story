@@ -148,7 +148,15 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
                               child: Row(
-                                children: [],
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    decoration: BoxDecoration(
+                                      color: 
+                                    ),
+                                  )
+                                ],
                               )
                             ),
                             Container(
