@@ -340,6 +340,18 @@ class _HealthHomePageState extends State<HealthHomePage> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
+                              padding: EdgeInsets.all(16),
+                              child: SvgPicture.asset("assets/img/water_blue.svg"),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(right: 16),
+                              height: 99,
+                              width: 99,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(26.3),
+                                  border: Border.all(color: Colors.black)),
+                              padding: EdgeInsets.all(16),
+                              child: SvgPicture.asset("assets/img/water_blue.svg"),
                             ),
                           ],
                         ),
