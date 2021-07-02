@@ -309,6 +309,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                   color: ColorSystem.green,
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
+                              padding: EdgeInsets.all(16),
                               child: SvgPicture.asset("assets/img/water_green.svg"),
                             ),
                             Container(
