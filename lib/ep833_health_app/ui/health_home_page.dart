@@ -99,6 +99,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(17)),
+                                    padding: EdgeInsets.all(8),
                                     child: SvgPicture.asset(
                                         "assets/img/push_up.svg"),
                                   ),
