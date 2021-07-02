@@ -116,7 +116,8 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                         ),
                                         Text(
                                           "100 Push Up",
-                                          style: GoogleFonts.kanit(fontSize: 24),
+                                          style:
+                                              GoogleFonts.kanit(fontSize: 24),
                                         ),
                                       ],
                                     ),
@@ -151,6 +152,60 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                   color: ColorSystem.white,
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    decoration: BoxDecoration(
+                                        color: ColorSystem.green,
+                                        border: Border.all(
+                                          color: Colors.black,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(17)),
+                                    padding: EdgeInsets.all(8),
+                                    child: SvgPicture.asset(
+                                        "assets/img/sit_up.svg"),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Day 02",
+                                          style: GoogleFonts.kanit(
+                                              fontSize: 18, color: Colors.grey),
+                                        ),
+                                        Text(
+                                          "20 Crunches",
+                                          style:
+                                              GoogleFonts.kanit(fontSize: 24),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  Container(
+                                      height: 38,
+                                      width: 76,
+                                      decoration: BoxDecoration(
+                                          color: ColorSystem.green,
+                                          border:
+                                              Border.all(color: Colors.black),
+                                          borderRadius:
+                                              BorderRadius.circular(17)),
+                                      child: Center(
+                                        child: Text(
+                                          "Start",
+                                          style: GoogleFonts.kanit(
+                                              color: Colors.white),
+                                        ),
+                                      ))
+                                ],
+                              ),
                             ),
                             SizedBox(
                               height: 16,
