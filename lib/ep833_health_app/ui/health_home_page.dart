@@ -99,9 +99,15 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                       child: SvgPicture.asset("assets/img/push_up.svg"),
                                     ),
                                     Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text("Day 18",style: GoogleFonts.kanit(),),
-                                        Text("100 Push Up",style: GoogleFonts.kanit(),),
+                                        Text("Day 18",style: GoogleFonts.kanit(
+                                          fontSize: 18,
+                                          color: Colors.grey
+                                        ),),
+                                        Text("100 Push Up",style: GoogleFonts.kanit(
+                                          fontSize: 24
+                                        ),),
                                       ],
                                     ),
 
