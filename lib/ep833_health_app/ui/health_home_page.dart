@@ -86,47 +86,58 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                   color: ColorSystem.yellow,
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
-                                child: Row(
-                                  children: [
-                                    Container(
-                                      height: 64,
-                                      width: 64,
-                                      decoration: BoxDecoration(
-                                          color: ColorSystem.green,
-                                          border: Border.all(color: Colors.black,),
-                                          borderRadius: BorderRadius.circular(17)
-                                      ),
-                                      child: SvgPicture.asset("assets/img/push_up.svg"),
-                                    ),
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    decoration: BoxDecoration(
+                                        color: ColorSystem.green,
+                                        border: Border.all(
+                                          color: Colors.black,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(17)),
+                                    child: SvgPicture.asset(
+                                        "assets/img/push_up.svg"),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
-                                        Text("Day 18",style: GoogleFonts.kanit(
-                                          fontSize: 18,
-                                          color: Colors.grey
-                                        ),),
-                                        Text("100 Push Up",style: GoogleFonts.kanit(
-                                          fontSize: 24
-                                        ),),
+                                        Text(
+                                          "Day 18",
+                                          style: GoogleFonts.kanit(
+                                              fontSize: 18, color: Colors.grey),
+                                        ),
+                                        Text(
+                                          "100 Push Up",
+                                          style: GoogleFonts.kanit(fontSize: 24),
+                                        ),
                                       ],
                                     ),
-
-                              Container(
-                                height: 38,
-                                width: 76,
-                                decoration: BoxDecoration(
-                                    color: ColorSystem.grey,
-                                    border: Border.all(color: Colors.black,),
-                                    borderRadius: BorderRadius.circular(17)
-                                ),
-                                child: Center(
-                                  child: Text("Done",style: GoogleFonts.kanit(),),
-                                )
-
-                              )
-
-                                  ],
-                                ),
+                                  ),
+                                  Spacer(),
+                                  Container(
+                                      height: 38,
+                                      width: 76,
+                                      decoration: BoxDecoration(
+                                          color: ColorSystem.grey,
+                                          border: Border.all(
+                                            color: Colors.black,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(17)),
+                                      child: Center(
+                                        child: Text(
+                                          "Done",
+                                          style: GoogleFonts.kanit(),
+                                        ),
+                                      ))
+                                ],
+                              ),
                             ),
                             SizedBox(
                               height: 16,
@@ -188,7 +199,6 @@ class _HealthHomePageState extends State<HealthHomePage> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
-
                             ),
                             Container(
                               margin: EdgeInsets.only(right: 16),
