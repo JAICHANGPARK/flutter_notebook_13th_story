@@ -97,9 +97,27 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                           borderRadius: BorderRadius.circular(17)
                                       ),
                                       child: SvgPicture.asset("assets/img/push_up.svg"),
-                                    )
+                                    ),
+                                    Column(
+                                      children: [
+                                        Text("Day 18"),
+                                        Text("100 Push Up"),
+                                      ],
+                                    ),
+
+                              Container(
+                                height: 38,
+                                width: 76,
+                                decoration: BoxDecoration(
+                                    color: ColorSystem.grey,
+                                    border: Border.all(color: Colors.black,),
+                                    borderRadius: BorderRadius.circular(17)
+                                ),
+                                
+                              )
+
                                   ],
-                                )
+                                ),
                             ),
                             SizedBox(
                               height: 16,
