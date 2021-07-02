@@ -86,6 +86,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                   color: ColorSystem.yellow,
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
+                              padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Row(
                                 children: [
                                   Container(
