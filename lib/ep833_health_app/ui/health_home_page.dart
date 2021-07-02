@@ -26,7 +26,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                 left: 16,
                 right: 0,
                 child: Container(
-                  color: Colors.grey[300],
+                  // color: Colors.grey[300],
                   child: ListView(
                     children: [
                       Padding(
