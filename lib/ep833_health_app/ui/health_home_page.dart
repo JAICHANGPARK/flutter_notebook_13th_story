@@ -148,6 +148,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                             Container(
                               height: 84,
                               width: 364,
+                              padding: EdgeInsets.symmetric(horizontal: 16),
                               decoration: BoxDecoration(
                                   color: ColorSystem.white,
                                   borderRadius: BorderRadius.circular(26.3),
