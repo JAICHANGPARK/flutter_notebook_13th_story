@@ -233,7 +233,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                         BorderRadius.circular(17)),
                                     padding: EdgeInsets.all(8),
                                     child: SvgPicture.asset(
-                                        "assets/img/threadmill.svg"),
+                                        "assets/img/treadmill.svg"),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
