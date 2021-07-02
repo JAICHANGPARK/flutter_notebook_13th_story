@@ -143,7 +143,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                               ),
                             ),
                             SizedBox(
-                              height: 16,
+                              height: 16
                             ),
                             Container(
                               height: 84,
@@ -209,15 +209,70 @@ class _HealthHomePageState extends State<HealthHomePage> {
                               ),
                             ),
                             SizedBox(
-                              height: 16,
+                              height: 16
                             ),
                             Container(
                               height: 84,
                               width: 364,
+                              padding: EdgeInsets.symmetric(horizontal: 16),
                               decoration: BoxDecoration(
                                   color: ColorSystem.white,
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    decoration: BoxDecoration(
+                                        color: ColorSystem.green,
+                                        border: Border.all(
+                                          color: Colors.black,
+                                        ),
+                                        borderRadius:
+                                        BorderRadius.circular(17)),
+                                    padding: EdgeInsets.all(8),
+                                    child: SvgPicture.asset(
+                                        "assets/img/threadmill.svg"),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Day 07",
+                                          style: GoogleFonts.kanit(
+                                              fontSize: 18, color: Colors.grey),
+                                        ),
+                                        Text(
+                                          "10 Min Run",
+                                          style:
+                                          GoogleFonts.kanit(fontSize: 24),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  Container(
+                                      height: 38,
+                                      width: 76,
+                                      decoration: BoxDecoration(
+                                          color: ColorSystem.green,
+                                          border:
+                                          Border.all(color: Colors.black),
+                                          borderRadius:
+                                          BorderRadius.circular(17)),
+                                      child: Center(
+                                        child: Text(
+                                          "Start",
+                                          style: GoogleFonts.kanit(
+                                              color: Colors.white),
+                                        ),
+                                      ))
+                                ],
+                              ),
                             ),
                           ],
                         ),
