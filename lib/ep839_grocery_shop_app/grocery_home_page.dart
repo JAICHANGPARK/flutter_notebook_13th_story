@@ -21,6 +21,9 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
         selectedLabelStyle: TextStyle(
           fontSize: 12
         ),
+        unselectedLabelStyle:  TextStyle(
+            fontSize: 12
+        ),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.flutter_dash_outlined), label: "Categories"),
