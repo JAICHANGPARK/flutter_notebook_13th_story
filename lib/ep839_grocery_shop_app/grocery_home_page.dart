@@ -23,15 +23,48 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
               return SafeArea(
                 child: Container(
                   child: Center(
-                    child: Text("Page 1"),
+                    child: Text("Page 1", style: TextStyle(
+                      color: Colors.white
+                    ),),
                   ),
                 ),
               );
+            case 1:
+              return SafeArea(
+                child: Container(
+                  child: Center(
+                    child: Text("Page 2", style: TextStyle(
+                        color: Colors.white
+                    ),),
+                  ),
+                ),
+              );
+            case 2:
+              return SafeArea(
+                child: Container(
+                  child: Center(
+                    child: Text("Page 3", style: TextStyle(
+                        color: Colors.white
+                    ),),
+                  ),
+                ),
+              );case 3:
+            return SafeArea(
+              child: Container(
+                child: Center(
+                  child: Text("Page 4", style: TextStyle(
+                      color: Colors.white
+                  ),),
+                ),
+              ),
+            );
             default:
               return SafeArea(
                 child: Container(
                   child: Center(
-                    child: Text("Page 2"),
+                    child: Text("Page ?", style: TextStyle(
+                        color: Colors.white
+                    ),),
                   ),
                 ),
               );
@@ -42,6 +75,7 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
         onTap: (idx) {
           _bottomTabIdx.value = idx;
         },
+        currentIndex:  _bottomTabIdx.value,
         backgroundColor: const Color(0xff08150D),
         type: BottomNavigationBarType.fixed,
         selectedItemColor: const Color(0xff52C66C),
