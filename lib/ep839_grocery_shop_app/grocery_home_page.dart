@@ -77,14 +77,14 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
             }
           },
         ),
-        bottomNavigationBar: ValueListenableBuilder(
+        bottomNavigationBar: ValueListenableBuilder<int>(
           valueListenable: _bottomTabIdx,
           builder: (context, value, child) {
             return BottomNavigationBar(
               onTap: (idx) {
-                value = idx;
+                _bottomTabIdx.value = idx;
               },
-              currentIndex: _bottomTabIdx.value,
+              currentIndex: value,
               backgroundColor: const Color(0xff08150D),
               type: BottomNavigationBarType.fixed,
               selectedItemColor: const Color(0xff52C66C),
