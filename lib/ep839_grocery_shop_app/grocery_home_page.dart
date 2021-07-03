@@ -11,9 +11,10 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.black87,
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
 
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
