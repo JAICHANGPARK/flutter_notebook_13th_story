@@ -10,6 +10,17 @@ class GroceryHomePage extends StatefulWidget {
 class _GroceryHomePageState extends State<GroceryHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Categories"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Categories"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Categories"),
+        ],
+
+      ),
+    );
   }
 }
