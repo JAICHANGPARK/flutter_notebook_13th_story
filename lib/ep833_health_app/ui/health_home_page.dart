@@ -310,7 +310,8 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
                               padding: EdgeInsets.all(16),
-                              child: SvgPicture.asset("assets/img/water_green.svg"),
+                              child: SvgPicture.asset(
+                                  "assets/img/water_green.svg"),
                             ),
                             Container(
                               margin: EdgeInsets.only(right: 16),
@@ -321,7 +322,8 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
                               padding: EdgeInsets.all(16),
-                              child: SvgPicture.asset("assets/img/water_green.svg"),
+                              child: SvgPicture.asset(
+                                  "assets/img/water_green.svg"),
                             ),
                             Container(
                               margin: EdgeInsets.only(right: 16),
@@ -331,7 +333,8 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
                               padding: EdgeInsets.all(16),
-                              child: SvgPicture.asset("assets/img/water_blue.svg"),
+                              child:
+                                  SvgPicture.asset("assets/img/water_blue.svg"),
                             ),
                             Container(
                               margin: EdgeInsets.only(right: 16),
@@ -341,7 +344,8 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
                               padding: EdgeInsets.all(16),
-                              child: SvgPicture.asset("assets/img/water_blue.svg"),
+                              child:
+                                  SvgPicture.asset("assets/img/water_blue.svg"),
                             ),
                             Container(
                               margin: EdgeInsets.only(right: 16),
@@ -351,7 +355,8 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                   borderRadius: BorderRadius.circular(26.3),
                                   border: Border.all(color: Colors.black)),
                               padding: EdgeInsets.all(16),
-                              child: SvgPicture.asset("assets/img/water_blue.svg"),
+                              child:
+                                  SvgPicture.asset("assets/img/water_blue.svg"),
                             ),
                           ],
                         ),
