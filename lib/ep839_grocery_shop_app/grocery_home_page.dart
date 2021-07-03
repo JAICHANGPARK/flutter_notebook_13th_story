@@ -9,6 +9,7 @@ class GroceryHomePage extends StatefulWidget {
 
 class _GroceryHomePageState extends State<GroceryHomePage> {
   // 82 189 108
+  int _bottomTabIdx = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
