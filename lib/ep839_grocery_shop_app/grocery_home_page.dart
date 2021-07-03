@@ -12,16 +12,16 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff08150D),
+      backgroundColor: const Color(0xff08150D),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xff08150D),
+        backgroundColor: const Color(0xff08150D),
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: Color(0xff52C66C),
+        selectedItemColor:const  Color(0xff52C66C),
         unselectedItemColor: Colors.white,
-        selectedLabelStyle: TextStyle(
+        selectedLabelStyle: const TextStyle(
           fontSize: 12
         ),
-        unselectedLabelStyle:  TextStyle(
+        unselectedLabelStyle:  const TextStyle(
             fontSize: 12
         ),
         items: [
