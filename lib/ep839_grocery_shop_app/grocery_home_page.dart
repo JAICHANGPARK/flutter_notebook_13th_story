@@ -17,7 +17,7 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
         backgroundColor: Color(0xff08150D),
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Color(0xff52C66C),
-
+        unselectedItemColor: Colors.white,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.flutter_dash_outlined), label: "Categories"),
