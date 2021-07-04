@@ -57,7 +57,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
               ),
             ),
             SizedBox(
-              height: 54,
+              height: 48,
               child: Row(
                 children: [
                   Expanded(
@@ -67,7 +67,6 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                         borderRadius: BorderRadius.circular(32)),
                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                     child: Row(
-
                       children: [
                         CircleAvatar(
                           foregroundColor: Colors.white,
@@ -90,9 +89,31 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                     width: 16,
                   ),
                   Expanded(
-                      child: Placeholder(
-                    color: _accentColor,
-                  ))
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: _accentColor,
+                            borderRadius: BorderRadius.circular(32)),
+                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              foregroundColor: Colors.white,
+                              backgroundColor: Colors.black,
+                              child: Icon(Icons.location_on_outlined),
+                            ),
+                            SizedBox(width: 8,),
+                            Text(
+                              "Seoul",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16
+                              ),
+                            ),
+                            IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_down),color: Colors.white,)
+                          ],
+                        ),
+                      )),
                 ],
               ),
             )
