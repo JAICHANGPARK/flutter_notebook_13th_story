@@ -69,12 +69,17 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                     child: Row(
 
                       children: [
-                        CircleAvatar(),
+                        CircleAvatar(
+                          foregroundColor: Colors.white,
+                          backgroundColor: Colors.black,
+                        ),
+                        SizedBox(width: 8,),
                         Text(
                           "Search",
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
+                            fontSize: 16
                           ),
                         )
                       ],
