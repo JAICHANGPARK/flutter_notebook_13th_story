@@ -46,7 +46,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(16.0),
               child: Text(
                 "Find everything\nright to your door",
                 textAlign: TextAlign.center,
@@ -69,7 +69,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                     ),
                   )
                   ),
-                  SizedBox(width: 8,),
+                  SizedBox(width: 16,),
                   Expanded(child: Placeholder(color: _accentColor,))
                 ],
               ),
