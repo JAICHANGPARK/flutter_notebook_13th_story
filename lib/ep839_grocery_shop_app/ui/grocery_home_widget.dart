@@ -22,7 +22,17 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                 child: Icon(Icons.menu),
                 foregroundColor: Colors.white,
               ),
-              Container(),
+              Container(
+                decoration: BoxDecoration(
+                  color: _accentColor
+                ),
+                child: Center(
+
+                  child: Text("Dream Shop", style: TextStyle(
+                    color: Colors.white
+                  ),),
+                ),
+              ),
               CircleAvatar(
                 backgroundColor: _accentColor,
                 child: Icon(Icons.notifications_none_outlined),
