@@ -44,6 +44,18 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                   foregroundColor: Colors.white,
                 ),
               ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                "Find everything\nright to your door",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: _accentColor,
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
             )
           ],
         ),
