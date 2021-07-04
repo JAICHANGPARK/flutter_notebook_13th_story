@@ -51,26 +51,42 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                 "Find everything\nright to your door",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: _accentColor,
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold
-                ),
+                    color: _accentColor,
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold),
               ),
             ),
             SizedBox(
               height: 54,
               child: Row(
                 children: [
-                  Expanded(child: Container(
+                  Expanded(
+                      child: Container(
                     decoration: BoxDecoration(
-                      color: _accentColor,
-                      borderRadius: BorderRadius.circular(32)
+                        color: _accentColor,
+                        borderRadius: BorderRadius.circular(32)),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                    child: Row(
 
+                      children: [
+                        CircleAvatar(),
+                        Text(
+                          "Search",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
                     ),
-                  )
+                  )),
+                  SizedBox(
+                    width: 16,
                   ),
-                  SizedBox(width: 16,),
-                  Expanded(child: Placeholder(color: _accentColor,))
+                  Expanded(
+                      child: Placeholder(
+                    color: _accentColor,
+                  ))
                 ],
               ),
             )
