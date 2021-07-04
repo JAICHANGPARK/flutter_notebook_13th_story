@@ -30,7 +30,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                     color: _accentColor,
                     borderRadius: BorderRadius.circular(24),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   child: Center(
                     child: Text(
                       "Dream Shop",
