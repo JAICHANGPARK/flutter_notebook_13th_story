@@ -56,6 +56,22 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                   fontWeight: FontWeight.bold
                 ),
               ),
+            ),
+            SizedBox(
+              height: 58,
+              child: Row(
+                children: [
+                  Expanded(child: Container(
+                    decoration: BoxDecoration(
+                      color: _accentColor,
+
+                    ),
+                  )
+                  ),
+                  SizedBox(width: 8,),
+                  Expanded(child: Placeholder(color: _accentColor,))
+                ],
+              ),
             )
           ],
         ),
