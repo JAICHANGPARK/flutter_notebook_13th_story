@@ -21,14 +21,7 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
             switch (value) {
               case 0:
                 return SafeArea(
-                  child: Container(
-                    child: Center(
-                      child: Text(
-                        "Page 1",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                  ),
+                  child: GroceryHomeWidget(),
                 );
               case 1:
                 return SafeArea(
