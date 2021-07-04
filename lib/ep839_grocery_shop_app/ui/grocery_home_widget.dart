@@ -73,47 +73,52 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                           backgroundColor: Colors.black,
                           child: Icon(Icons.search),
                         ),
-                        SizedBox(width: 8,),
+                        SizedBox(
+                          width: 8,
+                        ),
                         Text(
                           "Search",
                           style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16
-                          ),
+                              color: Colors.white,
+                              fontWeight: FontWeight.normal,
+                              fontSize: 16),
                         )
                       ],
                     ),
                   )),
-                  SizedBox(
-                    width: 16,
-                  ),
+                  SizedBox(width: 16),
                   Expanded(
                       child: Container(
-                        decoration: BoxDecoration(
-                            color: _accentColor,
-                            borderRadius: BorderRadius.circular(32)),
-                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                        child: Row(
-                          children: [
-                            CircleAvatar(
-                              foregroundColor: Colors.white,
-                              backgroundColor: Colors.black,
-                              child: Icon(Icons.location_on_outlined),
-                            ),
-                            SizedBox(width: 8,),
-                            Text(
-                              "Seoul",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16
-                              ),
-                            ),
-                            IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_down),color: Colors.white,)
-                          ],
+                    decoration: BoxDecoration(
+                        color: _accentColor,
+                        borderRadius: BorderRadius.circular(32)),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        CircleAvatar(
+                          foregroundColor: Colors.white,
+                          backgroundColor: Colors.black,
+                          child: Icon(Icons.location_on_outlined),
                         ),
-                      )),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          "Seoul",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.normal,
+                              fontSize: 16),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.keyboard_arrow_down),
+                          color: Colors.white,
+                        )
+                      ],
+                    ),
+                  )),
                 ],
               ),
             )
