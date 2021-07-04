@@ -72,6 +72,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                         CircleAvatar(
                           foregroundColor: Colors.white,
                           backgroundColor: Colors.black,
+                          child: Icon(Icons.search),
                         ),
                         SizedBox(width: 8,),
                         Text(
