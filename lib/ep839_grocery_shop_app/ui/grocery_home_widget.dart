@@ -16,6 +16,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
       child: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               CircleAvatar(
                 backgroundColor: _accentColor,
@@ -24,13 +25,15 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
               ),
               Container(
                 decoration: BoxDecoration(
-                  color: _accentColor
+                  color: _accentColor,
+                  borderRadius: BorderRadius.circular(24),
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Center(
-
-                  child: Text("Dream Shop", style: TextStyle(
-                    color: Colors.white
-                  ),),
+                  child: Text(
+                    "Dream Shop",
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
               ),
               CircleAvatar(
