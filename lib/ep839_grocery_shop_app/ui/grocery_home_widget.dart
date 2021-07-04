@@ -58,12 +58,13 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
               ),
             ),
             SizedBox(
-              height: 58,
+              height: 54,
               child: Row(
                 children: [
                   Expanded(child: Container(
                     decoration: BoxDecoration(
                       color: _accentColor,
+                      borderRadius: BorderRadius.circular(32)
 
                     ),
                   )
