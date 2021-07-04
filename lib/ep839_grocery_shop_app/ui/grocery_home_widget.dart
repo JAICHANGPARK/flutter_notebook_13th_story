@@ -19,9 +19,12 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
             children: [
               CircleAvatar(
                 backgroundColor: _accentColor,
+                child: Icon(Icons.menu),
+                foregroundColor: Colors.white
+                ,
               ),
               Container(),
-              CircleAvatar(),
+              CircleAvatar(  backgroundColor: _accentColor,),
             ],
           )
         ],
