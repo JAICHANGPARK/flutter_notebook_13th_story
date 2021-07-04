@@ -13,37 +13,40 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              CircleAvatar(
-                backgroundColor: _accentColor,
-                child: Icon(Icons.menu),
-                foregroundColor: Colors.white,
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  color: _accentColor,
-                  borderRadius: BorderRadius.circular(24),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CircleAvatar(
+                  backgroundColor: _accentColor,
+                  child: Icon(Icons.menu),
+                  foregroundColor: Colors.white,
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                child: Center(
-                  child: Text(
-                    "Dream Shop",
-                    style: TextStyle(color: Colors.white),
+                Container(
+                  decoration: BoxDecoration(
+                    color: _accentColor,
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                  child: Center(
+                    child: Text(
+                      "Dream Shop",
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                 ),
-              ),
-              CircleAvatar(
-                backgroundColor: _accentColor,
-                child: Icon(Icons.notifications_none_outlined),
-                foregroundColor: Colors.white,
-              ),
-            ],
-          )
-        ],
+                CircleAvatar(
+                  backgroundColor: _accentColor,
+                  child: Icon(Icons.notifications_none_outlined),
+                  foregroundColor: Colors.white,
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
