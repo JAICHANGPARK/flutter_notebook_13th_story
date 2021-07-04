@@ -9,7 +9,7 @@ class GroceryHomeWidget extends StatefulWidget {
 }
 
 class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
-  Color _accentColor =  Color(0xff52C66C);
+   Color _accentColor =  Color(0xff52C66C);
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -18,7 +18,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
           Row(
             children: [
               CircleAvatar(
-                backgroundColor: ,
+                backgroundColor: _accentColor,
               ),
               Container(),
               CircleAvatar(),
