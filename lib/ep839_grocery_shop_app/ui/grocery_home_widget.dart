@@ -225,6 +225,16 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                               "Weight ${e.weight}",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
+                            ),
+                            Container(
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundColor: Colors.black,
+                                    foregroundColor: Colors.white,
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),
