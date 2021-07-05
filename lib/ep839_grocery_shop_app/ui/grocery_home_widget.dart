@@ -175,11 +175,12 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
               ],
             ),
             GridView.count(crossAxisCount: 2, shrinkWrap: true,
-              mainAxisSpacing: 12,
-              crossAxisSpacing: 12,
+              mainAxisSpacing: 16,
+              crossAxisSpacing: 16,
+              childAspectRatio: 0.8,
               children: popularProductItems.map((e) => Container(
                 decoration: BoxDecoration(
-                    
+                    color: Colors.grey
                 ),
               )).toList(),
             ),
