@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep839_grocery_shop_app/model/popular_product.dart';
 
-List<PopularProduct> popularProductItems = [];
+List<PopularProduct> popularProductItems = [
+  PopularProduct(title: "Orange", count: 1, price: 3.99, weight: "1 kilogram"),
+];
 
 
 class GroceryHomeWidget extends StatefulWidget {
