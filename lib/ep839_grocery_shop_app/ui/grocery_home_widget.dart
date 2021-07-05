@@ -131,14 +131,20 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Buy \$100 and get \$10 off", style: TextStyle(
-                      color: Colors.white, fontSize: 24
-                    ),),
+                    Text(
+                      "Buy \$100 and get \$10 off",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold),
+                    ),
                     CircleAvatar(
                       backgroundColor: Color(0xff08150D),
-                      child: Icon(Icons.arrow_forward_ios_outlined, size: 18,),
+                      child: Icon(
+                        Icons.arrow_forward_ios_outlined,
+                        size: 18,
+                      ),
                       foregroundColor: Colors.white,
-
                     )
                   ],
                 ),
