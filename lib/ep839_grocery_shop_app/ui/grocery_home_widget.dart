@@ -197,7 +197,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
               shrinkWrap: true,
               mainAxisSpacing: 16,
               crossAxisSpacing: 16,
-              childAspectRatio: 0.8,
+              childAspectRatio: 0.75,
               children: popularProductItems
                   .map((e) => Container(
                         decoration: BoxDecoration(
@@ -224,7 +224,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 24),
                               child: Container(
-                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
                                 decoration: BoxDecoration(
                                   color: _accentColor,
                                   borderRadius: BorderRadius.circular(24),
@@ -233,8 +233,10 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                                 child: Row(
                                   children: [
                                     CircleAvatar(
+                                      radius: 18,
                                       backgroundColor: Colors.black,
                                       foregroundColor: Colors.white,
+                                      child: Icon(Icons.add),
                                     )
                                   ],
                                 ),
