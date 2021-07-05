@@ -207,14 +207,25 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                         padding: EdgeInsets.symmetric(vertical: 16),
                         child: Column(
                           children: [
-                            Image.network(e.img!, height: 80,),
+                            Image.network(
+                              e.img!,
+                              height: 80,
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
                             Text(
                               e.title!,
                               style: TextStyle(
-                                color: Colors.white,
-                                  fontSize: 16, fontWeight: FontWeight.bold),
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
                             ),
-                            Text("Weight ${e.weight}",)
+                            Text(
+                              "Weight ${e.weight}",
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 10),
+                            )
                           ],
                         ),
                       ))
