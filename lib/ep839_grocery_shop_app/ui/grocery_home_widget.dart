@@ -209,10 +209,10 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                           children: [
                             Image.network(
                               e.img!,
-                              height: 80,
+                              height: 80
                             ),
                             SizedBox(
-                              height: 16,
+                              height: 16
                             ),
                             Text(
                               e.title!,
@@ -228,7 +228,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                color: 
+                                color: _accentColor,
                               ),
                               child: Row(
                                 children: [
