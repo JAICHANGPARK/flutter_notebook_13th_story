@@ -204,6 +204,19 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        padding: EdgeInsets.symmetric(vertical: 16),
+                        child: Column(
+                          children: [
+                            Image.network(e.img!, height: 80,),
+                            Text(
+                              e.title!,
+                              style: TextStyle(
+                                color: Colors.white,
+                                  fontSize: 16, fontWeight: FontWeight.bold),
+                            ),
+                            Text("Weight ${e.weight}",)
+                          ],
+                        ),
                       ))
                   .toList(),
             ),
