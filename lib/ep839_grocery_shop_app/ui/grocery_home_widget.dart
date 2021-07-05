@@ -173,7 +173,10 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                   color: Colors.white
                 ),)
               ],
-            )
+            ),
+            GridView.count(crossAxisCount: 2, shrinkWrap: true,
+              children: popularProductItems.map((e) => Container()).toList(),
+            ),
           ],
         ),
       ),
