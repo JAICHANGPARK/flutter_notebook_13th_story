@@ -129,6 +129,11 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                 decoration: BoxDecoration(
                   color: Colors.black,
                 ),
+                child: Column(
+                  children: [
+                    
+                  ],
+                ),
               ),
             )
           ],
