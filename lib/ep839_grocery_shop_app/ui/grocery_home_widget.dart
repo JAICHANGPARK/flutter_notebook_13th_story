@@ -220,9 +220,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
                             ),
-                            SizedBox(
-                              height: 16,
-                            ),
+                            SizedBox(height: 16),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 24),
                               child: Container(
@@ -240,7 +238,9 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                                       foregroundColor: Colors.white,
                                       child: Icon(Icons.add),
                                     ),
-                                    SizedBox(width: 8,),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
                                     Text(
                                       "\$ ${e.price}",
                                       style: TextStyle(
