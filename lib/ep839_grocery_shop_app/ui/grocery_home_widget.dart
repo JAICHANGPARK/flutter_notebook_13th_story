@@ -2,14 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep839_grocery_shop_app/model/popular_product.dart';
 
 List<PopularProduct> popularProductItems = [
-  PopularProduct(title: "Orange", count: 1, price: 3.99, weight: "1 kilogram",
-  img: "https://cdn.pixabay.com/photo/2016/02/25/17/08/fruit-1222488_960_720.png"),
-  PopularProduct(title: "Orange", count: 1, price: 3.99, weight: "1 kilogram",
-      img: "https://cdn.pixabay.com/photo/2016/02/25/17/08/fruit-1222488_960_720.png"),
-  PopularProduct(title: "Orange", count: 1, price: 3.99, weight: "1 kilogram",
-      img: "https://cdn.pixabay.com/photo/2016/02/25/17/08/fruit-1222488_960_720.png"),
+  PopularProduct(
+      title: "Orange",
+      count: 1,
+      price: 3.99,
+      weight: "1 kilogram",
+      img:
+          "https://cdn.pixabay.com/photo/2016/02/25/17/08/fruit-1222488_960_720.png"),
+  PopularProduct(
+      title: "Orange",
+      count: 1,
+      price: 3.99,
+      weight: "1 kilogram",
+      img:
+          "https://cdn.pixabay.com/photo/2016/02/25/17/08/fruit-1222488_960_720.png"),
+  PopularProduct(
+      title: "Orange",
+      count: 1,
+      price: 3.99,
+      weight: "1 kilogram",
+      img:
+          "https://cdn.pixabay.com/photo/2016/02/25/17/08/fruit-1222488_960_720.png"),
 ];
-
 
 class GroceryHomeWidget extends StatefulWidget {
   const GroceryHomeWidget({Key? key}) : super(key: key);
@@ -169,20 +183,29 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                   "Popular product",
                   style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
-                Text("See all",style: TextStyle(
-                  color: Colors.white
-                ),)
+                Text(
+                  "See all",
+                  style: TextStyle(color: Colors.white),
+                )
               ],
             ),
-            GridView.count(crossAxisCount: 2, shrinkWrap: true,
+            SizedBox(
+              height: 16,
+            ),
+            GridView.count(
+              crossAxisCount: 2,
+              shrinkWrap: true,
               mainAxisSpacing: 16,
               crossAxisSpacing: 16,
               childAspectRatio: 0.8,
-              children: popularProductItems.map((e) => Container(
-                decoration: BoxDecoration(
-                    color: Colors.grey
-                ),
-              )).toList(),
+              children: popularProductItems
+                  .map((e) => Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ))
+                  .toList(),
             ),
           ],
         ),
