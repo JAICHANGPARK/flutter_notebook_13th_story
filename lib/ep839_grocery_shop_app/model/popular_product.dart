@@ -1,0 +1,5 @@
+
+
+class PopularProduct{
+  String? title;
+}
