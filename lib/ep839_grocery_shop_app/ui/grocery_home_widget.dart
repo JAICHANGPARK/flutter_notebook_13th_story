@@ -150,6 +150,16 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                   ],
                 ),
               ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Popular product",
+                  style: TextStyle(fontSize: 16, color: Colors.white),
+                ),
+                Text("See all")
+              ],
             )
           ],
         ),
