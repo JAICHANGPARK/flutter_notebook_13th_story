@@ -126,6 +126,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
               padding: const EdgeInsets.symmetric(vertical: 16),
               child: Container(
                 height: 160,
+                width: double.infinity,
                 decoration: BoxDecoration(color: Colors.black),
                 padding: EdgeInsets.all(16),
                 child: Column(
