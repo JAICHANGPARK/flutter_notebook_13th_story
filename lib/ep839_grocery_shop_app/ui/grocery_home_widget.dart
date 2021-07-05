@@ -220,15 +220,17 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
                             ),
-                            SizedBox(height: 16,),
+                            SizedBox(
+                              height: 16,
+                            ),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 24),
                               child: Container(
-                                padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 8, vertical: 4),
                                 decoration: BoxDecoration(
                                   color: _accentColor,
                                   borderRadius: BorderRadius.circular(24),
-
                                 ),
                                 child: Row(
                                   children: [
@@ -237,7 +239,15 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                                       backgroundColor: Colors.black,
                                       foregroundColor: Colors.white,
                                       child: Icon(Icons.add),
-                                    )
+                                    ),
+                                    SizedBox(width: 8,),
+                                    Text(
+                                      "\$ ${e.price}",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),
