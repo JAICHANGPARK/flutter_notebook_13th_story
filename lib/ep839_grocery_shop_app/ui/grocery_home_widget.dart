@@ -126,13 +126,9 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
               padding: const EdgeInsets.symmetric(vertical: 16),
               child: Container(
                 height: 160,
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                ),
+                decoration: BoxDecoration(color: Colors.black),
                 child: Column(
-                  children: [
-                    
-                  ],
+                  children: [],
                 ),
               ),
             )
