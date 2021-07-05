@@ -132,6 +132,9 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                     Text("Buy \$100 and get \$10 off", style: TextStyle(
                       color: Colors.white
                     ),),
+                    CircleAvatar(
+                      backgroundColor: Color,
+                    )
                   ],
                 ),
               ),
