@@ -5,6 +5,7 @@ class PopularProduct{
   String? weight;
   double? price;
   int? count;
+  String? img;
 
-  PopularProduct({this.title, this.weight, this.price, this.count});
+  PopularProduct({this.img, this.title, this.weight, this.price, this.count});
 }
