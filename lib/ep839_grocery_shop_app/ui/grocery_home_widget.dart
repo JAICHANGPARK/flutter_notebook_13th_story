@@ -128,7 +128,11 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                 height: 160,
                 decoration: BoxDecoration(color: Colors.black),
                 child: Column(
-                  children: [],
+                  children: [
+                    Text("Buy \$100 and get \$10 off", style: TextStyle(
+                      color: Colors.white
+                    ),),
+                  ],
                 ),
               ),
             )
