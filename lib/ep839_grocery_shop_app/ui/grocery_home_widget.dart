@@ -201,19 +201,13 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
               children: popularProductItems
                   .map((e) => Container(
                         decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(12),
-                        ),
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(12)),
                         padding: EdgeInsets.symmetric(vertical: 16),
                         child: Column(
                           children: [
-                            Image.network(
-                              e.img!,
-                              height: 80
-                            ),
-                            SizedBox(
-                              height: 16
-                            ),
+                            Image.network(e.img!, height: 80),
+                            SizedBox(height: 16),
                             Text(
                               e.title!,
                               style: TextStyle(
@@ -226,17 +220,24 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
                             ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: _accentColor,
-                              ),
-                              child: Row(
-                                children: [
-                                  CircleAvatar(
-                                    backgroundColor: Colors.black,
-                                    foregroundColor: Colors.white,
-                                  )
-                                ],
+                            SizedBox(height: 16,),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 24),
+                              child: Container(
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                decoration: BoxDecoration(
+                                  color: _accentColor,
+                                  borderRadius: BorderRadius.circular(24),
+
+                                ),
+                                child: Row(
+                                  children: [
+                                    CircleAvatar(
+                                      backgroundColor: Colors.black,
+                                      foregroundColor: Colors.white,
+                                    )
+                                  ],
+                                ),
                               ),
                             )
                           ],
