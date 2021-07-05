@@ -227,6 +227,9 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                                   TextStyle(color: Colors.white, fontSize: 10),
                             ),
                             Container(
+                              decoration: BoxDecoration(
+                                color: 
+                              ),
                               child: Row(
                                 children: [
                                   CircleAvatar(
