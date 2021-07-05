@@ -158,7 +158,9 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                   "Popular product",
                   style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
-                Text("See all")
+                Text("See all",style: TextStyle(
+                  color: Colors.white
+                ),)
               ],
             )
           ],
