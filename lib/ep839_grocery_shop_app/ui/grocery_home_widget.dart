@@ -134,6 +134,9 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                     ),),
                     CircleAvatar(
                       backgroundColor: Color(0xff08150D),
+                      child: Icon(Icons.arrow_forward_ios_outlined, size: 18,),
+                      foregroundColor: Colors.white,
+
                     )
                   ],
                 ),
