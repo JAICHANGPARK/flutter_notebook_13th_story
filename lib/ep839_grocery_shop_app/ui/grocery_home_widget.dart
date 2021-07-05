@@ -127,10 +127,12 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
               child: Container(
                 height: 160,
                 decoration: BoxDecoration(color: Colors.black),
+                padding: EdgeInsets.all(16),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Buy \$100 and get \$10 off", style: TextStyle(
-                      color: Colors.white
+                      color: Colors.white, fontSize: 24
                     ),),
                     CircleAvatar(
                       backgroundColor: Color(0xff08150D),
