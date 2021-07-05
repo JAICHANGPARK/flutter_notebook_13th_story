@@ -133,7 +133,7 @@ class _GroceryHomeWidgetState extends State<GroceryHomeWidget> {
                       color: Colors.white
                     ),),
                     CircleAvatar(
-                      backgroundColor: Color,
+                      backgroundColor: Color(0xff08150D),
                     )
                   ],
                 ),
