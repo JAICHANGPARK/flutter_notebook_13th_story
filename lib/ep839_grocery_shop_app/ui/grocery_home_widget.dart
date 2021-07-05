@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_13th_story/ep839_grocery_shop_app/model/popular_product.dart';
 
 List<PopularProduct> popularProductItems = [
-  PopularProduct(title: "Orange", count: 1, price: 3.99, weight: "1 kilogram"),
+  PopularProduct(title: "Orange", count: 1, price: 3.99, weight: "1 kilogram",
+  img: "https://cdn.pixabay.com/photo/2016/02/25/17/08/fruit-1222488_960_720.png"),
+  PopularProduct(title: "Orange", count: 1, price: 3.99, weight: "1 kilogram",
+      img: "https://cdn.pixabay.com/photo/2016/02/25/17/08/fruit-1222488_960_720.png"),
+  PopularProduct(title: "Orange", count: 1, price: 3.99, weight: "1 kilogram",
+      img: "https://cdn.pixabay.com/photo/2016/02/25/17/08/fruit-1222488_960_720.png"),
 ];
 
 
