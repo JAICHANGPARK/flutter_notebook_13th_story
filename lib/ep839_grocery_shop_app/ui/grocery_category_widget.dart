@@ -166,6 +166,19 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                 ],
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Easy cooking",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+                 
+                ],
+              ),
+            ),
           ],
         ),
       ),
