@@ -27,10 +27,11 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
             Column(
               children: [
                 Text("Categories", style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
                   color: _accentColor
                 ),),
+                SizedBox(height: 16,),
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
