@@ -64,6 +64,17 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                   ),
                 )
               ],
+            ),
+            Row(
+              children: [
+                Text("Daily needs", style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16
+                ),),
+                Text("see all", style: TextStyle(
+                  color: Colors.white,
+                ),)
+              ],
             )
 
           ],
