@@ -113,8 +113,12 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                         children: [
                           Image.network("https://www.seekpng.com/png/full/540-5406789_vegetable-png-image-fruits-and-vegetables-png.png",
                           height: 84,),
+                          Text("Vegetables & Fruits", style: TextStyle(
+                            color: Colors.white
+                          ),)
                         ],
                       ),
+
                     ),
                   ),
                   Padding(
