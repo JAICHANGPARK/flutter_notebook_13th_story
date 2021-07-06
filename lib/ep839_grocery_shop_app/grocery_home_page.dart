@@ -27,14 +27,7 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
                 );
               case 1:
                 return SafeArea(
-                  child: Container(
-                    child: Center(
-                      child: Text(
-                        "Page 2",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                  ),
+                  child:GroceryCategoryWidget(),
                 );
               case 2:
                 return SafeArea(
