@@ -11,10 +11,14 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Column(
-        children: [
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+          children: [
+            CircleAvatar()
 
-        ],
+          ],
+        ),
       ),
     );
   }
