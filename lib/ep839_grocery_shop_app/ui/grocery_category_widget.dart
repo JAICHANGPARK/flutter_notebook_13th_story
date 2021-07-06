@@ -65,16 +65,20 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                 )
               ],
             ),
-            Row(
-              children: [
-                Text("Daily needs", style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16
-                ),),
-                Text("see all", style: TextStyle(
-                  color: Colors.white,
-                ),)
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Daily needs", style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16
+                  ),),
+                  Text("see all", style: TextStyle(
+                    color: Colors.white,
+                  ),)
+                ],
+              ),
             )
 
           ],
