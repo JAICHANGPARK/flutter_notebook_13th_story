@@ -41,7 +41,11 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                   padding: EdgeInsets.symmetric(horizontal: 8),
                   child: Row(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(
+                        backgroundColor: Colors.black,
+                        foregroundColor: Colors.white,
+                        child: Center(child: Icon(Icons.search, size: 28,)),
+                      ),
                       SizedBox(width: 8,),
                       Expanded(
                         child: TextField(
