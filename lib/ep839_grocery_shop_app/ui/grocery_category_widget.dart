@@ -8,6 +8,7 @@ class GroceryCategoryWidget extends StatefulWidget {
 }
 
 class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
+  Color _accentColor = Color(0xff52C66C);
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -15,7 +16,11 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            CircleAvatar()
+            CircleAvatar(
+              backgroundColor: _accentColor,
+              foregroundColor: Colors.white,
+              child: Center(child: Icon(Icons.arrow_back_ios, size: 18,)),
+            )
 
           ],
         ),
