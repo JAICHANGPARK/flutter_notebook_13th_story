@@ -38,6 +38,7 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                   child: Row(
                     children: [
                       CircleAvatar(),
+                      SizedBox(width: 8,),
                       Expanded(
                         child: TextField(
                           
