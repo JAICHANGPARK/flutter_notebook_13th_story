@@ -79,7 +79,14 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                   ),)
                 ],
               ),
-            )
+            ),
+            SizedBox(height: 200,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+
+              ],
+            ),),
 
           ],
         ),
