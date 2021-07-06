@@ -106,6 +106,7 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                       width: 160,
                       decoration: BoxDecoration(
                         color: Colors.grey,
+                        borderRadius: BorderRadius.circular(8)
                       ),
                     ),
                   )
