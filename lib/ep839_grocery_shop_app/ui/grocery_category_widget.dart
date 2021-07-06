@@ -34,7 +34,10 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                     children: [
                       CircleAvatar(),
                       TextField(
-                        decoration: InputDecoration(),
+                        decoration: InputDecoration(
+                          hintText: "Search yout product",
+                          border: InputBorder.none
+                        ),
                       ),
                     ],
                   ),
