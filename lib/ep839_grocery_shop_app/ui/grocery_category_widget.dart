@@ -48,7 +48,10 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                           
                           decoration: InputDecoration(
                             hintText: "Search yout product",
-                            border: InputBorder.none
+                            border: InputBorder.none,
+                            hintStyle: TextStyle(
+                              color: Colors.white
+                            )
                           ),
                         ),
                       ),
