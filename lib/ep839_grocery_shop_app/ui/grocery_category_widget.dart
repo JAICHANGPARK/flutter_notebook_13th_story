@@ -9,6 +9,7 @@ class GroceryCategoryWidget extends StatefulWidget {
 
 class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
   Color _accentColor = Color(0xff52C66C);
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -21,43 +22,54 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
               child: CircleAvatar(
                 backgroundColor: _accentColor,
                 foregroundColor: Colors.white,
-                child: Center(child: Icon(Icons.keyboard_arrow_left, size: 28,)),
+                child: Center(
+                    child: Icon(
+                  Icons.keyboard_arrow_left,
+                  size: 28,
+                )),
               ),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Column(
               children: [
-                Text("Categories", style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: _accentColor
-                ),),
-                SizedBox(height: 16,),
+                Text(
+                  "Categories",
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: _accentColor),
+                ),
+                SizedBox(
+                  height: 16,
+                ),
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: _accentColor,
-                    borderRadius: BorderRadius.circular(24)
-                  ),
+                      color: _accentColor,
+                      borderRadius: BorderRadius.circular(24)),
                   padding: EdgeInsets.symmetric(horizontal: 8),
                   child: Row(
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.black,
                         foregroundColor: Colors.white,
-                        child: Center(child: Icon(Icons.search, size: 28,)),
+                        child: Center(
+                            child: Icon(
+                          Icons.search,
+                          size: 28,
+                        )),
                       ),
-                      SizedBox(width: 8,),
+                      SizedBox(
+                        width: 8,
+                      ),
                       Expanded(
                         child: TextField(
-                          
                           decoration: InputDecoration(
-                            hintText: "Search yout product",
-                            border: InputBorder.none,
-                            hintStyle: TextStyle(
-                              color: Colors.white
-                            )
-                          ),
+                              hintText: "Search yout product",
+                              border: InputBorder.none,
+                              hintStyle: TextStyle(color: Colors.white)),
                         ),
                       ),
                     ],
@@ -70,24 +82,36 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Daily needs", style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16
-                  ),),
-                  Text("see all", style: TextStyle(
-                    color: Colors.white,
-                  ),)
+                  Text(
+                    "Daily needs",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+                  Text(
+                    "see all",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  )
                 ],
               ),
             ),
-            SizedBox(height: 200,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-
-              ],
-            ),),
-
+            SizedBox(
+              height: 160,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Container(
+                      width: 160,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
