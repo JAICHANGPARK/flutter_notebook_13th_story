@@ -30,13 +30,21 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                 ),),
                 Container(
                   width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: _accentColor,
+                    borderRadius: BorderRadius.circular(24)
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 8),
                   child: Row(
                     children: [
                       CircleAvatar(),
-                      TextField(
-                        decoration: InputDecoration(
-                          hintText: "Search yout product",
-                          border: InputBorder.none
+                      Expanded(
+                        child: TextField(
+                          
+                          decoration: InputDecoration(
+                            hintText: "Search yout product",
+                            border: InputBorder.none
+                          ),
                         ),
                       ),
                     ],
