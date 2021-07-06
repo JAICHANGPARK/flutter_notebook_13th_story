@@ -105,8 +105,28 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                     child: Container(
                       width: 160,
                       decoration: BoxDecoration(
-                        color: Colors.grey,
+                        color: Colors.black,
                         borderRadius: BorderRadius.circular(8)
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Container(
+                      width: 160,
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8)
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Container(
+                      width: 160,
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8)
                       ),
                     ),
                   )
