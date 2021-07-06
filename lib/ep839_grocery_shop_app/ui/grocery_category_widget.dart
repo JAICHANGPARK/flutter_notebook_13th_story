@@ -19,7 +19,7 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
             CircleAvatar(
               backgroundColor: _accentColor,
               foregroundColor: Colors.white,
-              child: Center(child: Icon(Icons.arrow_back_ios, size: 18,)),
+              child: Center(child: Icon(Icons.keyboard_arrow_left, size: 28,)),
             )
 
           ],
