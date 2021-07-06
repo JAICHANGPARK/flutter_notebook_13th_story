@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'ui/grocery_category_widget.dart';
 import 'ui/grocery_home_widget.dart';
 
 class GroceryHomePage extends StatefulWidget {
@@ -27,7 +28,7 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
                 );
               case 1:
                 return SafeArea(
-                  child:GroceryCategoryWidget(),
+                  child: GroceryCategoryWidget(),
                 );
               case 2:
                 return SafeArea(
