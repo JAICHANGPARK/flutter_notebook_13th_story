@@ -13,7 +13,7 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          
+
         ],
       ),
     );
