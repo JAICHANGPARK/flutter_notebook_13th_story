@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'grocery_home_widget.dart';
+
 class GroceryCategoryWidget extends StatefulWidget {
   GroceryCategoryWidget({Key? key}) : super(key: key);
 
@@ -175,9 +177,38 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                     "Easy cooking",
                     style: TextStyle(color: Colors.white, fontSize: 16),
                   ),
-                 
+
                 ],
               ),
+            ),
+            GridView.count(
+              crossAxisCount: 2,
+              shrinkWrap: true,
+              mainAxisSpacing: 16,
+              crossAxisSpacing: 16,
+              childAspectRatio: 1,
+              children: popularProductItems
+                  .map((e) => Container(
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(12)),
+                padding: EdgeInsets.symmetric(vertical: 16),
+                child: Column(
+                  children: [
+                    Image.network(e.img!, height: 80),
+                    SizedBox(height: 16),
+                    Text(
+                      e.title!,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(height: 16),
+                  ],
+                ),
+              ))
+                  .toList(),
             ),
           ],
         ),
