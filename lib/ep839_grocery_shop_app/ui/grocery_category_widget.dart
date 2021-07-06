@@ -20,7 +20,12 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
               backgroundColor: _accentColor,
               foregroundColor: Colors.white,
               child: Center(child: Icon(Icons.keyboard_arrow_left, size: 28,)),
-            )
+            ),
+            Text("Categories", style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: _accentColor
+            ),)
 
           ],
         ),
