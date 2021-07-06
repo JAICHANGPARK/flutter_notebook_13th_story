@@ -16,10 +16,13 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            CircleAvatar(
-              backgroundColor: _accentColor,
-              foregroundColor: Colors.white,
-              child: Center(child: Icon(Icons.keyboard_arrow_left, size: 28,)),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: CircleAvatar(
+                backgroundColor: _accentColor,
+                foregroundColor: Colors.white,
+                child: Center(child: Icon(Icons.keyboard_arrow_left, size: 28,)),
+              ),
             ),
             Column(
               children: [
