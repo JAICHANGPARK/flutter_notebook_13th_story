@@ -17,6 +17,7 @@ class _GroceryHomePageState extends State<GroceryHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomInset: false,
         backgroundColor: const Color(0xff08150D),
         body: ValueListenableBuilder(
           valueListenable: _bottomTabIdx,
