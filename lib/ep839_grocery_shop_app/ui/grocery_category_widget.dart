@@ -10,6 +10,12 @@ class GroceryCategoryWidget extends StatefulWidget {
 class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
