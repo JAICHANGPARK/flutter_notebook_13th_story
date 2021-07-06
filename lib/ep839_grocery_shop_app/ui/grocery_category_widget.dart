@@ -24,6 +24,7 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                 child: Center(child: Icon(Icons.keyboard_arrow_left, size: 28,)),
               ),
             ),
+            SizedBox(height: 16,),
             Column(
               children: [
                 Text("Categories", style: TextStyle(
