@@ -108,6 +108,13 @@ class _GroceryCategoryWidgetState extends State<GroceryCategoryWidget> {
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(8)
                       ),
+                      padding: EdgeInsets.all(16),
+                      child: Column(
+                        children: [
+                          Image.network("https://www.seekpng.com/png/full/540-5406789_vegetable-png-image-fruits-and-vegetables-png.png",
+                          height: 84,),
+                        ],
+                      ),
                     ),
                   ),
                   Padding(
