@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 
 class MeditationClassHomePage extends StatefulWidget {
   const MeditationClassHomePage({Key? key}) : super(key: key);
@@ -31,7 +32,38 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                           spreadRadius: 1)
                     ]),
                 child: Row(
-                  children: [],
+                  children: [
+                    Column(
+                      children: [
+                        Icon(Icons.home_outlined),
+                        Text("Home"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Icon(Icons.home_outlined),
+                        Text("Home"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Icon(Icons.home_outlined),
+                        Text("Home"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Icon(Icons.home_outlined),
+                        Text("Home"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Icon(Ionicons.person_outline),
+                        Text("Profile"),
+                      ],
+                    )
+                  ],
                 ),
               )),
         ],
