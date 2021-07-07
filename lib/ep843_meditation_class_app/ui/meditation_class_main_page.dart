@@ -32,35 +32,50 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                           spreadRadius: 1)
                     ]),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
                       children: [
                         Icon(Ionicons.home_outline),
-                        Text("Home"),
+                        SizedBox(height: 8),
+                        Text(
+                          "Home",
+                          style: TextStyle(fontSize: 12),
+                        ),
                       ],
                     ),
                     Column(
                       children: [
                         Icon(Ionicons.calendar_number_outline),
-                        Text("Upcoming"),
+                        SizedBox(height: 8),
+                        Text(
+                          "Upcoming",
+                          style: TextStyle(fontSize: 12),
+                        ),
                       ],
                     ),
                     Column(
                       children: [
                         Icon(Ionicons.search),
-                        Text("Search"),
+                        SizedBox(height: 8),
+                        Text(
+                          "Search",
+                          style: TextStyle(fontSize: 12),
+                        ),
                       ],
                     ),
                     Column(
                       children: [
                         Icon(Ionicons.notifications_outline),
-                        Text("Notification"),
+                        SizedBox(height: 8),
+                        Text("Notification", style: TextStyle(fontSize: 12)),
                       ],
                     ),
                     Column(
                       children: [
                         Icon(Ionicons.person_outline),
-                        Text("Profile"),
+                        SizedBox(height: 8),
+                        Text("Profile", style: TextStyle(fontSize: 12)),
                       ],
                     )
                   ],
