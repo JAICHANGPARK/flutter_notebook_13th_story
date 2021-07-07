@@ -35,6 +35,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Ionicons.home_outline),
                         SizedBox(height: 8),
@@ -44,7 +45,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                         ),
                       ],
                     ),
-                    Column(
+                    Column( mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Ionicons.calendar_number_outline),
                         SizedBox(height: 8),
@@ -54,7 +55,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                         ),
                       ],
                     ),
-                    Column(
+                    Column( mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Ionicons.search),
                         SizedBox(height: 8),
@@ -64,14 +65,14 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                         ),
                       ],
                     ),
-                    Column(
+                    Column( mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Ionicons.notifications_outline),
                         SizedBox(height: 8),
                         Text("Notification", style: TextStyle(fontSize: 12)),
                       ],
                     ),
-                    Column(
+                    Column( mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Ionicons.person_outline),
                         SizedBox(height: 8),
