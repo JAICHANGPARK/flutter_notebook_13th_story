@@ -53,8 +53,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                     ),
                     Column(
                       children: [
-                        Icon(Icons.home_outlined),
-                        Text("Home"),
+                        Icon(Ionicons.notifications_outline),
+                        Text("Notification"),
                       ],
                     ),
                     Column(
