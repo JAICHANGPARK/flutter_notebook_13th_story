@@ -69,16 +69,28 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                       onTap: () {
                         _pageIndex.value = 1;
                       },
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(Ionicons.calendar_number_outline),
-                          SizedBox(height: 8),
-                          Text(
-                            "Upcoming",
-                            style: TextStyle(fontSize: 10),
-                          ),
-                        ],
+                      child: ValueListenableBuilder(
+                        valueListenable: _pageIndex,
+                        builder:
+                            (BuildContext context, int value, Widget? child) {
+                          return Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Ionicons.calendar_outline,
+                                color:
+                                value == 1 ? Colors.black : Colors.black87,
+                              ),
+                              SizedBox(height: 8),
+                              Text("Upcoming",
+                                  style: TextStyle(
+                                      fontSize: 10,
+                                      color: value == 1
+                                          ? Colors.black
+                                          : Colors.black87)),
+                            ],
+                          );
+                        },
                       ),
                     ),
                     GestureDetector(
