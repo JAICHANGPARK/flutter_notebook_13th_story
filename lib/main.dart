@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ep839_grocery_shop_app/grocery_shop_app.dart';
+import 'ep843_meditation_class_app/meditation_class_app.dart';
 
 
-void main() => runApp(GroceryShopApp());
+void main() => runApp(MeditationClassApp());
