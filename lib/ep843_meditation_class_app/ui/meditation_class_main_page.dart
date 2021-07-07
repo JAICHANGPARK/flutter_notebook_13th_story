@@ -35,20 +35,20 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                   children: [
                     Column(
                       children: [
-                        Icon(Icons.home_outlined),
+                        Icon(Ionicons.home_outline),
                         Text("Home"),
                       ],
                     ),
                     Column(
                       children: [
-                        Icon(Icons.home_outlined),
-                        Text("Home"),
+                        Icon(Ionicons.calendar_number_outline),
+                        Text("Upcoming"),
                       ],
                     ),
                     Column(
                       children: [
-                        Icon(Icons.home_outlined),
-                        Text("Home"),
+                        Icon(Ionicons.search),
+                        Text("Search"),
                       ],
                     ),
                     Column(
