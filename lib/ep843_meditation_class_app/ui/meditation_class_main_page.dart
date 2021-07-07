@@ -13,6 +13,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Positioned(
