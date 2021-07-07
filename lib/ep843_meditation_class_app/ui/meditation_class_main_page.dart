@@ -45,7 +45,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                         ),
                       ],
                     ),
-                    Column( mainAxisAlignment: MainAxisAlignment.center,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Ionicons.calendar_number_outline),
                         SizedBox(height: 8),
@@ -55,7 +56,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                         ),
                       ],
                     ),
-                    Column( mainAxisAlignment: MainAxisAlignment.center,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Ionicons.search),
                         SizedBox(height: 8),
@@ -65,14 +67,16 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                         ),
                       ],
                     ),
-                    Column( mainAxisAlignment: MainAxisAlignment.center,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Ionicons.notifications_outline),
                         SizedBox(height: 8),
                         Text("Notification", style: TextStyle(fontSize: 12)),
                       ],
                     ),
-                    Column( mainAxisAlignment: MainAxisAlignment.center,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Ionicons.person_outline),
                         SizedBox(height: 8),
