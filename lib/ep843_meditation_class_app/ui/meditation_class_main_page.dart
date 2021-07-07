@@ -51,7 +51,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                               Icon(
                                 Ionicons.home_outline,
                                 color:
-                                    value == 0 ? Colors.black : Colors.black87,
+                                    value == 0 ? Colors.black : Colors.black45,
                               ),
                               SizedBox(height: 8),
                               Text("Home",
@@ -59,7 +59,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                                       fontSize: 10,
                                       color: value == 0
                                           ? Colors.black
-                                          : Colors.black87)),
+                                          : Colors.black45)),
                             ],
                           );
                         },
@@ -79,7 +79,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                               Icon(
                                 Ionicons.calendar_outline,
                                 color:
-                                value == 1 ? Colors.black : Colors.black87,
+                                    value == 1 ? Colors.black : Colors.black45,
                               ),
                               SizedBox(height: 8),
                               Text("Upcoming",
@@ -87,7 +87,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                                       fontSize: 10,
                                       color: value == 1
                                           ? Colors.black
-                                          : Colors.black87)),
+                                          : Colors.black45)),
                             ],
                           );
                         },
