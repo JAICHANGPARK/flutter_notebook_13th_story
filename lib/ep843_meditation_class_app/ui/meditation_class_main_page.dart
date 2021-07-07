@@ -10,6 +10,8 @@ class MeditationClassHomePage extends StatefulWidget {
 }
 
 class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
+  ValueNotifier<int> _pageIndex = ValueNotifier<int>(0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,54 +37,82 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(Ionicons.home_outline),
-                        SizedBox(height: 8),
-                        Text(
-                          "Home",
-                          style: TextStyle(fontSize: 12),
-                        ),
-                      ],
+                    GestureDetector(
+                      onTap: () {
+                        _pageIndex.value = 0;
+                      },
+                      child: ValueListenableBuilder(
+                        valueListenable: _pageIndex,
+                        builder:
+                            (BuildContext context, int value, Widget? child) {
+                          return Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Ionicons.home_outline),
+                              SizedBox(height: 8),
+                              Text("Home", style: TextStyle(fontSize: 12)),
+                            ],
+                          );
+                        },
+                      ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(Ionicons.calendar_number_outline),
-                        SizedBox(height: 8),
-                        Text(
-                          "Upcoming",
-                          style: TextStyle(fontSize: 12),
-                        ),
-                      ],
+                    GestureDetector(
+                      onTap: () {
+                        _pageIndex.value = 1;
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Ionicons.calendar_number_outline),
+                          SizedBox(height: 8),
+                          Text(
+                            "Upcoming",
+                            style: TextStyle(fontSize: 12),
+                          ),
+                        ],
+                      ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(Ionicons.search),
-                        SizedBox(height: 8),
-                        Text(
-                          "Search",
-                          style: TextStyle(fontSize: 12),
-                        ),
-                      ],
+                    GestureDetector(
+                      onTap: () {
+                        _pageIndex.value = 2;
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Ionicons.search),
+                          SizedBox(height: 8),
+                          Text(
+                            "Search",
+                            style: TextStyle(fontSize: 12),
+                          ),
+                        ],
+                      ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(Ionicons.notifications_outline),
-                        SizedBox(height: 8),
-                        Text("Notification", style: TextStyle(fontSize: 12)),
-                      ],
+                    GestureDetector(
+                      onTap: () {
+                        _pageIndex.value = 3;
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Ionicons.notifications_outline),
+                          SizedBox(height: 8),
+                          Text("Notification", style: TextStyle(fontSize: 12)),
+                        ],
+                      ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(Ionicons.person_outline),
-                        SizedBox(height: 8),
-                        Text("Profile", style: TextStyle(fontSize: 12)),
-                      ],
+                    GestureDetector(
+                      onTap: () {
+                        _pageIndex.value = 4;
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Ionicons.person_outline),
+                          SizedBox(height: 8),
+                          Text("Profile", style: TextStyle(fontSize: 12)),
+                        ],
+                      ),
                     )
                   ],
                 ),
