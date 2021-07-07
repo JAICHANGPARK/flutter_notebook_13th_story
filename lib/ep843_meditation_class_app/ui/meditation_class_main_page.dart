@@ -125,28 +125,58 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                       onTap: () {
                         _pageIndex.value = 3;
                       },
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(Ionicons.notifications_outline),
-                          SizedBox(height: 8),
-                          Text("Notification", style: TextStyle(fontSize: 10)),
-                        ],
+                      child: ValueListenableBuilder(
+                        valueListenable: _pageIndex,
+                        builder:
+                            (BuildContext context, int value, Widget? child) {
+                          return Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Ionicons.notifications_outline,
+                                color:
+                                value == 3 ? Colors.black : Colors.black45,
+                              ),
+                              SizedBox(height: 8),
+                              Text("Notifications",
+                                  style: TextStyle(
+                                      fontSize: 10,
+                                      color: value == 3
+                                          ? Colors.black
+                                          : Colors.black45)),
+                            ],
+                          );
+                        },
                       ),
                     ),
                     GestureDetector(
                       onTap: () {
                         _pageIndex.value = 4;
                       },
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(Ionicons.person_outline),
-                          SizedBox(height: 8),
-                          Text("Profile", style: TextStyle(fontSize: 10)),
-                        ],
+                      child: ValueListenableBuilder(
+                        valueListenable: _pageIndex,
+                        builder:
+                            (BuildContext context, int value, Widget? child) {
+                          return Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Ionicons.person_outline,
+                                color:
+                                value == 4 ? Colors.black : Colors.black45,
+                              ),
+                              SizedBox(height: 8),
+                              Text("Profile",
+                                  style: TextStyle(
+                                      fontSize: 10,
+                                      color: value == 4
+                                          ? Colors.black
+                                          : Colors.black45)),
+                            ],
+                          );
+                        },
                       ),
-                    )
+                    ),
                   ],
                 ),
               )),
