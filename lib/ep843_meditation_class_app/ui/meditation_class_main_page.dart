@@ -105,7 +105,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
-                                Ionicons.calendar_outline,
+                                Ionicons.search,
                                 color:
                                 value == 2 ? Colors.black : Colors.black45,
                               ),
