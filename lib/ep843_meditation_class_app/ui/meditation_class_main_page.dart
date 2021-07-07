@@ -48,9 +48,18 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                           return Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Ionicons.home_outline),
+                              Icon(
+                                Ionicons.home_outline,
+                                color:
+                                    value == 0 ? Colors.black : Colors.black87,
+                              ),
                               SizedBox(height: 8),
-                              Text("Home", style: TextStyle(fontSize: 12)),
+                              Text("Home",
+                                  style: TextStyle(
+                                      fontSize: 10,
+                                      color: value == 0
+                                          ? Colors.black
+                                          : Colors.black87)),
                             ],
                           );
                         },
@@ -67,7 +76,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                           SizedBox(height: 8),
                           Text(
                             "Upcoming",
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(fontSize: 10),
                           ),
                         ],
                       ),
@@ -83,7 +92,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                           SizedBox(height: 8),
                           Text(
                             "Search",
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(fontSize: 10),
                           ),
                         ],
                       ),
@@ -97,7 +106,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                         children: [
                           Icon(Ionicons.notifications_outline),
                           SizedBox(height: 8),
-                          Text("Notification", style: TextStyle(fontSize: 12)),
+                          Text("Notification", style: TextStyle(fontSize: 10)),
                         ],
                       ),
                     ),
@@ -110,7 +119,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                         children: [
                           Icon(Ionicons.person_outline),
                           SizedBox(height: 8),
-                          Text("Profile", style: TextStyle(fontSize: 12)),
+                          Text("Profile", style: TextStyle(fontSize: 10)),
                         ],
                       ),
                     )
