@@ -4,7 +4,8 @@ class MeditationClassHomePage extends StatefulWidget {
   const MeditationClassHomePage({Key? key}) : super(key: key);
 
   @override
-  _MeditationClassHomePageState createState() => _MeditationClassHomePageState();
+  _MeditationClassHomePageState createState() =>
+      _MeditationClassHomePageState();
 }
 
 class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
@@ -20,22 +21,17 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
               child: Container(
                 height: 64,
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(16),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.15),
-                      offset: Offset(0, 2),
-                      blurRadius: 1,
-                      spreadRadius: 1
-
-                    )
-                  ]
-                ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.15),
+                          offset: Offset(0, 2),
+                          blurRadius: 1,
+                          spreadRadius: 1)
+                    ]),
                 child: Row(
-                  children: [
-
-                  ],
+                  children: [],
                 ),
               )),
         ],
