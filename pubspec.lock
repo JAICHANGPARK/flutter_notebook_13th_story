@@ -96,7 +96,7 @@ packages:
       name: flutter_hooks
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.17.0"
+    version: "0.18.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -110,7 +110,7 @@ packages:
       name: flutter_riverpod
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0-dev.1"
+    version: "1.0.0-dev.3"
   flutter_staggered_grid_view:
     dependency: "direct main"
     description:
@@ -157,7 +157,7 @@ packages:
       name: hooks_riverpod
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0-dev.1"
+    version: "1.0.0-dev.4"
   http:
     dependency: transitive
     description:
@@ -193,6 +193,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.12.10"
+  md2_tab_indicator:
+    dependency: "direct main"
+    description:
+      name: md2_tab_indicator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.2"
   meta:
     dependency: transitive
     description:
@@ -311,7 +318,7 @@ packages:
       name: riverpod
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0-dev.1"
+    version: "1.0.0-dev.3"
   sky_engine:
     dependency: transitive
     description: flutter
