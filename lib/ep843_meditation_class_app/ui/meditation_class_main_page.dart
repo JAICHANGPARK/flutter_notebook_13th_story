@@ -23,26 +23,27 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
     _tabController = TabController(length: 4, vsync: this);
   }
 
-  String dayConverter(int weekday){
-      switch(weekday){
-        case 1:
-          return "MON";
-        case 2:
-          return "TUE";
-        case 2:
-          return "WED";
-        case 2:
-          return "THU";
-        case 2:
-          return "FRI";
-        case 2:
-          return "SAT";
-        case 2:
-          return "SUN";
-
-
+  String dayConverter(int weekday) {
+    switch (weekday) {
+      case 1:
+        return "MON";
+      case 2:
+        return "TUE";
+      case 3:
+        return "WED";
+      case 4:
+        return "THU";
+      case 5:
+        return "FRI";
+      case 6:
+        return "SAT";
+      case 7:
+        return "SUN";
+      default:
+        return "MON";
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,41 +74,60 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                           ],
                         ),
                       ),
-                      TabBar(controller: _tabController,
-                          labelStyle: TextStyle(
-                            color: Colors.black
-                          ),
+                      TabBar(
+                          controller: _tabController,
+                          labelStyle: TextStyle(color: Colors.black),
                           unselectedLabelStyle: TextStyle(
                             color: Colors.grey,
                           ),
                           labelColor: Colors.black,
                           unselectedLabelColor: Colors.grey,
                           tabs: [
-                        Tab(
-                          child: Column(
-                            children: [
-                              Text("${DateTime.now().subtract(Duration(days: 4)).day}", ),
-                              Text("${DateTime.now().subtract(Duration(days: 4)).weekday}"),
-
-                            ],
-                          ),
-                        ),
-                        Tab(
-                          child: Column(
-                            children: [],
-                          ),
-                        ),
-                        Tab(
-                          child: Column(
-                            children: [],
-                          ),
-                        ),
-                        Tab(
-                          child: Column(
-                            children: [],
-                          ),
-                        ),
-                      ]),
+                            Tab(
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "${DateTime.now().subtract(Duration(days: 4)).day}",
+                                  ),
+                                  Text(
+                                      "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}"),
+                                ],
+                              ),
+                            ),
+                            Tab(
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "${DateTime.now().subtract(Duration(days: 4)).day}",
+                                  ),
+                                  Text(
+                                      "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}"),
+                                ],
+                              ),
+                            ),
+                            Tab(
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "${DateTime.now().subtract(Duration(days: 4)).day}",
+                                  ),
+                                  Text(
+                                      "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}"),
+                                ],
+                              ),
+                            ),
+                            Tab(
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "${DateTime.now().subtract(Duration(days: 4)).day}",
+                                  ),
+                                  Text(
+                                      "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}"),
+                                ],
+                              ),
+                            ),
+                          ]),
                     ],
                   ),
                 )),
