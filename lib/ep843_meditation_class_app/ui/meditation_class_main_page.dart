@@ -29,12 +29,23 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                   decoration: BoxDecoration(),
                   child: Column(
                     children: [
-                      Row(
-                        children: [
-                          IconButton(onPressed: (){}, icon: Icon(CupertinoIcons.search), iconSize: 32,),
-                          CircleAvatar(),
-                        ],
-                      )
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            IconButton(onPressed: (){}, icon: Icon(CupertinoIcons.search), iconSize: 32,),
+                            CircleAvatar(),
+                          ],
+                        ),
+                      ),
+                      TabBar(tabs: [
+                        Tab(child: Column(
+                          children: [
+                            
+                          ],
+                        ),),
+                      ]),
                     ],
                   ),
                 )),
