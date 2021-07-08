@@ -110,7 +110,7 @@ packages:
       name: flutter_riverpod
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0-dev.3"
+    version: "1.0.0-dev.5"
   flutter_staggered_grid_view:
     dependency: "direct main"
     description:
@@ -157,7 +157,7 @@ packages:
       name: hooks_riverpod
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0-dev.4"
+    version: "1.0.0-dev.5"
   http:
     dependency: transitive
     description:
@@ -306,7 +306,7 @@ packages:
       name: plugin_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "2.0.1"
   process:
     dependency: transitive
     description:
@@ -327,7 +327,7 @@ packages:
       name: riverpod
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0-dev.3"
+    version: "1.0.0-dev.5"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -409,7 +409,7 @@ packages:
       name: win32
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.4"
+    version: "2.2.5"
   xdg_directories:
     dependency: transitive
     description:
