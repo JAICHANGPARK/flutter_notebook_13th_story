@@ -55,242 +55,22 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
         child: Stack(
           children: [
             Positioned(
-                bottom: 0,
-                left: 0,
-                top: 0,
-                right: 0,
-                child:
-                    ValueListenableBuilder<int>(
-                      valueListenable:_pageIndex ,
-                      builder: (context, value, child){
-                        switch(value){
-                          case 0:
-                            return  Container(
-                              decoration: BoxDecoration(),
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        IconButton(
-                                          onPressed: () {},
-                                          icon: Icon(CupertinoIcons.search),
-                                          iconSize: 32,
-                                        ),
-                                        CircleAvatar(
-                                          backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 16,
-                                  ),
-                                  TabBar(
-                                    controller: _tabController,
-                                    labelStyle: TextStyle(color: Colors.black),
-                                    unselectedLabelStyle: TextStyle(
-                                      color: Colors.grey,
-                                    ),
-                                    labelColor: Colors.black,
-                                    unselectedLabelColor: Colors.grey,
-                                    tabs: [
-                                      Tab(
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "${DateTime.now().subtract(Duration(days: 4)).day}",
-                                              style: _tabDayTextStyle,
-                                            ),
-                                            SizedBox(
-                                              height: 4,
-                                            ),
-                                            Text(
-                                              "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}",
-                                              style: _tabWeekdayTextStyle,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Tab(
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "${DateTime.now().subtract(Duration(days: 3)).day}",
-                                              style: _tabDayTextStyle,
-                                            ),
-                                            SizedBox(
-                                              height: 4,
-                                            ),
-                                            Text(
-                                              "${dayConverter(DateTime.now().subtract(Duration(days: 3)).weekday)}",
-                                              style: _tabWeekdayTextStyle,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Tab(
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "${DateTime.now().subtract(Duration(days: 2)).day}",
-                                              style: _tabDayTextStyle,
-                                            ),
-                                            SizedBox(
-                                              height: 4,
-                                            ),
-                                            Text(
-                                              "${dayConverter(DateTime.now().subtract(Duration(days: 2)).weekday)}",
-                                              style: _tabWeekdayTextStyle,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Tab(
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "${DateTime.now().subtract(Duration(days: 1)).day}",
-                                              style: _tabDayTextStyle,
-                                            ),
-                                            SizedBox(
-                                              height: 4,
-                                            ),
-                                            Text(
-                                              "${dayConverter(DateTime.now().subtract(Duration(days: 1)).weekday)}",
-                                              style: _tabWeekdayTextStyle,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                    indicator: MD2Indicator(
-                                        indicatorHeight: 4,
-                                        indicatorColor: Colors.blueGrey[400]!,
-                                        indicatorSize: MD2IndicatorSize.normal),
-                                  ),
-                                ],
-                              ),
-                            );
-                          default:
-                            return  Container(
-                              decoration: BoxDecoration(),
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        IconButton(
-                                          onPressed: () {},
-                                          icon: Icon(CupertinoIcons.search),
-                                          iconSize: 32,
-                                        ),
-                                        CircleAvatar(
-                                          backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 16,
-                                  ),
-                                  TabBar(
-                                    controller: _tabController,
-                                    labelStyle: TextStyle(color: Colors.black),
-                                    unselectedLabelStyle: TextStyle(
-                                      color: Colors.grey,
-                                    ),
-                                    labelColor: Colors.black,
-                                    unselectedLabelColor: Colors.grey,
-                                    tabs: [
-                                      Tab(
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "${DateTime.now().subtract(Duration(days: 4)).day}",
-                                              style: _tabDayTextStyle,
-                                            ),
-                                            SizedBox(
-                                              height: 4,
-                                            ),
-                                            Text(
-                                              "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}",
-                                              style: _tabWeekdayTextStyle,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Tab(
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "${DateTime.now().subtract(Duration(days: 3)).day}",
-                                              style: _tabDayTextStyle,
-                                            ),
-                                            SizedBox(
-                                              height: 4,
-                                            ),
-                                            Text(
-                                              "${dayConverter(DateTime.now().subtract(Duration(days: 3)).weekday)}",
-                                              style: _tabWeekdayTextStyle,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Tab(
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "${DateTime.now().subtract(Duration(days: 2)).day}",
-                                              style: _tabDayTextStyle,
-                                            ),
-                                            SizedBox(
-                                              height: 4,
-                                            ),
-                                            Text(
-                                              "${dayConverter(DateTime.now().subtract(Duration(days: 2)).weekday)}",
-                                              style: _tabWeekdayTextStyle,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Tab(
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "${DateTime.now().subtract(Duration(days: 1)).day}",
-                                              style: _tabDayTextStyle,
-                                            ),
-                                            SizedBox(
-                                              height: 4,
-                                            ),
-                                            Text(
-                                              "${dayConverter(DateTime.now().subtract(Duration(days: 1)).weekday)}",
-                                              style: _tabWeekdayTextStyle,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                    indicator: MD2Indicator(
-                                        indicatorHeight: 4,
-                                        indicatorColor: Colors.blueGrey[400]!,
-                                        indicatorSize: MD2IndicatorSize.normal),
-                                  ),
-                                ],
-                              ),
-                            );
-                        }
-
-                      },
-
-                    ),
-
+              bottom: 0,
+              left: 0,
+              top: 0,
+              right: 0,
+              child: ValueListenableBuilder<int>(
+                valueListenable: _pageIndex,
+                builder: (context, value, child) {
+                  switch (value) {
+                    case 0:
+                      return buildFirstPage();
+                    default:
+                      return buildFirstPage();
+                  }
+                },
               ),
+            ),
             Positioned(
                 left: 16,
                 right: 16,
@@ -460,6 +240,119 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                 )),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget buildFirstPage() {
+    return Container(
+      decoration: BoxDecoration(),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(CupertinoIcons.search),
+                  iconSize: 32,
+                ),
+                CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      "https://avatars.githubusercontent.com/u/19484515?v=4"),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          TabBar(
+            controller: _tabController,
+            labelStyle: TextStyle(color: Colors.black),
+            unselectedLabelStyle: TextStyle(
+              color: Colors.grey,
+            ),
+            labelColor: Colors.black,
+            unselectedLabelColor: Colors.grey,
+            tabs: [
+              Tab(
+                child: Column(
+                  children: [
+                    Text(
+                      "${DateTime.now().subtract(Duration(days: 4)).day}",
+                      style: _tabDayTextStyle,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}",
+                      style: _tabWeekdayTextStyle,
+                    ),
+                  ],
+                ),
+              ),
+              Tab(
+                child: Column(
+                  children: [
+                    Text(
+                      "${DateTime.now().subtract(Duration(days: 3)).day}",
+                      style: _tabDayTextStyle,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      "${dayConverter(DateTime.now().subtract(Duration(days: 3)).weekday)}",
+                      style: _tabWeekdayTextStyle,
+                    ),
+                  ],
+                ),
+              ),
+              Tab(
+                child: Column(
+                  children: [
+                    Text(
+                      "${DateTime.now().subtract(Duration(days: 2)).day}",
+                      style: _tabDayTextStyle,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      "${dayConverter(DateTime.now().subtract(Duration(days: 2)).weekday)}",
+                      style: _tabWeekdayTextStyle,
+                    ),
+                  ],
+                ),
+              ),
+              Tab(
+                child: Column(
+                  children: [
+                    Text(
+                      "${DateTime.now().subtract(Duration(days: 1)).day}",
+                      style: _tabDayTextStyle,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      "${dayConverter(DateTime.now().subtract(Duration(days: 1)).weekday)}",
+                      style: _tabWeekdayTextStyle,
+                    ),
+                  ],
+                ),
+              ),
+            ],
+            indicator: MD2Indicator(
+                indicatorHeight: 4,
+                indicatorColor: Colors.blueGrey[400]!,
+                indicatorSize: MD2IndicatorSize.normal),
+          ),
+        ],
       ),
     );
   }
