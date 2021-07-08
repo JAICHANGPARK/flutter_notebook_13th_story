@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
 
 class MeditationClassHomePage extends StatefulWidget {
@@ -10,8 +11,16 @@ class MeditationClassHomePage extends StatefulWidget {
       _MeditationClassHomePageState();
 }
 
-class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
+class _MeditationClassHomePageState extends State<MeditationClassHomePage>
+with SingleTickerProviderStateMixin{
   ValueNotifier<int> _pageIndex = ValueNotifier<int>(0);
+  late TabController _tabController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 4, vsync: this);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +51,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                       TabBar(tabs: [
                         Tab(child: Column(
                           children: [
-                            
+
                           ],
                         ),),
                       ]),
