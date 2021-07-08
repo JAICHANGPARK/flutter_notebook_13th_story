@@ -16,6 +16,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
     with SingleTickerProviderStateMixin {
   ValueNotifier<int> _pageIndex = ValueNotifier<int>(0);
   late TabController _tabController;
+  final TextStyle _tabDayTextStyle = TextStyle(fontSize: 20);
+  final TextStyle _tabWeekdayTextStyle = TextStyle(fontSize: 10);
 
   @override
   void initState() {
@@ -44,9 +46,6 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
         return "MON";
     }
   }
-
-  final TextStyle _tabDayTextStyle = TextStyle(fontSize: 18);
-  final TextStyle _tabWeekdayTextStyle = TextStyle(fontSize: 12);
 
   @override
   Widget build(BuildContext context) {
@@ -82,76 +81,87 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                         height: 16,
                       ),
                       TabBar(
-                          controller: _tabController,
-                          labelStyle: TextStyle(color: Colors.black),
-                          unselectedLabelStyle: TextStyle(
-                            color: Colors.grey,
+                        controller: _tabController,
+                        labelStyle: TextStyle(color: Colors.black),
+                        unselectedLabelStyle: TextStyle(
+                          color: Colors.grey,
+                        ),
+                        labelColor: Colors.black,
+                        unselectedLabelColor: Colors.grey,
+                        tabs: [
+                          Tab(
+                            child: Column(
+                              children: [
+                                Text(
+                                  "${DateTime.now().subtract(Duration(days: 4)).day}",
+                                  style: _tabDayTextStyle,
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}",
+                                  style: _tabWeekdayTextStyle,
+                                ),
+                              ],
+                            ),
                           ),
-                          labelColor: Colors.black,
-                          unselectedLabelColor: Colors.grey,
-                          tabs: [
-                            Tab(
-                              child: Column(
-                                children: [
-                                  Text(
-                                    "${DateTime.now().subtract(Duration(days: 4)).day}",
-                                    style: _tabDayTextStyle,
-                                  ),
-                                  Text(
-                                    "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}",
-                                    style: _tabWeekdayTextStyle,
-                                  ),
-                                ],
-                              ),
+                          Tab(
+                            child: Column(
+                              children: [
+                                Text(
+                                  "${DateTime.now().subtract(Duration(days: 3)).day}",
+                                  style: _tabDayTextStyle,
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "${dayConverter(DateTime.now().subtract(Duration(days: 3)).weekday)}",
+                                  style: _tabWeekdayTextStyle,
+                                ),
+                              ],
                             ),
-                            Tab(
-                              child: Column(
-                                children: [
-                                  Text(
-                                    "${DateTime.now().subtract(Duration(days: 3)).day}",
-                                    style: _tabDayTextStyle,
-                                  ),
-                                  Text(
-                                    "${dayConverter(DateTime.now().subtract(Duration(days: 3)).weekday)}",
-                                    style: _tabWeekdayTextStyle,
-                                  ),
-                                ],
-                              ),
+                          ),
+                          Tab(
+                            child: Column(
+                              children: [
+                                Text(
+                                  "${DateTime.now().subtract(Duration(days: 2)).day}",
+                                  style: _tabDayTextStyle,
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "${dayConverter(DateTime.now().subtract(Duration(days: 2)).weekday)}",
+                                  style: _tabWeekdayTextStyle,
+                                ),
+                              ],
                             ),
-                            Tab(
-                              child: Column(
-                                children: [
-                                  Text(
-                                    "${DateTime.now().subtract(Duration(days: 2)).day}",
-                                    style: _tabDayTextStyle,
-                                  ),
-                                  Text(
-                                    "${dayConverter(DateTime.now().subtract(Duration(days: 2)).weekday)}",
-                                    style: _tabWeekdayTextStyle,
-                                  ),
-                                ],
-                              ),
+                          ),
+                          Tab(
+                            child: Column(
+                              children: [
+                                Text(
+                                  "${DateTime.now().subtract(Duration(days: 1)).day}",
+                                  style: _tabDayTextStyle,
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "${dayConverter(DateTime.now().subtract(Duration(days: 1)).weekday)}",
+                                  style: _tabWeekdayTextStyle,
+                                ),
+                              ],
                             ),
-                            Tab(
-                              child: Column(
-                                children: [
-                                  Text(
-                                    "${DateTime.now().subtract(Duration(days: 1)).day}",
-                                    style: _tabDayTextStyle,
-                                  ),
-                                  Text(
-                                    "${dayConverter(DateTime.now().subtract(Duration(days: 1)).weekday)}",
-                                    style: _tabWeekdayTextStyle,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                      indicator: MD2Indicator(
-                        indicatorHeight: 5,
-                        indicatorColor: Colors.blueGrey,
-                        indicatorSize: MD2IndicatorSize.normal
-                      ),
+                          ),
+                        ],
+                        indicator: MD2Indicator(
+                            indicatorHeight: 4,
+                            indicatorColor: Colors.blueGrey[400]!,
+                            indicatorSize: MD2IndicatorSize.normal),
                       ),
                     ],
                   ),
