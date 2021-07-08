@@ -23,6 +23,26 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
     _tabController = TabController(length: 4, vsync: this);
   }
 
+  String dayConverter(int weekday){
+      switch(weekday){
+        case 1:
+          return "MON";
+        case 2:
+          return "TUE";
+        case 2:
+          return "WED";
+        case 2:
+          return "THU";
+        case 2:
+          return "FRI";
+        case 2:
+          return "SAT";
+        case 2:
+          return "SUN";
+
+
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,6 +80,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                           unselectedLabelStyle: TextStyle(
                             color: Colors.grey,
                           ),
+                          labelColor: Colors.black,
+                          unselectedLabelColor: Colors.grey,
                           tabs: [
                         Tab(
                           child: Column(
