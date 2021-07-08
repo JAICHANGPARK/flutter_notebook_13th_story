@@ -12,9 +12,10 @@ class MeditationClassHomePage extends StatefulWidget {
 }
 
 class _MeditationClassHomePageState extends State<MeditationClassHomePage>
-with SingleTickerProviderStateMixin{
+    with SingleTickerProviderStateMixin {
   ValueNotifier<int> _pageIndex = ValueNotifier<int>(0);
   late TabController _tabController;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -43,17 +44,36 @@ with SingleTickerProviderStateMixin{
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            IconButton(onPressed: (){}, icon: Icon(CupertinoIcons.search), iconSize: 32,),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(CupertinoIcons.search),
+                              iconSize: 32,
+                            ),
                             CircleAvatar(),
                           ],
                         ),
                       ),
-                      TabBar(tabs: [
-                        Tab(child: Column(
-                          children: [
-
-                          ],
-                        ),),
+                      TabBar(controller: _tabController, tabs: [
+                        Tab(
+                          child: Column(
+                            children: [],
+                          ),
+                        ),
+                        Tab(
+                          child: Column(
+                            children: [],
+                          ),
+                        ),
+                        Tab(
+                          child: Column(
+                            children: [],
+                          ),
+                        ),
+                        Tab(
+                          child: Column(
+                            children: [],
+                          ),
+                        ),
                       ]),
                     ],
                   ),
