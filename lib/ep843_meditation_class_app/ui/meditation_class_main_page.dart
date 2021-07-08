@@ -53,10 +53,21 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                           ],
                         ),
                       ),
-                      TabBar(controller: _tabController, tabs: [
+                      TabBar(controller: _tabController,
+                          labelStyle: TextStyle(
+                            color: Colors.black
+                          ),
+                          unselectedLabelStyle: TextStyle(
+                            color: Colors.grey,
+                          ),
+                          tabs: [
                         Tab(
                           child: Column(
-                            children: [],
+                            children: [
+                              Text("${DateTime.now().subtract(Duration(days: 4)).day}", ),
+                              Text("${DateTime.now().subtract(Duration(days: 4)).weekday}"),
+
+                            ],
                           ),
                         ),
                         Tab(
