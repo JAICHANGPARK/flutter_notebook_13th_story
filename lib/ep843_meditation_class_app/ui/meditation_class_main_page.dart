@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:md2_tab_indicator/md2_tab_indicator.dart';
 
 class MeditationClassHomePage extends StatefulWidget {
   const MeditationClassHomePage({Key? key}) : super(key: key);
@@ -45,6 +46,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
   }
 
   final TextStyle _tabDayTextStyle = TextStyle(fontSize: 18);
+  final TextStyle _tabWeekdayTextStyle = TextStyle(fontSize: 12);
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +98,9 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                     style: _tabDayTextStyle,
                                   ),
                                   Text(
-                                      "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}"),
+                                    "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}",
+                                    style: _tabWeekdayTextStyle,
+                                  ),
                                 ],
                               ),
                             ),
@@ -108,7 +112,9 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                     style: _tabDayTextStyle,
                                   ),
                                   Text(
-                                      "${dayConverter(DateTime.now().subtract(Duration(days: 3)).weekday)}"),
+                                    "${dayConverter(DateTime.now().subtract(Duration(days: 3)).weekday)}",
+                                    style: _tabWeekdayTextStyle,
+                                  ),
                                 ],
                               ),
                             ),
@@ -120,7 +126,9 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                     style: _tabDayTextStyle,
                                   ),
                                   Text(
-                                      "${dayConverter(DateTime.now().subtract(Duration(days: 2)).weekday)}"),
+                                    "${dayConverter(DateTime.now().subtract(Duration(days: 2)).weekday)}",
+                                    style: _tabWeekdayTextStyle,
+                                  ),
                                 ],
                               ),
                             ),
@@ -132,11 +140,19 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                     style: _tabDayTextStyle,
                                   ),
                                   Text(
-                                      "${dayConverter(DateTime.now().subtract(Duration(days: 1)).weekday)}"),
+                                    "${dayConverter(DateTime.now().subtract(Duration(days: 1)).weekday)}",
+                                    style: _tabWeekdayTextStyle,
+                                  ),
                                 ],
                               ),
                             ),
-                          ]),
+                          ],
+                      indicator: MD2Indicator(
+                        indicatorHeight: 5,
+                        indicatorColor: Colors.blueGrey,
+                        indicatorSize: MD2IndicatorSize.normal
+                      ),
+                      ),
                     ],
                   ),
                 )),
