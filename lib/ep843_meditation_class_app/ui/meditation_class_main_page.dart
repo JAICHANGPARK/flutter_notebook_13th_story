@@ -361,6 +361,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
     );
   }
 }
+
 class BuildSecondPage extends StatelessWidget {
   const BuildSecondPage({Key? key}) : super(key: key);
 
@@ -369,6 +370,7 @@ class BuildSecondPage extends StatelessWidget {
     return Container();
   }
 }
+
 class BuildSearchPage extends StatelessWidget {
   const BuildSearchPage({Key? key}) : super(key: key);
 
