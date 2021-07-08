@@ -74,6 +74,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                           ],
                         ),
                       ),
+                      SizedBox(height: 16,),
                       TabBar(
                           controller: _tabController,
                           labelStyle: TextStyle(color: Colors.black),
@@ -98,10 +99,10 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                               child: Column(
                                 children: [
                                   Text(
-                                    "${DateTime.now().subtract(Duration(days: 4)).day}",
+                                    "${DateTime.now().subtract(Duration(days: 3)).day}",
                                   ),
                                   Text(
-                                      "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}"),
+                                      "${dayConverter(DateTime.now().subtract(Duration(days: 3)).weekday)}"),
                                 ],
                               ),
                             ),
@@ -109,10 +110,10 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                               child: Column(
                                 children: [
                                   Text(
-                                    "${DateTime.now().subtract(Duration(days: 4)).day}",
+                                    "${DateTime.now().subtract(Duration(days: 2)).day}",
                                   ),
                                   Text(
-                                      "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}"),
+                                      "${dayConverter(DateTime.now().subtract(Duration(days: 2)).weekday)}"),
                                 ],
                               ),
                             ),
@@ -120,10 +121,10 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                               child: Column(
                                 children: [
                                   Text(
-                                    "${DateTime.now().subtract(Duration(days: 4)).day}",
+                                    "${DateTime.now().subtract(Duration(days: 1)).day}",
                                   ),
                                   Text(
-                                      "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}"),
+                                      "${dayConverter(DateTime.now().subtract(Duration(days: 1)).weekday)}"),
                                 ],
                               ),
                             ),
