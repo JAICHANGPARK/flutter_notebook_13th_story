@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
@@ -27,7 +28,14 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> {
                 child: Container(
                   decoration: BoxDecoration(),
                   child: Column(
-                    children: [],
+                    children: [
+                      Row(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(CupertinoIcons.search), iconSize: 32,),
+                          CircleAvatar(),
+                        ],
+                      )
+                    ],
                   ),
                 )),
             Positioned(
