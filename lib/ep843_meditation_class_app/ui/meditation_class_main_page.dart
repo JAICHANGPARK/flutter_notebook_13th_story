@@ -65,6 +65,10 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                   switch (value) {
                     case 0:
                       return buildFirstPage();
+                    case 1:
+                      return BuildSecondPage();
+                    case 2:
+                      return BuildSearchPage();
                     default:
                       return buildFirstPage();
                   }
@@ -355,5 +359,21 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
         ],
       ),
     );
+  }
+}
+class BuildSecondPage extends StatelessWidget {
+  const BuildSecondPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+class BuildSearchPage extends StatelessWidget {
+  const BuildSearchPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
