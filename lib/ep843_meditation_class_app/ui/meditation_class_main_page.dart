@@ -97,7 +97,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                   style: _tabDayTextStyle,
                                 ),
                                 SizedBox(
-                                  height: 8,
+                                  height: 4,
                                 ),
                                 Text(
                                   "${dayConverter(DateTime.now().subtract(Duration(days: 4)).weekday)}",
@@ -114,7 +114,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                   style: _tabDayTextStyle,
                                 ),
                                 SizedBox(
-                                  height: 8,
+                                  height: 4,
                                 ),
                                 Text(
                                   "${dayConverter(DateTime.now().subtract(Duration(days: 3)).weekday)}",
