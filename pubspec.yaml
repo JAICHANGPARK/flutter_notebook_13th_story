@@ -26,7 +26,10 @@ dependencies:
 
   page_transition: ^2.0.2
   google_fonts: any
-  md2_tab_indicator: ^1.0.2
+  md2_tab_indicator:
+    git:
+      url: git://github.com/westdabestdb/md2_tab_indicator.git
+      ref: master
   ionicons: ^0.1.2
 
 dev_dependencies:
