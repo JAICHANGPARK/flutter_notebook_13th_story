@@ -379,7 +379,14 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                           child: Stack(
                             children: [
                               Positioned(child: Placeholder()),
-                              Positioned(child: Placeholder()),
+                              Positioned(child: Container(
+                                height: 160,
+                              child: Card(
+
+                              ),
+                              ), left: 24, right: 24,
+                              bottom: 0,
+                              ),
                             ],
                           ),
                         ),
