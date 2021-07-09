@@ -369,7 +369,6 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                     child:
                     Stack(
                       children: [
-
                         Container(
                           child: ListView(
                             scrollDirection: Axis.horizontal,
