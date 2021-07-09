@@ -375,8 +375,21 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
               ],
             ),
           ),
-          Text("Featured",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          SizedBox(height: 16),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Featured",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              SizedBox(
+                height: MediaQuery.of(context).size.height / 4,
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.grey),
+                ),
+              ),
+
+            ],
+          ),
         ],
       ),
     );
