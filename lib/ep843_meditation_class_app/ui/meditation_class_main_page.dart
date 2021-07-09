@@ -454,12 +454,13 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                           decoration: BoxDecoration(
                               color: Colors.white,
                               gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  stops: [0.3, 1],
+                                  begin: Alignment.bottomCenter,
+                                  end: Alignment.topCenter,
+                                  stops: [0.2, 0.5, 1],
                                   colors: [
-                                    Colors.blue,
-                                    Colors.white.withOpacity(0.2)
+                                    Colors.white.withOpacity(0.4),
+                                    Colors.white.withOpacity(0.2),
+                                    Colors.white.withOpacity(0.1)
                                   ])),
                         ),
                       ],
