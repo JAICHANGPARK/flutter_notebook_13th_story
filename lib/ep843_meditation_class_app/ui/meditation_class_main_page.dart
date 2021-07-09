@@ -359,9 +359,11 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height / 2,
+            height: MediaQuery.of(context).size.height / 3,
             child: Container(
-
+              decoration: BoxDecoration(
+                color: Colors.grey
+              ),
             ),
           ),
         ],
