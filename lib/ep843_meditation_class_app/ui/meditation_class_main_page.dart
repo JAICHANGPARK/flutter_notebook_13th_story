@@ -427,7 +427,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                                             "Yoga for Beginners"),
                                                       ),
                                                       Text("with Emily Cassel"),
-                                                      SizedBox(height: 4,),
+                                                      SizedBox(height: 8,),
                                                       Row(
                                                         children: [
                                                           Container(
@@ -437,15 +437,32 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                                               borderRadius: BorderRadius.circular(16)
                                                             ),
                                                             child: Text("Begginer",style: TextStyle(
-                                                              fontSize: 8
+                                                              fontSize: 10
                                                             ),),
                                                           ),
-                                                          Container(
-                                                            child: Text("Outdoor"),
+                                                          Padding(
+                                                            padding: const EdgeInsets.symmetric(horizontal: 4),
+                                                            child: Container(
+                                                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                              decoration: BoxDecoration(
+                                                                  color: Colors.blue[200]!,
+                                                                  borderRadius: BorderRadius.circular(16)
+                                                              ),
+                                                              child: Text("Outdoor",style: TextStyle(
+                                                                  fontSize: 10
+                                                              ),),
+                                                            ),
                                                           ),
                                                           Container(
-                                                            child: Text("Rest"),
-                                                          )
+                                                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                            decoration: BoxDecoration(
+                                                                color: Colors.indigo[200],
+                                                                borderRadius: BorderRadius.circular(16)
+                                                            ),
+                                                            child: Text("Rest",style: TextStyle(
+                                                                fontSize: 10
+                                                            ),),
+                                                          ),
                                                         ],
                                                       )
                                                     ],
