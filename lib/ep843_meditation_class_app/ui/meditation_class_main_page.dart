@@ -427,14 +427,18 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                                             "Yoga for Beginners"),
                                                       ),
                                                       Text("with Emily Cassel"),
+                                                      SizedBox(height: 4,),
                                                       Row(
                                                         children: [
                                                           Container(
+                                                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                                             decoration: BoxDecoration(
                                                               color: Colors.green,
                                                               borderRadius: BorderRadius.circular(16)
                                                             ),
-                                                            child: Text("Begginer"),
+                                                            child: Text("Begginer",style: TextStyle(
+                                                              fontSize: 8
+                                                            ),),
                                                           ),
                                                           Container(
                                                             child: Text("Outdoor"),
