@@ -354,18 +354,26 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                 indicatorColor: Colors.blueGrey[400]!,
                 indicatorSize: MD2IndicatorSize.normal),
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text("Upcoming sessions",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-              SizedBox(
-                height: MediaQuery.of(context).size.height / 3,
-                child: Container(
-                  decoration: BoxDecoration(color: Colors.grey),
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 16,
+              left: 16,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Upcoming sessions",
+                    style:
+                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                SizedBox(height: 16),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height / 3,
+                  child: Container(
+                    decoration: BoxDecoration(color: Colors.grey),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
