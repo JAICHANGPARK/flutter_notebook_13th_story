@@ -270,9 +270,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
               ],
             ),
           ),
-          SizedBox(
-            height: 16,
-          ),
+          SizedBox(height: 16),
           TabBar(
             controller: _tabController,
             labelStyle: TextStyle(color: Colors.black),
@@ -355,6 +353,10 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                 indicatorHeight: 4,
                 indicatorColor: Colors.blueGrey[400]!,
                 indicatorSize: MD2IndicatorSize.normal),
+          ),
+          Text(
+            "Upcoming sessions",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
         ],
       ),
