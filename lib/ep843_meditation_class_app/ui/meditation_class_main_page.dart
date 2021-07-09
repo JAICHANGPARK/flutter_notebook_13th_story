@@ -442,7 +442,118 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                 SizedBox(width: 16),
                                 Container(
                                   width: MediaQuery.of(context).size.width / 1.3,
-                                  decoration: BoxDecoration(color: Colors.blue),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              color: Colors.red,
+                                              borderRadius: BorderRadius.circular(16),
+                                              image: DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2018/02/06/14/07/dance-3134828__340.jpg"),
+                                                fit: BoxFit.cover,
+                                              )),
+                                        ),
+                                        left: 0,
+                                        right: 0,
+                                        bottom: 70,
+                                        top: 0,
+                                      ),
+                                      Positioned(
+                                        child: Container(
+                                          height: 140,
+                                          child: Card(
+                                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                                            child: Stack(
+                                              children: [
+                                                Positioned(
+                                                  child: CircleAvatar(),
+                                                  right: 8,
+                                                  top: 8,
+                                                ),
+                                                Positioned(
+                                                    left: 16,
+                                                    top: 16,
+                                                    child: Column(
+                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                      children: [
+                                                        Text(
+                                                          "9 am - 10:30 am",
+                                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                                        ),
+                                                        Padding(
+                                                          padding: const EdgeInsets.symmetric(vertical: 4),
+                                                          child: Text("Yoga for Beginners"),
+                                                        ),
+                                                        Text("with Emily Cassel"),
+
+                                                        Padding(
+                                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                                          child: Row(
+                                                            children: [
+                                                              Container(
+                                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                decoration: BoxDecoration(
+                                                                    color: Colors.green,
+                                                                    borderRadius: BorderRadius.circular(16)),
+                                                                child: Text(
+                                                                  "Begginer",
+                                                                  style: TextStyle(fontSize: 10),
+                                                                ),
+                                                              ),
+                                                              Padding(
+                                                                padding: const EdgeInsets.symmetric(horizontal: 4),
+                                                                child: Container(
+                                                                  padding:
+                                                                  EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                  decoration: BoxDecoration(
+                                                                      color: Colors.blue[200]!,
+                                                                      borderRadius: BorderRadius.circular(16)),
+                                                                  child: Text(
+                                                                    "Outdoor",
+                                                                    style: TextStyle(fontSize: 10),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              Container(
+                                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                decoration: BoxDecoration(
+                                                                    color: Colors.indigo[200],
+                                                                    borderRadius: BorderRadius.circular(16)),
+                                                                child: Text(
+                                                                  "Rest",
+                                                                  style: TextStyle(fontSize: 10),
+                                                                ),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ),
+                                                        Row(
+                                                          children: [
+                                                            Icon(Icons.location_on_outlined, size: 12,
+                                                              color: Colors.grey,),
+                                                            Text("Manhanttan", style: TextStyle(fontSize: 10,
+                                                              color: Colors.grey,),),
+                                                            SizedBox(width: 16),
+                                                            Icon(Icons.airplane_ticket,size: 12,
+                                                              color: Colors.grey,),
+                                                            Text("\$15.00", style: TextStyle(fontSize: 10,
+                                                              color: Colors.grey,),),
+                                                          ],
+                                                        )
+                                                      ],
+                                                    ))
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                        left: 24,
+                                        right: 24,
+                                        bottom: 0,
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
