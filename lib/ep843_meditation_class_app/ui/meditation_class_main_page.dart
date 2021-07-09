@@ -448,18 +448,25 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                             ],
                           ),
                         ),
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              gradient: LinearGradient(
-                                  begin: Alignment.bottomCenter,
-                                  end: Alignment.topCenter,
-                                  stops: [0.2, 0.5, 1],
-                                  colors: [
-                                    Colors.white.withOpacity(0.4),
-                                    Colors.white.withOpacity(0.2),
-                                    Colors.white.withOpacity(0.1)
-                                  ])),
+                        Positioned(
+                          bottom: 0,
+                          left: 0,
+                          right: 0,
+
+                          child: Container(
+                            height: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                gradient: LinearGradient(
+                                    begin: Alignment.bottomCenter,
+                                    end: Alignment.topCenter,
+                                    stops: [0.2, 0.5, 1],
+                                    colors: [
+                                      Colors.white.withOpacity(0.4),
+                                      Colors.white.withOpacity(0.2),
+                                      Colors.white.withOpacity(0.1)
+                                    ])),
+                          ),
                         ),
                       ],
                     )
