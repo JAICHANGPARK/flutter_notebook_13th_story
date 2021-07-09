@@ -379,7 +379,16 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                           child: Stack(
                             children: [
                               Positioned(
-                                child: Placeholder(),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2018/02/06/14/07/dance-3134828__340.jpg"),
+                                        fit: BoxFit.cover,
+                                      )),
+                                ),
                                 left: 0,
                                 right: 0,
                                 bottom: 70,
