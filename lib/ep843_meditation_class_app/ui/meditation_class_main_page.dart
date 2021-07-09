@@ -464,8 +464,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                         1
                                       ],
                                       colors: [
+                                        Colors.white.withOpacity(0.6),
                                         Colors.white.withOpacity(0.4),
-                                        Colors.white.withOpacity(0.2),
                                         Colors.white.withOpacity(0.1)
                                       ])),
                             ),
