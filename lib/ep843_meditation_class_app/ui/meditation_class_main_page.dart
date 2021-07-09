@@ -403,7 +403,15 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                     ),
                                     child: Stack(
                                       children: [
-                                        
+                                        Positioned(child: CircleAvatar(), right: 8, top: 8,),
+                                        Positioned(child: Column(
+                                          children: [
+                                            Text("9 am - 10:30 am"),
+                                            Text("Yoga for Beginners"),
+                                            Text("with Emily Cassel"),
+                                            
+                                          ],
+                                        ))
                                       ],
                                     ),
                                   ),
