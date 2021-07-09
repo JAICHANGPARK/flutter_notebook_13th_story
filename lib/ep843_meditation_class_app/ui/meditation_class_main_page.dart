@@ -375,16 +375,17 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                       children: [
                         Container(
                           width: MediaQuery.of(context).size.width / 1.3,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
+                          decoration: BoxDecoration(color: Colors.blue),
+                          child: Stack(
+                            children: [
+                              
+                            ],
                           ),
                         ),
                         SizedBox(width: 16),
                         Container(
                           width: MediaQuery.of(context).size.width / 1.3,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                          ),
+                          decoration: BoxDecoration(color: Colors.blue),
                         ),
                       ],
                     ),
