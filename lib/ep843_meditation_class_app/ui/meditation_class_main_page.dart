@@ -380,7 +380,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                             children: [
                               Positioned(child: Placeholder()),
                               Positioned(child: Container(
-                                height: 160,
+                                height: 140,
                               child: Card(
 
                               ),
