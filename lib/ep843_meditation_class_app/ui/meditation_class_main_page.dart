@@ -371,59 +371,55 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                                           child: Text("Yoga for Beginners"),
                                                         ),
                                                         Text("with Emily Cassel"),
-                                                        SizedBox(
-                                                          height: 8,
-                                                        ),
-                                                        Row(
-                                                          children: [
-                                                            Container(
-                                                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                              decoration: BoxDecoration(
-                                                                  color: Colors.green,
-                                                                  borderRadius: BorderRadius.circular(16)),
-                                                              child: Text(
-                                                                "Begginer",
-                                                                style: TextStyle(fontSize: 10),
-                                                              ),
-                                                            ),
-                                                            Padding(
-                                                              padding: const EdgeInsets.symmetric(horizontal: 4),
-                                                              child: Container(
-                                                                padding:
-                                                                    EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+
+                                                        Padding(
+                                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                                          child: Row(
+                                                            children: [
+                                                              Container(
+                                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                                                 decoration: BoxDecoration(
-                                                                    color: Colors.blue[200]!,
+                                                                    color: Colors.green,
                                                                     borderRadius: BorderRadius.circular(16)),
                                                                 child: Text(
-                                                                  "Outdoor",
+                                                                  "Begginer",
                                                                   style: TextStyle(fontSize: 10),
                                                                 ),
                                                               ),
-                                                            ),
-                                                            Container(
-                                                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                              decoration: BoxDecoration(
-                                                                  color: Colors.indigo[200],
-                                                                  borderRadius: BorderRadius.circular(16)),
-                                                              child: Text(
-                                                                "Rest",
-                                                                style: TextStyle(fontSize: 10),
+                                                              Padding(
+                                                                padding: const EdgeInsets.symmetric(horizontal: 4),
+                                                                child: Container(
+                                                                  padding:
+                                                                      EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                  decoration: BoxDecoration(
+                                                                      color: Colors.blue[200]!,
+                                                                      borderRadius: BorderRadius.circular(16)),
+                                                                  child: Text(
+                                                                    "Outdoor",
+                                                                    style: TextStyle(fontSize: 10),
+                                                                  ),
+                                                                ),
                                                               ),
-                                                            ),
-                                                          ],
+                                                              Container(
+                                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                decoration: BoxDecoration(
+                                                                    color: Colors.indigo[200],
+                                                                    borderRadius: BorderRadius.circular(16)),
+                                                                child: Text(
+                                                                  "Rest",
+                                                                  style: TextStyle(fontSize: 10),
+                                                                ),
+                                                              ),
+                                                            ],
+                                                          ),
                                                         ),
                                                         Row(
                                                           children: [
-                                                            Icon(
-                                                              Icons.location_on_outlined,
-                                                              size: 12,
-                                                            ),
-                                                            Text("Manhanttan"),
-                                                            SizedBox(
-                                                              width: 16,
-                                                            ),
-                                                            Icon(Icons.airplane_ticket),
-                                                            Text("\$15.00"),
+                                                            Icon(Icons.location_on_outlined, size: 12),
+                                                            Text("Manhanttan", style: TextStyle(fontSize: 10),),
+                                                            SizedBox(width: 16),
+                                                            Icon(Icons.airplane_ticket,size: 12),
+                                                            Text("\$15.00", style: TextStyle(fontSize: 10),),
                                                           ],
                                                         )
                                                       ],
