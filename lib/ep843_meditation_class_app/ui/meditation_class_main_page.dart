@@ -250,7 +250,9 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
 
   Widget buildFirstPage() {
     return Container(
-      decoration: BoxDecoration(),
+      decoration: BoxDecoration(
+
+      ),
       child: Column(
         children: [
           Padding(
@@ -359,97 +361,109 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
               top: 16,
               left: 16,
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("Upcoming sessions",
-                    style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                SizedBox(height: 16),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height / 2.8,
-                  child: Container(
-                    decoration: BoxDecoration(color: Colors.grey),
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        Container(
-                          width: MediaQuery.of(context).size.width / 1.3,
-                          decoration: BoxDecoration(color: Colors.blue),
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      color: Colors.red,
-                                      borderRadius: BorderRadius.circular(16),
-                                      image: DecorationImage(
-                                        image: NetworkImage(
-                                            "https://cdn.pixabay.com/photo/2018/02/06/14/07/dance-3134828__340.jpg"),
-                                        fit: BoxFit.cover,
-                                      )),
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                  colors: [
+                    Colors.white,
+                    Colors.white.withOpacity(0.2)
+                  ]
+                )
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Upcoming sessions",
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                  SizedBox(height: 16),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height / 2.8,
+                    child: Container(
+                      decoration: BoxDecoration(color: Colors.grey),
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width / 1.3,
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.circular(16),
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2018/02/06/14/07/dance-3134828__340.jpg"),
+                                          fit: BoxFit.cover,
+                                        )),
+                                  ),
+                                  left: 0,
+                                  right: 0,
+                                  bottom: 70,
+                                  top: 0,
                                 ),
-                                left: 0,
-                                right: 0,
-                                bottom: 70,
-                                top: 0,
-                              ),
-                              Positioned(
-                                child: Container(
-                                  height: 140,
-                                  child: Card(
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(12)),
-                                    child: Stack(
-                                      children: [
-                                        Positioned(
-                                          child: CircleAvatar(),
-                                          right: 8,
-                                          top: 8,
-                                        ),
-                                        Positioned(
-                                            left: 8,
+                                Positioned(
+                                  child: Container(
+                                    height: 140,
+                                    child: Card(
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(12)),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            child: CircleAvatar(),
+                                            right: 8,
                                             top: 8,
-                                            child: Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Text(
-                                                  "9 am - 10:30 am",
-                                                  style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold),
-                                                ),
-
-                                                Padding(
-                                                  padding: const EdgeInsets.symmetric(vertical: 8),
-                                                  child: Text("Yoga for Beginners"),
-                                                ),
-                                                Text("with Emily Cassel"),
-                                              ],
-                                            ))
-                                      ],
+                                          ),
+                                          Positioned(
+                                              left: 8,
+                                              top: 8,
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    "9 am - 10:30 am",
+                                                    style: TextStyle(
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                                  ),
+                                                  Padding(
+                                                    padding: const EdgeInsets
+                                                        .symmetric(vertical: 4),
+                                                    child: Text(
+                                                        "Yoga for Beginners"),
+                                                  ),
+                                                  Text("with Emily Cassel"),
+                                                ],
+                                              ))
+                                        ],
+                                      ),
                                     ),
                                   ),
+                                  left: 24,
+                                  right: 24,
+                                  bottom: 0,
                                 ),
-                                left: 24,
-                                right: 24,
-                                bottom: 0,
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
-                        ),
-                        SizedBox(width: 16),
-                        Container(
-                          width: MediaQuery.of(context).size.width / 1.3,
-                          decoration: BoxDecoration(color: Colors.blue),
-                        ),
-                      ],
+                          SizedBox(width: 16),
+                          Container(
+                            width: MediaQuery.of(context).size.width / 1.3,
+                            decoration: BoxDecoration(color: Colors.blue),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           SizedBox(height: 16),
