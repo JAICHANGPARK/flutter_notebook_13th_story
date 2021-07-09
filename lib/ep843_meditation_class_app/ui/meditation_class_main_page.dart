@@ -427,6 +427,23 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                                             "Yoga for Beginners"),
                                                       ),
                                                       Text("with Emily Cassel"),
+                                                      Row(
+                                                        children: [
+                                                          Container(
+                                                            decoration: BoxDecoration(
+                                                              color: Colors.green,
+                                                              borderRadius: BorderRadius.circular(16)
+                                                            ),
+                                                            child: Text("Begginer"),
+                                                          ),
+                                                          Container(
+                                                            child: Text("Outdoor"),
+                                                          ),
+                                                          Container(
+                                                            child: Text("Rest"),
+                                                          )
+                                                        ],
+                                                      )
                                                     ],
                                                   ))
                                             ],
