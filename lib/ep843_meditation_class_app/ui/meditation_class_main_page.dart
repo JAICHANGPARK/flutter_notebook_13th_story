@@ -418,10 +418,14 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                                 Text(
                                                   "9 am - 10:30 am",
                                                   style: TextStyle(
-                                                    
-                                                  ),
+                                                      fontWeight:
+                                                          FontWeight.bold),
                                                 ),
-                                                Text("Yoga for Beginners"),
+
+                                                Padding(
+                                                  padding: const EdgeInsets.symmetric(vertical: 8),
+                                                  child: Text("Yoga for Beginners"),
+                                                ),
                                                 Text("with Emily Cassel"),
                                               ],
                                             ))
