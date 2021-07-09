@@ -399,23 +399,32 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                   height: 140,
                                   child: Card(
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12)
-                                    ),
+                                        borderRadius:
+                                            BorderRadius.circular(12)),
                                     child: Stack(
                                       children: [
-                                        Positioned(child: CircleAvatar(), right: 8, top: 8,),
+                                        Positioned(
+                                          child: CircleAvatar(),
+                                          right: 8,
+                                          top: 8,
+                                        ),
                                         Positioned(
                                             left: 8,
                                             top: 8,
                                             child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text("9 am - 10:30 am"),
-                                            Text("Yoga for Beginners"),
-                                            Text("with Emily Cassel"),
-
-                                          ],
-                                        ))
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  "9 am - 10:30 am",
+                                                  style: TextStyle(
+                                                    
+                                                  ),
+                                                ),
+                                                Text("Yoga for Beginners"),
+                                                Text("with Emily Cassel"),
+                                              ],
+                                            ))
                                       ],
                                     ),
                                   ),
