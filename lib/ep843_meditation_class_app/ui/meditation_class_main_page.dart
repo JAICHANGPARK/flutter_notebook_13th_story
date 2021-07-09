@@ -367,7 +367,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                         TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                 SizedBox(height: 16),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height / 3,
+                  height: MediaQuery.of(context).size.height / 2.8,
                   child: Container(
                     decoration: BoxDecoration(color: Colors.grey),
                     child: ListView(
@@ -397,7 +397,16 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                               Positioned(
                                 child: Container(
                                   height: 140,
-                                  child: Card(),
+                                  child: Card(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(12)
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        
+                                      ],
+                                    ),
+                                  ),
                                 ),
                                 left: 24,
                                 right: 24,
