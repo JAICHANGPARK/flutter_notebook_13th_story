@@ -378,14 +378,21 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                           decoration: BoxDecoration(color: Colors.blue),
                           child: Stack(
                             children: [
-                              Positioned(child: Placeholder()),
-                              Positioned(child: Container(
-                                height: 140,
-                              child: Card(
-
+                              Positioned(
+                                child: Placeholder(),
+                                left: 0,
+                                right: 0,
+                                bottom: 70,
+                                top: 0,
                               ),
-                              ), left: 24, right: 24,
-                              bottom: 0,
+                              Positioned(
+                                child: Container(
+                                  height: 140,
+                                  child: Card(),
+                                ),
+                                left: 24,
+                                right: 24,
+                                bottom: 0,
                               ),
                             ],
                           ),
