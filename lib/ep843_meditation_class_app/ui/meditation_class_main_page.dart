@@ -367,7 +367,6 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
               ),
             ],
           ),
-
         ],
       ),
     );
