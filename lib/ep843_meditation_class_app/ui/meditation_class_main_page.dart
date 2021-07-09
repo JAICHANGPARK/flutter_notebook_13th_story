@@ -415,11 +415,15 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                                         ),
                                                         Row(
                                                           children: [
-                                                            Icon(Icons.location_on_outlined, size: 12),
-                                                            Text("Manhanttan", style: TextStyle(fontSize: 10),),
+                                                            Icon(Icons.location_on_outlined, size: 12,
+                                                            color: Colors.grey,),
+                                                            Text("Manhanttan", style: TextStyle(fontSize: 10,
+                                                              color: Colors.grey,),),
                                                             SizedBox(width: 16),
-                                                            Icon(Icons.airplane_ticket,size: 12),
-                                                            Text("\$15.00", style: TextStyle(fontSize: 10),),
+                                                            Icon(Icons.airplane_ticket,size: 12,
+                                                              color: Colors.grey,),
+                                                            Text("\$15.00", style: TextStyle(fontSize: 10,
+                                                              color: Colors.grey,),),
                                                           ],
                                                         )
                                                       ],
