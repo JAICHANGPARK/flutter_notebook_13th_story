@@ -408,8 +408,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                                                 top: 8,
                                               ),
                                               Positioned(
-                                                  left: 8,
-                                                  top: 8,
+                                                  left: 16,
+                                                  top: 16,
                                                   child: Column(
                                                     crossAxisAlignment:
                                                     CrossAxisAlignment.start,
