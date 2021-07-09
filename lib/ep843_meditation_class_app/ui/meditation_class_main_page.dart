@@ -357,7 +357,6 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
           Padding(
             padding: const EdgeInsets.only(top: 16, left: 16),
             child: Container(
-              height: MediaQuery.of(context).size.height / 2.3,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
