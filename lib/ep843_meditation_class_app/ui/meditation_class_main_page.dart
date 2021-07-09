@@ -370,6 +370,24 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                   height: MediaQuery.of(context).size.height / 3,
                   child: Container(
                     decoration: BoxDecoration(color: Colors.grey),
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 1.3,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        ),
+                        SizedBox(width: 16),
+                        Container(
+                          width: MediaQuery.of(context).size.width / 1.3,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
