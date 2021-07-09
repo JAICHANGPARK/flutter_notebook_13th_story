@@ -50,7 +50,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Stack(
           children: [
