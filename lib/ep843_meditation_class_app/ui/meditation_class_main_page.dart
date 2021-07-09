@@ -358,6 +358,12 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
             "Upcoming sessions",
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 2,
+            child: Container(
+
+            ),
+          ),
         ],
       ),
     );
