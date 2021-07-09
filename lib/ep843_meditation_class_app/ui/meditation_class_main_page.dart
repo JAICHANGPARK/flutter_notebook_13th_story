@@ -375,6 +375,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
               ],
             ),
           ),
+          Text("Featured",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         ],
       ),
     );
