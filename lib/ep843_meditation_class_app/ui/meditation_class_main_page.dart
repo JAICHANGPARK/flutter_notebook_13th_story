@@ -50,7 +50,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.red,
       body: SafeArea(
         child: Stack(
           children: [
@@ -250,9 +250,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
 
   Widget buildFirstPage() {
     return Container(
-      decoration: BoxDecoration(
-
-      ),
+      decoration: BoxDecoration(),
       child: Column(
         children: [
           Padding(
@@ -357,21 +355,20 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                 indicatorSize: MD2IndicatorSize.normal),
           ),
           Padding(
-            padding: const EdgeInsets.only(
-              top: 16,
-              left: 16,
-            ),
+            padding: const EdgeInsets.only(top: 16, left: 16),
             child: Container(
+              height: MediaQuery.of(context).size.height / 3,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.bottomCenter,
-                  end: Alignment.topCenter,
-                  colors: [
-                    Colors.white,
+                color: Colors.white,
+                  gradient: LinearGradient(
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      stops: [0.3, 1],
+                      colors: [
+                    Colors.blue,
+                    Colors.white.withOpacity(0.5),
                     Colors.white.withOpacity(0.2)
-                  ]
-                )
-              ),
+                  ])),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -382,7 +379,6 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage>
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 2.8,
                     child: Container(
-                      decoration: BoxDecoration(color: Colors.grey),
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
