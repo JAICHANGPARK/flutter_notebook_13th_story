@@ -308,6 +308,9 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
             indicator: MD2Indicator(
                 indicatorHeight: 4, indicatorColor: Colors.blueGrey[400]!, indicatorSize: MD2IndicatorSize.normal),
           ),
+          Expanded(child: TabBarView(
+            
+          )),
           Padding(
             padding: const EdgeInsets.only(top: 16, left: 16),
             child: Container(
@@ -653,10 +656,20 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                     ),
                                     borderRadius: BorderRadius.circular(12)
                                   ),
+                                  child: Stack(
+                                    children: [
+
+                                    ],
+                                  ),
                                 ),
                                 Container(
                                   decoration: BoxDecoration(
-                                      color: Colors.grey
+                                      color: Colors.grey,
+                                      image: DecorationImage(
+                                          image: NetworkImage("https://cdn.pixabay.com/photo/2017/07/31/11/40/people-2557536__340.jpg"),
+                                          fit: BoxFit.cover
+                                      ),
+                                      borderRadius: BorderRadius.circular(12)
                                   ),
                                 ),
 
