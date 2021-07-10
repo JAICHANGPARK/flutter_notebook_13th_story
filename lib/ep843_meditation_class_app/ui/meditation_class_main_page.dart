@@ -371,13 +371,13 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                                           child: Text("Yoga for Beginners"),
                                                         ),
                                                         Text("with Emily Cassel"),
-
                                                         Padding(
                                                           padding: const EdgeInsets.symmetric(vertical: 8),
                                                           child: Row(
                                                             children: [
                                                               Container(
-                                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                padding:
+                                                                    EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                                                 decoration: BoxDecoration(
                                                                     color: Colors.green,
                                                                     borderRadius: BorderRadius.circular(16)),
@@ -401,7 +401,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                                                 ),
                                                               ),
                                                               Container(
-                                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                padding:
+                                                                    EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                                                 decoration: BoxDecoration(
                                                                     color: Colors.indigo[200],
                                                                     borderRadius: BorderRadius.circular(16)),
@@ -415,15 +416,31 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                                         ),
                                                         Row(
                                                           children: [
-                                                            Icon(Icons.location_on_outlined, size: 12,
-                                                            color: Colors.grey,),
-                                                            Text("Manhanttan", style: TextStyle(fontSize: 10,
-                                                              color: Colors.grey,),),
+                                                            Icon(
+                                                              Icons.location_on_outlined,
+                                                              size: 12,
+                                                              color: Colors.grey,
+                                                            ),
+                                                            Text(
+                                                              "Manhanttan",
+                                                              style: TextStyle(
+                                                                fontSize: 10,
+                                                                color: Colors.grey,
+                                                              ),
+                                                            ),
                                                             SizedBox(width: 16),
-                                                            Icon(Icons.airplane_ticket,size: 12,
-                                                              color: Colors.grey,),
-                                                            Text("\$15.00", style: TextStyle(fontSize: 10,
-                                                              color: Colors.grey,),),
+                                                            Icon(
+                                                              Icons.airplane_ticket,
+                                                              size: 12,
+                                                              color: Colors.grey,
+                                                            ),
+                                                            Text(
+                                                              "\$15.00",
+                                                              style: TextStyle(
+                                                                fontSize: 10,
+                                                                color: Colors.grey,
+                                                              ),
+                                                            ),
                                                           ],
                                                         )
                                                       ],
@@ -487,13 +504,13 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                                           child: Text("Yoga for Beginners"),
                                                         ),
                                                         Text("with Emily Cassel"),
-
                                                         Padding(
                                                           padding: const EdgeInsets.symmetric(vertical: 8),
                                                           child: Row(
                                                             children: [
                                                               Container(
-                                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                padding:
+                                                                    EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                                                 decoration: BoxDecoration(
                                                                     color: Colors.green,
                                                                     borderRadius: BorderRadius.circular(16)),
@@ -506,7 +523,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                                                 padding: const EdgeInsets.symmetric(horizontal: 4),
                                                                 child: Container(
                                                                   padding:
-                                                                  EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                      EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                                                   decoration: BoxDecoration(
                                                                       color: Colors.blue[200]!,
                                                                       borderRadius: BorderRadius.circular(16)),
@@ -517,7 +534,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                                                 ),
                                                               ),
                                                               Container(
-                                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                padding:
+                                                                    EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                                                 decoration: BoxDecoration(
                                                                     color: Colors.indigo[200],
                                                                     borderRadius: BorderRadius.circular(16)),
@@ -531,15 +549,31 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                                         ),
                                                         Row(
                                                           children: [
-                                                            Icon(Icons.location_on_outlined, size: 12,
-                                                              color: Colors.grey,),
-                                                            Text("Manhanttan", style: TextStyle(fontSize: 10,
-                                                              color: Colors.grey,),),
+                                                            Icon(
+                                                              Icons.location_on_outlined,
+                                                              size: 12,
+                                                              color: Colors.grey,
+                                                            ),
+                                                            Text(
+                                                              "Manhanttan",
+                                                              style: TextStyle(
+                                                                fontSize: 10,
+                                                                color: Colors.grey,
+                                                              ),
+                                                            ),
                                                             SizedBox(width: 16),
-                                                            Icon(Icons.airplane_ticket,size: 12,
-                                                              color: Colors.grey,),
-                                                            Text("\$15.00", style: TextStyle(fontSize: 10,
-                                                              color: Colors.grey,),),
+                                                            Icon(
+                                                              Icons.airplane_ticket,
+                                                              size: 12,
+                                                              color: Colors.grey,
+                                                            ),
+                                                            Text(
+                                                              "\$15.00",
+                                                              style: TextStyle(
+                                                                fontSize: 10,
+                                                                color: Colors.grey,
+                                                              ),
+                                                            ),
                                                           ],
                                                         )
                                                       ],
