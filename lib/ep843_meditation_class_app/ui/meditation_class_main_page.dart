@@ -458,7 +458,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                 ),
                                 SizedBox(width: 16),
                                 Container(
-                                  width: MediaQuery.of(context).size.width / 1.3,
+                                  width: MediaQuery.of(context).size.width / 1.4,
                                   child: Stack(
                                     children: [
                                       Positioned(
