@@ -641,6 +641,8 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                           child: Container(
                             child: GridView.count(
                               crossAxisCount: 2,
+                              crossAxisSpacing: 16,
+                              mainAxisSpacing: 16,
                               children: [
                                 Container(
                                   decoration: BoxDecoration(
