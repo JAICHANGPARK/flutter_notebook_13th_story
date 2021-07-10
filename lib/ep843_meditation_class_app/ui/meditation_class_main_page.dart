@@ -311,7 +311,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
           Expanded(child: TabBarView(
             controller: _tabController,
             children: [
-
+              buildFirstDayWidget(),
             ],
 
           )),
