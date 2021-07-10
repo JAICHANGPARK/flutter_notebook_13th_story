@@ -648,8 +648,10 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                   decoration: BoxDecoration(
                                     color: Colors.grey,
                                     image: DecorationImage(
-
-                                    )
+                                        image: NetworkImage("https://cdn.pixabay.com/photo/2021/03/27/10/43/yoga-6128116__340.jpg"),
+                                      fit: BoxFit.cover
+                                    ),
+                                    borderRadius: BorderRadius.circular(12)
                                   ),
                                 ),
                                 Container(
