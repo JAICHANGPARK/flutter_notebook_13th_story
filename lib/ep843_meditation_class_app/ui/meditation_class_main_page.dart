@@ -630,7 +630,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                 Text("Featured", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                 SizedBox(height: 16),
                 SizedBox(
-                    height: MediaQuery.of(context).size.height / 3.8,
+                    height: MediaQuery.of(context).size.height / 5,
                     child: Stack(
                       children: [
                         Positioned(
