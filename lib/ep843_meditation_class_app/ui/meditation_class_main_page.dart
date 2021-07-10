@@ -468,7 +468,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                               borderRadius: BorderRadius.circular(16),
                                               image: DecorationImage(
                                                 image: NetworkImage(
-                                                    "https://cdn.pixabay.com/photo/2018/02/06/14/07/dance-3134828__340.jpg"),
+                                                    "https://cdn.pixabay.com/photo/2020/07/07/13/52/woman-5380651_960_720.jpg"),
                                                 fit: BoxFit.cover,
                                               )),
                                         ),
@@ -646,7 +646,10 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                               children: [
                                 Container(
                                   decoration: BoxDecoration(
-                                    color: Colors.grey
+                                    color: Colors.grey,
+                                    image: DecorationImage(
+
+                                    )
                                   ),
                                 ),
                                 Container(
