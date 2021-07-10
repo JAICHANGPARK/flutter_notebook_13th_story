@@ -309,372 +309,303 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                 indicatorHeight: 4, indicatorColor: Colors.blueGrey[400]!, indicatorSize: MD2IndicatorSize.normal),
           ),
           Expanded(child: TabBarView(
-            
+            controller: _tabController,
+            children: [
+
+            ],
+
           )),
-          Padding(
-            padding: const EdgeInsets.only(top: 16, left: 16),
-            child: Container(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Upcoming sessions", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                  SizedBox(height: 16),
-                  SizedBox(
-                      height: MediaQuery.of(context).size.height / 2.8,
-                      child: Stack(
-                        children: [
-                          Container(
-                            child: ListView(
-                              scrollDirection: Axis.horizontal,
-                              children: [
-                                Container(
-                                  width: MediaQuery.of(context).size.width / 1.4,
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                              color: Colors.red,
-                                              borderRadius: BorderRadius.circular(16),
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://cdn.pixabay.com/photo/2018/02/06/14/07/dance-3134828__340.jpg"),
-                                                fit: BoxFit.cover,
-                                              )),
-                                        ),
-                                        left: 0,
-                                        right: 0,
-                                        bottom: 70,
-                                        top: 0,
-                                      ),
-                                      Positioned(
-                                        child: Container(
-                                          height: 140,
-                                          child: Card(
-                                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                                            child: Stack(
-                                              children: [
-                                                Positioned(
-                                                  child: CircleAvatar(),
-                                                  right: 8,
-                                                  top: 8,
-                                                ),
-                                                Positioned(
-                                                    left: 16,
-                                                    top: 16,
-                                                    child: Column(
-                                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                                      children: [
-                                                        Text(
-                                                          "9 am - 10:30 am",
-                                                          style: TextStyle(fontWeight: FontWeight.bold),
-                                                        ),
-                                                        Padding(
-                                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                                          child: Text("Yoga for Beginners"),
-                                                        ),
-                                                        Text("with Emily Cassel"),
-                                                        Padding(
-                                                          padding: const EdgeInsets.symmetric(vertical: 8),
-                                                          child: Row(
-                                                            children: [
-                                                              Container(
-                                                                padding:
-                                                                    EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                                decoration: BoxDecoration(
-                                                                    color: Colors.green,
-                                                                    borderRadius: BorderRadius.circular(16)),
-                                                                child: Text(
-                                                                  "Begginer",
-                                                                  style: TextStyle(fontSize: 10),
-                                                                ),
-                                                              ),
-                                                              Padding(
-                                                                padding: const EdgeInsets.symmetric(horizontal: 4),
-                                                                child: Container(
-                                                                  padding:
-                                                                      EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                                  decoration: BoxDecoration(
-                                                                      color: Colors.blue[200]!,
-                                                                      borderRadius: BorderRadius.circular(16)),
-                                                                  child: Text(
-                                                                    "Outdoor",
-                                                                    style: TextStyle(fontSize: 10),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                              Container(
-                                                                padding:
-                                                                    EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                                decoration: BoxDecoration(
-                                                                    color: Colors.indigo[200],
-                                                                    borderRadius: BorderRadius.circular(16)),
-                                                                child: Text(
-                                                                  "Rest",
-                                                                  style: TextStyle(fontSize: 10),
-                                                                ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                        Row(
-                                                          children: [
-                                                            Icon(
-                                                              Icons.location_on_outlined,
-                                                              size: 12,
-                                                              color: Colors.grey,
-                                                            ),
-                                                            Text(
-                                                              "Manhanttan",
-                                                              style: TextStyle(
-                                                                fontSize: 10,
-                                                                color: Colors.grey,
-                                                              ),
-                                                            ),
-                                                            SizedBox(width: 16),
-                                                            Icon(
-                                                              Icons.airplane_ticket,
-                                                              size: 12,
-                                                              color: Colors.grey,
-                                                            ),
-                                                            Text(
-                                                              "\$15.00",
-                                                              style: TextStyle(
-                                                                fontSize: 10,
-                                                                color: Colors.grey,
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        )
-                                                      ],
-                                                    ))
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                        left: 24,
-                                        right: 24,
-                                        bottom: 0,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                SizedBox(width: 16),
-                                Container(
-                                  width: MediaQuery.of(context).size.width / 1.4,
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                              color: Colors.red,
-                                              borderRadius: BorderRadius.circular(16),
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://cdn.pixabay.com/photo/2020/07/07/13/52/woman-5380651_960_720.jpg"),
-                                                fit: BoxFit.cover,
-                                              )),
-                                        ),
-                                        left: 0,
-                                        right: 0,
-                                        bottom: 70,
-                                        top: 0,
-                                      ),
-                                      Positioned(
-                                        child: Container(
-                                          height: 140,
-                                          child: Card(
-                                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                                            child: Stack(
-                                              children: [
-                                                Positioned(
-                                                  child: CircleAvatar(),
-                                                  right: 8,
-                                                  top: 8,
-                                                ),
-                                                Positioned(
-                                                    left: 16,
-                                                    top: 16,
-                                                    child: Column(
-                                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                                      children: [
-                                                        Text(
-                                                          "9 am - 10:30 am",
-                                                          style: TextStyle(fontWeight: FontWeight.bold),
-                                                        ),
-                                                        Padding(
-                                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                                          child: Text("Yoga for Beginners"),
-                                                        ),
-                                                        Text("with Emily Cassel"),
-                                                        Padding(
-                                                          padding: const EdgeInsets.symmetric(vertical: 8),
-                                                          child: Row(
-                                                            children: [
-                                                              Container(
-                                                                padding:
-                                                                    EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                                decoration: BoxDecoration(
-                                                                    color: Colors.green,
-                                                                    borderRadius: BorderRadius.circular(16)),
-                                                                child: Text(
-                                                                  "Begginer",
-                                                                  style: TextStyle(fontSize: 10),
-                                                                ),
-                                                              ),
-                                                              Padding(
-                                                                padding: const EdgeInsets.symmetric(horizontal: 4),
-                                                                child: Container(
-                                                                  padding:
-                                                                      EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                                  decoration: BoxDecoration(
-                                                                      color: Colors.blue[200]!,
-                                                                      borderRadius: BorderRadius.circular(16)),
-                                                                  child: Text(
-                                                                    "Outdoor",
-                                                                    style: TextStyle(fontSize: 10),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                              Container(
-                                                                padding:
-                                                                    EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                                decoration: BoxDecoration(
-                                                                    color: Colors.indigo[200],
-                                                                    borderRadius: BorderRadius.circular(16)),
-                                                                child: Text(
-                                                                  "Rest",
-                                                                  style: TextStyle(fontSize: 10),
-                                                                ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                        Row(
-                                                          children: [
-                                                            Icon(
-                                                              Icons.location_on_outlined,
-                                                              size: 12,
-                                                              color: Colors.grey,
-                                                            ),
-                                                            Text(
-                                                              "Manhanttan",
-                                                              style: TextStyle(
-                                                                fontSize: 10,
-                                                                color: Colors.grey,
-                                                              ),
-                                                            ),
-                                                            SizedBox(width: 16),
-                                                            Icon(
-                                                              Icons.airplane_ticket,
-                                                              size: 12,
-                                                              color: Colors.grey,
-                                                            ),
-                                                            Text(
-                                                              "\$15.00",
-                                                              style: TextStyle(
-                                                                fontSize: 10,
-                                                                color: Colors.grey,
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        )
-                                                      ],
-                                                    ))
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                        left: 24,
-                                        right: 24,
-                                        bottom: 0,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Positioned(
-                            bottom: 0,
-                            left: 0,
-                            right: 0,
-                            child: Container(
-                              height: 64,
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  gradient: LinearGradient(
-                                      begin: Alignment.bottomCenter,
-                                      end: Alignment.topCenter,
-                                      stops: [
-                                        0.2,
-                                        0.5,
-                                        1
-                                      ],
-                                      colors: [
-                                        Colors.white.withOpacity(0.6),
-                                        Colors.white.withOpacity(0.4),
-                                        Colors.white.withOpacity(0.1)
-                                      ])),
-                            ),
-                          ),
-                        ],
-                      )),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(height: 16),
-          Padding(
-            padding: const EdgeInsets.only(top: 16, left: 16),
+
+        ],
+      ),
+    );
+  }
+
+  Widget buildFirstDayWidget(){
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 16, left: 16),
+          child: Container(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Featured", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                Text("Upcoming sessions", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                 SizedBox(height: 16),
                 SizedBox(
-                    height: MediaQuery.of(context).size.height / 5,
+                    height: MediaQuery.of(context).size.height / 2.8,
                     child: Stack(
                       children: [
-                        Positioned(
-                          left: 0,
-                          right: 0,
-                          bottom: 0,
-                          top: 0,
-                          child: Container(
-                            child: GridView.count(
-                              crossAxisCount: 2,
-                              crossAxisSpacing: 16,
-                              mainAxisSpacing: 16,
-                              children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey,
-                                    image: DecorationImage(
-                                        image: NetworkImage("https://cdn.pixabay.com/photo/2021/03/27/10/43/yoga-6128116__340.jpg"),
-                                      fit: BoxFit.cover
-                                    ),
-                                    borderRadius: BorderRadius.circular(12)
-                                  ),
-                                  child: Stack(
-                                    children: [
-
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      image: DecorationImage(
-                                          image: NetworkImage("https://cdn.pixabay.com/photo/2017/07/31/11/40/people-2557536__340.jpg"),
-                                          fit: BoxFit.cover
+                        Container(
+                          child: ListView(
+                            scrollDirection: Axis.horizontal,
+                            children: [
+                              Container(
+                                width: MediaQuery.of(context).size.width / 1.4,
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            color: Colors.red,
+                                            borderRadius: BorderRadius.circular(16),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2018/02/06/14/07/dance-3134828__340.jpg"),
+                                              fit: BoxFit.cover,
+                                            )),
                                       ),
-                                      borderRadius: BorderRadius.circular(12)
-                                  ),
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 70,
+                                      top: 0,
+                                    ),
+                                    Positioned(
+                                      child: Container(
+                                        height: 140,
+                                        child: Card(
+                                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                                          child: Stack(
+                                            children: [
+                                              Positioned(
+                                                child: CircleAvatar(),
+                                                right: 8,
+                                                top: 8,
+                                              ),
+                                              Positioned(
+                                                  left: 16,
+                                                  top: 16,
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text(
+                                                        "9 am - 10:30 am",
+                                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                                      ),
+                                                      Padding(
+                                                        padding: const EdgeInsets.symmetric(vertical: 4),
+                                                        child: Text("Yoga for Beginners"),
+                                                      ),
+                                                      Text("with Emily Cassel"),
+                                                      Padding(
+                                                        padding: const EdgeInsets.symmetric(vertical: 8),
+                                                        child: Row(
+                                                          children: [
+                                                            Container(
+                                                              padding:
+                                                              EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                              decoration: BoxDecoration(
+                                                                  color: Colors.green,
+                                                                  borderRadius: BorderRadius.circular(16)),
+                                                              child: Text(
+                                                                "Begginer",
+                                                                style: TextStyle(fontSize: 10),
+                                                              ),
+                                                            ),
+                                                            Padding(
+                                                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                                                              child: Container(
+                                                                padding:
+                                                                EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                decoration: BoxDecoration(
+                                                                    color: Colors.blue[200]!,
+                                                                    borderRadius: BorderRadius.circular(16)),
+                                                                child: Text(
+                                                                  "Outdoor",
+                                                                  style: TextStyle(fontSize: 10),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                            Container(
+                                                              padding:
+                                                              EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                              decoration: BoxDecoration(
+                                                                  color: Colors.indigo[200],
+                                                                  borderRadius: BorderRadius.circular(16)),
+                                                              child: Text(
+                                                                "Rest",
+                                                                style: TextStyle(fontSize: 10),
+                                                              ),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                      ),
+                                                      Row(
+                                                        children: [
+                                                          Icon(
+                                                            Icons.location_on_outlined,
+                                                            size: 12,
+                                                            color: Colors.grey,
+                                                          ),
+                                                          Text(
+                                                            "Manhanttan",
+                                                            style: TextStyle(
+                                                              fontSize: 10,
+                                                              color: Colors.grey,
+                                                            ),
+                                                          ),
+                                                          SizedBox(width: 16),
+                                                          Icon(
+                                                            Icons.airplane_ticket,
+                                                            size: 12,
+                                                            color: Colors.grey,
+                                                          ),
+                                                          Text(
+                                                            "\$15.00",
+                                                            style: TextStyle(
+                                                              fontSize: 10,
+                                                              color: Colors.grey,
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      )
+                                                    ],
+                                                  ))
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      left: 24,
+                                      right: 24,
+                                      bottom: 0,
+                                    ),
+                                  ],
                                 ),
-
-                              ],
-                            ),
+                              ),
+                              SizedBox(width: 16),
+                              Container(
+                                width: MediaQuery.of(context).size.width / 1.4,
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            color: Colors.red,
+                                            borderRadius: BorderRadius.circular(16),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2020/07/07/13/52/woman-5380651_960_720.jpg"),
+                                              fit: BoxFit.cover,
+                                            )),
+                                      ),
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 70,
+                                      top: 0,
+                                    ),
+                                    Positioned(
+                                      child: Container(
+                                        height: 140,
+                                        child: Card(
+                                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                                          child: Stack(
+                                            children: [
+                                              Positioned(
+                                                child: CircleAvatar(),
+                                                right: 8,
+                                                top: 8,
+                                              ),
+                                              Positioned(
+                                                  left: 16,
+                                                  top: 16,
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text(
+                                                        "9 am - 10:30 am",
+                                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                                      ),
+                                                      Padding(
+                                                        padding: const EdgeInsets.symmetric(vertical: 4),
+                                                        child: Text("Yoga for Beginners"),
+                                                      ),
+                                                      Text("with Emily Cassel"),
+                                                      Padding(
+                                                        padding: const EdgeInsets.symmetric(vertical: 8),
+                                                        child: Row(
+                                                          children: [
+                                                            Container(
+                                                              padding:
+                                                              EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                              decoration: BoxDecoration(
+                                                                  color: Colors.green,
+                                                                  borderRadius: BorderRadius.circular(16)),
+                                                              child: Text(
+                                                                "Begginer",
+                                                                style: TextStyle(fontSize: 10),
+                                                              ),
+                                                            ),
+                                                            Padding(
+                                                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                                                              child: Container(
+                                                                padding:
+                                                                EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                                decoration: BoxDecoration(
+                                                                    color: Colors.blue[200]!,
+                                                                    borderRadius: BorderRadius.circular(16)),
+                                                                child: Text(
+                                                                  "Outdoor",
+                                                                  style: TextStyle(fontSize: 10),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                            Container(
+                                                              padding:
+                                                              EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                              decoration: BoxDecoration(
+                                                                  color: Colors.indigo[200],
+                                                                  borderRadius: BorderRadius.circular(16)),
+                                                              child: Text(
+                                                                "Rest",
+                                                                style: TextStyle(fontSize: 10),
+                                                              ),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                      ),
+                                                      Row(
+                                                        children: [
+                                                          Icon(
+                                                            Icons.location_on_outlined,
+                                                            size: 12,
+                                                            color: Colors.grey,
+                                                          ),
+                                                          Text(
+                                                            "Manhanttan",
+                                                            style: TextStyle(
+                                                              fontSize: 10,
+                                                              color: Colors.grey,
+                                                            ),
+                                                          ),
+                                                          SizedBox(width: 16),
+                                                          Icon(
+                                                            Icons.airplane_ticket,
+                                                            size: 12,
+                                                            color: Colors.grey,
+                                                          ),
+                                                          Text(
+                                                            "\$15.00",
+                                                            style: TextStyle(
+                                                              fontSize: 10,
+                                                              color: Colors.grey,
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      )
+                                                    ],
+                                                  ))
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      left: 24,
+                                      right: 24,
+                                      bottom: 0,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                         Positioned(
@@ -682,7 +613,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                           left: 0,
                           right: 0,
                           child: Container(
-                            height: 84,
+                            height: 64,
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 gradient: LinearGradient(
@@ -705,8 +636,89 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
               ],
             ),
           ),
-        ],
-      ),
+        ),
+        SizedBox(height: 16),
+        Padding(
+          padding: const EdgeInsets.only(top: 16, left: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Featured", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              SizedBox(height: 16),
+              SizedBox(
+                  height: MediaQuery.of(context).size.height / 5,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        top: 0,
+                        child: Container(
+                          child: GridView.count(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 16,
+                            mainAxisSpacing: 16,
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    image: DecorationImage(
+                                        image: NetworkImage("https://cdn.pixabay.com/photo/2021/03/27/10/43/yoga-6128116__340.jpg"),
+                                        fit: BoxFit.cover
+                                    ),
+                                    borderRadius: BorderRadius.circular(12)
+                                ),
+                                child: Stack(
+                                  children: [
+
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    image: DecorationImage(
+                                        image: NetworkImage("https://cdn.pixabay.com/photo/2017/07/31/11/40/people-2557536__340.jpg"),
+                                        fit: BoxFit.cover
+                                    ),
+                                    borderRadius: BorderRadius.circular(12)
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
+                        child: Container(
+                          height: 84,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              gradient: LinearGradient(
+                                  begin: Alignment.bottomCenter,
+                                  end: Alignment.topCenter,
+                                  stops: [
+                                    0.2,
+                                    0.5,
+                                    1
+                                  ],
+                                  colors: [
+                                    Colors.white.withOpacity(0.6),
+                                    Colors.white.withOpacity(0.4),
+                                    Colors.white.withOpacity(0.1)
+                                  ])),
+                        ),
+                      ),
+                    ],
+                  )),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
