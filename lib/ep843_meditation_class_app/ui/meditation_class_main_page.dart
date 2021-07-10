@@ -312,6 +312,21 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
             controller: _tabController,
             children: [
               buildFirstDayWidget(),
+              Container(
+                child: Center(
+                  child: Text("Tab2"),
+                ),
+              ),
+              Container(
+                child: Center(
+                  child: Text("Tab3"),
+                ),
+              ),
+              Container(
+                child: Center(
+                  child: Text("Tab4"),
+                ),
+              ),
             ],
 
           )),
