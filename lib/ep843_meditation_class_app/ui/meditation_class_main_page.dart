@@ -325,7 +325,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                               scrollDirection: Axis.horizontal,
                               children: [
                                 Container(
-                                  width: MediaQuery.of(context).size.width / 1.3,
+                                  width: MediaQuery.of(context).size.width / 1.4,
                                   child: Stack(
                                     children: [
                                       Positioned(
