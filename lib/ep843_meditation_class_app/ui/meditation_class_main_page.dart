@@ -686,7 +686,19 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                                 ),
                                 child: Stack(
                                   children: [
-
+                                    Positioned(
+                                        right: 16,
+                                        top: 16,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.circular(8)
+                                          ),
+                                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                      child: Center(
+                                        child: Text("5"),
+                                      ),
+                                    )),
                                   ],
                                 ),
                               ),
