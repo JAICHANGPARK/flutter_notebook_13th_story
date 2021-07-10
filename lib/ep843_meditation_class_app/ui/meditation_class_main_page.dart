@@ -662,7 +662,7 @@ class _MeditationClassHomePageState extends State<MeditationClassHomePage> with 
                           left: 0,
                           right: 0,
                           child: Container(
-                            height: 64,
+                            height: 84,
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 gradient: LinearGradient(
