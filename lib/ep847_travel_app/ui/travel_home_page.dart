@@ -41,22 +41,28 @@ class _TravelHomePageState extends State<TravelHomePage> {
             top: 72,
           ),
           Positioned(
-
               left: 16,
               right: 0,
-              bottom: 0,
+              bottom: 24,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-                Text("New York",style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white
-
-                ),),
-              Text("1k places 12,456 reviews")
-            ],
-          ))
+                children: [
+                  Text(
+                    "New York",
+                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),
+                  ),
+                  Text("1k places 12,456 reviews",
+                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.white),),
+                  SizedBox(height: 48,),
+                  Text("Popular Places",  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height / 4,
+                    child: Container(
+                      color: Colors.blue,
+                    ),
+                  )
+                ],
+              ))
         ],
       ),
     );
