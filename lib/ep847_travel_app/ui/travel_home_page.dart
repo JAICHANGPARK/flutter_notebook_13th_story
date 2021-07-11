@@ -18,7 +18,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: NetworkImage("https://cdn.pixabay.com/photo/2020/06/08/20/58/nyc-5276112_960_720.jpg"),
-                      fit: BoxFit.cover)),
+                      fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken)),
+              ),
             ),
             left: 0,
             right: 0,
@@ -49,7 +51,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 children: [
                   Text(
                     "New York",
-                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),
+                    style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold, color: Colors.white),
                   ),
                   Text("1k places 12,456 reviews",
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.white),),
