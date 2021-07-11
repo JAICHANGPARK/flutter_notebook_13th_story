@@ -34,6 +34,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   child: Icon(
                     Icons.keyboard_arrow_left,
                     size: 32,
+                    color: Colors.white,
                   ),
                 ),
               ),
