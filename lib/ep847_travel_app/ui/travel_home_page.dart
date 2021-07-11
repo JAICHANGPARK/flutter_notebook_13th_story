@@ -46,6 +46,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
               right: 0,
               bottom: 0,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
             children: [
                 Text("New York",style: TextStyle(
                   fontSize: 32,
