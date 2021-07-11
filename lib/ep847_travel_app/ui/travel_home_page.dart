@@ -55,6 +55,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.white),),
                   SizedBox(height: 48,),
                   Text("Popular Places",  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),),
+                  SizedBox(height: 12,),
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 4,
                     child: Container(
