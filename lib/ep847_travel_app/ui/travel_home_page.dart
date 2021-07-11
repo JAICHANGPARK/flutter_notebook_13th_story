@@ -27,7 +27,15 @@ class _TravelHomePageState extends State<TravelHomePage> {
           right: 0,
           top: 0,
           bottom: 0,),
-          Positioned(child: Container(),
+          Positioned(child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white
+            ),
+            child: Center(
+              child: Icon(Icons.keyboard_arrow_left,
+              size: 32,),
+            ),
+          ),
           left: 16,
           top: 16,)
 
