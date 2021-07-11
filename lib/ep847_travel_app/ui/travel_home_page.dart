@@ -47,7 +47,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
               bottom: 0,
               child: Column(
             children: [
+                Text("New York",style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white
 
+                ),),
+              Text("1k places 12,456 reviews")
             ],
           ))
         ],
