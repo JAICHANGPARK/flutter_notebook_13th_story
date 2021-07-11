@@ -16,10 +16,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
           Positioned(
             child: Container(
               decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: NetworkImage("https://cdn.pixabay.com/photo/2020/06/08/20/58/nyc-5276112_960_720.jpg"),
-                      fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken)),
+                image: DecorationImage(
+                  image: NetworkImage("https://cdn.pixabay.com/"
+                      "photo/2020/06/08/20/58/nyc-5276112_960_720.jpg"),
+                  fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
+                ),
               ),
             ),
             left: 0,
@@ -29,7 +31,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
           ),
           Positioned(
             child: Container(
-              decoration: BoxDecoration(color: Colors.black.withOpacity(0.4), borderRadius: BorderRadius.circular(8)),
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.4),
+                borderRadius: BorderRadius.circular(8),
+              ),
               padding: EdgeInsets.all(8),
               child: Center(
                 child: Icon(
@@ -53,11 +58,20 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     "New York",
                     style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold, color: Colors.white),
                   ),
-                  Text("1k places 12,456 reviews",
-                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.white),),
-                  SizedBox(height: 48,),
-                  Text("Popular Places",  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),),
-                  SizedBox(height: 12,),
+                  Text(
+                    "1k places 12,456 reviews",
+                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.white),
+                  ),
+                  SizedBox(
+                    height: 48,
+                  ),
+                  Text(
+                    "Popular Places",
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),
+                  ),
+                  SizedBox(
+                    height: 12,
+                  ),
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 4,
                     child: Container(
