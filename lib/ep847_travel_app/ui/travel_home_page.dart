@@ -11,6 +11,12 @@ class TravelHomePage extends StatefulWidget {
 class _TravelHomePageState extends State<TravelHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
