@@ -109,6 +109,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     height: MediaQuery.of(context).size.height / 4,
                     child: Container(
                       color: Colors.blue,
+                      child: ListView(
+                        children: [
+                          
+                        ],
+                      ),
                     ),
                   )
                 ],
