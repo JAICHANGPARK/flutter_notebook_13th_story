@@ -52,8 +52,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
             child: Center(
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 42, vertical: 24),
-                decoration: BoxDecoration(color: Colors.black.withOpacity(0.3),
-                borderRadius: BorderRadius.circular(8)),
+                decoration: BoxDecoration(color: Colors.black.withOpacity(0.3), borderRadius: BorderRadius.circular(8)),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -110,27 +109,39 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     child: Container(
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index){
+                        itemBuilder: (context, index) {
                           return Padding(
                             padding: const EdgeInsets.only(right: 8),
                             child: SizedBox(
                               width: 160,
                               child: Card(
+                                  child: Padding(
+                                padding: const EdgeInsets.all(16.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("MOMA"),
+                                    Text(
+                                      "MOMA",
+                                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                    ),
                                     Row(
                                       children: [
-                                        ...List.generate(5, (index) => Icon(Icons.star, size: 14,color: Colors.orange,)).toList(),
-                                        Text("(128)",style: TextStyle(
-                                          color: Colors.grey
-                                        ),)
+                                        ...List.generate(
+                                            5,
+                                            (index) => Icon(
+                                                  Icons.star,
+                                                  size: 14,
+                                                  color: Colors.orange,
+                                                )).toList(),
+                                        Text(
+                                          "(128)",
+                                          style: TextStyle(color: Colors.grey),
+                                        )
                                       ],
                                     )
                                   ],
-                                )
-                              ),
+                                ),
+                              )),
                             ),
                           );
                         },
