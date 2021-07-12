@@ -48,24 +48,33 @@ class _TravelHomePageState extends State<TravelHomePage> {
             left: 16,
             top: 72,
           ),
-          Positioned(child: Center(
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.2)
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Icon(Ionicons.cloudy_night_outline),
-                  Text("95F")
-
-                ],
+          Positioned(
+            child: Center(
+              child: Container(
+                padding: EdgeInsets.all(24),
+                decoration: BoxDecoration(color: Colors.black.withOpacity(0.2)),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Ionicons.cloudy_night_outline,
+                      size: 38,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      "95F",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 28,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
-          ),
-          left: 0,
-          right: 0,
-          top: 100,
+            left: 0,
+            right: 0,
+            top: 100,
           ),
           Positioned(
               left: 16,
