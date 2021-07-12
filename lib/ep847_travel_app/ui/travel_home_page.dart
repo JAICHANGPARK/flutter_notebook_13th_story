@@ -108,11 +108,20 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 4,
                     child: Container(
-                      color: Colors.blue,
-                      child: ListView(
-                        children: [
-                          
-                        ],
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index){
+                          return SizedBox(
+                            width: 160,
+                            child: Card(
+                              child: Column(
+                                children: [
+                                  
+                                ],
+                              )
+                            ),
+                          );
+                        },
                       ),
                     ),
                   )
