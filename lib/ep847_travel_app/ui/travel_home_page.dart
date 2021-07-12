@@ -124,7 +124,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       "MOMA",
                                       style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                                     ),
-                                    SizedBox(height: 16,),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
                                     Row(
                                       children: [
                                         ...List.generate(
@@ -144,7 +146,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       children: [
                                         ...List.generate(
                                             3,
-                                                (index) => CircleAvatar(
+                                            (index) => CircleAvatar(
                                                   radius: 12,
                                                 )).toList(),
                                         Text(
@@ -154,15 +156,19 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       ],
                                     ),
                                     Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Text("3.8km",style: TextStyle(),),
+                                        Text(
+                                          "3.8km",
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        ),
                                         MaterialButton(
                                           minWidth: 48,
-                                          onPressed: () {  },
+                                          onPressed: () {},
                                           padding: EdgeInsets.zero,
                                           color: Colors.black,
                                           textColor: Colors.white,
-                                          child:Text("Uber"),
+                                          child: Text("Uber"),
                                         )
                                       ],
                                     )
