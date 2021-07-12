@@ -58,14 +58,17 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   children: [
                     Icon(
                       Ionicons.cloudy_night_outline,
-                      size: 38,
+                      size: 48,
                       color: Colors.white,
+                    ),
+                    SizedBox(
+                      height: 8,
                     ),
                     Text(
                       "95F",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 28,
+                        fontSize: 24,
                       ),
                     )
                   ],
