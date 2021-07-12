@@ -78,7 +78,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
             ),
             left: 0,
             right: 0,
-            top: 100,
+            top: 200,
           ),
           Positioned(
               left: 16,
