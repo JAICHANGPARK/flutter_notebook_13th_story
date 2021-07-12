@@ -116,7 +116,15 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             child: Card(
                               child: Column(
                                 children: [
-                                  
+                                  Text("MOMA"),
+                                  Row(
+                                    children: [
+                                      ...List.generate(5, (index) => Icon(Icons.star, size: 14,color: Colors.orange,)).toList(),
+                                      Text("(128)",style: TextStyle(
+                                        color: Colors.grey
+                                      ),)
+                                    ],
+                                  )
                                 ],
                               )
                             ),
