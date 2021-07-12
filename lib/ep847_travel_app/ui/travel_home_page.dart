@@ -50,9 +50,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
           ),
           Positioned(child: Center(
             child: Container(
+              decoration: BoxDecoration(),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Icon(Ionicons.cloudy_night_outline),
+                  Text("95F")
 
                 ],
               ),
