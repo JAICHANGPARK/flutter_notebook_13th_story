@@ -124,6 +124,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       "MOMA",
                                       style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                                     ),
+                                    SizedBox(height: 16,),
                                     Row(
                                       children: [
                                         ...List.generate(
@@ -136,6 +137,32 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                         Text(
                                           "(128)",
                                           style: TextStyle(color: Colors.grey),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        ...List.generate(
+                                            3,
+                                                (index) => CircleAvatar(
+                                                  radius: 12,
+                                                )).toList(),
+                                        Text(
+                                          "+16",
+                                          style: TextStyle(color: Colors.grey),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text("3.8km",style: TextStyle(),),
+                                        MaterialButton(
+                                          minWidth: 48,
+                                          onPressed: () {  },
+                                          padding: EdgeInsets.zero,
+                                          color: Colors.black,
+                                          textColor: Colors.white,
+                                          child:Text("Uber"),
                                         )
                                       ],
                                     )
