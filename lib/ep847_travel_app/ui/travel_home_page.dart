@@ -161,7 +161,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       children: [
                                         Text(
                                           "3.8km",
-                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                          style: TextStyle(fontWeight: FontWeight.bold,
+                                          fontSize: 16),
                                         ),
                                         MaterialButton(
                                           minWidth: 48,
