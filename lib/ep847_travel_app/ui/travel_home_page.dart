@@ -106,27 +106,31 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     height: 12,
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height / 4,
+                    height: MediaQuery.of(context).size.height / 4.5,
                     child: Container(
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index){
-                          return SizedBox(
-                            width: 160,
-                            child: Card(
-                              child: Column(
-                                children: [
-                                  Text("MOMA"),
-                                  Row(
-                                    children: [
-                                      ...List.generate(5, (index) => Icon(Icons.star, size: 14,color: Colors.orange,)).toList(),
-                                      Text("(128)",style: TextStyle(
-                                        color: Colors.grey
-                                      ),)
-                                    ],
-                                  )
-                                ],
-                              )
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: SizedBox(
+                              width: 160,
+                              child: Card(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("MOMA"),
+                                    Row(
+                                      children: [
+                                        ...List.generate(5, (index) => Icon(Icons.star, size: 14,color: Colors.orange,)).toList(),
+                                        Text("(128)",style: TextStyle(
+                                          color: Colors.grey
+                                        ),)
+                                      ],
+                                    )
+                                  ],
+                                )
+                              ),
                             ),
                           );
                         },
