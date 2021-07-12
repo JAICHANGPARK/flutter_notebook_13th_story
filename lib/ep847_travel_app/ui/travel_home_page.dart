@@ -50,7 +50,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
           ),
           Positioned(child: Center(
             child: Container(
-              decoration: BoxDecoration(),
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.2)
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -63,8 +65,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
           ),
           left: 0,
           right: 0,
-          top: 24,
-          bottom: 200,
+          top: 100,
           ),
           Positioned(
               left: 16,
