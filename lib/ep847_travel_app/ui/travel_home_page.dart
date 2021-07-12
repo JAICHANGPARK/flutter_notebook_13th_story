@@ -115,6 +115,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             child: SizedBox(
                               width: 160,
                               child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(16)
+                                ),
                                   child: Padding(
                                 padding: const EdgeInsets.all(16.0),
                                 child: Column(
