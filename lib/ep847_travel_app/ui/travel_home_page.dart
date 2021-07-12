@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 
 class TravelHomePage extends StatefulWidget {
   const TravelHomePage({Key? key}) : super(key: key);
@@ -49,7 +50,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
           ),
           Positioned(child: Center(
             child: Container(
+              child: Column(
+                children: [
+                  Icon(Ionicons.cloudy_night_outline),
 
+                ],
+              ),
             ),
           ),
           left: 0,
