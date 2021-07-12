@@ -52,7 +52,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
             child: Center(
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 42, vertical: 24),
-                decoration: BoxDecoration(color: Colors.black.withOpacity(0.2),
+                decoration: BoxDecoration(color: Colors.black.withOpacity(0.3),
                 borderRadius: BorderRadius.circular(8)),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
