@@ -47,6 +47,16 @@ class _TravelHomePageState extends State<TravelHomePage> {
             left: 16,
             top: 72,
           ),
+          Positioned(child: Center(
+            child: Container(
+
+            ),
+          ),
+          left: 0,
+          right: 0,
+          top: 24,
+          bottom: 200,
+          ),
           Positioned(
               left: 16,
               right: 0,
