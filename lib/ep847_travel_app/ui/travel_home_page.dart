@@ -118,6 +118,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                   child: Padding(
                                 padding: const EdgeInsets.all(16.0),
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
