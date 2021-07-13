@@ -28,10 +28,10 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
               child: Stack(
                 children: [],
               ),
-              flex: 4,
+              flex: 6,
             ),
             Expanded(
-                flex: 2,
+                flex: 3,
                 child: Column(
                   children: [
                     TabBar(
