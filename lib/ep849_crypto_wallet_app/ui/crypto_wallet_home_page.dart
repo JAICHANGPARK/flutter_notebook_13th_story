@@ -14,13 +14,16 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
-          Stack(
-            children: [
+          Expanded(child: Placeholder(), flex: 6,),
+          Expanded(
+            flex: 2,
+            child: Stack(
+              children: [
 
 
 
-            ],
+              ],
+            ),
           ),
         ],
       ),
