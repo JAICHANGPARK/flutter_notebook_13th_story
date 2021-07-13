@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CryptoWalletHomePage extends StatefulWidget {
-  CryptoWalletHomePage({Key key}) : super(key: key);
+  CryptoWalletHomePage({Key? key}) : super(key: key);
 
   @override
   _CryptoWalletHomePageState createState() => _CryptoWalletHomePageState();
@@ -10,6 +10,6 @@ class CryptoWalletHomePage extends StatefulWidget {
 class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
