@@ -38,12 +38,16 @@ with SingleTickerProviderStateMixin{
               flex: 2,
               child:Column(
                 children: [
-                  TabBar(tabs: [Tab(text: "Watchlist",),
+                  TabBar(
+                      controller: _tabController,
+                      tabs: [Tab(text: "Watchlist",),
                     Tab(text: "Movers",),
                     Tab(text: "Rewards",),
                     Tab(text: "News",)]),
                   Expanded(
-                    child: TabBarView(children: [
+                    child: TabBarView(
+                        controller: _tabController,
+                        children: [
                       Container(color: Colors.red,),
                       Container(color: Colors.blue,),
                       Container(color: Colors.green,),
