@@ -28,9 +28,15 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
               child:Column(
                 children: [
                   TabBar(tabs: [Tab(text: "Watchlist",),
-                    Tab(text: "Watchlist",),
-                    Tab(text: "Watchlist",),
-                    Tab(text: "Watchlist",)])
+                    Tab(text: "Movers",),
+                    Tab(text: "Rewards",),
+                    Tab(text: "News",)]),
+                  TabBarView(children: [
+                    Container(color: Colors.red,),
+                    Container(color: Colors.red,),
+                    Container(color: Colors.red,),
+                    Container(color: Colors.red,),
+                  ]),
                 ],
               )
             ),
