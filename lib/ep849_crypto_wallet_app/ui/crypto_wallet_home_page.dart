@@ -59,7 +59,8 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                       width: 32,
                       decoration: BoxDecoration(
                         color: Colors.indigo,
-                        border:Border.all(color: Colors.white, width: 2)
+                        border:Border.all(color: Colors.white, width: 4),
+                        borderRadius: BorderRadius.circular(8)
 
                       ),
 
