@@ -56,6 +56,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                 ],
               ),
             ),
+            SizedBox(height: 16,),
             Expanded(
                 flex: 4,
                 child: Column(
