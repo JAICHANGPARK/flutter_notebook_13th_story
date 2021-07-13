@@ -12,20 +12,22 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(child: Placeholder(), flex: 6,),
-          Expanded(
-            flex: 2,
-            child: Stack(
-              children: [
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Placeholder(), flex: 4,),
+            Expanded(
+              flex: 2,
+              child: Stack(
+                children: [
 
 
 
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
