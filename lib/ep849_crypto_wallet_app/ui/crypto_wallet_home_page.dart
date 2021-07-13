@@ -28,50 +28,47 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
               flex: 7,
               child: Stack(
                 children: [
-
-                  Positioned(child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.purple,
-                      borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(48)
-                      )
+                  Positioned(
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.purple, borderRadius: BorderRadius.only(bottomLeft: Radius.circular(48))),
                     ),
+                    left: 0,
+                    top: 0,
+                    bottom: 8,
+                    right: 0,
                   ),
-                  left: 0,
-                  top: 0,
-                  bottom: 8,
-                  right: 0,),
-                  Positioned(child: Container(
-                    decoration: BoxDecoration(
-                        color: Colors.indigo,
-                        borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(48)
-                        )
+                  Positioned(
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.indigo, borderRadius: BorderRadius.only(bottomLeft: Radius.circular(48))),
                     ),
-                  ),
                     left: 0,
                     top: 0,
                     bottom: 200,
-                    right: 0,),
-                  Positioned(child: Center(
-                    child: Container(
-                      height: 16,
-                      width: 32,
-                      decoration: BoxDecoration(
-                        color: Colors.indigo,
-                        border:Border.all(color: Colors.white, width: 4),
-                        borderRadius: BorderRadius.circular(8)
-
-                      ),
-
-                    ),
+                    right: 0,
                   ),
-                  left: 0, right: 0,
-                  bottom: 0,)
+                  Positioned(
+                    child: Center(
+                      child: Container(
+                        height: 16,
+                        width: 32,
+                        decoration: BoxDecoration(
+                            color: Colors.indigo,
+                            border: Border.all(color: Colors.white, width: 4),
+                            borderRadius: BorderRadius.circular(8)),
+                      ),
+                    ),
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                  )
                 ],
               ),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Expanded(
                 flex: 4,
                 child: Column(
