@@ -15,16 +15,21 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder(), flex: 4,),
+            Expanded(child: Stack(
+              children: [
+
+
+
+
+              ],
+            ), flex: 4,),
             Expanded(
               flex: 2,
-              child: Stack(
+              child:Column(
                 children: [
-
-
-
+                  
                 ],
-              ),
+              )
             ),
           ],
         ),
