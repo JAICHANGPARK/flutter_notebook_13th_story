@@ -22,8 +22,10 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
           child: Row(
             children: [
               IconButton(onPressed: (){}, icon: Icon(Ionicons.wallet_outline)),
-              IconButton(onPressed: (){}, icon: Icon(Ionicons.wallet_outline)),
-
+              IconButton(onPressed: (){}, icon: Icon(Ionicons.pie_chart)),
+              FloatingActionButton(onPressed: (){}, child: Icon(Icons.my_location_outlined),),
+              IconButton(onPressed: (){}, icon: Icon(Ionicons.stats_chart_outline)),
+              IconButton(onPressed: (){}, icon: Icon(Ionicons.settings_outline)),
             ],
           ),
         ),
