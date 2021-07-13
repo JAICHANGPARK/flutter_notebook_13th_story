@@ -53,6 +53,18 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                     top: 0,
                     bottom: 200,
                     right: 0,),
+                  Positioned(child: Container(
+                    height: 24,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      color: Colors.indigo,
+                      border: BorderRadius.circular(24),
+
+                    ),
+
+                  ),
+                  left: 0, right: 0,
+                  bottom: 0,)
                 ],
               ),
             ),
