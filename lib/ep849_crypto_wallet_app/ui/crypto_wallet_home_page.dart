@@ -27,7 +27,10 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
               flex: 2,
               child:Column(
                 children: [
-                  
+                  TabBar(tabs: [Tab(text: "Watchlist",),
+                    Tab(text: "Watchlist",),
+                    Tab(text: "Watchlist",),
+                    Tab(text: "Watchlist",)])
                 ],
               )
             ),
