@@ -8,9 +8,7 @@ class CryptoWalletHomePage extends StatefulWidget {
   _CryptoWalletHomePageState createState() => _CryptoWalletHomePageState();
 }
 
-class _CryptoWalletHomePageState extends State<CryptoWalletHomePage>
-with SingleTickerProviderStateMixin{
-
+class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with SingleTickerProviderStateMixin {
   TabController? _tabController;
 
   @override
@@ -26,37 +24,52 @@ with SingleTickerProviderStateMixin{
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Stack(
-              children: [
-
-
-
-
-              ],
-            ), flex: 4,),
             Expanded(
-              flex: 2,
-              child:Column(
-                children: [
-                  TabBar(
-                      controller: _tabController,
-                      tabs: [Tab(text: "Watchlist",),
-                    Tab(text: "Movers",),
-                    Tab(text: "Rewards",),
-                    Tab(text: "News",)]),
-                  Expanded(
-                    child: TabBarView(
-                        controller: _tabController,
-                        children: [
-                      Container(color: Colors.red,),
-                      Container(color: Colors.blue,),
-                      Container(color: Colors.green,),
-                      Container(color: Colors.yellow,),
-                    ]),
-                  ),
-                ],
-              )
+              child: Stack(
+                children: [],
+              ),
+              flex: 4,
             ),
+            Expanded(
+                flex: 2,
+                child: Column(
+                  children: [
+                    TabBar(
+                        controller: _tabController,
+                        labelColor: Colors.black,
+                        unselectedLabelColor: Colors.black,
+                        tabs: [
+                          Tab(
+                            text: "Watchlist",
+                          ),
+                          Tab(
+                            text: "Movers",
+                          ),
+                          Tab(
+                            text: "Rewards",
+                          ),
+                          Tab(
+                            text: "News",
+                          )
+                        ]),
+                    Expanded(
+                      child: TabBarView(controller: _tabController, children: [
+                        Container(
+                          color: Colors.red,
+                        ),
+                        Container(
+                          color: Colors.blue,
+                        ),
+                        Container(
+                          color: Colors.green,
+                        ),
+                        Container(
+                          color: Colors.yellow,
+                        ),
+                      ]),
+                    ),
+                  ],
+                )),
           ],
         ),
       ),
@@ -66,11 +79,14 @@ with SingleTickerProviderStateMixin{
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              IconButton(onPressed: (){}, icon: Icon(Ionicons.wallet_outline)),
-              IconButton(onPressed: (){}, icon: Icon(Ionicons.pie_chart)),
-              FloatingActionButton(onPressed: (){}, child: Icon(Icons.my_location_outlined),),
-              IconButton(onPressed: (){}, icon: Icon(Ionicons.stats_chart_outline)),
-              IconButton(onPressed: (){}, icon: Icon(Ionicons.settings_outline)),
+              IconButton(onPressed: () {}, icon: Icon(Ionicons.wallet_outline)),
+              IconButton(onPressed: () {}, icon: Icon(Ionicons.pie_chart)),
+              FloatingActionButton(
+                onPressed: () {},
+                child: Icon(Icons.my_location_outlined),
+              ),
+              IconButton(onPressed: () {}, icon: Icon(Ionicons.stats_chart_outline)),
+              IconButton(onPressed: () {}, icon: Icon(Ionicons.settings_outline)),
             ],
           ),
         ),
