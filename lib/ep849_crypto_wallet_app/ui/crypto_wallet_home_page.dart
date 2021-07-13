@@ -30,7 +30,12 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                 children: [
 
                   Positioned(child: Container(
-                    color: Colors.purple,
+                    decoration: BoxDecoration(
+                      color: Colors.purple,
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(32)
+                      )
+                    ),
                   ),
                   left: 0,
                   top: 0,
