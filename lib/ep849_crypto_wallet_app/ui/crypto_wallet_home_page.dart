@@ -21,6 +21,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
         child: Container(
           padding: EdgeInsets.symmetric(vertical: 16),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               IconButton(onPressed: (){}, icon: Icon(Ionicons.wallet_outline)),
               IconButton(onPressed: (){}, icon: Icon(Ionicons.pie_chart)),
