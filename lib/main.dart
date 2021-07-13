@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep847_travel_app/travel_app.dart';
+import 'ep849_crypto_wallet_app/crypto_wallet_app.dart';
 
-
-void main() => runApp(TravelApp());
+void main() => runApp(CryptoWalletApp());
