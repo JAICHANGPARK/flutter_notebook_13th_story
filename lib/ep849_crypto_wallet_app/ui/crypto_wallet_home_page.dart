@@ -31,12 +31,14 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
                     Tab(text: "Movers",),
                     Tab(text: "Rewards",),
                     Tab(text: "News",)]),
-                  TabBarView(children: [
-                    Container(color: Colors.red,),
-                    Container(color: Colors.red,),
-                    Container(color: Colors.red,),
-                    Container(color: Colors.red,),
-                  ]),
+                  Expanded(
+                    child: TabBarView(children: [
+                      Container(color: Colors.red,),
+                      Container(color: Colors.blue,),
+                      Container(color: Colors.green,),
+                      Container(color: Colors.yellow,),
+                    ]),
+                  ),
                 ],
               )
             ),
