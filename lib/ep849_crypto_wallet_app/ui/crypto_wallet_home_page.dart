@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 
 class CryptoWalletHomePage extends StatefulWidget {
   CryptoWalletHomePage({Key? key}) : super(key: key);
@@ -20,7 +21,9 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
         child: Container(
           child: Row(
             children: [
-              
+              IconButton(onPressed: (){}, icon: Icon(Ionicons.wallet_outline)),
+              IconButton(onPressed: (){}, icon: Icon(Ionicons.wallet_outline)),
+
             ],
           ),
         ),
