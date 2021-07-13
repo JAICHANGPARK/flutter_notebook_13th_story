@@ -19,6 +19,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
+          padding: EdgeInsets.symmetric(vertical: 16),
           child: Row(
             children: [
               IconButton(onPressed: (){}, icon: Icon(Ionicons.wallet_outline)),
