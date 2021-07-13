@@ -27,7 +27,23 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
             Expanded(
               flex: 7,
               child: Stack(
-                children: [],
+                children: [
+
+                  Positioned(child: Container(
+                    color: Colors.purple,
+                  ),
+                  left: 0,
+                  top: 0,
+                  bottom: 0,
+                  right: 0,),
+                  Positioned(child: Container(
+                    color: Colors.indigo
+                  ),
+                    left: 0,
+                    top: 0,
+                    bottom: 200,
+                    right: 0,),
+                ],
               ),
             ),
             Expanded(
