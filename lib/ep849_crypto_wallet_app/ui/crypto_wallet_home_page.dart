@@ -8,7 +8,18 @@ class CryptoWalletHomePage extends StatefulWidget {
   _CryptoWalletHomePageState createState() => _CryptoWalletHomePageState();
 }
 
-class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> {
+class _CryptoWalletHomePageState extends State<CryptoWalletHomePage>
+with SingleTickerProviderStateMixin{
+
+  TabController? _tabController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 4, vsync: this);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
