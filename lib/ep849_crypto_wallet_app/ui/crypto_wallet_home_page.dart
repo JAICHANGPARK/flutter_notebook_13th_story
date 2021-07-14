@@ -10,10 +10,10 @@ class CryptoWalletHomePage extends StatefulWidget {
 
 class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with SingleTickerProviderStateMixin {
   TabController? _tabController;
-  const Color _backgroundColor = Color(0xffede7f7);
-  const Color _fabColor = Color(0xff491a90);
-  const Color _topColor = Color(0xff1b2052);
-  const Color _bottomColor = Color(0xff1b2052);
+  final Color _backgroundColor = Color(0xffede7f7);
+  final Color _fabColor = Color(0xff491a90);
+  final Color _topColor = Color(0xff1b2052);
+  final Color _bottomColor = Color(0xff1b2052);
 
   @override
   void initState() {
