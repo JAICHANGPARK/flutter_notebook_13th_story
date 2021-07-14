@@ -141,7 +141,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                       height: 4,
                                     ),
                                     Text("BTC",
-                                        style: TextStyle(color: _blueColor,
+                                        style: TextStyle(color: Colors.brown[100],
                                             fontWeight: FontWeight.bold, fontSize: 10))
                                   ],
                                 ),
@@ -152,13 +152,13 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                     Container(
                                       height: 3,
                                       width: 60,
-                                      decoration: BoxDecoration(color: _blueColor),
+                                      decoration: BoxDecoration(color: Colors.deepOrangeAccent[100]),
                                     ),
                                     SizedBox(
                                       height: 4,
                                     ),
                                     Text("XRP",
-                                        style: TextStyle(color: _blueColor,
+                                        style: TextStyle(color: Colors.deepOrangeAccent[100],
                                             fontWeight: FontWeight.bold, fontSize: 10))
                                   ],
                                 ),
