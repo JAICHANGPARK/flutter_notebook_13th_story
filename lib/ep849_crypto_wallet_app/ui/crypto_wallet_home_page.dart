@@ -14,7 +14,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
   final Color _fabColor = Color(0xff491a90);
   final Color _topColor = Color(0xff1b2052);
   final Color _bottomColor = Color(0xff141645);
-  final Color _blueColor =Color(0xff93def9);
+  final Color _blueColor = Color(0xff93def9);
 
   @override
   void initState() {
@@ -59,8 +59,8 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                 Container(
                                   height: 42,
                                   width: 42,
-                                  decoration: BoxDecoration(color: _bottomColor,
-                                  borderRadius: BorderRadius.circular(8)),
+                                  decoration:
+                                      BoxDecoration(color: _bottomColor, borderRadius: BorderRadius.circular(8)),
                                   child: Icon(
                                     Icons.menu,
                                     color: Colors.white,
@@ -69,8 +69,8 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                 Container(
                                   height: 42,
                                   width: 42,
-                                  decoration: BoxDecoration(color: _bottomColor,
-                                      borderRadius: BorderRadius.circular(8)),
+                                  decoration:
+                                      BoxDecoration(color: _bottomColor, borderRadius: BorderRadius.circular(8)),
                                   child: Icon(
                                     Icons.notifications_none_outlined,
                                     color: Colors.white,
@@ -79,56 +79,55 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                               ],
                             ),
                           ),
-                          SizedBox(height: 16,),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Padding(
                             padding: const EdgeInsets.only(left: 16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("TOTAL BALANCE",style: TextStyle(
-                                    color: Colors.white.withOpacity(0.4)
-                                ),),
-                                SizedBox(height: 3,),
-                                Text.rich(
-                                    TextSpan(
-                                    children:[
-                                      TextSpan(
-                                          text: "\$",
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold
-                                          )
-                                      ),
-                                      TextSpan(
-                                          text: "27,915.55",
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                            fontSize: 38
-                                          )
-                                      )
-                                    ]
+                                Text(
+                                  "TOTAL BALANCE",
+                                  style: TextStyle(color: Colors.white.withOpacity(0.4)),
                                 ),
-                                textAlign: TextAlign.center,)
+                                SizedBox(
+                                  height: 3,
+                                ),
+                                Text.rich(
+                                  TextSpan(children: [
+                                    TextSpan(
+                                        text: "\$", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                                    TextSpan(
+                                        text: "27,915.55",
+                                        style:
+                                            TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 38))
+                                  ]),
+                                  textAlign: TextAlign.center,
+                                )
                               ],
                             ),
                           ),
-                          Row(
-                            children: [
-                              Column(
-                                children: [
-                                  Container(
-                                    height: 3,
-                                    width: 160,
-                                    decoration: BoxDecoration(
-                                      color:_blueColor
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      height: 3,
+                                      width: 100,
+                                      decoration: BoxDecoration(color: _blueColor),
                                     ),
-                                  )
-                                ],
-                              )
-                            ],
+                                    Text("ETH",
+                                        style: TextStyle(color: _blueColor, fontWeight:
+                                        FontWeight.bold, fontSize: 12))
+                                  ],
+                                )
+                              ],
+                            ),
                           )
-
                         ],
                       ),
                     ),
@@ -173,7 +172,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                       child: TabBarView(controller: _tabController, children: [
                         Container(color: _backgroundColor),
                         Container(color: _backgroundColor),
-                        Container(color:_backgroundColor),
+                        Container(color: _backgroundColor),
                         Container(color: _backgroundColor),
                       ]),
                     ),
