@@ -38,6 +38,13 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                     child: Container(
                       decoration: BoxDecoration(
                           color: _bottomColor, borderRadius: BorderRadius.only(bottomLeft: Radius.circular(48))),
+                      padding: EdgeInsets.only(top: 220, left: 8, bottom: 16),
+                      child: Row(
+                        children: [
+                          Expanded(child: Placeholder(color: Colors.white,)),
+                          Expanded(child: Placeholder()),
+                        ],
+                      ),
                     ),
                     left: 0,
                     top: 0,
@@ -198,12 +205,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                             color: _bottomColor,
                             border: Border.all(color: Colors.white, width: 4),
                             borderRadius: BorderRadius.circular(8)),
-                        child: Row(
-                          children: [
-                            Expanded(child: Placeholder()),
-                            Expanded(child: Placeholder()),
-                          ],
-                        ),
+
                       ),
                     ),
                     left: 0,
