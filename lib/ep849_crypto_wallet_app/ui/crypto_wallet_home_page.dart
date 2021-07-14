@@ -46,11 +46,14 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                             children: [
                               Text("My",style: TextStyle(color: Colors.white.withOpacity(0.4)),),
                               Text("INVESTMENTS",style: TextStyle(color: Colors.white.withOpacity(0.4))),
+                              SizedBox(height: 8,),
                               Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text("\$",style: TextStyle(color: Colors.white.withOpacity(0.4))),
-                                  Text("10.112",style: TextStyle(color: Colors.white.withOpacity(0.4))),
-                                  Text("+3.2%",style: TextStyle(color: Colors.white.withOpacity(0.4))),
+                                  Text("10.112",style: TextStyle(color: Colors.white.withOpacity(0.4),
+                                  fontSize: 24)),
+                                  Text("+3.2%",style: TextStyle(color: _blueColor)),
                                 ],
                               )
                             ],
