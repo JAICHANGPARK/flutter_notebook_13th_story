@@ -94,7 +94,9 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
         ),
       ),
       bottomNavigationBar: BottomAppBar(
+        color: _backgroundColor,
         child: Container(
+          color: _backgroundColor,
           padding: EdgeInsets.symmetric(vertical: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
