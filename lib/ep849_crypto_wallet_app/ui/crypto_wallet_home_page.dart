@@ -124,7 +124,8 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                       height: 4,
                                     ),
                                     Text("ETH",
-                                        style: TextStyle(color: _blueColor, fontWeight: FontWeight.bold, fontSize: 12))
+                                        style: TextStyle(color: _blueColor,
+                                            fontWeight: FontWeight.bold, fontSize: 10))
                                   ],
                                 ),
                                 SizedBox(width: 8),
@@ -134,13 +135,14 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                     Container(
                                       height: 3,
                                       width: 72,
-                                      decoration: BoxDecoration(color: _blueColor),
+                                      decoration: BoxDecoration(color: Colors.brown[100]),
                                     ),
                                     SizedBox(
                                       height: 4,
                                     ),
-                                    Text("ETH",
-                                        style: TextStyle(color: _blueColor, fontWeight: FontWeight.bold, fontSize: 12))
+                                    Text("BTC",
+                                        style: TextStyle(color: _blueColor,
+                                            fontWeight: FontWeight.bold, fontSize: 10))
                                   ],
                                 ),
                                 SizedBox(width: 8),
@@ -155,8 +157,9 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                     SizedBox(
                                       height: 4,
                                     ),
-                                    Text("ETH",
-                                        style: TextStyle(color: _blueColor, fontWeight: FontWeight.bold, fontSize: 12))
+                                    Text("XRP",
+                                        style: TextStyle(color: _blueColor,
+                                            fontWeight: FontWeight.bold, fontSize: 10))
                                   ],
                                 ),
                                 SizedBox(width: 8),
@@ -171,8 +174,9 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                     SizedBox(
                                       height: 4,
                                     ),
-                                    Text("ETH",
-                                        style: TextStyle(color: _blueColor, fontWeight: FontWeight.bold, fontSize: 12))
+                                    Text("OTHERS",
+                                        style: TextStyle(color: _blueColor,
+                                            fontWeight: FontWeight.bold, fontSize: 10))
                                   ],
                                 )
                               ],
