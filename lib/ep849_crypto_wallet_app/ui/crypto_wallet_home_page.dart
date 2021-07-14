@@ -87,9 +87,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                           Tab(
                             text: "Rewards",
                           ),
-                          Tab(
-                            text: "News",
-                          )
+                          Tab(text: "News")
                         ]),
                     Expanded(
                       child: TabBarView(controller: _tabController, children: [
