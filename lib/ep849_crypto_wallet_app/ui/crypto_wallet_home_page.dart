@@ -109,7 +109,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.only(top: 12, left: 16),
                             child: Row(
                               children: [
                                 Column(
@@ -120,6 +120,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                       width: 100,
                                       decoration: BoxDecoration(color: _blueColor),
                                     ),
+                                    SizedBox(height: 4,),
                                     Text("ETH",
                                         style: TextStyle(color: _blueColor, fontWeight:
                                         FontWeight.bold, fontSize: 12))
