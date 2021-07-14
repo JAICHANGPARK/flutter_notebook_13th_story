@@ -63,6 +63,13 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                   ),
                                   Text("+3.2%", style: TextStyle(color: _blueColor)),
                                 ],
+                              ),
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  color: Colors.white
+                                ),
                               )
                             ],
                           )),
