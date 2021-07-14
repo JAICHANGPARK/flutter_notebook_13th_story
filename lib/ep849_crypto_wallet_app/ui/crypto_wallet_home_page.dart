@@ -90,7 +90,8 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                       child: Container(
                                         width: 100,
                                         decoration: BoxDecoration(
-                                          color: _blueColor
+                                          color: _blueColor,
+                                          borderRadius: BorderRadius.circular(8)
                                         ),
                                         child: Center(
                                           child: Text(""),
