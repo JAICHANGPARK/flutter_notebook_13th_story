@@ -57,7 +57,10 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text("\$", style: TextStyle(color: Colors.white)),
-                                  Text("10.112", style: TextStyle(color: Colors.white, fontSize: 24)),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                                    child: Text("10.112", style: TextStyle(color: Colors.white, fontSize: 24)),
+                                  ),
                                   Text("+3.2%", style: TextStyle(color: _blueColor)),
                                 ],
                               )
