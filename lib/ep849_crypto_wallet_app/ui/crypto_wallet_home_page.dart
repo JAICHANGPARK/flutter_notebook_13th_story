@@ -13,7 +13,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
   final Color _backgroundColor = Color(0xffede7f7);
   final Color _fabColor = Color(0xff491a90);
   final Color _topColor = Color(0xff1b2052);
-  final Color _bottomColor = Color(0xff1b2052);
+  final Color _bottomColor = Color(0xff141645);
 
   @override
   void initState() {
@@ -36,7 +36,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                   Positioned(
                     child: Container(
                       decoration: BoxDecoration(
-                          color: Colors.purple, borderRadius: BorderRadius.only(bottomLeft: Radius.circular(48))),
+                          color: _bottomColor, borderRadius: BorderRadius.only(bottomLeft: Radius.circular(48))),
                     ),
                     left: 0,
                     top: 0,
@@ -46,7 +46,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                   Positioned(
                     child: Container(
                       decoration: BoxDecoration(
-                          color: Colors.indigo, borderRadius: BorderRadius.only(bottomLeft: Radius.circular(48))),
+                          color: _topColor, borderRadius: BorderRadius.only(bottomLeft: Radius.circular(48))),
                     ),
                     left: 0,
                     top: 0,
@@ -59,7 +59,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                         height: 16,
                         width: 32,
                         decoration: BoxDecoration(
-                            color: Colors.indigo,
+                            color: _bottomColor
                             border: Border.all(color: Colors.white, width: 4),
                             borderRadius: BorderRadius.circular(8)),
                       ),
