@@ -114,13 +114,15 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                         controller: _tabController,
                         labelColor: Colors.black,
                         unselectedLabelColor: Colors.black,
+                        indicatorSize: TabBarIndicatorSize.label,
+                        indicatorColor: _bottomColor,
                         tabs: [Tab(text: "Watchlist"), Tab(text: "Movers"), Tab(text: "Rewards"), Tab(text: "News")]),
                     Expanded(
                       child: TabBarView(controller: _tabController, children: [
                         Container(color: _backgroundColor),
-                        Container(color: Colors.blue),
-                        Container(color: Colors.green),
-                        Container(color: Colors.yellow),
+                        Container(color: _backgroundColor),
+                        Container(color:_backgroundColor),
+                        Container(color: _backgroundColor),
                       ]),
                     ),
                   ],
