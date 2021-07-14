@@ -120,12 +120,14 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                       width: 100,
                                       decoration: BoxDecoration(color: _blueColor),
                                     ),
-                                    SizedBox(height: 4,),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
                                     Text("ETH",
-                                        style: TextStyle(color: _blueColor, fontWeight:
-                                        FontWeight.bold, fontSize: 12))
+                                        style: TextStyle(color: _blueColor, fontWeight: FontWeight.bold, fontSize: 12))
                                   ],
                                 ),
+                                SizedBox(width: 8),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -134,12 +136,14 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                       width: 72,
                                       decoration: BoxDecoration(color: _blueColor),
                                     ),
-                                    SizedBox(height: 4,),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
                                     Text("ETH",
-                                        style: TextStyle(color: _blueColor, fontWeight:
-                                        FontWeight.bold, fontSize: 12))
+                                        style: TextStyle(color: _blueColor, fontWeight: FontWeight.bold, fontSize: 12))
                                   ],
                                 ),
+                                SizedBox(width: 8),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -148,12 +152,14 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                       width: 60,
                                       decoration: BoxDecoration(color: _blueColor),
                                     ),
-                                    SizedBox(height: 4,),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
                                     Text("ETH",
-                                        style: TextStyle(color: _blueColor, fontWeight:
-                                        FontWeight.bold, fontSize: 12))
+                                        style: TextStyle(color: _blueColor, fontWeight: FontWeight.bold, fontSize: 12))
                                   ],
                                 ),
+                                SizedBox(width: 8),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -162,10 +168,11 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                       width: 30,
                                       decoration: BoxDecoration(color: _blueColor),
                                     ),
-                                    SizedBox(height: 4,),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
                                     Text("ETH",
-                                        style: TextStyle(color: _blueColor, fontWeight:
-                                        FontWeight.bold, fontSize: 12))
+                                        style: TextStyle(color: _blueColor, fontWeight: FontWeight.bold, fontSize: 12))
                                   ],
                                 )
                               ],
