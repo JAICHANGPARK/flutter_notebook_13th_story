@@ -48,6 +48,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                       decoration: BoxDecoration(
                           color: _topColor, borderRadius: BorderRadius.only(bottomLeft: Radius.circular(48))),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
                             padding: const EdgeInsets.all(8.0),
