@@ -14,6 +14,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
   final Color _fabColor = Color(0xff491a90);
   final Color _topColor = Color(0xff1b2052);
   final Color _bottomColor = Color(0xff141645);
+  final Color _blueColor =Color(0xff93def9);
 
   @override
   void initState() {
@@ -108,10 +109,24 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                       )
                                     ]
                                 ),
-
                                 textAlign: TextAlign.center,)
                               ],
                             ),
+                          ),
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    height: 3,
+                                    width: 160,
+                                    decoration: BoxDecoration(
+                                      color:_blueColor
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
                           )
 
                         ],
