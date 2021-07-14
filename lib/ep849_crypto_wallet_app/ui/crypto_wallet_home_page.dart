@@ -79,27 +79,40 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                             ),
                           ),
                           SizedBox(height: 16,),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("TOTAL BALANCE",style: TextStyle(
-                                  color: Colors.white.withOpacity(0.4)
-                              ),),
-                              Text.rich(TextSpan(
-                                  children:[
+                          Padding(
+                            padding: const EdgeInsets.only(left: 16),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("TOTAL BALANCE",style: TextStyle(
+                                    color: Colors.white.withOpacity(0.4)
+                                ),),
+                                Text.rich(
+
                                     TextSpan(
-                                        text: "\$",
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold
-                                        )
-                                    ),
-                                    TextSpan(
-                                        text: "27,915.55"
-                                    )
-                                  ]
-                              ))
-                            ],
+
+                                    children:[
+                                      TextSpan(
+                                          text: "\$",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold
+                                          )
+                                      ),
+                                      TextSpan(
+                                          text: "27,915.55",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                            fontSize: 24
+                                          )
+                                      )
+                                    ]
+                                ),
+
+                                textAlign: TextAlign.center,)
+                              ],
+                            ),
                           )
 
                         ],
