@@ -169,13 +169,13 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                     Container(
                                       height: 3,
                                       width: 30,
-                                      decoration: BoxDecoration(color: _blueColor),
+                                      decoration: BoxDecoration(color: Colors.blueGrey),
                                     ),
                                     SizedBox(
                                       height: 4,
                                     ),
                                     Text("OTHERS",
-                                        style: TextStyle(color: _blueColor,
+                                        style: TextStyle(color:  Colors.blueGrey,
                                             fontWeight: FontWeight.bold, fontSize: 10))
                                   ],
                                 )
