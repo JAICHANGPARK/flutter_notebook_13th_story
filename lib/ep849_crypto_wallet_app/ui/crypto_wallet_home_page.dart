@@ -65,10 +65,14 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                 ],
                               ),
                               Container(
-                                height: 64,
-                                width: 64,
+                                height: 42,
+                                width: 42,
                                 decoration: BoxDecoration(
-                                  color: Colors.white
+                                  color: Colors.white,
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Center(
+                                  child: Icon(Icons.play_arrow),
                                 ),
                               )
                             ],
