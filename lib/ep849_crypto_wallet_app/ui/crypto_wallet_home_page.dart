@@ -125,6 +125,48 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                         style: TextStyle(color: _blueColor, fontWeight:
                                         FontWeight.bold, fontSize: 12))
                                   ],
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      height: 3,
+                                      width: 72,
+                                      decoration: BoxDecoration(color: _blueColor),
+                                    ),
+                                    SizedBox(height: 4,),
+                                    Text("ETH",
+                                        style: TextStyle(color: _blueColor, fontWeight:
+                                        FontWeight.bold, fontSize: 12))
+                                  ],
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      height: 3,
+                                      width: 60,
+                                      decoration: BoxDecoration(color: _blueColor),
+                                    ),
+                                    SizedBox(height: 4,),
+                                    Text("ETH",
+                                        style: TextStyle(color: _blueColor, fontWeight:
+                                        FontWeight.bold, fontSize: 12))
+                                  ],
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      height: 3,
+                                      width: 30,
+                                      decoration: BoxDecoration(color: _blueColor),
+                                    ),
+                                    SizedBox(height: 4,),
+                                    Text("ETH",
+                                        style: TextStyle(color: _blueColor, fontWeight:
+                                        FontWeight.bold, fontSize: 12))
+                                  ],
                                 )
                               ],
                             ),
