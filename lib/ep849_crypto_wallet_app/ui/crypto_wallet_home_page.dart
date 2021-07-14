@@ -81,7 +81,19 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                           )),
                           Expanded(
                               flex: 4,
-                              child: Placeholder()),
+                              child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index){
+                                    return Container(
+                                      width: 84,
+                                      decoration: BoxDecoration(
+                                        color: _blueColor
+                                      ),
+                                      child: Center(
+                                        child: Text(""),
+                                      ),
+                                    )
+                                  })),
                         ],
                       ),
                     ),
