@@ -41,19 +41,24 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                       padding: EdgeInsets.only(top: 220, left: 8, bottom: 16),
                       child: Row(
                         children: [
-                          Expanded(child: Column(
+                          Expanded(
+                              child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("My",style: TextStyle(color: Colors.white.withOpacity(0.4)),),
-                              Text("INVESTMENTS",style: TextStyle(color: Colors.white.withOpacity(0.4))),
-                              SizedBox(height: 8,),
+                              Text(
+                                "My",
+                                style: TextStyle(color: Colors.white.withOpacity(0.4)),
+                              ),
+                              Text("INVESTMENTS", style: TextStyle(color: Colors.white.withOpacity(0.4))),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("\$",style: TextStyle(color: Colors.white.withOpacity(0.4))),
-                                  Text("10.112",style: TextStyle(color: Colors.white.withOpacity(0.4),
-                                  fontSize: 24)),
-                                  Text("+3.2%",style: TextStyle(color: _blueColor)),
+                                  Text("\$", style: TextStyle(color: Colors.white)),
+                                  Text("10.112", style: TextStyle(color: Colors.white, fontSize: 24)),
+                                  Text("+3.2%", style: TextStyle(color: _blueColor)),
                                 ],
                               )
                             ],
@@ -221,7 +226,6 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                             color: _bottomColor,
                             border: Border.all(color: Colors.white, width: 4),
                             borderRadius: BorderRadius.circular(8)),
-
                       ),
                     ),
                     left: 0,
