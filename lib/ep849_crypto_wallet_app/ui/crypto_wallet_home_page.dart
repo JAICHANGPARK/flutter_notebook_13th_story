@@ -87,10 +87,9 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                 Text("TOTAL BALANCE",style: TextStyle(
                                     color: Colors.white.withOpacity(0.4)
                                 ),),
+                                SizedBox(height: 3,),
                                 Text.rich(
-
                                     TextSpan(
-
                                     children:[
                                       TextSpan(
                                           text: "\$",
@@ -104,7 +103,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                           style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
-                                            fontSize: 24
+                                            fontSize: 38
                                           )
                                       )
                                     ]
@@ -120,7 +119,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                     ),
                     left: 0,
                     top: 0,
-                    bottom: 200,
+                    bottom: 160,
                     right: 0,
                   ),
                   Positioned(
