@@ -10,6 +10,7 @@ class CryptoWalletHomePage extends StatefulWidget {
 
 class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with SingleTickerProviderStateMixin {
   TabController? _tabController;
+  Color _backgroundColor = Color(0xffede7f7);
 
   @override
   void initState() {
@@ -21,6 +22,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: _backgroundColor,
       body: SafeArea(
         child: Column(
           children: [
