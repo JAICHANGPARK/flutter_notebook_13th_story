@@ -11,6 +11,7 @@ class CryptoWalletHomePage extends StatefulWidget {
 class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with SingleTickerProviderStateMixin {
   TabController? _tabController;
   Color _backgroundColor = Color(0xffede7f7);
+  Color _fabColor = Color(0xff491a90);
 
   @override
   void initState() {
@@ -105,6 +106,7 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
               IconButton(onPressed: () {}, icon: Icon(Ionicons.pie_chart)),
               FloatingActionButton(
                 onPressed: () {},
+                backgroundColor: _fabColor,
                 child: Icon(Icons.my_location_outlined),
               ),
               IconButton(onPressed: () {}, icon: Icon(Ionicons.stats_chart_outline)),
