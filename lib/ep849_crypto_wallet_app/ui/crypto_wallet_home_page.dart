@@ -49,18 +49,33 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                           color: _topColor, borderRadius: BorderRadius.only(bottomLeft: Radius.circular(48))),
                       child: Column(
                         children: [
-                          Row(
-                            children: [
-                              Container(
-                                height: 42,
-                                width: 42,
-                                decoration: BoxDecoration(color: _bottomColor),
-                                child: Icon(
-                                  Icons.menu,
-                                  color: Colors.white,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  height: 42,
+                                  width: 42,
+                                  decoration: BoxDecoration(color: _bottomColor,
+                                  borderRadius: BorderRadius.circular(8)),
+                                  child: Icon(
+                                    Icons.menu,
+                                    color: Colors.white,
+                                  ),
                                 ),
-                              )
-                            ],
+                                Container(
+                                  height: 42,
+                                  width: 42,
+                                  decoration: BoxDecoration(color: _bottomColor,
+                                      borderRadius: BorderRadius.circular(8)),
+                                  child: Icon(
+                                    Icons.notifications_none_outlined,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
