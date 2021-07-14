@@ -73,10 +73,23 @@ class _CryptoWalletHomePageState extends State<CryptoWalletHomePage> with Single
                                     Icons.notifications_none_outlined,
                                     color: Colors.white,
                                   ),
-                                )
+                                ),
                               ],
                             ),
-                          )
+                          ),
+                          Text("TOTAL BALANCE",style: TextStyle(
+                            color: Colors.white.withOpacity(0.4)
+                          ),),
+                          Text.rich(TextSpan(
+                            children:[
+                              TextSpan(
+                                 text: "\$",
+                              ),
+                              TextSpan(
+                                text: "27,915.55"
+                              )
+                            ]
+                          ))
                         ],
                       ),
                     ),
